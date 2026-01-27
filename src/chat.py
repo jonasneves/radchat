@@ -44,6 +44,7 @@ For ACR criteria:
 
 def execute_tool(name: str, args: dict) -> dict:
     """Route tool execution to appropriate handler."""
+    print(f"[TOOL] {name}({args})")
     # Phone catalog tools
     phone_tools = (
         "search_phone_directory",
@@ -53,7 +54,9 @@ def execute_tool(name: str, args: dict) -> dict:
         "list_contacts_by_type",
     )
     if name in phone_tools:
-        return execute_phone_tool(name, args)
+        result = execute_phone_tool(name, args)
+        print(f"[TOOL] {name} returned {len(result.get('results', result.get('contacts', [])))} results")
+        return result
     # ACR criteria tools
     acr_tools = ("search_acr_criteria", "get_acr_topic_details", "list_acr_topics")
     if name in acr_tools:
