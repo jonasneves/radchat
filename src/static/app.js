@@ -279,8 +279,7 @@ class RadChat {
 
         // Check if authenticated
         if (!this.user) {
-            this.addMessage('assistant', 'Please sign in with your Duke NetID to use RadChat.');
-            this.login();
+            this.showToast('Please sign in with your Duke NetID to use RadChat.');
             return;
         }
 
@@ -634,6 +633,26 @@ class RadChat {
 
     scrollToBottom() {
         this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+    }
+
+    showToast(message) {
+        // Remove existing toast if any
+        const existing = document.querySelector('.toast');
+        if (existing) existing.remove();
+
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.textContent = message;
+        document.body.appendChild(toast);
+
+        // Trigger animation
+        requestAnimationFrame(() => toast.classList.add('show'));
+
+        // Auto-dismiss after 4 seconds
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        }, 4000);
     }
 }
 

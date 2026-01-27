@@ -1,44 +1,43 @@
 # RadChat
 
-Radiology assistant with Claude tool calling for phone directory lookup and ACR imaging criteria.
+Radiology assistant with phone directory lookup and ACR imaging criteria. Uses GitHub Models API and Duke NetID authentication.
 
 ## Setup
 
 ```bash
 make install
-export ANTHROPIC_API_KEY=your_key
+cp .env.example .env
+# Edit .env with your credentials
 ```
 
-## Usage
+## Development
 
 ```bash
-make cli      # Interactive chat
-make server   # API server (port 5000)
+make preview        # Local server (port 5000)
+make preview-remote # Local + ngrok tunnel
 ```
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_phone_directory` | Find reading rooms, scheduling, procedures |
-| `get_reading_room_contact` | Get contact for modality + body region |
-| `get_procedure_contact` | VIR/procedure requests |
-| `search_acr_criteria` | Imaging appropriateness by clinical scenario |
-| `get_acr_topic_details` | Detailed appropriateness scores (1-9) |
-
-## API
-
-```bash
-curl -X POST http://localhost:5000/chat \
-  -H "Content-Type: application/json" \
-  -d '{"message": "CT reading room number?"}'
-```
+| Phone Directory | Reading rooms, scheduling, procedures |
+| ACR Criteria | Imaging appropriateness scores (1-9) |
 
 ## Deploy
 
-Uses Cloudflare Tunnel via GitHub Actions. Set secrets:
-- `ANTHROPIC_API_KEY`
-- `TUNNEL_TOKEN` (from `make setup-tunnel`)
-- `APP_ID` / `APP_PRIVATE_KEY` (for auto-restart)
+GitHub Actions with Cloudflare Tunnel. Required secrets:
+
+| Secret | Description |
+|--------|-------------|
+| `GH_MODELS_TOKEN` | GitHub token for Models API |
+| `DUKE_CLIENT_SECRET` | Duke OAuth client secret |
+| `FLASK_SECRET_KEY` | Session encryption key |
+| `TUNNEL_TOKEN` | Cloudflare tunnel token |
+| `APP_ID` / `APP_PRIVATE_KEY` | Auto-restart (optional) |
 
 Trigger: Actions → Deploy → Run workflow
+
+## Docs
+
+- [Duke OAuth Setup](.docs/duke-oauth.md)
