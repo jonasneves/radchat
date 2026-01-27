@@ -528,9 +528,10 @@ class RadChat {
             }
         } else if (type === 'acr') {
             // Render ACR results
-            if (data.topics && data.topics.length > 0) {
+            const topics = data.topics || data.results || [];
+            if (topics.length > 0) {
                 // Search results - show list of topics
-                const card = this.renderACRSearchResults(data.topics);
+                const card = this.renderACRSearchResults(topics);
                 card.dataset.tool = tool;
                 bubbleEl.appendChild(card);
             } else if (data.topic) {

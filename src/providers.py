@@ -377,8 +377,13 @@ class GitHubModelsProvider(LLMProvider):
                     args = json.loads(tc["arguments"]) if tc["arguments"] else {}
                     result = tool_executor(tool_name, args)
 
+                    # Determine tool type
+                    if "acr" in tool_name.lower():
+                        tool_type = "acr"
+                    else:
+                        tool_type = "contacts"
+
                     # Emit structured tool result
-                    tool_type = "contacts" if "phone" in tool_name or "contact" in tool_name or "reading_room" in tool_name else "acr"
                     yield f"__TOOL_RESULT__{json.dumps({'type': tool_type, 'tool': tool_name, 'data': result})}__"
 
                     tool_results.append({
