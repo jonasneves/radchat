@@ -297,8 +297,22 @@ def list_tools():
 
 def main():
     """Run the server."""
+    import logging
+    import click
+
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("DEBUG", "true").lower() == "true"
+
+    # Suppress default Flask startup banner
+    log = logging.getLogger('werkzeug')
+    log.setLevel(logging.WARNING)
+    click.disable_unicode_literals_warning = True
+
+    print(f" * Running on http://localhost:{port}")
+    print(" * Press CTRL+C to quit")
+    if debug:
+        print(" * Debug mode: on")
+
     app.run(host="0.0.0.0", port=port, debug=debug)
 
 

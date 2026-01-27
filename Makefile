@@ -29,11 +29,9 @@ models:
 	python3 -m src.cli --models
 
 preview:
-	@echo "Starting RadChat at http://localhost:$(PORT)"
-	python3 -m src.server
+	@python3 -m src.server
 
 preview-remote:
-	@echo "Starting server and ngrok tunnel..."
 	@python3 -m src.server & sleep 2 && ngrok http $(PORT)
 
 stop:

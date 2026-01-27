@@ -1045,7 +1045,7 @@ body {
 /* Toast Notification */
 .toast {
     position: fixed;
-    top: 20px;
+    top: calc(var(--header-height) + 12px);
     right: 20px;
     padding: 12px 20px;
     background: #1E293B;
@@ -1056,13 +1056,13 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateY(-10px);
     transition: opacity 0.3s, transform 0.3s;
 }
 
 .toast.show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 /* Scrollbar */
