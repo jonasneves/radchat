@@ -31,6 +31,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Fetch ACR cache from data branch
+        run: |
+          git fetch origin data:data 2>/dev/null || true
+          if git rev-parse --verify data >/dev/null 2>&1; then
+            git checkout data -- src/data/acr_criteria.json 2>/dev/null || echo "No cache yet"
+          fi
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'

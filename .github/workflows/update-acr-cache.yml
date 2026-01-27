@@ -15,6 +15,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: data
+          fetch-depth: 0
+
+      - name: Create data branch if missing
+        run: |
+          if ! git rev-parse --verify origin/data >/dev/null 2>&1; then
+            git checkout --orphan data
+            git rm -rf . 2>/dev/null || true
+            mkdir -p src/data
+          fi
 
       - uses: actions/setup-python@v5
         with:
@@ -27,7 +38,10 @@ jobs:
           playwright install-deps chromium
 
       - name: Update ACR cache
-        run: python scripts/update_acr_cache.py
+        run: |
+          # Get scraper from main branch
+          git show main:scripts/update_acr_cache.py > update_acr_cache.py
+          python update_acr_cache.py
 
       - name: Validate JSON
         run: |
@@ -40,7 +54,8 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if git diff --quiet src/data/acr_criteria.json 2>/dev/null; then
+          git add src/data/acr_criteria.json
+          if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -51,6 +66,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/acr_criteria.json
           git commit -m "Update ACR criteria cache [$(date +%Y-%m-%d)]"
-          git push
+          git push origin data
