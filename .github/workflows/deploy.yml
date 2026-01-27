@@ -94,7 +94,7 @@ jobs:
             AUTO_RESTART="true"
           fi
 
-          echo "Duration: ${DURATION_HOURS}h | Auto-restart: $AUTO_RESTART"
+          echo "Duration: ${DURATION_HOURS}h (${DURATION}s) | Restart at: ${RESTART_THRESHOLD}s | Auto-restart: $AUTO_RESTART | Token set: $([ -n \"$RESTART_TOKEN\" ] && echo yes || echo no)"
 
           while true; do
             ELAPSED=$(($(date +%s) - START_TIME))
