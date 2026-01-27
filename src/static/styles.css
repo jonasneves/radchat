@@ -736,6 +736,29 @@ body {
     color: var(--duke-royal);
 }
 
+/* ACR Search Results */
+.acr-search-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+.acr-search-item:last-child {
+    border-bottom: none;
+}
+
+.acr-search-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 4px;
+}
+
+.acr-search-item p {
+    font-size: 13px;
+    color: #64748B;
+    margin: 0;
+}
+
 /* Inline Phone Link */
 .inline-phone {
     color: var(--duke-royal);

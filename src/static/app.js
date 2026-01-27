@@ -318,7 +318,8 @@ class RadChat {
             const reader = response.body.getReader();
             const decoder = new TextDecoder();
             let fullText = '';
-            let inToolCall = false;
+            let buffer = '';
+            let toolResults = [];
 
             while (true) {
                 const { value, done } = await reader.read();
@@ -336,18 +337,45 @@ class RadChat {
                     try {
                         const parsed = JSON.parse(data);
                         if (parsed.text) {
-                            const text = parsed.text;
+                            buffer += parsed.text;
 
-                            // Detect tool call markers
-                            if (text.includes('[Searching:')) {
-                                inToolCall = true;
-                                const toolName = text.match(/\[Searching: (.+?)\.{3}\]/)?.[1] || 'tools';
-                                this.addToolCallIndicator(bubbleEl, toolName);
-                            } else if (inToolCall && text.includes(']')) {
-                                inToolCall = false;
-                            } else {
-                                fullText += text;
-                                bubbleEl.innerHTML = this.formatMessage(fullText);
+                            // Process buffer for tool markers
+                            while (true) {
+                                // Check for tool start marker
+                                const startMatch = buffer.match(/__TOOL_START__(.+?)__/);
+                                if (startMatch) {
+                                    const beforeMarker = buffer.slice(0, startMatch.index);
+                                    if (beforeMarker) {
+                                        fullText += beforeMarker;
+                                        bubbleEl.innerHTML = this.formatMessage(fullText);
+                                    }
+                                    this.addToolCallIndicator(bubbleEl, startMatch[1]);
+                                    buffer = buffer.slice(startMatch.index + startMatch[0].length);
+                                    continue;
+                                }
+
+                                // Check for tool result marker
+                                const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
+                                if (resultMatch) {
+                                    buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
+                                    try {
+                                        const toolData = JSON.parse(resultMatch[1]);
+                                        toolResults.push(toolData);
+                                        this.renderToolResult(bubbleEl, toolData);
+                                    } catch (e) {
+                                        console.error('Failed to parse tool result:', e);
+                                    }
+                                    continue;
+                                }
+
+                                // No more markers, output remaining buffer as text
+                                // But keep last 50 chars in case marker is split across chunks
+                                if (buffer.length > 50 && !buffer.includes('__')) {
+                                    fullText += buffer;
+                                    bubbleEl.innerHTML = this.formatMessage(fullText);
+                                    buffer = '';
+                                }
+                                break;
                             }
                         }
                     } catch (e) {
@@ -356,9 +384,22 @@ class RadChat {
                 }
             }
 
-            // Parse and render any tool results in the final text
+            // Process any remaining buffer
+            if (buffer) {
+                fullText += buffer;
+            }
+
+            // Final render
             bubbleEl.innerHTML = this.formatMessage(fullText);
             this.parseAndRenderToolResults(bubbleEl, fullText);
+
+            // Append any tool result cards that were rendered
+            toolResults.forEach(tr => {
+                const existingCard = bubbleEl.querySelector(`[data-tool="${tr.tool}"]`);
+                if (!existingCard) {
+                    this.renderToolResult(bubbleEl, tr);
+                }
+            });
 
             // Add model footer
             const modelName = assistantMessage.dataset.model;
@@ -433,6 +474,9 @@ class RadChat {
         const loadingDots = bubbleEl.querySelector('.loading-dots');
         if (loadingDots) loadingDots.remove();
 
+        // Format tool name for display
+        const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
+
         const loader = document.createElement('div');
         loader.className = 'tool-call-loader';
         loader.innerHTML = `
@@ -442,12 +486,94 @@ class RadChat {
                         <circle cx="12" cy="12" r="10"/>
                         <path d="M12 6v6l4 2"/>
                     </svg>
-                    <span>Searching ${toolName}...</span>
+                    <span>Searching ${displayName}...</span>
                 </div>
             </div>
         `;
         bubbleEl.appendChild(loader);
         this.scrollToBottom();
+    }
+
+    renderToolResult(bubbleEl, toolData) {
+        // Remove tool call loader
+        const loader = bubbleEl.querySelector('.tool-call-loader');
+        if (loader) loader.remove();
+
+        const { type, tool, data } = toolData;
+
+        // Don't render if there's an error
+        if (data.error) return;
+
+        if (type === 'contacts') {
+            // Handle different response structures
+            let contacts = [];
+            if (data.results) {
+                // search_phone_directory returns { results: [...] }
+                contacts = data.results;
+            } else if (data.contacts) {
+                // get_scheduling_contact, list_contacts_by_type return { contacts: [...] }
+                contacts = data.contacts;
+            } else if (data.contact) {
+                // get_reading_room_contact, get_procedure_contact return { contact: {...} }
+                contacts = [data.contact];
+                if (data.alternatives) {
+                    contacts = contacts.concat(data.alternatives);
+                }
+            }
+
+            if (contacts.length > 0) {
+                const card = this.renderContactResults(contacts.slice(0, 5), data.time_context);
+                card.dataset.tool = tool;
+                bubbleEl.appendChild(card);
+            }
+        } else if (type === 'acr') {
+            // Render ACR results
+            if (data.topics && data.topics.length > 0) {
+                // Search results - show list of topics
+                const card = this.renderACRSearchResults(data.topics);
+                card.dataset.tool = tool;
+                bubbleEl.appendChild(card);
+            } else if (data.topic) {
+                // Single topic detail
+                const card = this.renderACRResults(data.topic);
+                card.dataset.tool = tool;
+                bubbleEl.appendChild(card);
+            }
+        }
+
+        this.scrollToBottom();
+    }
+
+    renderACRSearchResults(topics) {
+        const container = document.createElement('div');
+        container.className = 'data-card';
+
+        const header = document.createElement('div');
+        header.className = 'data-card-header';
+        header.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span>ACR Criteria</span>
+        `;
+        container.appendChild(header);
+
+        const body = document.createElement('div');
+        body.className = 'data-card-body';
+
+        topics.slice(0, 5).forEach(topic => {
+            const item = document.createElement('div');
+            item.className = 'acr-search-item';
+            item.innerHTML = `
+                <h4>${topic.title || topic.name}</h4>
+                ${topic.clinical_condition ? `<p>${topic.clinical_condition}</p>` : ''}
+            `;
+            body.appendChild(item);
+        });
+
+        container.appendChild(body);
+        return container;
     }
 
     formatMessage(text) {
@@ -465,14 +591,20 @@ class RadChat {
         const loader = bubbleEl.querySelector('.tool-call-loader');
         if (loader) loader.remove();
 
-        // Check for contact information patterns and render cards
-        const phonePattern = /(\d{3}-\d{4})/g;
+        // Check for phone numbers and make them clickable
+        // Matches: (919) 684-7213, 919-684-7213, 684-7213
+        const phonePattern = /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g;
         const phones = text.match(phonePattern);
 
         if (phones && phones.length > 0) {
-            // Enhance phone numbers to be clickable
             let enhanced = bubbleEl.innerHTML;
-            enhanced = enhanced.replace(/(\d{3}-\d{4})/g, '<a href="tel:$1" class="inline-phone">$1</a>');
+            enhanced = enhanced.replace(
+                /\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}/g,
+                match => {
+                    const digits = match.replace(/\D/g, '');
+                    return `<a href="tel:${digits}" class="inline-phone">${match}</a>`;
+                }
+            );
             bubbleEl.innerHTML = enhanced;
         }
     }
@@ -520,6 +652,7 @@ class RadChat {
             'procedure_request': 'Procedure'
         };
         const typeBadge = typeMap[contact.study_status] || contact.study_status || '';
+        const phoneDigits = (contact.phone || '').replace(/\D/g, '');
 
         card.innerHTML = `
             <div class="contact-header">
@@ -529,11 +662,11 @@ class RadChat {
                 </div>
                 ${typeBadge ? `<span class="contact-type-badge">${typeBadge}</span>` : ''}
             </div>
-            <h4 class="contact-department">${contact.department}</h4>
-            <a class="contact-phone" href="tel:${contact.phone}">${contact.phone}</a>
-            <p class="contact-description">${contact.description || ''}</p>
+            <h4 class="contact-department">${contact.department || 'Unknown'}</h4>
+            <a class="contact-phone" href="tel:${phoneDigits}">${contact.phone || 'N/A'}</a>
+            ${contact.description ? `<p class="contact-description">${contact.description}</p>` : ''}
             <div class="contact-meta">
-                ${contact.modalities ? `<span>${contact.modalities.join(', ')}</span>` : ''}
+                ${contact.modalities && contact.modalities.length ? `<span>${contact.modalities.join(', ')}</span>` : ''}
                 ${contact.location ? `<span>${contact.location}</span>` : ''}
             </div>
         `;

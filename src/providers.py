@@ -369,9 +369,18 @@ class GitHubModelsProvider(LLMProvider):
                 tool_results = []
                 for idx in sorted(tool_calls_data.keys()):
                     tc = tool_calls_data[idx]
-                    yield f"\n[Searching: {tc['name']}...]\n"
+                    tool_name = tc["name"]
+
+                    # Emit tool call start marker
+                    yield f"__TOOL_START__{tool_name}__"
+
                     args = json.loads(tc["arguments"]) if tc["arguments"] else {}
-                    result = tool_executor(tc["name"], args)
+                    result = tool_executor(tool_name, args)
+
+                    # Emit structured tool result
+                    tool_type = "contacts" if "phone" in tool_name or "contact" in tool_name or "reading_room" in tool_name else "acr"
+                    yield f"__TOOL_RESULT__{json.dumps({'type': tool_type, 'tool': tool_name, 'data': result})}__"
+
                     tool_results.append({
                         "type": "tool_result",
                         "tool_use_id": tc["id"],
