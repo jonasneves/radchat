@@ -292,6 +292,7 @@ body {
     border-radius: 16px;
     font-size: 15px;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 .message.user .message-bubble {
@@ -1062,11 +1063,13 @@ body {
     color: inherit;
 }
 
-/* Lists */
+/* Lists - reset browser defaults */
 .message-content ul,
 .message-content ol {
     padding-left: 0;
-    margin: 0.5em 0;
+    margin-left: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     list-style-position: inside;
 }
 
