@@ -184,11 +184,29 @@ class RadChat {
 
         this.authArea.innerHTML = `
             <div class="user-info">
-                <div class="user-avatar">${initials}</div>
-                <span class="user-name">${firstName}</span>
-                <button class="logout-btn" id="logoutBtn">Sign out</button>
+                <button class="user-btn" id="userBtn">
+                    <div class="user-avatar">${initials}</div>
+                    <span class="user-name">${firstName}</span>
+                </button>
+                <div class="user-menu" id="userMenu">
+                    <button class="user-menu-item" disabled>${fullName}</button>
+                    <button class="user-menu-item danger" id="logoutBtn">Sign out</button>
+                </div>
             </div>
         `;
+
+        const userBtn = this.authArea.querySelector('#userBtn');
+        const userMenu = this.authArea.querySelector('#userMenu');
+
+        userBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            userMenu.classList.toggle('open');
+        });
+
+        document.addEventListener('click', () => {
+            userMenu.classList.remove('open');
+        });
+
         this.authArea.querySelector('#logoutBtn').addEventListener('click', () => this.logout());
     }
 
