@@ -368,13 +368,20 @@ class RadChat {
                                     continue;
                                 }
 
-                                // No more markers, output remaining buffer as text
-                                // But keep last 50 chars in case marker is split across chunks
-                                if (buffer.length > 50 && !buffer.includes('__')) {
+                                // Stream text immediately if no marker could be starting
+                                const underscoreIdx = buffer.indexOf('_');
+                                if (underscoreIdx === -1) {
+                                    // No underscore, safe to output all
                                     fullText += buffer;
                                     bubbleEl.innerHTML = this.formatMessage(fullText);
                                     buffer = '';
+                                } else if (underscoreIdx > 0) {
+                                    // Output everything before the underscore
+                                    fullText += buffer.slice(0, underscoreIdx);
+                                    bubbleEl.innerHTML = this.formatMessage(fullText);
+                                    buffer = buffer.slice(underscoreIdx);
                                 }
+                                // else: buffer starts with '_', keep buffering
                                 break;
                             }
                         }
@@ -382,6 +389,8 @@ class RadChat {
                         // Skip invalid JSON
                     }
                 }
+
+                this.scrollToBottom();
             }
 
             // Process any remaining buffer
