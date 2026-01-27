@@ -7,6 +7,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
+from zoneinfo import ZoneInfo
+
+EASTERN = ZoneInfo("America/New_York")
 
 DATA_FILE = Path(__file__).parent.parent / "data" / "contacts.json"
 _contacts_cache: Optional[dict] = None
@@ -28,7 +31,7 @@ def load_contacts() -> dict:
 
 def is_after_hours() -> bool:
     """Check if current time is after hours (weekday 5pm-7:30am or weekend)."""
-    now = datetime.now()
+    now = datetime.now(EASTERN)
     day_of_week = now.weekday()  # 0=Monday, 6=Sunday
     hour = now.hour
     minute = now.minute
@@ -48,7 +51,7 @@ def is_after_hours() -> bool:
 
 def get_time_context() -> dict:
     """Get current time context for routing decisions."""
-    now = datetime.now()
+    now = datetime.now(EASTERN)
     after_hours = is_after_hours()
     day_of_week = now.weekday()
 
