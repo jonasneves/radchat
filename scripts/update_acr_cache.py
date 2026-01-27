@@ -116,33 +116,22 @@ def main():
         # Fetch topic list
         print("Fetching topic list...")
         page.goto(f"{BASE_URL}/list", wait_until="networkidle", timeout=60000)
-        page.wait_for_selector("a[href*='TopicId=']", timeout=30000)
+        page.wait_for_selector("a[href*='/docs/']", timeout=30000)
 
-        # Extract topics
+        # Extract topics with their doc URLs from Narrative links
         topics = {}
-        links = page.query_selector_all("a[href*='TopicId=']")
-        for link in links:
-            href = link.get_attribute("href") or ""
-            id_match = re.search(r"TopicId=(\d+)", href)
-            name_match = re.search(r"TopicName=([^&]+)", href)
-            if id_match and name_match:
-                topic_id = id_match.group(1)
-                topic_name = unquote(name_match.group(1)).replace("+", " ")
-                if topic_id not in topics:
-                    topics[topic_id] = topic_name
-
-        print(f"Found {len(topics)} topics")
-
-        # Extract doc URLs
-        doc_urls = {}
-        doc_links = page.query_selector_all("a[href*='/docs/']")
+        doc_links = page.query_selector_all("a[href*='/docs/'][href*='/Narrative/']")
         for link in doc_links:
             href = link.get_attribute("href") or ""
-            if "Narrative" in href or "EvidenceTable" in href:
-                match = re.search(r"/docs/(\d+)/", href)
-                if match:
+            doc_match = re.search(r"/docs/(\d+)/Narrative/", href)
+            if doc_match:
+                doc_id = doc_match.group(1)
+                topic_name = link.inner_text().strip()
+                if topic_name and doc_id not in topics:
                     full_url = BASE_URL + href if href.startswith("/") else href
-                    doc_urls[match.group(1)] = full_url
+                    topics[doc_id] = {"name": topic_name, "url": full_url}
+
+        print(f"Found {len(topics)} topics")
 
         # Build cache
         cached_data = {
@@ -151,16 +140,16 @@ def main():
             "topics": {},
         }
 
-        topic_list = sorted(topics.items(), key=lambda x: x[1])
+        topic_list = sorted(topics.items(), key=lambda x: x[1]["name"])
         total = len(topic_list)
 
-        for i, (topic_id, topic_title) in enumerate(topic_list):
+        for i, (doc_id, topic_info) in enumerate(topic_list):
+            topic_title = topic_info["name"]
+            topic_url = topic_info["url"]
             print(f"[{i+1}/{total}] {topic_title[:50]}...")
 
-            topic_url = doc_urls.get(topic_id, f"{BASE_URL}/docs/{topic_id}/Narrative/")
-
             topic_data = {
-                "id": topic_id,
+                "id": doc_id,
                 "title": topic_title,
                 "url": topic_url,
                 "body_regions": extract_body_regions(topic_title),
@@ -176,10 +165,19 @@ def main():
             try:
                 # Navigate to topic page
                 page.goto(topic_url, wait_until="networkidle", timeout=30000)
-                page.wait_for_timeout(1000)  # Extra wait for dynamic content
+                page.wait_for_timeout(2000)  # Extra wait for dynamic content
+
+                # Check for error page
+                if page.query_selector("text=Error"):
+                    print(f"  Error page detected, trying alternate URL...")
+                    # Try without trailing slash
+                    alt_url = topic_url.rstrip("/")
+                    page.goto(alt_url, wait_until="networkidle", timeout=30000)
+                    page.wait_for_timeout(2000)
 
                 # Look for procedure tables
                 tables = page.query_selector_all("table")
+                print(f"  Found {len(tables)} tables")
 
                 variant_num = 0
                 for table in tables:
@@ -188,6 +186,7 @@ def main():
                         continue
 
                     header_text = rows[0].inner_text().lower()
+                    print(f"    Table header: {header_text[:60]}...")
                     if "procedure" not in header_text and "appropriateness" not in header_text:
                         continue
 
@@ -239,7 +238,7 @@ def main():
             except Exception as e:
                 print(f"  Error fetching details: {e}")
 
-            cached_data["topics"][topic_id] = topic_data
+            cached_data["topics"][doc_id] = topic_data
 
         browser.close()
 
