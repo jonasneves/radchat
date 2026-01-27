@@ -1,4 +1,4 @@
-.PHONY: help install run cli server dev stop test setup-tunnel models
+.PHONY: help install cli models preview preview-remote stop test setup-tunnel
 
 PORT := 5000
 MODEL ?= openai/gpt-4o-mini
@@ -7,14 +7,14 @@ help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Targets:"
-	@echo "  install       Install dependencies"
-	@echo "  cli           Run interactive CLI chat"
-	@echo "  models        List available models"
-	@echo "  server        Run Flask API server (port $(PORT))"
-	@echo "  dev           Run server + ngrok tunnel (HTTPS)"
-	@echo "  stop          Stop server and ngrok"
-	@echo "  test          Test phone catalog and ACR tools"
-	@echo "  setup-tunnel  Setup Cloudflare tunnel"
+	@echo "  install         Install dependencies"
+	@echo "  cli             Run interactive CLI chat"
+	@echo "  models          List available models"
+	@echo "  preview         Run local server (http://localhost:$(PORT))"
+	@echo "  preview-remote  Run server + ngrok tunnel (HTTPS)"
+	@echo "  stop            Stop server and ngrok"
+	@echo "  test            Test phone catalog and ACR tools"
+	@echo "  setup-tunnel    Setup Cloudflare tunnel"
 	@echo ""
 	@echo "Environment:"
 	@echo "  MODEL=openai/gpt-4o  make cli    Use specific model"
@@ -28,10 +28,11 @@ cli:
 models:
 	python3 -m src.cli --models
 
-server:
+preview:
+	@echo "Starting RadChat at http://localhost:$(PORT)"
 	python3 -m src.server
 
-dev:
+preview-remote:
 	@echo "Starting server and ngrok tunnel..."
 	@python3 -m src.server & sleep 2 && ngrok http $(PORT)
 
