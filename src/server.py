@@ -24,11 +24,12 @@ app = Flask(__name__, static_folder=str(STATIC_DIR))
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", secrets.token_hex(32))
 CORS(app, supports_credentials=True)
 
-# GitHub OAuth settings
-GITHUB_CLIENT_ID = os.environ.get("GITHUB_CLIENT_ID")
-GITHUB_CLIENT_SECRET = os.environ.get("GITHUB_CLIENT_SECRET")
-GITHUB_OAUTH_URL = "https://github.com/login/oauth/authorize"
-GITHUB_TOKEN_URL = "https://github.com/login/oauth/access_token"
+# Duke OIDC settings
+DUKE_CLIENT_ID = os.environ.get("DUKE_CLIENT_ID", "radchat")
+DUKE_CLIENT_SECRET = os.environ.get("DUKE_CLIENT_SECRET")
+DUKE_OAUTH_URL = "https://oauth.oit.duke.edu/oidc/authorize"
+DUKE_TOKEN_URL = "https://oauth.oit.duke.edu/oidc/token"
+DUKE_USERINFO_URL = "https://oauth.oit.duke.edu/oidc/userinfo"
 
 # Session storage (in production, use Redis or similar)
 sessions: dict[str, RadChat] = {}
@@ -70,33 +71,38 @@ def list_models():
     return jsonify({"models": get_available_models()})
 
 
-@app.route("/auth/github")
-def github_auth():
-    """Initiate GitHub OAuth flow."""
-    if not GITHUB_CLIENT_ID:
-        return jsonify({"error": "GitHub OAuth not configured"}), 500
+@app.route("/auth/duke")
+def duke_auth():
+    """Initiate Duke OIDC flow."""
+    if not DUKE_CLIENT_SECRET:
+        return jsonify({"error": "Duke OAuth not configured"}), 500
 
     state = secrets.token_urlsafe(32)
     session["oauth_state"] = state
 
     params = {
-        "client_id": GITHUB_CLIENT_ID,
-        "scope": "read:user",
+        "client_id": DUKE_CLIENT_ID,
+        "response_type": "code",
+        "scope": "openid profile email",
         "state": state,
         "redirect_uri": request.url_root.rstrip("/") + "/auth/callback",
     }
 
-    return redirect(f"{GITHUB_OAUTH_URL}?{urlencode(params)}")
+    return redirect(f"{DUKE_OAUTH_URL}?{urlencode(params)}")
 
 
 @app.route("/auth/callback")
-def github_callback():
-    """Handle GitHub OAuth callback."""
-    if not GITHUB_CLIENT_ID or not GITHUB_CLIENT_SECRET:
-        return jsonify({"error": "GitHub OAuth not configured"}), 500
+def duke_callback():
+    """Handle Duke OIDC callback."""
+    if not DUKE_CLIENT_SECRET:
+        return jsonify({"error": "Duke OAuth not configured"}), 500
 
     code = request.args.get("code")
     state = request.args.get("state")
+    error = request.args.get("error")
+
+    if error:
+        return jsonify({"error": request.args.get("error_description", error)}), 400
 
     if not code:
         return jsonify({"error": "No code provided"}), 400
@@ -105,27 +111,43 @@ def github_callback():
         return jsonify({"error": "Invalid state"}), 400
 
     # Exchange code for token
+    redirect_uri = request.url_root.rstrip("/") + "/auth/callback"
     response = requests.post(
-        GITHUB_TOKEN_URL,
-        headers={"Accept": "application/json"},
+        DUKE_TOKEN_URL,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
         data={
-            "client_id": GITHUB_CLIENT_ID,
-            "client_secret": GITHUB_CLIENT_SECRET,
+            "grant_type": "authorization_code",
+            "client_id": DUKE_CLIENT_ID,
+            "client_secret": DUKE_CLIENT_SECRET,
             "code": code,
+            "redirect_uri": redirect_uri,
         },
         timeout=30,
     )
 
     if response.status_code != 200:
-        return jsonify({"error": "Failed to get token"}), 500
+        return jsonify({"error": "Failed to get token", "details": response.text}), 500
 
     data = response.json()
     access_token = data.get("access_token")
+    id_token = data.get("id_token")
 
     if not access_token:
         return jsonify({"error": data.get("error_description", "No token received")}), 400
 
-    session["github_token"] = access_token
+    # Get user info
+    userinfo_response = requests.get(
+        DUKE_USERINFO_URL,
+        headers={"Authorization": f"Bearer {access_token}"},
+        timeout=30,
+    )
+
+    user_info = {}
+    if userinfo_response.status_code == 200:
+        user_info = userinfo_response.json()
+
+    session["duke_token"] = access_token
+    session["duke_user"] = user_info
     session.pop("oauth_state", None)
 
     # Return HTML that posts token to parent window (for popup auth)
@@ -136,7 +158,7 @@ def github_callback():
     <body>
         <script>
             if (window.opener) {
-                window.opener.postMessage({type: 'github_auth', success: true}, '*');
+                window.opener.postMessage({type: 'duke_auth', success: true}, '*');
                 window.close();
             } else {
                 window.location.href = '/';
@@ -151,17 +173,24 @@ def github_callback():
 @app.route("/auth/status")
 def auth_status():
     """Check authentication status."""
-    token = session.get("github_token")
+    token = session.get("duke_token")
+    user = session.get("duke_user", {})
     return jsonify({
         "authenticated": bool(token),
-        "oauth_configured": bool(GITHUB_CLIENT_ID),
+        "oauth_configured": bool(DUKE_CLIENT_SECRET),
+        "user": {
+            "name": user.get("name"),
+            "email": user.get("email"),
+            "netid": user.get("dukeNetID"),
+        } if token else None,
     })
 
 
 @app.route("/auth/logout", methods=["POST"])
 def logout():
     """Clear authentication."""
-    session.pop("github_token", None)
+    session.pop("duke_token", None)
+    session.pop("duke_user", None)
     return jsonify({"status": "logged_out"})
 
 
@@ -181,13 +210,15 @@ def chat():
     if not message:
         return jsonify({"error": "Message is required"}), 400
 
-    # Get token from session or request header
-    token = session.get("github_token") or request.headers.get("X-GitHub-Token")
-    if not token:
-        token = os.environ.get("GITHUB_TOKEN")
+    # Get GitHub token for API access (from env or header)
+    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
 
     if not token:
-        return jsonify({"error": "Authentication required. Use /auth/github to login."}), 401
+        return jsonify({"error": "GitHub token not configured. Set GITHUB_TOKEN environment variable."}), 401
+
+    # Check Duke auth for user access control
+    if not session.get("duke_token"):
+        return jsonify({"error": "Authentication required. Use /auth/duke to login."}), 401
 
     chat_session = get_session(session_id, token, model)
     response = chat_session.chat(message)
@@ -214,11 +245,14 @@ def chat_stream():
     if not message:
         return jsonify({"error": "Message is required"}), 400
 
-    token = session.get("github_token") or request.headers.get("X-GitHub-Token")
-    if not token:
-        token = os.environ.get("GITHUB_TOKEN")
+    # Get GitHub token for API access (from env or header)
+    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
 
     if not token:
+        return jsonify({"error": "GitHub token not configured"}), 401
+
+    # Check Duke auth for user access control
+    if not session.get("duke_token"):
         return jsonify({"error": "Authentication required"}), 401
 
     chat_session = get_session(session_id, token, model)
@@ -242,7 +276,7 @@ def chat_stream():
 @app.route("/sessions/<session_id>", methods=["DELETE"])
 def clear_session(session_id: str):
     """Clear a chat session."""
-    token = session.get("github_token") or request.headers.get("X-GitHub-Token")
+    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
     key = f"{session_id}:{token or 'default'}"
     if key in sessions:
         del sessions[key]
