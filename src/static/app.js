@@ -178,13 +178,14 @@ class RadChat {
     }
 
     renderUserInfo() {
-        const displayName = this.user.name || this.user.netid || 'User';
+        const fullName = this.user.name || this.user.netid || 'User';
+        const firstName = fullName.split(' ')[0];
+        const initials = fullName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+
         this.authArea.innerHTML = `
             <div class="user-info">
-                <div>
-                    <div class="user-name">${displayName}</div>
-                    ${this.user.netid ? `<div class="user-netid">${this.user.netid}</div>` : ''}
-                </div>
+                <div class="user-avatar">${initials}</div>
+                <span class="user-name">${firstName}</span>
                 <button class="logout-btn" id="logoutBtn">Sign out</button>
             </div>
         `;

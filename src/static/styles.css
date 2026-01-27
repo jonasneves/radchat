@@ -131,7 +131,20 @@ body {
 .user-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--duke-royal);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .user-name {
@@ -140,16 +153,11 @@ body {
     color: #334155;
 }
 
-.user-netid {
-    font-size: 12px;
-    color: #94A3B8;
-}
-
 .logout-btn {
-    padding: 6px 12px;
+    padding: 6px 10px;
     background: transparent;
-    color: #64748B;
-    border: 1px solid #E2E8F0;
+    color: #94A3B8;
+    border: none;
     border-radius: 6px;
     font-size: 13px;
     cursor: pointer;
@@ -157,9 +165,8 @@ body {
 }
 
 .logout-btn:hover {
-    background: #F8FAFC;
-    border-color: #CBD5E1;
-    color: #334155;
+    background: #F1F5F9;
+    color: #64748B;
 }
 
 /* Main Content */
