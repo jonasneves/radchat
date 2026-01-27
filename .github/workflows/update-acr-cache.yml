@@ -2,6 +2,11 @@ name: Update ACR Cache
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force update even if cache is recent'
+        type: boolean
+        default: false
   schedule:
     # Run weekly on Sundays at 3am UTC
     - cron: '0 3 * * 0'
@@ -29,22 +34,55 @@ jobs:
           fi
           mkdir -p src/data
 
+      - name: Check if update needed
+        id: need_update
+        run: |
+          FORCE="${{ github.event.inputs.force }}"
+          if [ "$FORCE" = "true" ]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "Force update requested"
+            exit 0
+          fi
+
+          if [ -f src/data/acr_criteria.json ]; then
+            UPDATED=$(python3 -c "import json; print(json.load(open('src/data/acr_criteria.json')).get('updated_at', ''))" 2>/dev/null || echo "")
+            if [ -n "$UPDATED" ]; then
+              AGE_DAYS=$(python3 -c "
+          from datetime import datetime, timezone
+          updated = datetime.fromisoformat('$UPDATED'.replace('Z', '+00:00'))
+          age = (datetime.now(timezone.utc) - updated).days
+          print(age)
+          " 2>/dev/null || echo "999")
+              echo "Cache is $AGE_DAYS days old"
+              if [ "$AGE_DAYS" -lt 6 ]; then
+                echo "skip=true" >> $GITHUB_OUTPUT
+                echo "Cache is recent, skipping update"
+                exit 0
+              fi
+            fi
+          fi
+          echo "skip=false" >> $GITHUB_OUTPUT
+
       - uses: actions/setup-python@v5
+        if: steps.need_update.outputs.skip != 'true'
         with:
           python-version: '3.11'
 
       - name: Install dependencies
+        if: steps.need_update.outputs.skip != 'true'
         run: |
           pip install playwright beautifulsoup4
           playwright install chromium
           playwright install-deps chromium
 
       - name: Update ACR cache
+        if: steps.need_update.outputs.skip != 'true'
         run: |
           git show main:scripts/update_acr_cache.py > update_acr_cache.py
           python update_acr_cache.py
 
       - name: Validate JSON
+        if: steps.need_update.outputs.skip != 'true'
         run: |
           python3 << 'EOF'
           import json
@@ -53,6 +91,7 @@ jobs:
           EOF
 
       - name: Check for changes
+        if: steps.need_update.outputs.skip != 'true'
         id: check
         run: |
           git add src/data/acr_criteria.json
@@ -63,7 +102,7 @@ jobs:
           fi
 
       - name: Commit and push
-        if: steps.check.outputs.changed == 'true'
+        if: steps.need_update.outputs.skip != 'true' && steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
