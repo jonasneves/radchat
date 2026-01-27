@@ -1,4 +1,4 @@
-name: Update ACR Cache
+name: Update Data Cache
 
 on:
   workflow_dispatch:
@@ -39,9 +39,11 @@ jobs:
           playwright install chromium
           playwright install-deps chromium
 
+      - name: Copy contacts from main
+        run: git show main:src/data/contacts.json > src/data/contacts.json
+
       - name: Update ACR cache
         run: |
-          # Get scraper from main branch
           git show main:scripts/update_acr_cache.py > update_acr_cache.py
           python update_acr_cache.py
 
@@ -49,14 +51,16 @@ jobs:
         run: |
           python3 << 'EOF'
           import json
-          data = json.load(open("src/data/acr_criteria.json"))
-          print(f"Topics: {len(data['topics'])}")
+          acr = json.load(open("src/data/acr_criteria.json"))
+          contacts = json.load(open("src/data/contacts.json"))
+          print(f"ACR topics: {len(acr['topics'])}")
+          print(f"Contacts: {len(contacts.get('contacts', []))}")
           EOF
 
       - name: Check for changes
         id: check
         run: |
-          git add src/data/acr_criteria.json
+          git add src/data/
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -68,5 +72,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update ACR criteria cache [$(date +%Y-%m-%d)]"
+          git commit -m "Update data cache [$(date +%Y-%m-%d)]"
           git push origin data
