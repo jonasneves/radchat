@@ -30,7 +30,12 @@ jobs:
         run: python scripts/update_acr_cache.py
 
       - name: Validate JSON
-        run: python3 -c "import json; data = json.load(open('src/data/acr_criteria.json')); print(f'Topics: {len(data[\"topics\"])}')"
+        run: |
+          python3 << 'EOF'
+          import json
+          data = json.load(open("src/data/acr_criteria.json"))
+          print(f"Topics: {len(data['topics'])}")
+          EOF
 
       - name: Check for changes
         id: check
