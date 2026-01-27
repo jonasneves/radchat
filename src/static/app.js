@@ -43,9 +43,9 @@ class RadChat {
         setInterval(() => this.updateShiftIndicator(), 60000);
 
         // Listen for auth popup messages
-        window.addEventListener('message', (e) => {
+        window.addEventListener('message', async (e) => {
             if (e.data?.type === 'duke_auth' && e.data?.success) {
-                this.checkAuthStatus();
+                await this.checkAuthStatus();
             }
         });
     }
@@ -168,6 +168,24 @@ class RadChat {
             console.error('Failed to check auth status:', error);
             this.renderLoginButton();
         }
+        this.updateWelcomeMessage();
+    }
+
+    updateWelcomeMessage() {
+        if (!this.welcomeState) return;
+
+        const heading = this.welcomeState.querySelector('h2');
+        const subtext = this.welcomeState.querySelector('p');
+
+        if (this.user) {
+            const fullName = this.user.name || this.user.netid || 'User';
+            const firstName = fullName.split(' ')[0];
+            heading.textContent = `How can I help, ${firstName}?`;
+            subtext.textContent = 'Use the quick actions below or type a message';
+        } else {
+            heading.textContent = 'How can I help?';
+            subtext.textContent = 'Sign in with Duke to get started';
+        }
     }
 
     renderLoginButton() {
@@ -228,6 +246,7 @@ class RadChat {
             await fetch('/auth/logout', { method: 'POST' });
             this.user = null;
             this.renderLoginButton();
+            this.updateWelcomeMessage();
         } catch (error) {
             console.error('Logout failed:', error);
         }
