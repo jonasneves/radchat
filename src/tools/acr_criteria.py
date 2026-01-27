@@ -1,13 +1,13 @@
 """
 ACR Appropriateness Criteria Tool - Clinical decision support for imaging.
-Uses cached data when available, falls back to live topic search.
+Fetches cached data from GitHub data branch, falls back to live topic search.
 Cache is updated weekly via GitHub Action.
 """
 
 import json
+import os
 import re
 from functools import lru_cache
-from pathlib import Path
 from typing import Optional
 from urllib.parse import unquote
 
@@ -15,7 +15,7 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://acsearch.acr.org"
-CACHE_FILE = Path(__file__).parent.parent / "data" / "acr_criteria.json"
+CACHE_URL = "https://raw.githubusercontent.com/jonasneves/radchat/data/src/data/acr_criteria.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
@@ -41,15 +41,15 @@ def extract_body_regions(title: str) -> list[str]:
     return [r for r, kws in BODY_REGION_KEYWORDS.items() if any(kw in title_lower for kw in kws)]
 
 
+@lru_cache(maxsize=1)
 def load_cache() -> Optional[dict]:
-    """Load cached ACR data if available."""
-    if CACHE_FILE.exists():
-        try:
-            with open(CACHE_FILE) as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError):
-            pass
-    return None
+    """Fetch cached ACR data from GitHub data branch."""
+    try:
+        response = requests.get(CACHE_URL, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, json.JSONDecodeError):
+        return None
 
 
 @lru_cache(maxsize=1)
