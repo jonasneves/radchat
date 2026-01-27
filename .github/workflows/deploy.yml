@@ -55,7 +55,10 @@ jobs:
 
       - name: Start server
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          DUKE_CLIENT_ID: radchat
+          DUKE_CLIENT_SECRET: ${{ secrets.DUKE_CLIENT_SECRET }}
+          FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
         run: |
           python -m src.server &
           for i in {1..15}; do
