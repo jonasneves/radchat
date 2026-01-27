@@ -14,9 +14,14 @@ class RadChat {
         this.inputForm = document.getElementById('inputForm');
         this.sendBtn = document.getElementById('sendBtn');
         this.modelSelect = document.getElementById('modelSelect');
+        this.modelBtn = document.getElementById('modelBtn');
+        this.modelMenu = document.getElementById('modelMenu');
+        this.modelOptions = document.getElementById('modelOptions');
         this.shiftIndicator = document.getElementById('shiftIndicator');
         this.welcomeState = document.getElementById('welcomeState');
         this.quickActions = document.getElementById('quickActions');
+
+        this.selectedModel = { id: 'openai/gpt-4o-mini', name: 'GPT-4o Mini' };
 
         this.init();
     }
@@ -64,6 +69,21 @@ class RadChat {
             // Focus the input and let the keypress go through
             this.messageInput.focus();
         });
+
+        // Model menu toggle
+        this.modelBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.modelMenu.classList.toggle('open');
+            this.modelBtn.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!this.modelMenu.contains(e.target) && e.target !== this.modelBtn) {
+                this.modelMenu.classList.remove('open');
+                this.modelBtn.classList.remove('active');
+            }
+        });
     }
 
     async loadModels() {
@@ -71,16 +91,52 @@ class RadChat {
             const response = await fetch('/models');
             const data = await response.json();
 
-            this.modelSelect.innerHTML = '';
-            data.models.forEach(model => {
+            this.models = data.models;
+            this.modelOptions.innerHTML = '';
+
+            data.models.forEach((model, index) => {
+                // Update hidden select
                 const option = document.createElement('option');
                 option.value = model.id;
                 option.textContent = model.name;
                 this.modelSelect.appendChild(option);
+
+                // Create menu option
+                const menuOption = document.createElement('div');
+                menuOption.className = `model-option ${index === 0 ? 'selected' : ''}`;
+                menuOption.dataset.id = model.id;
+                menuOption.dataset.name = model.name;
+                menuOption.innerHTML = `
+                    <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <span>${model.name}</span>
+                `;
+                menuOption.addEventListener('click', () => this.selectModel(model));
+                this.modelOptions.appendChild(menuOption);
             });
+
+            // Set default
+            if (data.models.length > 0) {
+                this.selectedModel = data.models[0];
+            }
         } catch (error) {
             console.error('Failed to load models:', error);
         }
+    }
+
+    selectModel(model) {
+        this.selectedModel = model;
+        this.modelSelect.value = model.id;
+
+        // Update UI
+        this.modelOptions.querySelectorAll('.model-option').forEach(opt => {
+            opt.classList.toggle('selected', opt.dataset.id === model.id);
+        });
+
+        // Close menu
+        this.modelMenu.classList.remove('open');
+        this.modelBtn.classList.remove('active');
     }
 
     updateShiftIndicator() {
@@ -185,6 +241,12 @@ class RadChat {
             bubbleEl.innerHTML = this.formatMessage(fullText);
             this.parseAndRenderToolResults(bubbleEl, fullText);
 
+            // Add model footer
+            const modelName = assistantMessage.dataset.model;
+            if (modelName) {
+                this.addModelFooter(bubbleEl, modelName);
+            }
+
         } catch (error) {
             bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
         } finally {
@@ -214,6 +276,8 @@ class RadChat {
                     <span></span><span></span><span></span>
                 </div>
             `;
+            // Store model name for later
+            messageEl.dataset.model = this.selectedModel.name;
         } else {
             bubbleEl.innerHTML = this.formatMessage(content);
         }
@@ -223,6 +287,20 @@ class RadChat {
         this.scrollToBottom();
 
         return messageEl;
+    }
+
+    addModelFooter(bubbleEl, modelName) {
+        const footer = document.createElement('div');
+        footer.className = 'message-footer';
+        footer.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+                <path d="M12 12v10"/>
+                <path d="M8 18h8"/>
+            </svg>
+            <span>${modelName}</span>
+        `;
+        bubbleEl.appendChild(footer);
     }
 
     addToolCallIndicator(bubbleEl, toolName) {
