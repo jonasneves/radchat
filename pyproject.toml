@@ -1,0 +1,20 @@
+[project]
+name = "radchat"
+version = "1.0.0"
+description = "Duke Radiology Assistant with Claude tool calling"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[project.scripts]
+radchat = "src.cli:main"
+radchat-server = "src.server:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

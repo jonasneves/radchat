@@ -1,0 +1,9 @@
+name = "radchat"
+main = "src/worker.py"
+compatibility_date = "2024-01-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Secrets are set via `wrangler secret put` or GitHub Actions
+# ANTHROPIC_API_KEY = "set via secrets"

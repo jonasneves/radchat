@@ -1,0 +1,178 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      duration_hours:
+        description: 'Duration in hours (max 5.5)'
+        required: false
+        default: '5'
+      auto_restart:
+        description: 'Auto-restart before timeout'
+        required: false
+        default: 'true'
+        type: boolean
+
+  repository_dispatch:
+    types: [restart-deploy]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      actions: write
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Cancel previous workflow
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PREVIOUS_RUN_ID=$(curl -s \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/runs?status=in_progress" \
+            | jq -r ".workflow_runs[] | select(.id < ${{ github.run_id }}) | .id" | head -1)
+
+          if [ -n "$PREVIOUS_RUN_ID" ] && [ "$PREVIOUS_RUN_ID" != "null" ]; then
+            echo "Cancelling previous workflow: $PREVIOUS_RUN_ID"
+            curl -s -X POST \
+              -H "Authorization: token $GH_TOKEN" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$PREVIOUS_RUN_ID/cancel"
+            sleep 5
+          fi
+
+      - name: Start server
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -m src.server &
+          for i in {1..15}; do
+            if curl -sf http://localhost:5000/health > /dev/null 2>&1; then
+              echo "RadChat server started"
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "Server failed to start"
+          exit 1
+
+      - name: Setup Cloudflare Tunnel
+        run: |
+          curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o cloudflared
+          chmod +x cloudflared
+          ./cloudflared tunnel --no-autoupdate run --token "${{ secrets.TUNNEL_TOKEN }}" &
+          sleep 5
+          echo "Tunnel started"
+
+      - name: Monitor
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          generate_app_token() {
+            NOW=$(date +%s)
+            IAT=$((NOW - 60))
+            EXP=$((NOW + 600))
+
+            HEADER=$(echo -n '{"alg":"RS256","typ":"JWT"}' | openssl base64 -e | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+            PAYLOAD=$(echo -n "{\"iat\":${IAT},\"exp\":${EXP},\"iss\":\"${APP_ID}\"}" | openssl base64 -e | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+            SIGNATURE=$(echo -n "${HEADER}.${PAYLOAD}" | openssl dgst -sha256 -sign <(echo "$APP_PRIVATE_KEY") | openssl base64 -e | tr -d '=' | tr '/+' '_-' | tr -d '\n')
+
+            JWT="${HEADER}.${PAYLOAD}.${SIGNATURE}"
+
+            INSTALLATION_ID=$(curl -s \
+              -H "Authorization: Bearer $JWT" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/installation" | jq -r '.id')
+
+            if [ -z "$INSTALLATION_ID" ] || [ "$INSTALLATION_ID" = "null" ]; then
+              return
+            fi
+
+            TOKEN_RESPONSE=$(curl -sX POST \
+              -H "Authorization: Bearer $JWT" \
+              -H "Accept: application/vnd.github+json" \
+              -d '{"permissions":{"contents":"write"}}' \
+              "https://api.github.com/app/installations/${INSTALLATION_ID}/access_tokens")
+
+            TOKEN=$(echo "$TOKEN_RESPONSE" | jq -r '.token // empty')
+            if [ -z "$TOKEN" ] || [ "$TOKEN" = "null" ]; then
+              return
+            fi
+            echo "$TOKEN"
+          }
+
+          DURATION_HOURS="${{ github.event.client_payload.duration_hours || github.event.inputs.duration_hours || '5' }}"
+          DURATION=$(awk "BEGIN {printf \"%.0f\", $DURATION_HOURS * 3600}")
+          RESTART_THRESHOLD=$((DURATION - 360))
+          START_TIME=$(date +%s)
+          RESTART_TRIGGERED=false
+
+          AUTO_RESTART="${{ github.event.client_payload.auto_restart || github.event.inputs.auto_restart }}"
+          if [ -z "$AUTO_RESTART" ]; then
+            AUTO_RESTART="true"
+          fi
+
+          echo "Duration: ${DURATION_HOURS}h | Auto-restart: $AUTO_RESTART"
+
+          while true; do
+            ELAPSED=$(($(date +%s) - START_TIME))
+            REMAINING=$((DURATION - ELAPSED))
+
+            if ! curl -sf http://localhost:5000/health > /dev/null; then
+              echo "Health check failed, restarting server..."
+              pkill -f "python -m src.server" || true
+              python -m src.server &
+              sleep 2
+            fi
+
+            printf "[%s] RadChat running | %dm elapsed | %dm remaining\n" \
+              "$(date '+%H:%M:%S')" "$((ELAPSED/60))" "$((REMAINING/60))"
+
+            if [ "$ELAPSED" -gt "$RESTART_THRESHOLD" ] && [ "$RESTART_TRIGGERED" = "false" ]; then
+              if [ "$AUTO_RESTART" = "true" ] && [ -n "$APP_ID" ] && [ -n "$APP_PRIVATE_KEY" ]; then
+                echo "Generating fresh token and triggering restart..."
+
+                APP_TOKEN=$(generate_app_token)
+                if [ -z "$APP_TOKEN" ]; then
+                  echo "ERROR: Failed to generate app token"
+                  RESTART_TRIGGERED=true
+                else
+                  RESPONSE=$(curl -sX POST \
+                    -H "Accept: application/vnd.github+json" \
+                    -H "Authorization: Bearer $APP_TOKEN" \
+                    "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+                    -d "{\"event_type\":\"restart-deploy\",\"client_payload\":{\"duration_hours\":\"$DURATION_HOURS\",\"auto_restart\":true}}" \
+                    -w "\nHTTP_STATUS:%{http_code}" 2>&1)
+
+                  HTTP_CODE=$(echo "$RESPONSE" | grep "HTTP_STATUS:" | cut -d: -f2)
+
+                  if [ "$HTTP_CODE" = "204" ]; then
+                    echo "SUCCESS: Restart triggered! Waiting for new instance..."
+                    sleep 60
+                  else
+                    echo "ERROR: Failed to trigger restart (HTTP $HTTP_CODE)"
+                  fi
+
+                  RESTART_TRIGGERED=true
+                fi
+              fi
+            fi
+
+            [ "$ELAPSED" -gt "$DURATION" ] && break
+            sleep 30 &
+            wait $! 2>/dev/null || true
+          done
