@@ -16,16 +16,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: data
           fetch-depth: 0
 
-      - name: Create data branch if missing
+      - name: Setup data branch
         run: |
-          if ! git rev-parse --verify origin/data >/dev/null 2>&1; then
+          git fetch origin data:data 2>/dev/null || true
+          if git rev-parse --verify data >/dev/null 2>&1; then
+            git checkout data
+          else
             git checkout --orphan data
             git rm -rf . 2>/dev/null || true
-            mkdir -p src/data
           fi
+          mkdir -p src/data
 
       - uses: actions/setup-python@v5
         with:
