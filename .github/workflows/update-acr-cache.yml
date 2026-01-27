@@ -1,0 +1,51 @@
+name: Update ACR Cache
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run weekly on Sundays at 3am UTC
+    - cron: '0 3 * * 0'
+
+jobs:
+  update-cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Update ACR cache
+        run: python scripts/update_acr_cache.py
+
+      - name: Validate JSON
+        run: python3 -c "import json; data = json.load(open('src/data/acr_criteria.json')); print(f'Topics: {len(data[\"topics\"])}')"
+
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet src/data/acr_criteria.json 2>/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/acr_criteria.json
+          git commit -m "Update ACR criteria cache [$(date +%Y-%m-%d)]"
+          git push
