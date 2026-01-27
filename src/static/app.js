@@ -587,13 +587,7 @@ class RadChat {
     }
 
     formatMessage(text) {
-        // Basic markdown-like formatting
-        let formatted = text
-            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-            .replace(/`(.+?)`/g, '<code>$1</code>')
-            .replace(/\n/g, '<br>');
-
-        return formatted;
+        return marked.parse(text, { breaks: true, gfm: true });
     }
 
     parseAndRenderToolResults(bubbleEl, text) {
