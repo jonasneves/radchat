@@ -55,7 +55,7 @@ jobs:
 
       - name: Start server
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
           DUKE_CLIENT_ID: radchat
           DUKE_CLIENT_SECRET: ${{ secrets.DUKE_CLIENT_SECRET }}
           FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
