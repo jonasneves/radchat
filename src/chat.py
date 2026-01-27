@@ -58,9 +58,11 @@ def execute_tool(name: str, args: dict) -> dict:
         print(f"[TOOL] {name} returned {len(result.get('results', result.get('contacts', [])))} results")
         return result
     # ACR criteria tools
-    acr_tools = ("search_acr_criteria", "get_acr_topic_details", "list_acr_topics")
+    acr_tools = ("get_imaging_recommendations", "search_acr_criteria", "get_acr_topic_details", "list_acr_topics")
     if name in acr_tools:
-        return execute_acr_tool(name, args)
+        result = execute_acr_tool(name, args)
+        print(f"[TOOL] {name} found={result.get('found', 'n/a')}")
+        return result
     return {"error": f"Unknown tool: {name}"}
 
 
