@@ -8,8 +8,10 @@ tool use with streaming support.
 import json
 from typing import Generator, Optional
 
-import anthropic
+from dotenv import load_dotenv
+load_dotenv()
 
+from .providers import create_provider, LLMProvider, list_github_models, GITHUB_MODELS_WITH_TOOLS
 from .tools.phone_catalog import PHONE_CATALOG_TOOLS, execute_phone_tool
 from .tools.acr_criteria import ACR_CRITERIA_TOOLS, execute_acr_tool
 
@@ -52,11 +54,15 @@ def execute_tool(name: str, args: dict) -> dict:
 
 
 class RadChat:
-    """Claude-powered radiology assistant."""
+    """LLM-powered radiology assistant."""
 
-    def __init__(self, model: str = "claude-sonnet-4-20250514"):
-        self.client = anthropic.Anthropic()
-        self.model = model
+    def __init__(
+        self,
+        provider_type: str = "github",
+        model: Optional[str] = None,
+        token: Optional[str] = None,
+    ):
+        self.provider = create_provider(provider_type, model, token)
         self.messages: list[dict] = []
 
     def reset(self):
@@ -64,105 +70,43 @@ class RadChat:
         self.messages = []
 
     def chat(self, user_message: str, max_turns: int = 10) -> str:
-        """
-        Send a message and get a response.
-
-        Implements agentic loop: continues until Claude stops calling tools
-        or max_turns is reached.
-        """
+        """Send a message and get a response."""
         self.messages.append({"role": "user", "content": user_message})
 
-        for _ in range(max_turns):
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=4096,
-                system=SYSTEM_PROMPT,
-                tools=ALL_TOOLS,
-                messages=self.messages,
-            )
+        response, updated_msgs = self.provider.chat(
+            messages=self.messages,
+            system=SYSTEM_PROMPT,
+            tools=ALL_TOOLS,
+            tool_executor=execute_tool,
+            max_turns=max_turns,
+        )
 
-            # Check if we need to handle tool use
-            if response.stop_reason == "tool_use":
-                # Add assistant's response (includes tool_use blocks)
-                self.messages.append({"role": "assistant", "content": response.content})
-
-                # Process each tool call
-                tool_results = []
-                for block in response.content:
-                    if block.type == "tool_use":
-                        result = execute_tool(block.name, block.input)
-                        tool_results.append({
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
-                            "content": json.dumps(result, indent=2),
-                        })
-
-                # Add tool results
-                self.messages.append({"role": "user", "content": tool_results})
-
-            else:
-                # No more tool calls - extract final text response
-                self.messages.append({"role": "assistant", "content": response.content})
-
-                text_parts = [block.text for block in response.content if hasattr(block, "text")]
-                return "\n".join(text_parts)
-
-        return "Maximum conversation turns reached."
+        # Update messages with any tool interactions
+        self.messages = updated_msgs
+        return response
 
     def chat_stream(self, user_message: str, max_turns: int = 10) -> Generator[str, None, None]:
-        """
-        Stream a response token by token.
-
-        Yields text chunks as they arrive. Tool calls are handled internally.
-        """
+        """Stream a response token by token."""
         self.messages.append({"role": "user", "content": user_message})
 
-        for _ in range(max_turns):
-            # Collect the full response for tool handling
-            full_response_content = []
-            current_text = ""
-
-            with self.client.messages.stream(
-                model=self.model,
-                max_tokens=4096,
-                system=SYSTEM_PROMPT,
-                tools=ALL_TOOLS,
-                messages=self.messages,
-            ) as stream:
-                for event in stream:
-                    if hasattr(event, "type"):
-                        if event.type == "content_block_delta":
-                            if hasattr(event.delta, "text"):
-                                current_text += event.delta.text
-                                yield event.delta.text
-
-                # Get final message
-                response = stream.get_final_message()
-
-            # Check if we need tool use
-            if response.stop_reason == "tool_use":
-                self.messages.append({"role": "assistant", "content": response.content})
-
-                tool_results = []
-                for block in response.content:
-                    if block.type == "tool_use":
-                        yield f"\n[Searching: {block.name}...]\n"
-                        result = execute_tool(block.name, block.input)
-                        tool_results.append({
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
-                            "content": json.dumps(result, indent=2),
-                        })
-
-                self.messages.append({"role": "user", "content": tool_results})
-
-            else:
-                self.messages.append({"role": "assistant", "content": response.content})
-                return
-
-        yield "\nMaximum conversation turns reached."
+        yield from self.provider.chat_stream(
+            messages=self.messages,
+            system=SYSTEM_PROMPT,
+            tools=ALL_TOOLS,
+            tool_executor=execute_tool,
+            max_turns=max_turns,
+        )
 
 
-def create_chat(model: Optional[str] = None) -> RadChat:
+def create_chat(
+    provider_type: str = "github",
+    model: Optional[str] = None,
+    token: Optional[str] = None,
+) -> RadChat:
     """Create a new RadChat instance."""
-    return RadChat(model=model) if model else RadChat()
+    return RadChat(provider_type=provider_type, model=model, token=token)
+
+
+def get_available_models() -> list[dict]:
+    """Get list of available GitHub Models with function calling support."""
+    return list_github_models()

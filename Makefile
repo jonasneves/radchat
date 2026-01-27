@@ -1,6 +1,7 @@
-.PHONY: help install run cli server dev stop test setup-tunnel
+.PHONY: help install run cli server dev stop test setup-tunnel models
 
 PORT := 5000
+MODEL ?= openai/gpt-4o-mini
 
 help:
 	@echo "Usage: make [target]"
@@ -8,17 +9,24 @@ help:
 	@echo "Targets:"
 	@echo "  install       Install dependencies"
 	@echo "  cli           Run interactive CLI chat"
+	@echo "  models        List available models"
 	@echo "  server        Run Flask API server (port $(PORT))"
 	@echo "  dev           Run server + ngrok tunnel (HTTPS)"
 	@echo "  stop          Stop server and ngrok"
 	@echo "  test          Test phone catalog and ACR tools"
 	@echo "  setup-tunnel  Setup Cloudflare tunnel"
+	@echo ""
+	@echo "Environment:"
+	@echo "  MODEL=openai/gpt-4o  make cli    Use specific model"
 
 install:
 	pip3 install -r requirements.txt
 
 cli:
-	python3 -m src.cli
+	MODEL=$(MODEL) python3 -m src.cli
+
+models:
+	python3 -m src.cli --models
 
 server:
 	python3 -m src.server
