@@ -187,9 +187,9 @@ class GitHubModelsProvider(LLMProvider):
     def __init__(self, model: str = "openai/gpt-4o-mini", token: Optional[str] = None):
         from openai import OpenAI
 
-        self.token = token or os.environ.get("GITHUB_TOKEN")
+        self.token = token or os.environ.get("GH_MODELS_TOKEN")
         if not self.token:
-            raise ValueError("GitHub token required. Set GITHUB_TOKEN or pass token parameter.")
+            raise ValueError("GitHub token required. Set GH_MODELS_TOKEN or pass token parameter.")
 
         self.client = OpenAI(
             base_url=GITHUB_MODELS_ENDPOINT,

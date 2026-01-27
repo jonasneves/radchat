@@ -211,10 +211,10 @@ def chat():
         return jsonify({"error": "Message is required"}), 400
 
     # Get GitHub token for API access (from env or header)
-    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
+    token = os.environ.get("GH_MODELS_TOKEN") or request.headers.get("X-GitHub-Token")
 
     if not token:
-        return jsonify({"error": "GitHub token not configured. Set GITHUB_TOKEN environment variable."}), 401
+        return jsonify({"error": "GitHub token not configured. Set GH_MODELS_TOKEN environment variable."}), 401
 
     # Check Duke auth for user access control
     if not session.get("duke_token"):
@@ -246,7 +246,7 @@ def chat_stream():
         return jsonify({"error": "Message is required"}), 400
 
     # Get GitHub token for API access (from env or header)
-    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
+    token = os.environ.get("GH_MODELS_TOKEN") or request.headers.get("X-GitHub-Token")
 
     if not token:
         return jsonify({"error": "GitHub token not configured"}), 401
@@ -276,7 +276,7 @@ def chat_stream():
 @app.route("/sessions/<session_id>", methods=["DELETE"])
 def clear_session(session_id: str):
     """Clear a chat session."""
-    token = os.environ.get("GITHUB_TOKEN") or request.headers.get("X-GitHub-Token")
+    token = os.environ.get("GH_MODELS_TOKEN") or request.headers.get("X-GitHub-Token")
     key = f"{session_id}:{token or 'default'}"
     if key in sessions:
         del sessions[key]
