@@ -12,6 +12,10 @@ on:
         required: false
         default: 'true'
         type: boolean
+      tunnel_replicas:
+        description: 'Tunnel HA connections (1-4)'
+        required: false
+        default: '2'
 
   repository_dispatch:
     types: [restart-deploy]
@@ -73,11 +77,12 @@ jobs:
 
       - name: Setup Cloudflare Tunnel
         run: |
+          REPLICAS="${{ github.event.client_payload.tunnel_replicas || github.event.inputs.tunnel_replicas || '2' }}"
           curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o cloudflared
           chmod +x cloudflared
-          ./cloudflared tunnel --no-autoupdate run --token "${{ secrets.TUNNEL_TOKEN }}" &
+          ./cloudflared tunnel --no-autoupdate --ha-connections "$REPLICAS" run --token "${{ secrets.TUNNEL_TOKEN }}" &
           sleep 5
-          echo "Tunnel started"
+          echo "Tunnel started with $REPLICAS HA connections"
 
       - name: Monitor
         env:
@@ -114,11 +119,12 @@ jobs:
               if [ "$AUTO_RESTART" = "true" ] && [ -n "$RESTART_TOKEN" ]; then
                 echo "Triggering restart..."
 
+                REPLICAS="${{ github.event.client_payload.tunnel_replicas || github.event.inputs.tunnel_replicas || '2' }}"
                 RESPONSE=$(curl -sX POST \
                   -H "Accept: application/vnd.github+json" \
                   -H "Authorization: Bearer $RESTART_TOKEN" \
                   "https://api.github.com/repos/${{ github.repository }}/dispatches" \
-                  -d "{\"event_type\":\"restart-deploy\",\"client_payload\":{\"duration_hours\":\"$DURATION_HOURS\",\"auto_restart\":true}}" \
+                  -d "{\"event_type\":\"restart-deploy\",\"client_payload\":{\"duration_hours\":\"$DURATION_HOURS\",\"auto_restart\":true,\"tunnel_replicas\":\"$REPLICAS\"}}" \
                   -w "\nHTTP_STATUS:%{http_code}" 2>&1)
 
                 HTTP_CODE=$(echo "$RESPONSE" | grep "HTTP_STATUS:" | cut -d: -f2)
