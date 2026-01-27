@@ -105,6 +105,63 @@ body {
     background: var(--duke-persimmon);
 }
 
+/* Auth Area */
+.auth-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-btn {
+    padding: 8px 16px;
+    background: var(--duke-royal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.login-btn:hover {
+    background: var(--duke-navy);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.user-netid {
+    font-size: 12px;
+    color: #94A3B8;
+}
+
+.logout-btn {
+    padding: 6px 12px;
+    background: transparent;
+    color: #64748B;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.logout-btn:hover {
+    background: #F8FAFC;
+    border-color: #CBD5E1;
+    color: #334155;
+}
+
 /* Main Content */
 .main-content {
     flex: 1;

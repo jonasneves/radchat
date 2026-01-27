@@ -22,6 +22,11 @@ class RadChat {
         this.quickActions = document.getElementById('quickActions');
 
         this.selectedModel = { id: 'openai/gpt-4o-mini', name: 'GPT-4o Mini' };
+        this.user = null;
+
+        // Auth elements
+        this.authArea = document.getElementById('authArea');
+        this.loginBtn = document.getElementById('loginBtn');
 
         this.init();
     }
@@ -32,9 +37,17 @@ class RadChat {
 
     async init() {
         this.bindEvents();
+        await this.checkAuthStatus();
         await this.loadModels();
         this.updateShiftIndicator();
         setInterval(() => this.updateShiftIndicator(), 60000);
+
+        // Listen for auth popup messages
+        window.addEventListener('message', (e) => {
+            if (e.data?.type === 'duke_auth' && e.data?.success) {
+                this.checkAuthStatus();
+            }
+        });
     }
 
     bindEvents() {
@@ -139,6 +152,68 @@ class RadChat {
         this.modelBtn.classList.remove('active');
     }
 
+    async checkAuthStatus() {
+        try {
+            const response = await fetch('/auth/status');
+            const data = await response.json();
+
+            if (data.authenticated && data.user) {
+                this.user = data.user;
+                this.renderUserInfo();
+            } else {
+                this.user = null;
+                this.renderLoginButton();
+            }
+        } catch (error) {
+            console.error('Failed to check auth status:', error);
+            this.renderLoginButton();
+        }
+    }
+
+    renderLoginButton() {
+        this.authArea.innerHTML = `
+            <button class="login-btn" id="loginBtn">Sign in with Duke</button>
+        `;
+        this.authArea.querySelector('#loginBtn').addEventListener('click', () => this.login());
+    }
+
+    renderUserInfo() {
+        const displayName = this.user.name || this.user.netid || 'User';
+        this.authArea.innerHTML = `
+            <div class="user-info">
+                <div>
+                    <div class="user-name">${displayName}</div>
+                    ${this.user.netid ? `<div class="user-netid">${this.user.netid}</div>` : ''}
+                </div>
+                <button class="logout-btn" id="logoutBtn">Sign out</button>
+            </div>
+        `;
+        this.authArea.querySelector('#logoutBtn').addEventListener('click', () => this.logout());
+    }
+
+    login() {
+        const width = 500;
+        const height = 600;
+        const left = window.screenX + (window.outerWidth - width) / 2;
+        const top = window.screenY + (window.outerHeight - height) / 2;
+
+        window.open(
+            '/auth/duke',
+            'Duke Login',
+            `width=${width},height=${height},left=${left},top=${top}`
+        );
+    }
+
+    async logout() {
+        try {
+            await fetch('/auth/logout', { method: 'POST' });
+            this.user = null;
+            this.renderLoginButton();
+        } catch (error) {
+            console.error('Logout failed:', error);
+        }
+    }
+
     updateShiftIndicator() {
         const now = new Date();
         const hour = now.getHours();
@@ -163,6 +238,13 @@ class RadChat {
     async sendMessage() {
         const message = this.messageInput.value.trim();
         if (!message || this.isStreaming) return;
+
+        // Check if authenticated
+        if (!this.user) {
+            this.addMessage('assistant', 'Please sign in with your Duke NetID to use RadChat.');
+            this.login();
+            return;
+        }
 
         // Hide welcome state
         if (this.welcomeState) {
