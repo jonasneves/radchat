@@ -81,7 +81,7 @@ jobs:
 
       - name: Monitor
         env:
-          RESTART_TOKEN: ${{ secrets.RESTART_TOKEN }}
+          RESTART_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
         run: |
           DURATION_HOURS="${{ github.event.client_payload.duration_hours || github.event.inputs.duration_hours || '5' }}"
           DURATION=$(awk "BEGIN {printf \"%.0f\", $DURATION_HOURS * 3600}")

@@ -30,11 +30,10 @@ GitHub Actions with Cloudflare Tunnel. Required secrets:
 
 | Secret | Description |
 |--------|-------------|
-| `GH_MODELS_TOKEN` | GitHub token for Models API |
+| `GH_MODELS_TOKEN` | GitHub token (Models API + repo for auto-restart) |
 | `DUKE_CLIENT_SECRET` | Duke OAuth client secret |
 | `FLASK_SECRET_KEY` | Session encryption key |
 | `TUNNEL_TOKEN` | Cloudflare tunnel token |
-| `RESTART_TOKEN` | PAT with repo scope for auto-restart (optional) |
 
 Trigger: Actions → Deploy → Run workflow
 
