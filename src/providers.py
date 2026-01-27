@@ -7,26 +7,39 @@ import os
 from abc import ABC, abstractmethod
 from typing import Generator, Optional
 
-# GitHub Models that support function calling
+# GitHub Models that support function calling (tool-calling capability)
 GITHUB_MODELS_WITH_TOOLS = [
+    # OpenAI
     {"id": "openai/gpt-4o", "name": "GPT-4o", "provider": "OpenAI"},
     {"id": "openai/gpt-4o-mini", "name": "GPT-4o Mini", "provider": "OpenAI"},
     {"id": "openai/gpt-4.1", "name": "GPT-4.1", "provider": "OpenAI"},
     {"id": "openai/gpt-4.1-mini", "name": "GPT-4.1 Mini", "provider": "OpenAI"},
     {"id": "openai/gpt-4.1-nano", "name": "GPT-4.1 Nano", "provider": "OpenAI"},
+    {"id": "openai/gpt-5", "name": "GPT-5", "provider": "OpenAI"},
+    {"id": "openai/gpt-5-mini", "name": "GPT-5 Mini", "provider": "OpenAI"},
+    {"id": "openai/gpt-5-nano", "name": "GPT-5 Nano", "provider": "OpenAI"},
     {"id": "openai/o1", "name": "o1", "provider": "OpenAI"},
-    {"id": "openai/o1-mini", "name": "o1 Mini", "provider": "OpenAI"},
-    {"id": "openai/o1-preview", "name": "o1 Preview", "provider": "OpenAI"},
+    {"id": "openai/o3", "name": "o3", "provider": "OpenAI"},
     {"id": "openai/o3-mini", "name": "o3 Mini", "provider": "OpenAI"},
-    {"id": "mistral-ai/mistral-large-2411", "name": "Mistral Large", "provider": "Mistral AI"},
-    {"id": "mistral-ai/mistral-small-2503", "name": "Mistral Small", "provider": "Mistral AI"},
-    {"id": "cohere/cohere-command-r", "name": "Command R", "provider": "Cohere"},
-    {"id": "cohere/cohere-command-r-plus", "name": "Command R+", "provider": "Cohere"},
-    {"id": "ai21-labs/jamba-1.5-large", "name": "Jamba 1.5 Large", "provider": "AI21 Labs"},
-    {"id": "ai21-labs/jamba-1.5-mini", "name": "Jamba 1.5 Mini", "provider": "AI21 Labs"},
+    {"id": "openai/o4-mini", "name": "o4 Mini", "provider": "OpenAI"},
+    # DeepSeek
+    {"id": "deepseek/deepseek-r1", "name": "DeepSeek R1", "provider": "DeepSeek"},
+    {"id": "deepseek/deepseek-r1-0528", "name": "DeepSeek R1 0528", "provider": "DeepSeek"},
+    {"id": "deepseek/deepseek-v3-0324", "name": "DeepSeek V3", "provider": "DeepSeek"},
+    # Meta
+    {"id": "meta/llama-4-maverick-17b-128e-instruct-fp8", "name": "Llama 4 Maverick", "provider": "Meta"},
+    {"id": "meta/llama-4-scout-17b-16e-instruct", "name": "Llama 4 Scout", "provider": "Meta"},
+    # Mistral
+    {"id": "mistral-ai/ministral-3b", "name": "Ministral 3B", "provider": "Mistral AI"},
+    {"id": "mistral-ai/mistral-medium-2505", "name": "Mistral Medium 3", "provider": "Mistral AI"},
+    {"id": "mistral-ai/mistral-small-2503", "name": "Mistral Small 3.1", "provider": "Mistral AI"},
+    # Cohere
+    {"id": "cohere/cohere-command-r-plus-08-2024", "name": "Command R+", "provider": "Cohere"},
+    # AI21
+    {"id": "ai21-labs/ai21-jamba-1.5-large", "name": "Jamba 1.5 Large", "provider": "AI21 Labs"},
 ]
 
-GITHUB_MODELS_ENDPOINT = "https://models.inference.ai.azure.com"
+GITHUB_MODELS_ENDPOINT = "https://models.github.ai/inference"
 
 
 def convert_anthropic_tools_to_openai(tools: list[dict]) -> list[dict]:

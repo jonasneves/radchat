@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(pip3 install:*)",
+      "Bash(make:*)",
+      "WebFetch(domain:docs.github.com)",
+      "Bash(curl -s -H \"Authorization: Bearer $GITHUB_TOKEN\" \"https://models.github.ai/catalog/models\")"
+    ]
+  }
+}
