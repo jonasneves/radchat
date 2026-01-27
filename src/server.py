@@ -24,6 +24,7 @@ def get_session(session_id: str) -> RadChat:
 
 
 @app.route("/")
+@app.route("/health")
 def health():
     """Health check endpoint."""
     return jsonify({"status": "healthy", "service": "duke-radchat"})
