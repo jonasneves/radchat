@@ -45,10 +45,18 @@ For ACR criteria:
 def execute_tool(name: str, args: dict) -> dict:
     """Route tool execution to appropriate handler."""
     # Phone catalog tools
-    if name in ("search_phone_directory", "get_reading_room_contact", "get_procedure_contact"):
+    phone_tools = (
+        "search_phone_directory",
+        "get_reading_room_contact",
+        "get_procedure_contact",
+        "get_scheduling_contact",
+        "list_contacts_by_type",
+    )
+    if name in phone_tools:
         return execute_phone_tool(name, args)
     # ACR criteria tools
-    if name in ("search_acr_criteria", "get_acr_topic_details", "list_acr_topics"):
+    acr_tools = ("search_acr_criteria", "get_acr_topic_details", "list_acr_topics")
+    if name in acr_tools:
         return execute_acr_tool(name, args)
     return {"error": f"Unknown tool: {name}"}
 

@@ -9,7 +9,8 @@
       "Bash(pip3 install:*)",
       "Bash(make:*)",
       "WebFetch(domain:docs.github.com)",
-      "Bash(curl -s -H \"Authorization: Bearer $GITHUB_TOKEN\" \"https://models.github.ai/catalog/models\")"
+      "Bash(curl -s -H \"Authorization: Bearer $GITHUB_TOKEN\" \"https://models.github.ai/catalog/models\")",
+      "Bash(python3:*)"
     ]
   }
 }
