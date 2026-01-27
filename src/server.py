@@ -5,10 +5,11 @@ Duke RadChat API Server - Flask backend for web interface
 import json
 import os
 import secrets
+from pathlib import Path
 from urllib.parse import urlencode
 
 import requests
-from flask import Flask, request, jsonify, Response, stream_with_context, redirect, session
+from flask import Flask, request, jsonify, Response, stream_with_context, redirect, session, send_from_directory
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -17,7 +18,9 @@ from flask_cors import CORS
 
 from .chat import create_chat, RadChat, get_available_models
 
-app = Flask(__name__)
+STATIC_DIR = Path(__file__).parent / "static"
+
+app = Flask(__name__, static_folder=str(STATIC_DIR))
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", secrets.token_hex(32))
 CORS(app, supports_credentials=True)
 
@@ -44,6 +47,17 @@ def get_session(session_id: str, token: str = None, model: str = None) -> RadCha
 
 
 @app.route("/")
+def index():
+    """Serve the web UI."""
+    return send_from_directory(STATIC_DIR, "index.html")
+
+
+@app.route("/static/<path:filename>")
+def static_files(filename):
+    """Serve static files."""
+    return send_from_directory(STATIC_DIR, filename)
+
+
 @app.route("/health")
 def health():
     """Health check endpoint."""
