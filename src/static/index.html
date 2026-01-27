@@ -21,11 +21,6 @@
                     <span class="shift-dot"></span>
                     <span class="shift-text">Loading...</span>
                 </div>
-                <div class="model-selector">
-                    <select id="modelSelect">
-                        <option value="openai/gpt-4o-mini">GPT-4o Mini</option>
-                    </select>
-                </div>
             </div>
         </header>
 
@@ -83,19 +78,26 @@
                         </button>
                     </div>
                     <form class="input-form" id="inputForm">
-                        <div class="input-wrapper">
-                            <input
-                                type="text"
-                                id="messageInput"
-                                placeholder="Type a message..."
-                                autocomplete="off"
-                            >
-                            <button type="submit" class="send-btn" id="sendBtn">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"/>
-                                    <polygon points="22,2 15,22 11,13 2,9"/>
-                                </svg>
-                            </button>
+                        <div class="input-row">
+                            <div class="model-selector">
+                                <select id="modelSelect">
+                                    <option value="openai/gpt-4o-mini">GPT-4o Mini</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper">
+                                <input
+                                    type="text"
+                                    id="messageInput"
+                                    placeholder="Type a message..."
+                                    autocomplete="off"
+                                >
+                                <button type="submit" class="send-btn" id="sendBtn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="22" y1="2" x2="11" y2="13"/>
+                                        <polygon points="22,2 15,22 11,13 2,9"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>

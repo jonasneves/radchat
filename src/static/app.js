@@ -46,6 +46,24 @@ class RadChat {
                 this.sendMessage();
             });
         });
+
+        // Global keyboard listener - focus input when typing anywhere
+        document.addEventListener('keydown', (e) => {
+            // Skip if already focused on an input/textarea/select
+            const activeEl = document.activeElement;
+            if (activeEl.tagName === 'INPUT' ||
+                activeEl.tagName === 'TEXTAREA' ||
+                activeEl.tagName === 'SELECT') {
+                return;
+            }
+
+            // Skip modifier keys and special keys
+            if (e.metaKey || e.ctrlKey || e.altKey) return;
+            if (e.key.length !== 1 && e.key !== 'Backspace') return;
+
+            // Focus the input and let the keypress go through
+            this.messageInput.focus();
+        });
     }
 
     async loadModels() {
