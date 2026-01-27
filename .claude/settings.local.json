@@ -10,7 +10,8 @@
       "Bash(make:*)",
       "WebFetch(domain:docs.github.com)",
       "Bash(curl -s -H \"Authorization: Bearer $GITHUB_TOKEN\" \"https://models.github.ai/catalog/models\")",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(gh secret set:*)"
     ]
   }
 }
