@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Optional
 from urllib.parse import unquote
 
-OUTPUT_FILE = Path(__file__).parent.parent / "src" / "data" / "acr_criteria.json"
+OUTPUT_FILE = Path.cwd() / "src" / "data" / "acr_criteria.json"
 BASE_URL = "https://acsearch.acr.org"
 
 
