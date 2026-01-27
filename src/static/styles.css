@@ -1065,9 +1065,15 @@ body {
 /* Lists */
 .message-content ul,
 .message-content ol {
-    padding-left: 1.5rem;
+    padding-left: 0;
     margin: 0.5em 0;
     list-style-position: inside;
+}
+
+/* Nested lists need indent */
+.message-content li ul,
+.message-content li ol {
+    padding-left: 1.5rem;
 }
 
 .message-content li {
