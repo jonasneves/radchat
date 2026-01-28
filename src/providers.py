@@ -9,12 +9,12 @@ from typing import Generator, Optional
 
 # GitHub Models that support function calling (tool-calling capability)
 GITHUB_MODELS_WITH_TOOLS = [
-    # OpenAI
+    # OpenAI - GPT-4.1 family first (better tool calling reliability)
+    {"id": "openai/gpt-4.1-mini", "name": "GPT-4.1 Mini", "provider": "OpenAI"},
+    {"id": "openai/gpt-4.1", "name": "GPT-4.1", "provider": "OpenAI"},
+    {"id": "openai/gpt-4.1-nano", "name": "GPT-4.1 Nano", "provider": "OpenAI"},
     {"id": "openai/gpt-4o", "name": "GPT-4o", "provider": "OpenAI"},
     {"id": "openai/gpt-4o-mini", "name": "GPT-4o Mini", "provider": "OpenAI"},
-    {"id": "openai/gpt-4.1", "name": "GPT-4.1", "provider": "OpenAI"},
-    {"id": "openai/gpt-4.1-mini", "name": "GPT-4.1 Mini", "provider": "OpenAI"},
-    {"id": "openai/gpt-4.1-nano", "name": "GPT-4.1 Nano", "provider": "OpenAI"},
     {"id": "openai/gpt-5", "name": "GPT-5", "provider": "OpenAI"},
     {"id": "openai/gpt-5-mini", "name": "GPT-5 Mini", "provider": "OpenAI"},
     {"id": "openai/gpt-5-nano", "name": "GPT-5 Nano", "provider": "OpenAI"},
@@ -184,7 +184,7 @@ class AnthropicProvider(LLMProvider):
 class GitHubModelsProvider(LLMProvider):
     """GitHub Models provider using OpenAI-compatible API."""
 
-    def __init__(self, model: str = "openai/gpt-4o-mini", token: Optional[str] = None):
+    def __init__(self, model: str = "openai/gpt-4.1-mini", token: Optional[str] = None):
         from openai import OpenAI
 
         self.token = token or os.environ.get("GH_MODELS_TOKEN")
@@ -407,7 +407,7 @@ def create_provider(
     if provider_type == "anthropic":
         return AnthropicProvider(model=model or "claude-sonnet-4-20250514")
     elif provider_type == "github":
-        return GitHubModelsProvider(model=model or "openai/gpt-4o-mini", token=token)
+        return GitHubModelsProvider(model=model or "openai/gpt-4.1-mini", token=token)
     else:
         raise ValueError(f"Unknown provider: {provider_type}")
 

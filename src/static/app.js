@@ -17,7 +17,7 @@ class RadChat {
         this.welcomeState = document.getElementById('welcomeState');
         this.quickActions = document.getElementById('quickActions');
 
-        this.selectedModel = { id: 'openai/gpt-4o-mini', name: 'GPT-4o Mini' };
+        this.selectedModel = { id: 'openai/gpt-4.1-mini', name: 'GPT-4.1 Mini' };
         this.models = [];
         this.user = null;
 
@@ -69,10 +69,12 @@ class RadChat {
     }
 
     bindEvents() {
-        this.inputForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            this.sendMessage();
-        });
+        if (this.inputForm) {
+            this.inputForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                this.sendMessage();
+            });
+        }
 
         // Quick action buttons
         document.querySelectorAll('.quick-action').forEach(btn => {
@@ -102,11 +104,13 @@ class RadChat {
         });
 
         // Scroll tracking for "new messages" button
-        this.chatMessages.addEventListener('scroll', () => {
-            const { scrollTop, scrollHeight, clientHeight } = this.chatMessages;
-            this.isNearBottom = scrollHeight - scrollTop - clientHeight < 100;
-            this.updateScrollToBottomButton();
-        });
+        if (this.chatMessages) {
+            this.chatMessages.addEventListener('scroll', () => {
+                const { scrollTop, scrollHeight, clientHeight } = this.chatMessages;
+                this.isNearBottom = scrollHeight - scrollTop - clientHeight < 100;
+                this.updateScrollToBottomButton();
+            });
+        }
 
         // Brand title click - start new chat
         const brandTitle = document.getElementById('brandTitle');
