@@ -512,7 +512,7 @@ body {
 .message-footer {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
     margin-top: 12px;
     padding-top: 10px;
     border-top: 1px solid #F1F5F9;
