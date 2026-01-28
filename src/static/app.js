@@ -474,7 +474,9 @@ class RadChat {
                                         fullText += beforeMarker;
                                         bubbleEl.innerHTML = this.formatMessage(fullText);
                                     }
-                                    this.addToolCallIndicator(bubbleEl, startMatch[1]);
+                                    // Hide loading message, show thinking indicator
+                                    assistantMessage.style.display = 'none';
+                                    this.addToolCallIndicator(startMatch[1]);
                                     buffer = buffer.slice(startMatch.index + startMatch[0].length);
                                     continue;
                                 }
@@ -483,6 +485,12 @@ class RadChat {
                                 const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
+                                    // Remove thinking indicator, show message again
+                                    this.removeThinkingIndicator();
+                                    assistantMessage.style.display = '';
+                                    // Clear loading dots
+                                    const loadingDots = bubbleEl.querySelector('.loading-dots');
+                                    if (loadingDots) loadingDots.remove();
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
@@ -672,13 +680,9 @@ class RadChat {
         bubbleEl.appendChild(footer);
     }
 
-    addToolCallIndicator(bubbleEl, toolName) {
-        const existingLoader = bubbleEl.querySelector('.tool-call-loader');
-        if (existingLoader) existingLoader.remove();
-
-        // Clear loading dots
-        const loadingDots = bubbleEl.querySelector('.loading-dots');
-        if (loadingDots) loadingDots.remove();
+    addToolCallIndicator(toolName) {
+        // Remove any existing thinking indicator
+        this.removeThinkingIndicator();
 
         // Format tool name for display
         const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
@@ -691,30 +695,34 @@ class RadChat {
             iconSvg = `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`;
         }
 
-        const loader = document.createElement('div');
-        loader.className = 'tool-call-loader';
-        loader.innerHTML = `
-            <div class="tool-call">
-                <div class="tool-call-header loading">
-                    <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        ${iconSvg}
-                    </svg>
-                    <span>Searching ${displayName}</span>
-                    <div class="tool-call-dots">
-                        <span></span><span></span><span></span>
-                    </div>
+        const indicator = document.createElement('div');
+        indicator.className = 'thinking-indicator';
+        indicator.innerHTML = `
+            <div class="thinking-avatar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+            </div>
+            <div class="thinking-bubble">
+                <svg class="thinking-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    ${iconSvg}
+                </svg>
+                <span class="thinking-text">Searching ${displayName}</span>
+                <div class="thinking-dots">
+                    <span></span><span></span><span></span>
                 </div>
             </div>
         `;
-        bubbleEl.appendChild(loader);
+        this.chatMessages.appendChild(indicator);
         this.scrollToBottom();
     }
 
-    renderToolResult(bubbleEl, toolData) {
-        // Remove tool call loader
-        const loader = bubbleEl.querySelector('.tool-call-loader');
-        if (loader) loader.remove();
+    removeThinkingIndicator() {
+        const indicator = this.chatMessages.querySelector('.thinking-indicator');
+        if (indicator) indicator.remove();
+    }
 
+    renderToolResult(bubbleEl, toolData) {
         const { type, tool, data } = toolData;
 
         // Don't render if there's an error
