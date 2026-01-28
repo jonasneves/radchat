@@ -262,7 +262,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px 32px;
+    padding: 48px 32px;
     height: 100%;
 }
 
@@ -279,20 +279,64 @@ body {
 }
 
 .welcome-state h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: #0F172A;
     margin-bottom: 8px;
 }
 
 .welcome-state p {
-    font-size: 15px;
+    font-size: 14px;
     color: #64748B;
-    max-width: 320px;
+    max-width: 340px;
+    margin-bottom: 32px;
 }
 
 .welcome-state.hidden {
     display: none;
+}
+
+/* Try Asking Section */
+.try-asking {
+    width: 100%;
+    max-width: 500px;
+}
+
+.try-asking-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.welcome-state .quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+.welcome-state .quick-action {
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    text-align: left;
+    background: white;
+    border: 1px solid rgba(0, 83, 155, 0.12);
+    color: var(--duke-navy);
+}
+
+.welcome-state .quick-action:hover {
+    background: #F8FAFC;
+    border-color: var(--duke-royal);
+}
+
+.welcome-state .quick-action svg {
+    color: #94A3B8;
+    flex-shrink: 0;
 }
 
 /* Messages */
@@ -870,11 +914,11 @@ body {
     border-top: 1px solid #E2E8F0;
 }
 
+/* Quick Actions (in welcome state) */
 .quick-actions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
-    margin-bottom: 16px;
 }
 
 .quick-action {
