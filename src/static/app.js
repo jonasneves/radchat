@@ -668,9 +668,7 @@ class RadChat {
             }
         }
 
-        messageEl.appendChild(bubbleEl);
-
-        // Add status footer for user messages
+        // Add status inside bubble for user messages
         if (role === 'user') {
             const statusEl = document.createElement('div');
             statusEl.className = 'message-status';
@@ -680,12 +678,14 @@ class RadChat {
                     <polyline points="20 6 9 17 4 12"/>
                 </svg>
             `;
-            messageEl.appendChild(statusEl);
+            bubbleEl.appendChild(statusEl);
 
             // Simulate delivery status changes
             setTimeout(() => this.updateMessageStatus(messageEl, 'delivered'), 300);
             setTimeout(() => this.updateMessageStatus(messageEl, 'read'), 600);
         }
+
+        messageEl.appendChild(bubbleEl);
 
         this.chatMessages.appendChild(messageEl);
         this.scrollToBottom();
