@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: 'Force update even if cache is recent'
+        description: 'Force full update'
         type: boolean
         default: false
   schedule:
-    # Run weekly on Sundays at 3am UTC
-    - cron: '0 3 * * 0'
+    # Run daily at 3am UTC during initial scraping, then weekly once complete
+    - cron: '0 3 * * *'
 
 jobs:
   update-cache:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
     permissions:
       contents: write
 
@@ -40,28 +40,55 @@ jobs:
           FORCE="${{ github.event.inputs.force }}"
           if [ "$FORCE" = "true" ]; then
             echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=force" >> $GITHUB_OUTPUT
             echo "Force update requested"
             exit 0
           fi
 
-          if [ -f src/data/acr_criteria.json ]; then
-            UPDATED=$(python3 -c "import json; print(json.load(open('src/data/acr_criteria.json')).get('updated_at', ''))" 2>/dev/null || echo "")
-            if [ -n "$UPDATED" ]; then
-              AGE_DAYS=$(python3 -c "
+          if [ ! -f src/data/acr_criteria.json ]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=no_cache" >> $GITHUB_OUTPUT
+            echo "No cache file, running initial scrape"
+            exit 0
+          fi
+
+          # Check scrape state
+          PENDING=$(python3 -c "
+          import json
+          data = json.load(open('src/data/acr_criteria.json'))
+          topics = data.get('topics', {})
+          pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
+          print(pending)
+          " 2>/dev/null || echo "0")
+
+          echo "Pending topics: $PENDING"
+
+          if [ "$PENDING" -gt 0 ]; then
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "reason=pending" >> $GITHUB_OUTPUT
+            echo "Has pending topics to scrape"
+            exit 0
+          fi
+
+          # Check age for weekly refresh
+          UPDATED=$(python3 -c "import json; print(json.load(open('src/data/acr_criteria.json')).get('updated_at', ''))" 2>/dev/null || echo "")
+          if [ -n "$UPDATED" ]; then
+            AGE_DAYS=$(python3 -c "
           from datetime import datetime, timezone
           updated = datetime.fromisoformat('$UPDATED'.replace('Z', '+00:00'))
           age = (datetime.now(timezone.utc) - updated).days
           print(age)
           " 2>/dev/null || echo "999")
-              echo "Cache is $AGE_DAYS days old"
-              if [ "$AGE_DAYS" -lt 6 ]; then
-                echo "skip=true" >> $GITHUB_OUTPUT
-                echo "Cache is recent, skipping update"
-                exit 0
-              fi
+            echo "Cache is $AGE_DAYS days old"
+            if [ "$AGE_DAYS" -lt 7 ]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+              echo "Cache is recent and no pending, skipping"
+              exit 0
             fi
           fi
+
           echo "skip=false" >> $GITHUB_OUTPUT
+          echo "reason=weekly" >> $GITHUB_OUTPUT
 
       - uses: actions/setup-python@v5
         if: steps.need_update.outputs.skip != 'true'
@@ -78,16 +105,34 @@ jobs:
       - name: Update ACR cache
         if: steps.need_update.outputs.skip != 'true'
         run: |
+          # Copy existing cache if present
+          if [ -f src/data/acr_criteria.json ]; then
+            cp src/data/acr_criteria.json /tmp/existing_cache.json
+          fi
+
           git show main:scripts/update_acr_cache.py > update_acr_cache.py
           python update_acr_cache.py
 
-      - name: Validate JSON
+          # Restore cache location if script wrote elsewhere
+          if [ -f /tmp/existing_cache.json ] && [ ! -f src/data/acr_criteria.json ]; then
+            cp /tmp/existing_cache.json src/data/acr_criteria.json
+          fi
+
+      - name: Show stats
         if: steps.need_update.outputs.skip != 'true'
         run: |
           python3 << 'EOF'
           import json
-          acr = json.load(open("src/data/acr_criteria.json"))
-          print(f"ACR topics: {len(acr['topics'])}")
+          data = json.load(open("src/data/acr_criteria.json"))
+          topics = data.get("topics", {})
+          state = data.get("scrape_state", {})
+
+          print(f"Topics: {len(topics)}")
+          print(f"Details scraped: {state.get('details_scraped', 0)}")
+          print(f"Details blocked: {state.get('details_blocked', 0)}")
+
+          pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
+          print(f"Pending: {pending}")
           EOF
 
       - name: Check for changes
