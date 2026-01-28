@@ -255,12 +255,19 @@ def chat_stream():
     if not session.get("duke_token"):
         return jsonify({"error": "Authentication required"}), 401
 
-    chat_session = get_session(session_id, token, model)
+    try:
+        chat_session = get_session(session_id, token, model)
+    except Exception as e:
+        return jsonify({"error": f"Failed to create session: {str(e)}"}), 500
 
     def generate():
-        for chunk in chat_session.chat_stream(message):
-            yield f"data: {json.dumps({'text': chunk})}\n\n"
-        yield "data: [DONE]\n\n"
+        try:
+            for chunk in chat_session.chat_stream(message):
+                yield f"data: {json.dumps({'text': chunk})}\n\n"
+            yield "data: [DONE]\n\n"
+        except Exception as e:
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
+            yield "data: [DONE]\n\n"
 
     return Response(
         stream_with_context(generate()),
