@@ -32,9 +32,9 @@ LIST_URL = "https://acsearch.acr.org/list"
 DETAIL_API_URL = "https://gravitas.acr.org/ACPortal/GetDataForOneTopic"
 
 # Scraping configuration
-BATCH_SIZE = 20  # Topics per run
-DELAY_MIN = 1.5
-DELAY_MAX = 3.0
+BATCH_SIZE = 50  # Topics per run
+DELAY_MIN = 1.0
+DELAY_MAX = 2.0
 MAX_ATTEMPTS = 3
 RETRY_AFTER_DAYS = 7
 DETAIL_MAX_AGE_DAYS = 30
