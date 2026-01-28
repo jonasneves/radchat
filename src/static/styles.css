@@ -1091,32 +1091,44 @@ body {
     color: inherit;
 }
 
-/* Lists - reset browser defaults */
+/* Lists - keep markers inside the bubble */
+.message-bubble ul,
+.message-bubble ol,
 .message-content ul,
 .message-content ol {
-    padding-left: 0;
+    padding-left: 1.5em;
     margin-left: 0;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
-/* Nested lists need indent */
+/* Nested lists need more indent */
+.message-bubble li ul,
+.message-bubble li ol,
 .message-content li ul,
 .message-content li ol {
-    padding-left: 1.5rem;
+    padding-left: 1.5em;
+    margin-top: 0.25em;
 }
 
+.message-bubble li,
 .message-content li {
     margin-bottom: 0.25em;
     line-height: 1.5;
 }
 
+.message-bubble li > p,
 .message-content li > p {
     margin: 0;
+    display: inline;
 }
 
 /* Nested lists */
+.message-bubble ul ul,
+.message-bubble ol ol,
+.message-bubble ul ol,
+.message-bubble ol ul,
 .message-content ul ul,
 .message-content ol ol,
 .message-content ul ol,
