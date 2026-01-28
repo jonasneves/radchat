@@ -535,11 +535,8 @@ class RadChat {
                 }
             });
 
-            // Add model footer
-            const modelName = assistantMessage.dataset.model;
-            if (modelName) {
-                this.addModelFooter(bubbleEl, modelName);
-            }
+            // Add message footer with time
+            this.addMessageFooter(bubbleEl);
 
         } catch (error) {
             bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
@@ -600,6 +597,7 @@ class RadChat {
 
         const messageEl = document.createElement('div');
         messageEl.className = `message ${role}`;
+        messageEl.dataset.timestamp = Date.now();
 
         // Add avatar for assistant messages
         if (role === 'assistant') {
@@ -622,33 +620,55 @@ class RadChat {
                     <span></span><span></span><span></span>
                 </div>
             `;
-            // Store model name for later
-            messageEl.dataset.model = this.selectedModel.name;
         } else {
             bubbleEl.innerHTML = this.formatMessage(content);
         }
 
         messageEl.appendChild(bubbleEl);
+
+        // Add status footer for user messages
+        if (role === 'user') {
+            const statusEl = document.createElement('div');
+            statusEl.className = 'message-status';
+            statusEl.innerHTML = `
+                <span class="message-time">just now</span>
+                <svg class="status-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+            `;
+            messageEl.appendChild(statusEl);
+
+            // Simulate delivery status changes
+            setTimeout(() => this.updateMessageStatus(messageEl, 'delivered'), 300);
+            setTimeout(() => this.updateMessageStatus(messageEl, 'read'), 600);
+        }
+
         this.chatMessages.appendChild(messageEl);
         this.scrollToBottom();
 
         return messageEl;
     }
 
-    addModelFooter(bubbleEl, modelName) {
+    updateMessageStatus(messageEl, status) {
+        const statusEl = messageEl.querySelector('.message-status');
+        if (!statusEl) return;
+
+        const iconEl = statusEl.querySelector('.status-icon');
+        if (!iconEl) return;
+
+        if (status === 'delivered' || status === 'read') {
+            // Double check mark
+            iconEl.innerHTML = `<polyline points="18 6 7 17 2 12"/><polyline points="22 6 11 17 8 14"/>`;
+        }
+        if (status === 'read') {
+            iconEl.classList.add('read');
+        }
+    }
+
+    addMessageFooter(bubbleEl) {
         const footer = document.createElement('div');
         footer.className = 'message-footer';
-        footer.innerHTML = `
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 8V4H8"/>
-                <rect width="16" height="12" x="4" y="8" rx="2"/>
-                <path d="M2 14h2"/>
-                <path d="M20 14h2"/>
-                <path d="M15 13v2"/>
-                <path d="M9 13v2"/>
-            </svg>
-            <span>${modelName}</span>
-        `;
+        footer.innerHTML = `<span class="message-time">just now</span>`;
         bubbleEl.appendChild(footer);
     }
 

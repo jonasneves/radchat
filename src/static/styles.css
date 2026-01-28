@@ -501,6 +501,27 @@ body {
     color: #94A3B8;
 }
 
+/* Message Status (for user messages) */
+.message-status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-top: 4px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.message-status .status-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;
+}
+
+.message-status .status-icon.read {
+    opacity: 1;
+}
+
 /* Date Group Header */
 .date-group-header {
     display: flex;
