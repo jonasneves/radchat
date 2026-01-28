@@ -1,0 +1,169 @@
+{
+  "id": "123",
+  "title": "Second and Third Trimester Vaginal Bleeding",
+  "url": "https://acsearch.acr.org/docs/123/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Vaginal bleeding, after first trimester, painless, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, painful, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, placenta previa, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, vasa previa, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, low lying placenta, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, low lying placenta suspected, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, placenta previa suspected, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vaginal bleeding, after first trimester, vasa previa suspected, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:38:03.378653+00:00"
+}

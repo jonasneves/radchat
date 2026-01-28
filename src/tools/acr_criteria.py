@@ -1,12 +1,13 @@
 """
 ACR Appropriateness Criteria Tool - Clinical decision support for imaging.
-Fetches cached data from GitHub data branch (index + individual topic files).
-Cache is updated daily via GitHub Action until complete, then weekly.
+Reads cached data from local files (src/data/acr/).
+Cache is updated weekly via GitHub Action.
 """
 
 import json
 import re
 from functools import lru_cache
+from pathlib import Path
 from typing import Optional
 from urllib.parse import unquote
 
@@ -14,8 +15,9 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://acsearch.acr.org"
-CACHE_BASE = "https://raw.githubusercontent.com/jonasneves/radchat/data/src/data/acr"
-INDEX_URL = f"{CACHE_BASE}/index.json"
+DATA_DIR = Path(__file__).parent.parent / "data" / "acr"
+INDEX_FILE = DATA_DIR / "index.json"
+TOPICS_DIR = DATA_DIR / "topics"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
@@ -43,24 +45,21 @@ def extract_body_regions(title: str) -> list[str]:
 
 @lru_cache(maxsize=1)
 def load_index() -> Optional[dict]:
-    """Fetch ACR index from GitHub data branch."""
+    """Load ACR index from local file."""
     try:
-        response = requests.get(INDEX_URL, timeout=10)
-        response.raise_for_status()
-        return response.json()
-    except (requests.RequestException, json.JSONDecodeError):
+        with open(INDEX_FILE) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
         return None
 
 
 @lru_cache(maxsize=50)
 def load_topic_details(topic_id: str) -> Optional[dict]:
-    """Fetch individual topic details from GitHub data branch."""
+    """Load individual topic details from local file."""
     try:
-        url = f"{CACHE_BASE}/topics/{topic_id}.json"
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        return response.json()
-    except (requests.RequestException, json.JSONDecodeError):
+        with open(TOPICS_DIR / f"{topic_id}.json") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
         return None
 
 

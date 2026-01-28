@@ -1,0 +1,261 @@
+{
+  "id": "5",
+  "title": "Management of Iliac Artery Occlusive Disease",
+  "url": "https://acsearch.acr.org/docs/5/Narrative/",
+  "body_regions": [
+    "vascular"
+  ],
+  "procedures": [
+    {
+      "name": "Adult. Nonsmoker, sedentary lifestyle. Left lower-extremity claudication on walking, asymmetrically diminished left femoral pulse. No symptoms at rest. Initial management.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Risk factor analysis and lipid profile and ABIs",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Antiplatelet adjunctive therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with bilateral lower extremity runoff with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis with bilateral lower extremity runoff with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Plethysmography and pulse volume recording",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Catheter-directed angiography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Anticoagulation adjunctive therapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Long history of claudication. Acute-onset left lower-extremity pain. Absent left femoral pulse by palpation, faint audible DP and PT Doppler signals. Initial management.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with bilateral lower extremity runoff with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed angiography",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis with bilateral lower extremity runoff with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Ankle brachial index",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Risk factor analysis and lipid profile",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Plethysmography and pulse volume recording",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Known atrial fibrillation and spine surgery performed within the past month. Sudden-onset right lower-extremity pain. Diminished pulses in right lower extremity. CTA demonstrates isolated filling defect in right common iliac artery. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed mechanical thrombectomy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical  revascularization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Antiplatelet adjunctive therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Catheter-directed thrombolytic therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous transluminal angioplasty iliac artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Primary stent placement iliac artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Past medical history of heavy smoking. Severe claudication without rest pain. CTA demonstrates bilateral common iliac artery stenosis at or greater than 90% (TASC A). Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Best medical management including supervised exercise program",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Bilateral primary stent placement iliac artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Anticoagulation adjunctive therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bilateral percutaneous transluminal angioplasty iliac artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical  revascularization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Past medical history significant for diabetes mellitus, hypertension, and smoking. Increasing claudication of right lower-extremity involving right buttock for the last 3 months. CTA pelvis with runoff reveals short-segment occlusion of the right common iliac artery (TASC B). Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Best medical management including supervised exercise program",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Primary stent placement aortoiliac arterial segment",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Anticoagulation adjunctive therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous transluminal angioplasty aortoiliac arterial segment",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical  revascularization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Past medical history significant for diabetes mellitus, hypertension, and heavy smoking. Gradually increasing claudication of bilateral lower extremities for at least 2 months. CTA pelvis with runoff reveals bilateral common iliac artery occlusion without any involvement of the external or internal iliac artery (TASC C). Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Best medical management including supervised exercise program",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Anticoagulation adjunctive therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bilateral primary stent placement aortoiliac arterial segment",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bilateral percutaneous transluminal angioplasty aortoiliac arterial segment",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical  revascularization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Worsening claudication and small ischemic ulcers on digits of both feet. CTA demonstrates diffuse atherosclerosis involving distal aorta and both common and external iliac arteries with multiple stenoses at or greater than 50%, bilateral mid-superficial femoral artery stenoses at or greater than 70% with 2-vessel tibial runoff bilaterally (TASC D). Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous stent placement aortoiliac arterial segment plus superficial femoral",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Antiplatelet adjunctive therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical  revascularization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous stent placement aortoiliac arterial segment",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Anticoagulation adjunctive therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Best medical management including supervised exercise program only",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Percutaneous transluminal angioplasty aortoiliac arterial segment",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:48:19.284166+00:00"
+}

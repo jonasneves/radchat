@@ -1,0 +1,81 @@
+{
+  "id": "38",
+  "title": "Renovascular Hypertension",
+  "url": "https://acsearch.acr.org/docs/38/Narrative/",
+  "body_regions": [
+    "vascular"
+  ],
+  "procedures": [
+    {
+      "name": "HTN, high suspicion renal vascular, normal renal function",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "ACE-inhibitor renography",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Venography with renal vein sampling",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "HTN, high suspicion renal vascular, decreased renal function",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA abdomen without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA abdomen with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Venography with renal vein sampling",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "ACE-inhibitor renography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:47:22.151774+00:00"
+}

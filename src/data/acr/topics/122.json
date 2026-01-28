@@ -1,0 +1,99 @@
+{
+  "id": "122",
+  "title": "Assessment of Gravid Cervix",
+  "url": "https://acsearch.acr.org/docs/122/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Gravid cervix assessment, no hx of preterm birth, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Gravid cervix assessment, nulliparous, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Gravid cervix assessment, hx of preterm birth, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Gravid cervix assessment, preterm labor suspected, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transabdominal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transperineal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Gravid cervix assessment, active term labor, initial imaging",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Gravid cervix assessment, labor induction, initial imaging",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:37:24.812274+00:00"
+}

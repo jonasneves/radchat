@@ -1,0 +1,221 @@
+{
+  "id": "7",
+  "title": "Radiologic Management of Pulmonary Nodules and Masses",
+  "url": "https://acsearch.acr.org/docs/7/Narrative/",
+  "body_regions": [
+    "chest"
+  ],
+  "procedures": [
+    {
+      "name": "Adult. Stable 1 to 3 cm solitary solid pulmonary nodule. Unchanged in diameter for 2 years. Person who smokes. Next step.",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous lung biopsy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Endobronchial ultrasound and biopsy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Serially, enlarging solitary solid pulmonary nodule, now 1 to 3 cm in diameter. Person who smokes. Next step.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Endobronchial ultrasound and biopsy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Follow-up imaging only",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. 1 to 3 cm solitary solid pulmonary nodule near the hilum. Identified on initial screening CT chest. Person who smokes. Next step.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous lung biopsy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Follow-up imaging only",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Serially, enlarging solitary solid pulmonary nodule in the periphery of the lung, now 1 to 3 cm in diameter. High risk of poor surgical outcome. Next step.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Endobronchial ultrasound and biopsy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Follow-up imaging only",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. 1 to 3 cm solitary solid pulmonary nodule in the periphery of the lung. Previously treated nonpulmonary primary malignancy. Next step.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Endobronchial ultrasound and biopsy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Follow-up imaging only",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. 1 to 3 cm solitary ground glass pulmonary nodule which has persisted on short interval follow-up. Findings suspicious for primary lung adenocarcinoma. Next step",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Endobronchial ultrasound and biopsy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Fiducial marker and surgical management",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Follow-up imaging only",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation lung",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Stereotactic body radiotherapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical management",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:51:50.496556+00:00"
+}

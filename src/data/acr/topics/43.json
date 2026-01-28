@@ -1,0 +1,426 @@
+{
+  "id": "43",
+  "title": "Management of Liver Cancer",
+  "url": "https://acsearch.acr.org/docs/43/Narrative/",
+  "body_regions": [
+    "abdomen"
+  ],
+  "procedures": [
+    {
+      "name": "Hepatocellular cancer: Solitary tumor less than 3 cm, cirrhotic.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic therapies",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hepatocellular cancer: Solitary tumor 3 to 5 cm, cirrhotic.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic therapies",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hepatocellular cancer: Multifocal, bilobar disease, at least 1 tumor greater than 5 cm, cirrhotic.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic therapies",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hepatocellular cancer: Solitary or multifocal disease with vascular invasion, cirrhotic.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Intrahepatic cholangiocarcinoma: Peripheral hepatic lobar cholangiocarcinoma, less than 3 cm; no biliary ductal dilatation, macroscopic vascular invasion, regional lymphadenopathy, or distant metastases.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic therapies",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ductal cholangiocarcinoma: Hilar cholangiocarcinoma, greater than 3 cm with poorly defined margins, vascular invasion, and periportal lymphadenopathy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Metastatic liver disease: Multifocal metastatic neuroendocrine tumor (includes carcinoid tumors as well as islet cell tumors of the pancreas).",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Peptide receptor radionuclide therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic therapies",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Metastatic liver disease: Solitary colorectal liver metastasis.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hepatic arterial chemotherapy infusion",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Metastatic liver disease: Multifocal bilobar colorectal carcinoma (liver dominant or isolated).",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Hepatic arterial chemotherapy infusion",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial chemoembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transarterial radioembolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Bland transarterial embolization",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Combination locoregional therapy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous ablation liver",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical liver resection",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "External beam radiation therapy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Liver transplantation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:48:21.625990+00:00"
+}

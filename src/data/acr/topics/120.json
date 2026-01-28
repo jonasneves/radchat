@@ -1,0 +1,909 @@
+{
+  "id": "120",
+  "title": "Multiple Gestations",
+  "url": "https://acsearch.acr.org/docs/120/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Multiple gestations suspected, dichorionic, first trimester, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic, first trimester, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations suspected, monochorionic, first trimester, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic, first trimester, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic, first trimester US performed, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic, first trimester US performed, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, multichorionic higher order multiples, second trimester anatomy exam, follow-up imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic twins, second trimester anatomy exam, follow-up imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic twins, second trimester anatomy exam, follow-up imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic twins, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, multichorionic higher order multiples, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic twins, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic, discordance between fetuses, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic, discordance between fetuses, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, multichorionic higher order multiples, abnormality, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, monochorionic, abnormality, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, dichorionic, abnormality, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Multiple gestations, multichorionic higher order multiples, discordance between fetuses, growth and antepartum surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US assessment for TTTS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US cervix transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T03:37:41.524835+00:00"
+}

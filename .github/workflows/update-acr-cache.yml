@@ -8,8 +8,8 @@ on:
         type: boolean
         default: false
   schedule:
-    # Run daily at 3am UTC during initial scraping, then weekly once complete
-    - cron: '0 3 * * *'
+    # Run weekly on Sundays at 3am UTC
+    - cron: '0 3 * * 0'
 
 jobs:
   update-cache:
@@ -20,19 +20,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup data branch
-        run: |
-          git fetch origin data:data 2>/dev/null || true
-          if git rev-parse --verify data >/dev/null 2>&1; then
-            git checkout data
-          else
-            git checkout --orphan data
-            git rm -rf . 2>/dev/null || true
-          fi
-          mkdir -p src/data
 
       - name: Check if update needed
         id: need_update
@@ -40,33 +27,13 @@ jobs:
           FORCE="${{ github.event.inputs.force }}"
           if [ "$FORCE" = "true" ]; then
             echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=force" >> $GITHUB_OUTPUT
             echo "Force update requested"
             exit 0
           fi
 
           if [ ! -f src/data/acr/index.json ]; then
             echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=no_cache" >> $GITHUB_OUTPUT
-            echo "No cache file, running initial scrape"
-            exit 0
-          fi
-
-          # Check scrape state
-          PENDING=$(python3 -c "
-          import json
-          data = json.load(open('src/data/acr/index.json'))
-          topics = data.get('topics', {})
-          pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
-          print(pending)
-          " 2>/dev/null || echo "0")
-
-          echo "Pending topics: $PENDING"
-
-          if [ "$PENDING" -gt 0 ]; then
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "reason=pending" >> $GITHUB_OUTPUT
-            echo "Has pending topics to scrape"
+            echo "No cache file, running scrape"
             exit 0
           fi
 
@@ -82,13 +49,12 @@ jobs:
             echo "Cache is $AGE_DAYS days old"
             if [ "$AGE_DAYS" -lt 7 ]; then
               echo "skip=true" >> $GITHUB_OUTPUT
-              echo "Cache is recent and no pending, skipping"
+              echo "Cache is recent, skipping"
               exit 0
             fi
           fi
 
           echo "skip=false" >> $GITHUB_OUTPUT
-          echo "reason=weekly" >> $GITHUB_OUTPUT
 
       - uses: actions/setup-python@v5
         if: steps.need_update.outputs.skip != 'true'
@@ -101,9 +67,7 @@ jobs:
 
       - name: Update ACR cache
         if: steps.need_update.outputs.skip != 'true'
-        run: |
-          git show main:scripts/update_acr_cache.py > update_acr_cache.py
-          python update_acr_cache.py
+        run: python scripts/update_acr_cache.py
 
       - name: Show stats
         if: steps.need_update.outputs.skip != 'true'
@@ -111,33 +75,21 @@ jobs:
           python3 << 'EOF'
           import json
           data = json.load(open("src/data/acr/index.json"))
-          topics = data.get("topics", {})
           state = data.get("scrape_state", {})
-
-          print(f"Topics total: {state.get('topics_total', len(topics))}")
-          print(f"Topics with data: {state.get('topics_with_data', 0)}")
-          print(f"No data on ACR: {state.get('topics_no_data', 0)}")
-          print(f"Blocked: {state.get('topics_blocked', 0)}")
-
-          pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
-          print(f"Pending: {pending}")
+          print(f"Topics: {state.get('topics_total', 0)}")
+          print(f"With data: {state.get('topics_with_data', 0)}")
+          print(f"No data: {state.get('topics_no_data', 0)}")
           EOF
 
-      - name: Check for changes
+      - name: Commit and push
         if: steps.need_update.outputs.skip != 'true'
-        id: check
         run: |
           git add src/data/acr/
           if git diff --cached --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "No changes to commit"
+            exit 0
           fi
-
-      - name: Commit and push
-        if: steps.need_update.outputs.skip != 'true' && steps.check.outputs.changed == 'true'
-        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Update ACR cache [$(date +%Y-%m-%d)]"
-          git push origin data
+          git push
