@@ -450,6 +450,18 @@ class RadChat {
         const messageEl = document.createElement('div');
         messageEl.className = `message ${role}`;
 
+        // Add avatar for assistant messages
+        if (role === 'assistant') {
+            const avatarEl = document.createElement('div');
+            avatarEl.className = 'message-avatar';
+            avatarEl.innerHTML = `
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+            `;
+            messageEl.appendChild(avatarEl);
+        }
+
         const bubbleEl = document.createElement('div');
         bubbleEl.className = 'message-bubble';
 
