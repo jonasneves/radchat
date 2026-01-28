@@ -421,6 +421,8 @@ class RadChat {
 
         // Add assistant message with loading state
         const assistantMessage = this.addMessage('assistant', '', true);
+        const contentWrapper = assistantMessage.querySelector('.message-content-wrapper');
+        const cardsContainer = assistantMessage.querySelector('.message-cards');
         const bubbleEl = assistantMessage.querySelector('.message-bubble');
         let messageRevealed = false; // Track if we've shown the message yet
 
@@ -500,7 +502,7 @@ class RadChat {
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
-                                        this.renderToolResult(bubbleEl, toolData);
+                                        this.renderToolResult(cardsContainer, toolData);
                                     } catch (e) {
                                         console.error('Failed to parse tool result:', e);
                                     }
@@ -509,7 +511,6 @@ class RadChat {
 
                                 // Stream text immediately if no marker could be starting
                                 const underscoreIdx = buffer.indexOf('_');
-                                const textContainer = bubbleEl.querySelector('.message-text') || bubbleEl;
                                 if (underscoreIdx === -1) {
                                     // No underscore, safe to output all
                                     fullText += buffer;
@@ -517,7 +518,7 @@ class RadChat {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                         messageRevealed = true;
                                     } else {
-                                        textContainer.innerHTML = this.formatMessage(fullText);
+                                        bubbleEl.innerHTML = this.formatMessage(fullText);
                                     }
                                     buffer = '';
                                 } else if (underscoreIdx > 0) {
@@ -527,7 +528,7 @@ class RadChat {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                         messageRevealed = true;
                                     } else {
-                                        textContainer.innerHTML = this.formatMessage(fullText);
+                                        bubbleEl.innerHTML = this.formatMessage(fullText);
                                     }
                                     buffer = buffer.slice(underscoreIdx);
                                 }
@@ -548,21 +549,20 @@ class RadChat {
                 fullText += buffer;
             }
 
-            // Final render - use text container to preserve cards
-            const finalTextContainer = bubbleEl.querySelector('.message-text') || bubbleEl;
-            finalTextContainer.innerHTML = this.formatMessage(fullText);
-            this.parseAndRenderToolResults(finalTextContainer, fullText);
+            // Final render - bubble is now just for text
+            bubbleEl.innerHTML = this.formatMessage(fullText);
+            this.parseAndRenderToolResults(bubbleEl, fullText);
 
             // Append any tool result cards that were rendered
             toolResults.forEach(tr => {
-                const existingCard = bubbleEl.querySelector(`[data-tool="${tr.tool}"]`);
+                const existingCard = cardsContainer.querySelector(`[data-tool="${tr.tool}"]`);
                 if (!existingCard) {
-                    this.renderToolResult(bubbleEl, tr);
+                    this.renderToolResult(cardsContainer, tr);
                 }
             });
 
             // Add message footer with time and source badge
-            this.addMessageFooter(finalTextContainer, usedTools);
+            this.addMessageFooter(bubbleEl, usedTools);
 
         } catch (error) {
             bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
@@ -635,30 +635,19 @@ class RadChat {
                 </svg>
             `;
             messageEl.appendChild(avatarEl);
-        }
 
-        const bubbleEl = document.createElement('div');
-        bubbleEl.className = 'message-bubble';
+            // Create content wrapper (cards + bubble as siblings)
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'message-content-wrapper';
 
-        if (role === 'assistant') {
-            // Create structure: cards container + text container
+            // Cards container (outside bubble)
             const cardsContainer = document.createElement('div');
             cardsContainer.className = 'message-cards';
-            bubbleEl.appendChild(cardsContainer);
+            contentWrapper.appendChild(cardsContainer);
 
-            const textContainer = document.createElement('div');
-            textContainer.className = 'message-text';
-            if (isLoading) {
-                textContainer.innerHTML = `
-                    <div class="loading-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                `;
-            } else {
-                textContainer.innerHTML = this.formatMessage(content);
-            }
-            bubbleEl.appendChild(textContainer);
-        } else {
+            // Message bubble (text only)
+            const bubbleEl = document.createElement('div');
+            bubbleEl.className = 'message-bubble';
             if (isLoading) {
                 bubbleEl.innerHTML = `
                     <div class="loading-dots">
@@ -668,10 +657,24 @@ class RadChat {
             } else {
                 bubbleEl.innerHTML = this.formatMessage(content);
             }
-        }
+            contentWrapper.appendChild(bubbleEl);
 
-        // Add status inside bubble for user messages
-        if (role === 'user') {
+            messageEl.appendChild(contentWrapper);
+        } else {
+            // User message - simple bubble
+            const bubbleEl = document.createElement('div');
+            bubbleEl.className = 'message-bubble';
+            if (isLoading) {
+                bubbleEl.innerHTML = `
+                    <div class="loading-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                `;
+            } else {
+                bubbleEl.innerHTML = this.formatMessage(content);
+            }
+
+            // Add status inside bubble for user messages
             const statusEl = document.createElement('div');
             statusEl.className = 'message-status';
             statusEl.innerHTML = `
@@ -685,9 +688,9 @@ class RadChat {
             // Simulate delivery status changes
             setTimeout(() => this.updateMessageStatus(messageEl, 'delivered'), 300);
             setTimeout(() => this.updateMessageStatus(messageEl, 'read'), 600);
-        }
 
-        messageEl.appendChild(bubbleEl);
+            messageEl.appendChild(bubbleEl);
+        }
 
         this.chatMessages.appendChild(messageEl);
         this.scrollToBottom();
@@ -800,21 +803,14 @@ class RadChat {
         this.removeThinkingIndicator();
         // Show the message element
         messageEl.style.display = '';
-        // Get or create text container
-        let textContainer = bubbleEl.querySelector('.message-text');
-        if (!textContainer) {
-            textContainer = bubbleEl;
-        }
-        // Clear loading dots
-        const loadingDots = textContainer.querySelector('.loading-dots');
+        // Clear loading dots from bubble
+        const loadingDots = bubbleEl.querySelector('.loading-dots');
         if (loadingDots) loadingDots.remove();
         // Render the text
-        textContainer.innerHTML = this.formatMessage(text);
+        bubbleEl.innerHTML = this.formatMessage(text);
     }
 
-    renderToolResult(bubbleEl, toolData) {
-        // Get cards container, fall back to bubble
-        const cardsContainer = bubbleEl.querySelector('.message-cards') || bubbleEl;
+    renderToolResult(cardsContainer, toolData) {
         const { type, tool, data } = toolData;
 
         // Don't render if there's an error
