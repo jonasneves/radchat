@@ -60,8 +60,8 @@ body {
     justify-content: space-between;
     padding: 0 24px;
     height: var(--header-height);
-    background: white;
-    border-bottom: 1px solid #E2E8F0;
+    background: var(--duke-navy);
+    border-bottom: none;
     flex-shrink: 0;
 }
 
@@ -72,9 +72,9 @@ body {
 }
 
 .brand {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
-    color: #0F172A;
+    color: white;
 }
 
 .header-right {
@@ -87,11 +87,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 16px;
-    background: #F8FAFC;
-    border-radius: 12px;
-    font-size: 14px;
-    color: #64748B;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .shift-dot {
@@ -113,19 +113,19 @@ body {
 }
 
 .login-btn {
-    padding: 8px 16px;
-    background: var(--duke-royal);
-    color: white;
+    padding: 8px 18px;
+    background: white;
+    color: var(--duke-navy);
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s;
+    transition: all 0.15s;
 }
 
 .login-btn:hover {
-    background: var(--duke-navy);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .user-info {
@@ -136,8 +136,8 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 4px 8px 4px 4px;
-    background: transparent;
+    padding: 4px 12px 4px 4px;
+    background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -145,14 +145,14 @@ body {
 }
 
 .user-btn:hover {
-    background: #F1F5F9;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .user-avatar {
     width: 32px;
     height: 32px;
-    background: var(--duke-royal);
-    color: white;
+    background: white;
+    color: var(--duke-navy);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@ body {
 .user-name {
     font-size: 14px;
     font-weight: 500;
-    color: #334155;
+    color: white;
 }
 
 .user-menu {
@@ -214,15 +214,21 @@ body {
 .main-content {
     flex: 1;
     display: flex;
+    justify-content: center;
     overflow: hidden;
+    padding: 24px;
+    background: var(--duke-hatteras);
 }
 
 .chat-container {
-    flex: 1;
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    background: #F8FAFC;
+    background: white;
     overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Chat Messages */
@@ -239,14 +245,14 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 48px;
+    padding: 60px 32px;
     height: 100%;
 }
 
 .welcome-icon {
-    width: 96px;
-    height: 96px;
-    background: rgba(0, 83, 155, 0.1);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 83, 155, 0.12);
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -256,15 +262,16 @@ body {
 }
 
 .welcome-state h2 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     color: #0F172A;
     margin-bottom: 8px;
 }
 
 .welcome-state p {
-    font-size: 16px;
+    font-size: 15px;
     color: #64748B;
+    max-width: 320px;
 }
 
 .welcome-state.hidden {
@@ -781,8 +788,8 @@ body {
 }
 
 .quick-actions {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     margin-bottom: 16px;
 }
@@ -790,21 +797,30 @@ body {
 .quick-action {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
+    gap: 10px;
+    padding: 12px 16px;
     background: white;
-    border: 1px solid #E2E8F0;
+    border: 1px solid rgba(0, 83, 155, 0.15);
     border-radius: 12px;
     font-size: 14px;
     font-weight: 500;
-    color: #475569;
+    color: var(--duke-navy);
     cursor: pointer;
     transition: all 0.15s;
+    text-align: left;
+}
+
+.quick-action svg {
+    flex-shrink: 0;
+    color: #94A3B8;
 }
 
 .quick-action:hover {
     border-color: var(--duke-royal);
-    background: var(--duke-royal-light);
+    background: #F8FAFC;
+}
+
+.quick-action:hover svg {
     color: var(--duke-royal);
 }
 
@@ -923,10 +939,10 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 6px 6px 6px 16px;
-    background: white;
+    padding: 8px 8px 8px 20px;
+    background: #F8FAFC;
     border: 1px solid #E2E8F0;
-    border-radius: 12px;
+    border-radius: 28px;
     transition: all 0.2s;
 }
 
@@ -950,13 +966,13 @@ body {
 }
 
 .send-btn {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     background: var(--duke-royal);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.15s;
     display: flex;
@@ -970,7 +986,7 @@ body {
 }
 
 .send-btn:disabled {
-    background: #E2E8F0;
+    background: #CBD5E1;
     color: #94A3B8;
     cursor: not-allowed;
 }
@@ -1206,6 +1222,15 @@ body {
         display: none;
     }
 
+    .main-content {
+        padding: 0;
+    }
+
+    .chat-container {
+        border-radius: 0;
+        max-width: none;
+    }
+
     .chat-messages {
         padding: 16px;
     }
@@ -1215,15 +1240,8 @@ body {
     }
 
     .quick-actions {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding-bottom: 8px;
-        margin-bottom: 12px;
-    }
-
-    .quick-action {
-        flex-shrink: 0;
-        white-space: nowrap;
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 
     .message {
