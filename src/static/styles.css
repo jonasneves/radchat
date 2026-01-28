@@ -849,20 +849,15 @@ body {
 .model-btn {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 12px;
+    gap: 4px;
+    padding: 8px 10px 8px 14px;
     background: white;
     border: 1px solid #E2E8F0;
     border-radius: 20px;
-    color: #64748B;
     cursor: pointer;
     transition: all 0.15s;
     font-size: 13px;
     font-weight: 500;
-}
-
-.model-btn svg:first-child {
-    color: var(--duke-royal);
 }
 
 .model-btn .model-name {
