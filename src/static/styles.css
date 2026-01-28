@@ -1266,6 +1266,19 @@ body {
     cursor: not-allowed;
 }
 
+.send-btn.stop-btn {
+    background: #DC2626;
+}
+
+.send-btn.stop-btn:hover {
+    background: #B91C1C;
+}
+
+.stopped-text {
+    color: #94A3B8;
+    font-style: italic;
+}
+
 /* Message Content - Markdown Styling */
 .message-content {
     max-width: 100%;

@@ -46,6 +46,9 @@ class RadChat {
         this.thinkingShownAt = null;
         this.minThinkingTime = 800; // minimum ms to show indicator
 
+        // Streaming control
+        this.abortController = null;
+
         this.init();
     }
 
@@ -465,7 +468,8 @@ class RadChat {
         this.addMessage('user', message);
         this.messageInput.value = '';
         this.isStreaming = true;
-        this.sendBtn.disabled = true;
+        this.abortController = new AbortController();
+        this.updateSendButton(true);
         this.setQuickActionsDisabled(true);
 
         // Add assistant message with loading state
@@ -483,7 +487,8 @@ class RadChat {
                     message,
                     session_id: this.sessionId,
                     model: this.modelSelect.value
-                })
+                }),
+                signal: this.abortController.signal
             });
 
             if (!response.ok) {
@@ -616,12 +621,56 @@ class RadChat {
             this.addMessageFooter(bubbleEl, usedTools);
 
         } catch (error) {
-            bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
+            if (error.name === 'AbortError') {
+                // User stopped generation - show partial response if any
+                if (fullText) {
+                    bubbleEl.innerHTML = this.formatMessage(fullText);
+                    this.addMessageFooter(bubbleEl, usedTools);
+                } else {
+                    bubbleEl.innerHTML = '<span class="stopped-text">Generation stopped</span>';
+                }
+            } else {
+                bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
+            }
         } finally {
             this.isStreaming = false;
-            this.sendBtn.disabled = false;
+            this.abortController = null;
+            this.updateSendButton(false);
             this.setQuickActionsDisabled(false);
+            this.removeThinkingIndicator();
             this.scrollToBottom();
+        }
+    }
+
+    stopGeneration() {
+        if (this.abortController) {
+            this.abortController.abort();
+        }
+    }
+
+    updateSendButton(isStreaming) {
+        if (isStreaming) {
+            this.sendBtn.innerHTML = `
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                    <rect x="6" y="6" width="12" height="12" rx="2"/>
+                </svg>
+            `;
+            this.sendBtn.classList.add('stop-btn');
+            this.sendBtn.disabled = false;
+            this.sendBtn.onclick = (e) => {
+                e.preventDefault();
+                this.stopGeneration();
+            };
+        } else {
+            this.sendBtn.innerHTML = `
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"/>
+                    <polyline points="5 12 12 5 19 12"/>
+                </svg>
+            `;
+            this.sendBtn.classList.remove('stop-btn');
+            this.sendBtn.onclick = null;
+            this.sendBtn.disabled = false;
         }
     }
 
