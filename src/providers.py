@@ -46,15 +46,6 @@ ANTHROPIC_MODELS = [
 
 GITHUB_MODELS_ENDPOINT = "https://models.github.ai/inference"
 
-ACR_TOOLS = {"get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"}
-
-
-def get_tool_type(tool_name: str) -> str:
-    """Determine tool type for UI rendering."""
-    if tool_name in ACR_TOOLS or "acr" in tool_name.lower():
-        return "acr"
-    return "contacts"
-
 
 def convert_anthropic_tools_to_openai(tools: list[dict]) -> list[dict]:
     """Convert Anthropic tool format to OpenAI function calling format."""
@@ -181,11 +172,16 @@ class AnthropicProvider(LLMProvider):
                     if block.type == "tool_use":
                         tool_name = block.name
 
+                        # Emit tool call start marker
                         yield f"__TOOL_START__{tool_name}__"
 
                         result = tool_executor(tool_name, block.input)
-                        tool_type = get_tool_type(tool_name)
 
+                        # Determine tool type
+                        acr_tools = ["get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"]
+                        tool_type = "acr" if tool_name in acr_tools or "acr" in tool_name.lower() else "contacts"
+
+                        # Emit structured tool result
                         yield f"__TOOL_RESULT__{json.dumps({'type': tool_type, 'tool': tool_name, 'data': result})}__"
 
                         tool_results.append({
@@ -390,12 +386,20 @@ class GitHubModelsProvider(LLMProvider):
                     tc = tool_calls_data[idx]
                     tool_name = tc["name"]
 
+                    # Emit tool call start marker
                     yield f"__TOOL_START__{tool_name}__"
 
                     args = json.loads(tc["arguments"]) if tc["arguments"] else {}
                     result = tool_executor(tool_name, args)
-                    tool_type = get_tool_type(tool_name)
 
+                    # Determine tool type
+                    acr_tools = ["get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"]
+                    if tool_name in acr_tools or "acr" in tool_name.lower():
+                        tool_type = "acr"
+                    else:
+                        tool_type = "contacts"
+
+                    # Emit structured tool result
                     yield f"__TOOL_RESULT__{json.dumps({'type': tool_type, 'tool': tool_name, 'data': result})}__"
 
                     tool_results.append({

@@ -9,6 +9,7 @@ import re
 from functools import lru_cache
 from pathlib import Path
 from typing import Optional
+from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -307,10 +308,14 @@ def execute_acr_tool(name: str, args: dict) -> dict:
             args.get("clinical_scenario", ""),
             args.get("body_region"),
         )
+    elif name == "search_acr_criteria":
+        return get_imaging_recommendations(args.get("query", ""), args.get("body_region"))
     elif name == "list_acr_topics":
         body_region = args.get("body_region")
         if body_region:
             return list_topics_by_region(body_region)
         topics, _ = get_topics()
         return {"topics": [{"title": t.get("title"), "url": t.get("url")} for t in topics[:30]], "total": len(topics)}
+    elif name == "get_acr_topic_details":
+        return get_imaging_recommendations(args.get("topic_id", ""))
     return {"error": f"Unknown tool: {name}"}
