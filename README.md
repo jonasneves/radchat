@@ -36,7 +36,3 @@ GitHub Actions with Cloudflare Tunnel. Required secrets:
 | `TUNNEL_TOKEN` | Cloudflare tunnel token |
 
 Trigger: Actions → Deploy → Run workflow
-
-## Docs
-
-- [Duke OAuth Setup](.docs/duke-oauth.md)
