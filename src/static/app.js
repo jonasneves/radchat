@@ -42,6 +42,10 @@ class RadChat {
         this.currentPage = 0;
         this.totalPages = 0;
 
+        // Thinking indicator timing
+        this.thinkingShownAt = null;
+        this.minThinkingTime = 600; // minimum ms to show indicator
+
         this.init();
     }
 
@@ -486,7 +490,7 @@ class RadChat {
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
                                     // Show message, remove thinking indicator
-                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
@@ -502,12 +506,12 @@ class RadChat {
                                 if (underscoreIdx === -1) {
                                     // No underscore, safe to output all
                                     fullText += buffer;
-                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     buffer = '';
                                 } else if (underscoreIdx > 0) {
                                     // Output everything before the underscore
                                     fullText += buffer.slice(0, underscoreIdx);
-                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     buffer = buffer.slice(underscoreIdx);
                                 }
                                 // else: buffer starts with '_', keep buffering
@@ -680,6 +684,9 @@ class RadChat {
         // Remove any existing thinking indicator
         this.removeThinkingIndicator();
 
+        // Record when indicator is shown
+        this.thinkingShownAt = Date.now();
+
         // Format tool name for display
         const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
 
@@ -718,7 +725,15 @@ class RadChat {
         if (indicator) indicator.remove();
     }
 
-    showAssistantMessage(messageEl, bubbleEl, text) {
+    async showAssistantMessage(messageEl, bubbleEl, text) {
+        // Wait for minimum thinking time if indicator was recently shown
+        if (this.thinkingShownAt) {
+            const elapsed = Date.now() - this.thinkingShownAt;
+            if (elapsed < this.minThinkingTime) {
+                await new Promise(r => setTimeout(r, this.minThinkingTime - elapsed));
+            }
+            this.thinkingShownAt = null;
+        }
         // Remove thinking indicator if present
         this.removeThinkingIndicator();
         // Show the message element
