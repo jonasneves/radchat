@@ -37,11 +37,14 @@ sessions: dict[str, RadChat] = {}
 
 def get_session(session_id: str, token: str = None, model: str = None) -> RadChat:
     """Get or create a chat session."""
-    key = f"{session_id}:{token or 'default'}"
+    # Determine provider type based on model
+    provider_type = "anthropic" if model and model.startswith("claude-") else "github"
+    key = f"{session_id}:{model or 'default'}"
+
     if key not in sessions:
         sessions[key] = create_chat(
-            provider_type="github",
-            model=model or "openai/gpt-4o-mini",
+            provider_type=provider_type,
+            model=model or "openai/gpt-4.1-mini",
             token=token,
         )
     return sessions[key]

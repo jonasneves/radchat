@@ -15,28 +15,24 @@ GITHUB_MODELS_WITH_TOOLS = [
     {"id": "openai/gpt-4.1-nano", "name": "GPT-4.1 Nano", "provider": "OpenAI"},
     {"id": "openai/gpt-4o", "name": "GPT-4o", "provider": "OpenAI"},
     {"id": "openai/gpt-4o-mini", "name": "GPT-4o Mini", "provider": "OpenAI"},
-    {"id": "openai/gpt-5", "name": "GPT-5", "provider": "OpenAI"},
-    {"id": "openai/gpt-5-mini", "name": "GPT-5 Mini", "provider": "OpenAI"},
-    {"id": "openai/gpt-5-nano", "name": "GPT-5 Nano", "provider": "OpenAI"},
-    {"id": "openai/o1", "name": "o1", "provider": "OpenAI"},
-    {"id": "openai/o3", "name": "o3", "provider": "OpenAI"},
     {"id": "openai/o3-mini", "name": "o3 Mini", "provider": "OpenAI"},
     {"id": "openai/o4-mini", "name": "o4 Mini", "provider": "OpenAI"},
-    # DeepSeek
-    {"id": "deepseek/deepseek-r1", "name": "DeepSeek R1", "provider": "DeepSeek"},
-    {"id": "deepseek/deepseek-r1-0528", "name": "DeepSeek R1 0528", "provider": "DeepSeek"},
+    # DeepSeek - only R1-0528+ supports tool calling (original R1 does not)
+    {"id": "deepseek/deepseek-r1-0528", "name": "DeepSeek R1", "provider": "DeepSeek"},
     {"id": "deepseek/deepseek-v3-0324", "name": "DeepSeek V3", "provider": "DeepSeek"},
     # Meta
     {"id": "meta/llama-4-maverick-17b-128e-instruct-fp8", "name": "Llama 4 Maverick", "provider": "Meta"},
     {"id": "meta/llama-4-scout-17b-16e-instruct", "name": "Llama 4 Scout", "provider": "Meta"},
     # Mistral
-    {"id": "mistral-ai/ministral-3b", "name": "Ministral 3B", "provider": "Mistral AI"},
-    {"id": "mistral-ai/mistral-medium-2505", "name": "Mistral Medium 3", "provider": "Mistral AI"},
     {"id": "mistral-ai/mistral-small-2503", "name": "Mistral Small 3.1", "provider": "Mistral AI"},
     # Cohere
     {"id": "cohere/cohere-command-r-plus-08-2024", "name": "Command R+", "provider": "Cohere"},
-    # AI21
-    {"id": "ai21-labs/ai21-jamba-1.5-large", "name": "Jamba 1.5 Large", "provider": "AI21 Labs"},
+]
+
+# Anthropic models (direct API)
+ANTHROPIC_MODELS = [
+    {"id": "claude-sonnet-4-20250514", "name": "Claude Sonnet 4.5", "provider": "Anthropic"},
+    {"id": "claude-opus-4-20250514", "name": "Claude Opus 4.5", "provider": "Anthropic"},
 ]
 
 GITHUB_MODELS_ENDPOINT = "https://models.github.ai/inference"
@@ -165,8 +161,20 @@ class AnthropicProvider(LLMProvider):
                 tool_results = []
                 for block in response.content:
                     if block.type == "tool_use":
-                        yield f"\n[Searching: {block.name}...]\n"
-                        result = tool_executor(block.name, block.input)
+                        tool_name = block.name
+
+                        # Emit tool call start marker
+                        yield f"__TOOL_START__{tool_name}__"
+
+                        result = tool_executor(tool_name, block.input)
+
+                        # Determine tool type
+                        acr_tools = ["get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"]
+                        tool_type = "acr" if tool_name in acr_tools or "acr" in tool_name.lower() else "contacts"
+
+                        # Emit structured tool result
+                        yield f"__TOOL_RESULT__{json.dumps({'type': tool_type, 'tool': tool_name, 'data': result})}__"
+
                         tool_results.append({
                             "type": "tool_result",
                             "tool_use_id": block.id,
@@ -415,3 +423,18 @@ def create_provider(
 def list_github_models() -> list[dict]:
     """List available GitHub Models that support function calling."""
     return GITHUB_MODELS_WITH_TOOLS
+
+
+def list_all_models() -> list[dict]:
+    """List all available models (Anthropic + GitHub Models)."""
+    models = []
+
+    # Add Anthropic models if API key is configured
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        models.extend(ANTHROPIC_MODELS)
+
+    # Add GitHub models if token is configured
+    if os.environ.get("GH_MODELS_TOKEN"):
+        models.extend(GITHUB_MODELS_WITH_TOOLS)
+
+    return models

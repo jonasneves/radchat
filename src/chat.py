@@ -11,7 +11,7 @@ from typing import Generator, Optional
 from dotenv import load_dotenv
 load_dotenv()
 
-from .providers import create_provider, LLMProvider, list_github_models, GITHUB_MODELS_WITH_TOOLS
+from .providers import create_provider, LLMProvider, list_all_models
 from .tools.phone_catalog import PHONE_CATALOG_TOOLS, execute_phone_tool
 from .tools.acr_criteria import ACR_CRITERIA_TOOLS, execute_acr_tool
 
@@ -129,5 +129,5 @@ def create_chat(
 
 
 def get_available_models() -> list[dict]:
-    """Get list of available GitHub Models with function calling support."""
-    return list_github_models()
+    """Get list of available models with function calling support."""
+    return list_all_models()
