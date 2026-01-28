@@ -116,22 +116,58 @@ def main():
         # Fetch topic list
         print("Fetching topic list...")
         page.goto(f"{BASE_URL}/list", wait_until="networkidle", timeout=60000)
-        page.wait_for_selector("a[href*='/docs/']", timeout=30000)
+        page.wait_for_selector("a[href*='TopicId=']", timeout=30000)
 
-        # Extract topics with their doc URLs from Narrative links
-        topics = {}
-        doc_links = page.query_selector_all("a[href*='/docs/'][href*='/Narrative/']")
-        for link in doc_links:
+        # Extract topic names from GetEvidence links (they have TopicName param)
+        topic_names = {}
+        evidence_links = page.query_selector_all("a[href*='TopicId='][href*='TopicName=']")
+        for link in evidence_links:
             href = link.get_attribute("href") or ""
-            doc_match = re.search(r"/docs/(\d+)/Narrative/", href)
-            if doc_match:
-                doc_id = doc_match.group(1)
-                topic_name = link.inner_text().strip()
-                if topic_name and doc_id not in topics:
-                    full_url = BASE_URL + href if href.startswith("/") else href
-                    topics[doc_id] = {"name": topic_name, "url": full_url}
+            id_match = re.search(r"TopicId=(\d+)", href)
+            name_match = re.search(r"TopicName=([^&]+)", href)
+            if id_match and name_match:
+                topic_id = id_match.group(1)
+                topic_name = unquote(name_match.group(1)).replace("+", " ")
+                if topic_id not in topic_names:
+                    topic_names[topic_id] = topic_name
 
-        print(f"Found {len(topics)} topics")
+        print(f"Found {len(topic_names)} topic names")
+
+        # Now find Narrative URLs - look for parent containers that have both
+        topics = {}
+        # Get all topic containers (cards/rows)
+        containers = page.query_selector_all("[class*='topic'], [class*='card'], tr, .list-group-item, article")
+        if not containers:
+            containers = [page]  # Fallback to whole page
+
+        for container in containers:
+            # Find TopicId in this container
+            topic_link = container.query_selector("a[href*='TopicId=']")
+            if not topic_link:
+                continue
+            href = topic_link.get_attribute("href") or ""
+            id_match = re.search(r"TopicId=(\d+)", href)
+            if not id_match:
+                continue
+            topic_id = id_match.group(1)
+
+            # Find Narrative link in same container
+            narrative_link = container.query_selector("a[href*='/docs/'][href*='/Narrative/']")
+            if not narrative_link:
+                continue
+            narrative_href = narrative_link.get_attribute("href") or ""
+            doc_match = re.search(r"/docs/(\d+)/", narrative_href)
+            if not doc_match:
+                continue
+
+            doc_id = doc_match.group(1)
+            topic_name = topic_names.get(topic_id, f"Topic {topic_id}")
+            full_url = BASE_URL + narrative_href if narrative_href.startswith("/") else narrative_href
+
+            if doc_id not in topics:
+                topics[doc_id] = {"name": topic_name, "url": full_url, "topic_id": topic_id}
+
+        print(f"Found {len(topics)} topics with narrative URLs")
 
         # Build cache
         cached_data = {
