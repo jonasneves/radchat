@@ -824,9 +824,9 @@ class RadChat {
                 const card = this.renderACRSearchResults(topics);
                 card.dataset.tool = tool;
                 cardsContainer.appendChild(card);
-            } else if (data.topic) {
-                // Single topic detail
-                const card = this.renderACRResults(data.topic);
+            } else if (data.topic || data.first_line_imaging) {
+                // Recommendation results with detailed data
+                const card = this.renderACRRecommendations(data);
                 card.dataset.tool = tool;
                 cardsContainer.appendChild(card);
             }
@@ -840,31 +840,107 @@ class RadChat {
         container.className = 'data-card';
 
         const header = document.createElement('div');
-        header.className = 'data-card-header';
+        header.className = 'data-card-header acr-header';
         header.innerHTML = `
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 12l2 2 4-4"/>
-                <circle cx="12" cy="12" r="10"/>
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
             </svg>
-            <span>ACR Criteria</span>
+            <span>ACR CRITERIA</span>
         `;
         container.appendChild(header);
 
         const body = document.createElement('div');
         body.className = 'data-card-body';
 
-        topics.slice(0, 5).forEach(topic => {
+        topics.slice(0, 3).forEach(topic => {
             const item = document.createElement('div');
-            item.className = 'acr-search-item';
+            item.className = 'acr-topic-item';
             item.innerHTML = `
-                <h4>${topic.title || topic.name}</h4>
-                ${topic.clinical_condition ? `<p>${topic.clinical_condition}</p>` : ''}
+                <a href="${topic.url || '#'}" target="_blank" rel="noopener noreferrer">
+                    <span class="acr-topic-title">${topic.title || topic.name}</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
             `;
             body.appendChild(item);
         });
 
         container.appendChild(body);
         return container;
+    }
+
+    renderACRRecommendations(data) {
+        const container = document.createElement('div');
+        container.className = 'data-card acr-card';
+
+        // Header
+        const header = document.createElement('div');
+        header.className = 'data-card-header acr-header';
+        header.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            <span>ACR CRITERIA</span>
+        `;
+        container.appendChild(header);
+
+        const body = document.createElement('div');
+        body.className = 'data-card-body acr-body';
+
+        // Topic title
+        if (data.topic) {
+            const topicEl = document.createElement('div');
+            topicEl.className = 'acr-topic-header';
+            topicEl.innerHTML = `
+                <h4>${data.topic}</h4>
+                ${data.url ? `<a href="${data.url}" target="_blank" rel="noopener noreferrer" class="acr-link">View full criteria →</a>` : ''}
+            `;
+            body.appendChild(topicEl);
+        }
+
+        // Recommendations sections
+        if (data.first_line_imaging && data.first_line_imaging.length > 0) {
+            body.appendChild(this.createACRSection('Usually Appropriate', data.first_line_imaging, 'appropriate'));
+        }
+
+        if (data.alternatives && data.alternatives.length > 0) {
+            body.appendChild(this.createACRSection('May Be Appropriate', data.alternatives, 'maybe'));
+        }
+
+        if (data.usually_not_appropriate && data.usually_not_appropriate.length > 0) {
+            body.appendChild(this.createACRSection('Usually Not Appropriate', data.usually_not_appropriate, 'not-appropriate'));
+        }
+
+        // If no detailed recommendations, show instructions
+        if (!data.first_line_imaging && !data.alternatives && !data.usually_not_appropriate) {
+            const instructionEl = document.createElement('p');
+            instructionEl.className = 'acr-instruction';
+            instructionEl.textContent = data.instructions || 'View the ACR website for detailed appropriateness ratings.';
+            body.appendChild(instructionEl);
+        }
+
+        container.appendChild(body);
+        return container;
+    }
+
+    createACRSection(title, items, type) {
+        const section = document.createElement('div');
+        section.className = `acr-section acr-${type}`;
+        section.innerHTML = `
+            <div class="acr-section-header">
+                <span class="acr-badge ${type}">${type === 'appropriate' ? '7-9' : type === 'maybe' ? '4-6' : '1-3'}</span>
+                <span class="acr-section-title">${title}</span>
+            </div>
+            <ul class="acr-list">
+                ${items.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+        `;
+        return section;
     }
 
     formatMessage(text) {
