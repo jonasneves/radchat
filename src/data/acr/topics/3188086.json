@@ -1,0 +1,2500 @@
+{
+  "id": "3188086",
+  "topic_id": "311",
+  "title": "Sepsis",
+  "url": "https://acsearch.acr.org/docs/3188086/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Sepsis, chest pain, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cough, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, chest pain, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cough, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, dyspnea, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, dyspnea, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, chest pain, chest radiography , nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, dyspnea, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, dyspnea, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cough, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, chest pain, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, dyspnea, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cough, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, dyspnea, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cough, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, chest pain, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cough, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, chest pain, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cough, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, dyspnea, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, chest pain, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, dyspnea, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, chest pain, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cough, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, acute abdominal pain, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, acute abdominal pain, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cannot assess symptoms, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, non specific symptoms, unknown origin, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, non specific symptoms, unknown origin, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cannot assess symptoms, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected,  non specific symptoms, unknown origin, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cannot assess symptoms, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cannot assess symptoms, chest radiography  normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cannot assess symptoms, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected,  non specific symptoms, unknown origin, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, non specific symptoms, unknown origin, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cannot assess symptoms, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected, cannot assess symptoms, chest radiography nonspecific, next  imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis suspected,  non specific symptoms, unknown origin, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, non specific symptoms, unknown origin, chest radiography normal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, non specific symptoms, unknown origin, chest radiography nonspecific, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sepsis, cannot assess symptoms, chest radiography equivocal, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy contrast enema",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy upper GI series with small bowel follow-through",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan gallbladder",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "WBC scan abdomen and pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:09:43.498866+00:00"
+}

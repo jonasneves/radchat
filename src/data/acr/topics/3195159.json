@@ -1,0 +1,722 @@
+{
+  "id": "3195159",
+  "topic_id": "340",
+  "title": "Imaging of Suspected Intracranial Hypotension",
+  "url": "https://acsearch.acr.org/docs/3195159/Narrative/",
+  "body_regions": [
+    "head"
+  ],
+  "procedures": [
+    {
+      "name": "Headache, orthostatic, intracranial hypotension suspected, no recent spinal intervention that could cause CSF leakage, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiographic myelography digital subtraction complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, orthostatic, within 72 hrs of spinal intervention that could cause CSF leakage, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, orthostatic, intracranial hypotension suspected, within 72 hrs of dural puncture that could cause CSF leakage, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, orthostatic, intracranial hypotension suspected, no improvement post 72 hrs of dural puncture that could cause CSF leakage, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, orthostatic, intracranial hypotension suspected, no improvement post 72 hrs of spinal intervention that could cause CSF leakage, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Obtundation, intracranial hypotension suspected on initial brain imaging, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiographic myelography digital subtraction complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, chronic, daily, intracranial hypotension suspected, initial imaging negative, hx and clinical exam suggesting CSF leakage, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, rebound, post fibrin glue patch treatment, intracranial hypotension suspected, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Headache, rebound, post epidural blood patch treatment, intracranial hypotension suspected, initial imaging",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA cisternography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT complete spine without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT myelography dynamic complete spine",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:12:25.160229+00:00"
+}

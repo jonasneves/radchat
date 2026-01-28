@@ -1,0 +1,602 @@
+{
+  "id": "69419",
+  "topic_id": "78",
+  "title": "Acute Trauma to the Knee",
+  "url": "https://acsearch.acr.org/docs/69419/Narrative/",
+  "body_regions": [
+    "msk"
+  ],
+  "procedures": [
+    {
+      "name": "Knee trauma, fall or twisting, no tenderness, no effusion, can walk, initial imaging",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, effusion, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, cannot bear weight, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, focal tenderness, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, internal derangement suspected, no fracture on radiography, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, occult fracture suspected, no fracture on radiography, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, occult fracture suspected, no fracture on radiography, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT lower extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, internal derangement suspected, no fracture on radiography, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT lower extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, fall or twisting, tibial plateau fracture on radiography, additional bone or soft tissue injury suspected, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, unknown mechanism, patellar tenderness, effusion, can walk, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Knee trauma, significant, possible dislocation, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Arteriography lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA knee without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT knee with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT knee without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MR arthrography knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA knee without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT knee without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan with SPECT or SPECT/CT knee",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:11:04.510594+00:00"
+}

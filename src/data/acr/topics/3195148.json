@@ -1,0 +1,190 @@
+{
+  "id": "3195148",
+  "topic_id": "329",
+  "title": "Staging and Follow-up of Anal Cancer",
+  "url": "https://acsearch.acr.org/docs/3195148/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Anal cancer, squamous cell, newly diagnosed, locoregional assessment, initial staging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/MRI whole body",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis transrectal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Anal cancer, squamous cell, assessment for mets, surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/MRI whole body",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Anal cancer, squamous cell, assessment for mets, initial staging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/MRI whole body",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Anal cancer, squamous cell, locoregional assessment, posttreatment evaluation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/MRI whole body",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis transrectal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:09:49.416784+00:00"
+}

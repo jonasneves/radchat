@@ -1,0 +1,777 @@
+{
+  "id": "71096",
+  "topic_id": "183",
+  "title": "Renal Transplant Dysfunction",
+  "url": "https://acsearch.acr.org/docs/71096/Narrative/",
+  "body_regions": [
+    "abdomen"
+  ],
+  "procedures": [
+    {
+      "name": "Renal transplant dysfunction, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy antegrade pyelography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided biopsy kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MAG3 renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Renal transplant dysfunction, arterial etiology suspected on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA pelvis without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "DTPA renal scan",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler kidney transplant",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided biopsy kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MAG3 renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Renal transplant dysfunction, venous etiology suspected on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRV pelvis without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTV abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTV pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler kidney transplant",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided biopsy kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MAG3 renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Renal transplant dysfunction, extrinsic etiology suspected on US, next imaging study",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRU without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRU without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTU without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler kidney transplant",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy antegrade pyelography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided biopsy kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MAG3 renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Renal transplant dysfunction, unremarkable or indeterminate US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler kidney transplant",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arteriography kidney",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fluoroscopy antegrade pyelography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRU without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "DTPA renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MAG3 renal scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTU without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV abdomen and pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:15:38.134391+00:00"
+}

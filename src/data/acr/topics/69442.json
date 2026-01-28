@@ -1,0 +1,260 @@
+{
+  "id": "69442",
+  "topic_id": "100",
+  "title": "Sinusitis\u2013Child",
+  "url": "https://acsearch.acr.org/docs/69442/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Ped, sinusitis, acute, uncomplicated, initial exam",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ped, sinusitis, persistent or recurrent, initial exam",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography paranasal sinuses",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ped, functional endoscopic sinus surgery planning",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography paranasal sinuses",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ped, sinusitis, chronic, initial exam",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography paranasal sinuses",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ped, sinusitis, orbital or intracranial complications suspected, initial exam",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI head and paranasal sinuses without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA head without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTA head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography paranasal sinuses",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head and paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT head and paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI head and paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Ped, sinusitis, invasive fungal suspected, initial exam",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA head without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRV head without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTA head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV head with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography paranasal sinuses",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT paranasal sinuses without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:13:53.214037+00:00"
+}

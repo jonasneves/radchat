@@ -1,0 +1,52 @@
+{
+  "id": "69363",
+  "topic_id": "27",
+  "title": "Acute Onset of Scrotal Pain-Without Trauma, Without Antecedent Mass",
+  "url": "https://acsearch.acr.org/docs/69363/Narrative/",
+  "body_regions": [
+    "pelvis"
+  ],
+  "procedures": [
+    {
+      "name": "Scrotal pain, acute, nontraumatic, no antecedent mass, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US scrotum",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI pelvis (scrotum) without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis (scrotum) without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine scan scrotum",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:15:05.768224+00:00"
+}

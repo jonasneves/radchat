@@ -1,0 +1,507 @@
+{
+  "id": "3099847",
+  "topic_id": "238",
+  "title": "Screening, Locoregional Assessment, and Surveillance of Pancreatic Ductal Adenocarcinoma",
+  "url": "https://acsearch.acr.org/docs/3099847/Narrative/",
+  "body_regions": [
+    "abdomen"
+  ],
+  "procedures": [
+    {
+      "name": "Pancreatic ductal adenocarcinoma screening, high risk,",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma suspected, abdominal symptoms, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, surgical planning, posttreatment evaluation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, neoadjuvant therapy, posttreatment evaluation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, pretreatment planning",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, locoregional staging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast with MRCP",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with hepatobiliary contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast with MRCP",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, distant metastatic evaluation, postprocedure surveillance",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Pancreatic ductal adenocarcinoma, distant metastatic evaluation, initial staging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen with IV contrast multiphase",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:09:41.802603+00:00"
+}

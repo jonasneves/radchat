@@ -1,0 +1,380 @@
+{
+  "id": "3158182",
+  "topic_id": "303",
+  "title": "Workup of Noncerebral Systemic Arterial Embolic Source",
+  "url": "https://acsearch.acr.org/docs/3158182/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Arterial occlusion, upper extremity, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Aortography chest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arterial occlusion, mesenteric arterial system, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest and abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Aortography chest and abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arterial occlusion, renal infarcts, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest and abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Aortography chest and abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arterial occlusion, renal arterial system, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest and abdomen with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest and abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Aortography chest and abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arterial occlusion, lower extremity, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest abdomen pelvis without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Aortography chest abdomen pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Arterial occlusions, multi organ system, embolic etiology suspected, next imaging study, determine source",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest abdomen pelvis without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest abdomen pelvis without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA chest without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:02:33.831393+00:00"
+}

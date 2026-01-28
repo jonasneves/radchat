@@ -1,0 +1,123 @@
+{
+  "id": "69450",
+  "topic_id": "108",
+  "title": "Rib Fractures",
+  "url": "https://acsearch.acr.org/docs/69450/Narrative/",
+  "body_regions": [
+    "chest",
+    "msk"
+  ],
+  "procedures": [
+    {
+      "name": "Chest trauma, blunt, rib fracture suspected",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography rib views",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US chest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan whole body",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Rib fracture suspected, after CPR",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography rib views",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US chest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Bone scan whole body",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Rib fracture suspected, pathological",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Bone scan whole body",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Radiography rib views",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US chest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:14:54.074571+00:00"
+}

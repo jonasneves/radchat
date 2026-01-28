@@ -1,0 +1,320 @@
+{
+  "id": "69459",
+  "topic_id": "117",
+  "title": "Pretreatment Evaluation and Follow-Up of Endometrial Cancer",
+  "url": "https://acsearch.acr.org/docs/69459/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Endometrial cancer, pretreatment staging, all grades, assess local tumor extension",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pelvis transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Endometrial cancer, pretreatment evaluation, low grade, assess lymph node and mets",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Lymphangiography pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Endometrial cancer, pretreatment staging, high grade, assess lymph node and mets",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis transabdominal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Lymphangiography pelvis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Endometrial cancer, treated, low to intermediate risk, no sxs, surveillance",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Radiography chest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Endometrial cancer, treated, high risk, no sxs, surveillance",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Endometrial cancer, treated, recurrence suspected",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "FDG-PET/CT skull base to mid-thigh",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US abdomen",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Radiography chest",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI abdomen without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pelvis transabdominal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pelvis transvaginal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT chest abdomen pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:10:34.028403+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "3102382",
+  "topic_id": "248",
+  "title": "Breast Imaging of Lactating Women",
+  "url": "https://acsearch.acr.org/docs/3102382/Narrative/",
+  "body_regions": [
+    "breast"
+  ],
+  "procedures": [
+    {
+      "name": "Breast cancer screening, lactating, initial exam",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography screening",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:01:24.728800+00:00"
+}

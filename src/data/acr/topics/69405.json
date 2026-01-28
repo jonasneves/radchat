@@ -1,0 +1,193 @@
+{
+  "id": "69405",
+  "topic_id": "65",
+  "title": "Chronic Chest Pain-High Probability of Coronary Artery Disease",
+  "url": "https://acsearch.acr.org/docs/69405/Narrative/",
+  "body_regions": [
+    "chest",
+    "vascular"
+  ],
+  "procedures": [
+    {
+      "name": "Chest pain, chronic, high probability of CAD, no ischemic heart disease, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Arteriography coronary",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function with stress without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function with stress without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA coronary arteries with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Rb-82 PET/CT MPI rest and stress",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "SPECT or SPECT/CT MPI rest and stress",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT coronary calcium",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography transesophageal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA coronary arteries without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA coronary arteries without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA triple rule out",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine ventriculography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Chest pain, chronic, high probability of CAD, ischemic heart disease, no prior definitive treatment, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Arteriography coronary",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function with stress without and with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI heart function with stress without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA coronary arteries with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Rb-82 PET/CT MPI rest and stress",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "SPECT or SPECT/CT MPI rest and stress",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography transthoracic resting",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI heart function and morphology without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT heart function and morphology with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US echocardiography transesophageal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA coronary arteries without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA coronary arteries without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CT coronary calcium",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA chest with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA triple rule out",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuclear medicine ventriculography",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:02:04.102137+00:00"
+}

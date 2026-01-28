@@ -1,0 +1,150 @@
+{
+  "id": "69501",
+  "topic_id": "159",
+  "title": "Radiologic Management of Mesenteric Ischemia",
+  "url": "https://acsearch.acr.org/docs/69501/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Recent onset abdominal pain, no peritoneal signs, and known atrial fibrillation. CTA shows filling defect in proximal SMA consistent with embolus. No intramural or extra-luminal air. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Angiography and aspiration embolectomy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transcatheter thrombolysis",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Recent onset abdominal pain, no peritoneal signs, and known atrial fibrillation. CTA shows calcified atherosclerotic plaque involving the aorta and its major branches, as well as proximal short-segment occlusion of the proximal SMA. No intramural or extra-luminal air. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic anticoagulation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical endarterectomy or bypass",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Patient with cardiac disease causing low cardiac output who developed abdominal pain but without peritoneal signs. CTA shows patent origins and proximal portions of celiac artery, SMA, and IMA, with diffuse irregular narrowing of SMA branches. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic anticoagulation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic infusion of prostaglandin E1",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Angiography with percutaneous transluminal angioplasty",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Recent onset abdominal pain, peritoneal signs, and known atrial fibrillation. CTA shows filling defect in the proximal SMA consistent with embolus and evidence of bowel infarction. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic anticoagulation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Angiography and aspiration embolectomy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Transcatheter thrombolysis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Abdominal pain after meals and CTA showing widely patent origins of SMA and IMA, with compression of the celiac origin by the median arcuate ligament. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mesenteric angiography in lateral projection during both inspiration and expiration",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Supportive measures only",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Percutaneous transluminal angioplasty with stent placement",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic anticoagulation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "History of abdominal pain after meals for the past few months and weight loss. CTA shows aortic atherosclerotic disease and suggests SMA-origin stenosis with occlusion of celiac origin and an occluded IMA. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical bypass or endarterectomy",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic anticoagulation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Previously healthy with worsening diffuse abdominal pain for 2 weeks. CTA shows occlusion of the superior mesenteric vein and its major tributaries. Bowel appears normal. Serum lactate level is normal. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transhepatic superior mesenteric vein catheterization and pharmacomechanical thrombolysis",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Transjugular superior mesenteric vein catheterization and pharmacomechanical thrombolysis and TIPS",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "SMA angiography followed by thrombolytic infusion",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical thrombectomy",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:16:53.956767+00:00"
+}

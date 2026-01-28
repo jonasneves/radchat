@@ -1,0 +1,1425 @@
+{
+  "id": "3158170",
+  "topic_id": "291",
+  "title": "Dialysis Fistula Malfunction ",
+  "url": "https://acsearch.acr.org/docs/3158170/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Hemodialysis access dysfunction suspected, lower extremity, abnormal hemodynamic indicator, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access dysfunction suspected, upper extremity, abnormal clinical indicator, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access dysfunction suspected, lower extremity, abnormal clinical indicator, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access dysfunction suspected, upper extremity, abnormal hemodynamic indicator, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Suspected dysfunction of the upper or lower extremity hemodialysis access (ie, arteriovenous fistula or graft) suggested by an abnormal clinical indicator or hemodynamic indicator (ie, reduction in dialysis vascular access blood flow rate or kinetics). Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access area of interest",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical consultation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Continued hemodialysis access use with surveillance",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Hemodialysis access thrombosis suspected, upper extremity, no pulse or thrill on physical exam, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access thrombosis suspected, lower extremity, no pulse or thrill on physical exam, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Suspected thrombosis of the upper or lower extremity hemodialysis access, marked by absent pulse and thrill on physical examination. Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical consultation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access area of interest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "AVF, lower extremity, not mature 2 mos after created, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "AVF, upper extremity, not mature 2 mos after created, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Failure of an upper or lower extremity arteriovenous fistula to mature within 2 months after creation. Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical consultation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access area of interest",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Hemodialysis access, lower extremity, ipsilateral extremity swelling, with or without venous collaterals, central venous stenosis suspected, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access, lower extremity, ipsilateral extremity swelling, with or without venous collaterals, central venous occlusion suspected, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access, upper extremity, ipsilateral extremity swelling, with or without venous collaterals, central venous stenosis suspected, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access, upper extremity, ipsilateral extremity swelling, with or without venous collaterals, central venous occlusion suspected, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Clinical suspicion of central venous stenosis or occlusion suggested by swelling (ie, soft tissue edema) of the extremity ipsilateral to the upper or lower extremity hemodialysis access, with or without the development of venous collaterals. Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Continued hemodialysis access use with surveillance",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access area of interest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical consultation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, deep infection, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, ulceration, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, deep infection, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, ulceration, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, superficial infection, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, spontaneous bleeding, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, abnormal skin changes, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, spontaneous bleeding, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, eschar, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, marked skin thinning, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, superficial infection, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, marked skin thinning, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, abnormal skin changes, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, pseudoaneurysm, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, upper extremity, eschar, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access upper extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Hemodialysis access cannulation site, lower extremity, pseudoaneurysm, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access lower extremity",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Abnormal skin changes associated with the upper or lower extremity hemodialysis access cannulation site, including marked thinning, ulceration, eschar formation, spontaneous bleeding, pseudoaneurysm formation, superficial or deep infection. Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access with intervention",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Continued hemodialysis access use with surveillance",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vascular steal syndrome suspected, upper extremity, cardiac failure, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vascular steal syndrome suspected, lower extremity, ischemic symptoms, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vascular steal syndrome suspected, upper extremity, ischemic symptoms, initial imaging, guide IR therapy options",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access upper extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA upper extremity with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV upper extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV upper extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Vascular steal syndrome suspected, lower extremity, cardiac failure, initial imaging, guide IR therapy",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access lower extremity",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA lower extremity with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CTV lower extremity with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRA lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRV lower extremity without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Suspected vascular steal syndrome (upper or lower extremity), suggested by cardiac failure or ischemic symptoms. Treatment and procedures.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Continued hemodialysis access use with surveillance",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Fluoroscopy fistulography hemodialysis access with intervention",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Placement of a new tunneled dialysis catheter",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler hemodialysis access area of interest",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:15:52.444707+00:00"
+}

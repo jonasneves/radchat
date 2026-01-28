@@ -1,0 +1,90 @@
+{
+  "id": "3102397",
+  "topic_id": "263",
+  "title": "Nuchal Translucency Evaluation at 11 to 14 Weeks Gestational Age",
+  "url": "https://acsearch.acr.org/docs/3102397/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Nuchal translucency measurement, routine, 11-14 weeks gestation, single or twins, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler pregnant uterus",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nuchal translucency measurement, increased, 11-14 weeks gestation, single gestation",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler pregnant uterus",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Nuchal translucency measurement, increased, 11-14 weeks gestation, dichorionic twins",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler pregnant uterus",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Nuchal translucency measurement, increased, 11-14 weeks gestation, monochorionic twins,",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler pregnant uterus",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transvaginal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:10:19.884985+00:00"
+}

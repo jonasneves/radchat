@@ -1,0 +1,82 @@
+{
+  "id": "3099165",
+  "topic_id": "233",
+  "title": "Penetrating Neck Injury",
+  "url": "https://acsearch.acr.org/docs/3099165/Narrative/",
+  "body_regions": [
+    "neck"
+  ],
+  "procedures": [
+    {
+      "name": "Neck trauma, penetrating, soft tissue injury suspected",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CTA neck with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US neck",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Arteriography neck",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Fluoroscopy biphasic esophagram",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA neck without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA neck without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Neck trauma, penetrating, CTA neg or equivocal, vascular injury suspected",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US neck",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA neck without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRA neck without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Neck trauma, penetrating, CTA neg or equivocal, aerodigestive injury suspected",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI neck without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI neck without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:12:43.717061+00:00"
+}

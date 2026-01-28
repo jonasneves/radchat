@@ -1,0 +1,110 @@
+{
+  "id": "3102400",
+  "topic_id": "266",
+  "title": "Second and Third Trimester Screening for Fetal Anomaly",
+  "url": "https://acsearch.acr.org/docs/3102400/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Fetal anomaly screening, gestation >= 14 weeks, low risk pregnancy, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal detailed scan",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fetal anomaly screening, gestation >= 14 weeks, high risk pregnancy, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal anatomy scan",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fetal anomaly screening, gestation >= 14 weeks, soft marker findings on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal follow-up",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US echocardiography fetal",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fetal anomaly screening, gestation >= 14 weeks, major anomalies on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal detailed scan",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal follow-up",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI fetal without IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI fetal without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:10:38.365824+00:00"
+}

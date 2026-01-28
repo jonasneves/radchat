@@ -163,33 +163,49 @@ def fetch_topic_list() -> dict[str, dict]:
     soup = BeautifulSoup(response.text, "html.parser")
     topics = {}
 
-    # Extract document IDs from Narrative links (correct URL format)
-    # and TopicIds from Evidence links (for API calls)
-    for link in soup.find_all("a", href=True):
-        href = link.get("href", "")
-
-        # Match Narrative links: /docs/{doc_id}/Narrative/
+    # Structure: col-lg-8 > [title div, row div with links]
+    # Narrative link is in row > col-lg-3
+    # Evidence link with TopicId is in row > col-lg-2
+    for narrative_link in soup.find_all("a", href=re.compile(r"/docs/\d+/Narrative/")):
+        href = narrative_link.get("href", "")
         doc_match = re.search(r"/docs/(\d+)/Narrative/", href)
-        if doc_match:
-            doc_id = doc_match.group(1)
-            topic_name = link.get_text(strip=True)
-            if topic_name and doc_id not in topics:
-                topics[doc_id] = {"name": topic_name, "topic_id": None}
+        if not doc_match:
+            continue
 
-    # Second pass: find TopicIds for API calls
-    for link in soup.find_all("a", href=True):
-        href = link.get("href", "")
-        if "TopicId=" in href and "TopicName=" in href:
-            id_match = re.search(r"TopicId=(\d+)", href)
-            name_match = re.search(r"TopicName=([^&]+)", href)
-            if id_match and name_match:
-                topic_id = id_match.group(1)
-                topic_name = unquote(name_match.group(1)).replace("+", " ")
-                # Find matching doc by name and set topic_id
-                for doc_id, data in topics.items():
-                    if data["name"] == topic_name and data["topic_id"] is None:
-                        data["topic_id"] = topic_id
-                        break
+        doc_id = doc_match.group(1)
+        if doc_id in topics:
+            continue
+
+        # Navigate: link -> parent (col-lg-3) -> parent (row) -> search for Evidence link
+        col_div = narrative_link.parent
+        row_div = col_div.parent if col_div else None
+        if not row_div:
+            continue
+
+        topic_id = None
+        topic_name = None
+
+        # Search row for Evidence link with TopicId
+        for link in row_div.find_all("a", href=True):
+            link_href = link.get("href", "")
+            if "TopicId=" in link_href and "TopicName=" in link_href:
+                id_match = re.search(r"TopicId=(\d+)", link_href)
+                name_match = re.search(r"TopicName=([^&]+)", link_href)
+                if id_match and name_match:
+                    topic_id = id_match.group(1)
+                    topic_name = unquote(name_match.group(1)).replace("+", " ")
+                    break
+
+        # Fallback: get name from previous sibling of row's parent
+        if not topic_name:
+            container = row_div.parent
+            if container:
+                prev_sibling = row_div.find_previous_sibling()
+                if prev_sibling:
+                    topic_name = prev_sibling.get_text(strip=True)
+
+        if topic_name:
+            topics[doc_id] = {"name": topic_name, "topic_id": topic_id}
 
     print(f"Found {len(topics)} topics")
     return topics

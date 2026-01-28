@@ -1,0 +1,45 @@
+{
+  "id": "3102398",
+  "topic_id": "264",
+  "title": "Postmenopausal Acute Pelvic Pain",
+  "url": "https://acsearch.acr.org/docs/3102398/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Pelvic pain, acute, postmenopausal, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pelvis transvaginal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis with IV contrast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "MRI pelvis without and with IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "MRI pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without IV contrast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "CT abdomen and pelvis without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:10:27.793993+00:00"
+}

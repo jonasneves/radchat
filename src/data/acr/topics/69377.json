@@ -1,0 +1,100 @@
+{
+  "id": "69377",
+  "topic_id": "41",
+  "title": "Growth Disturbances\u2013Risk of Fetal Growth Restriction",
+  "url": "https://acsearch.acr.org/docs/69377/Narrative/",
+  "body_regions": [],
+  "procedures": [
+    {
+      "name": "Fetal growth disturbance, low risk for fetal growth restriction",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler ductus venosus",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US duplex Doppler maternal uterine artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fetal growth disturbance, high risk for fetal growth restriction",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler ductus venosus",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler maternal uterine artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Fetal growth restriction, follow up",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal middle cerebral artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler fetal umbilical artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus biophysical profile",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US pregnant uterus transabdominal",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US duplex Doppler maternal uterine artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:10:16.431033+00:00"
+}

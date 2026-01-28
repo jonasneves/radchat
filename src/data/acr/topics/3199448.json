@@ -1,0 +1,663 @@
+{
+  "id": "3199448",
+  "topic_id": "396",
+  "title": "Breast Imaging During Pregnancy",
+  "url": "https://acsearch.acr.org/docs/3199448/Narrative/",
+  "body_regions": [
+    "pelvis",
+    "breast"
+  ],
+  "procedures": [
+    {
+      "name": "Breast cancer screening, pregnant, average risk",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography screening",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast cancer screening, pregnant, intermediate risk",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography screening",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast cancer screening, pregnant, higher than average risk",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis screening",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography screening",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast cancer screening, pregnant, higher than average risk",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography screening",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast abbreviated",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast mass, palpable, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast pain, focal, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast mass, palpable, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast pain, focal, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nipple discharge, clinically suspicious, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Nipple discharge, clinically suspicious, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast cancer, newly diagnosed, pregnant, locoregional staging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast abscess suspected, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast infection suspected, pregnant, initial imaging",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Breast mass, palpable, pregnant, findings probably benign on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US axilla",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided core biopsy breast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Image-guided fine needle aspiration breast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Palpable breast mass, pregnant, suspicious malignancy findings on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Image-guided core biopsy breast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Image-guided fine needle aspiration breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Palpable breast mass, pregnant, highly suggestive of malignancy findings on US, next imaging study",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "US breast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Digital breast tomosynthesis diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Mammography diagnostic",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Image-guided core biopsy breast",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Image-guided fine needle aspiration breast",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Mammography with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without and with IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "MRI breast without IV contrast",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Sestamibi MBI",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:01:22.862720+00:00"
+}

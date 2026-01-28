@@ -1,25 +1,26 @@
 {
-  "updated_at": "2026-01-28T03:51:54.681282+00:00",
+  "updated_at": "2026-01-28T21:17:00.192644+00:00",
   "source": "https://acsearch.acr.org/list",
   "scrape_state": {
-    "last_run": "2026-01-28T03:51:54.681105+00:00",
+    "last_run": "2026-01-28T21:17:00.192130+00:00",
     "topics_total": 270,
     "topics_with_data": 262,
     "topics_no_data": 8,
     "topics_blocked": 0
   },
   "topics": {
-    "396": {
-      "id": "396",
+    "3199448": {
+      "id": "3199448",
+      "topic_id": "396",
       "title": "Breast Imaging During Pregnancy",
-      "url": "https://acsearch.acr.org/docs/396/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3199448/Narrative/",
       "body_regions": [
         "pelvis",
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:36.086548+00:00",
+      "last_attempted": "2026-01-28T21:01:22.862720+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, pregnant, average risk",
@@ -40,16 +41,17 @@
         "total_procedures": 26
       }
     },
-    "248": {
-      "id": "248",
+    "3102382": {
+      "id": "3102382",
+      "topic_id": "248",
       "title": "Breast Imaging of Lactating Women",
-      "url": "https://acsearch.acr.org/docs/248/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102382/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:39.216307+00:00",
+      "last_attempted": "2026-01-28T21:01:24.728800+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, lactating, initial exam",
@@ -66,16 +68,17 @@
         "total_procedures": 6
       }
     },
-    "239": {
-      "id": "239",
+    "3100728": {
+      "id": "3100728",
+      "topic_id": "239",
       "title": "Breast Implant Evaluation ",
-      "url": "https://acsearch.acr.org/docs/239/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3100728/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:41.283247+00:00",
+      "last_attempted": "2026-01-28T21:01:26.854342+00:00",
       "summary": {
         "first_line": [
           "Breast implant evaluation, saline,  implant rupture suspected, initial imaging",
@@ -95,16 +98,17 @@
         "total_procedures": 16
       }
     },
-    "204": {
-      "id": "204",
+    "3091546": {
+      "id": "3091546",
+      "topic_id": "204",
       "title": "Breast Pain",
-      "url": "https://acsearch.acr.org/docs/204/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3091546/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
-      "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:44.694528+00:00",
+      "attempts": 2,
+      "last_attempted": "2026-01-28T21:09:19.822677+00:00",
       "summary": {
         "first_line": [
           "Breast pain, noncyclical, focal"
@@ -118,14 +122,15 @@
         "total_procedures": 9
       }
     },
-    "236": {
-      "id": "236",
+    "3099312": {
+      "id": "3099312",
+      "topic_id": "236",
       "title": "Evaluation of Nipple Discharge",
-      "url": "https://acsearch.acr.org/docs/236/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099312/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:46.623135+00:00",
+      "last_attempted": "2026-01-28T21:01:30.463673+00:00",
       "summary": {
         "first_line": [
           "Nipple discharge, pathologic, initial imaging",
@@ -140,16 +145,17 @@
         "total_procedures": 14
       }
     },
-    "205": {
-      "id": "205",
+    "3091547": {
+      "id": "3091547",
+      "topic_id": "205",
       "title": "Evaluation of the Symptomatic Male Breast",
-      "url": "https://acsearch.acr.org/docs/205/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3091547/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:48.534084+00:00",
+      "last_attempted": "2026-01-28T21:01:32.212865+00:00",
       "summary": {
         "first_line": [
           "Breast mass palpable, initial exam (male<25y)",
@@ -169,16 +175,17 @@
         "total_procedures": 13
       }
     },
-    "179": {
-      "id": "179",
+    "70910": {
+      "id": "70910",
+      "topic_id": "179",
       "title": "Female Breast Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/179/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70910/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:51.173093+00:00",
+      "last_attempted": "2026-01-28T21:01:33.995096+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, average risk",
@@ -200,16 +207,17 @@
         "total_procedures": 22
       }
     },
-    "306": {
-      "id": "306",
+    "3178300": {
+      "id": "3178300",
+      "topic_id": "306",
       "title": "Imaging after Breast Surgery",
-      "url": "https://acsearch.acr.org/docs/306/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3178300/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:54.176459+00:00",
+      "last_attempted": "2026-01-28T21:01:35.637198+00:00",
       "summary": {
         "first_line": [
           "Breast excision, nonmalignant, asymptomatic, postsurgical, initial imaging",
@@ -229,16 +237,17 @@
         "total_procedures": 13
       }
     },
-    "282": {
-      "id": "282",
+    "3155410": {
+      "id": "3155410",
+      "topic_id": "282",
       "title": "Imaging after Mastectomy and Breast Reconstruction",
-      "url": "https://acsearch.acr.org/docs/282/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3155410/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:29:57.466610+00:00",
+      "last_attempted": "2026-01-28T21:01:37.209351+00:00",
       "summary": {
         "first_line": [
           "Breast mass palpable, mastectomy side, no reconstruction, initial imaging",
@@ -259,14 +268,15 @@
         "total_procedures": 19
       }
     },
-    "320": {
-      "id": "320",
+    "3195139": {
+      "id": "3195139",
+      "topic_id": "320",
       "title": "Imaging of Ductal Carcinoma in Situ (DCIS)",
-      "url": "https://acsearch.acr.org/docs/320/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195139/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:00.043444+00:00",
+      "last_attempted": "2026-01-28T21:01:39.368084+00:00",
       "summary": {
         "first_line": [
           "DCIS, newly diagnosed, initial imaging",
@@ -287,16 +297,17 @@
         "total_procedures": 38
       }
     },
-    "310": {
-      "id": "310",
+    "3186697": {
+      "id": "3186697",
+      "topic_id": "310",
       "title": "Imaging of Invasive Breast Cancer",
-      "url": "https://acsearch.acr.org/docs/310/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3186697/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:02.766785+00:00",
+      "last_attempted": "2026-01-28T21:01:41.616248+00:00",
       "summary": {
         "first_line": [
           "Breast cancer, newly diagnosed, clinical stage I-IIA, locoregional disease evaluation",
@@ -318,14 +329,15 @@
         "total_procedures": 31
       }
     },
-    "286": {
-      "id": "286",
+    "3158165": {
+      "id": "3158165",
+      "topic_id": "286",
       "title": "Imaging of the Axilla",
-      "url": "https://acsearch.acr.org/docs/286/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158165/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:04.961413+00:00",
+      "last_attempted": "2026-01-28T21:01:44.082877+00:00",
       "summary": {
         "first_line": [
           "Axillary lump, palpable, new, unilateral, initial axilla imaging",
@@ -347,16 +359,17 @@
         "total_procedures": 23
       }
     },
-    "357": {
-      "id": "357",
+    "3196044": {
+      "id": "3196044",
+      "topic_id": "357",
       "title": "Male Breast Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/357/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196044/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:07.352942+00:00",
+      "last_attempted": "2026-01-28T21:01:45.825372+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, higher than average risk",
@@ -374,16 +387,17 @@
         "total_procedures": 19
       }
     },
-    "235": {
-      "id": "235",
+    "3099208": {
+      "id": "3099208",
+      "topic_id": "235",
       "title": "Monitoring Response to Neoadjuvant Systemic Therapy for Breast Cancer",
-      "url": "https://acsearch.acr.org/docs/235/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099208/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:09.632196+00:00",
+      "last_attempted": "2026-01-28T21:01:47.674472+00:00",
       "summary": {
         "first_line": [
           "Breast cancer, determine tumor size and extent within the breast, prior to neoadjuvant chemo, initial imaging",
@@ -401,16 +415,17 @@
         "total_procedures": 24
       }
     },
-    "153": {
-      "id": "153",
+    "69495": {
+      "id": "69495",
+      "topic_id": "153",
       "title": "Palpable Breast Masses",
-      "url": "https://acsearch.acr.org/docs/153/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69495/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:12.755856+00:00",
+      "last_attempted": "2026-01-28T21:01:49.030004+00:00",
       "summary": {
         "first_line": [
           "Breast mass, palpable, initial imaging",
@@ -431,16 +446,17 @@
         "total_procedures": 22
       }
     },
-    "287": {
-      "id": "287",
+    "3158166": {
+      "id": "3158166",
+      "topic_id": "287",
       "title": "Supplemental Breast Cancer Screening Based on Breast Density",
-      "url": "https://acsearch.acr.org/docs/287/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158166/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:16.104322+00:00",
+      "last_attempted": "2026-01-28T21:01:50.838012+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, supplemental, average risk, nondense breasts",
@@ -458,16 +474,17 @@
         "total_procedures": 16
       }
     },
-    "283": {
-      "id": "283",
+    "3155692": {
+      "id": "3155692",
+      "topic_id": "283",
       "title": "Transgender Breast Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/283/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3155692/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:18.227405+00:00",
+      "last_attempted": "2026-01-28T21:01:52.204807+00:00",
       "summary": {
         "first_line": [
           "Breast cancer screening, transfeminine, higher than average risk, past hormone use >=5 yrs, personal hx breast cancer",
@@ -489,17 +506,18 @@
         "total_procedures": 52
       }
     },
-    "61": {
-      "id": "61",
+    "69401": {
+      "id": "69401",
+      "topic_id": "61",
       "title": "Acute Nonspecific Chest Pain-Low Probability of Coronary Artery Disease",
-      "url": "https://acsearch.acr.org/docs/61/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69401/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:21.964192+00:00",
+      "last_attempted": "2026-01-28T21:01:54.429211+00:00",
       "summary": {
         "first_line": [
           "Chest pain, acute, nonspecific, low probability CAD, initial imaging",
@@ -518,16 +536,17 @@
         "total_procedures": 25
       }
     },
-    "322": {
-      "id": "322",
+    "3195141": {
+      "id": "3195141",
+      "topic_id": "322",
       "title": "Assessment of Cardiac Function and Baseline Cardiac Risk Stratification in Oncology Patients",
-      "url": "https://acsearch.acr.org/docs/322/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195141/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:24.930748+00:00",
+      "last_attempted": "2026-01-28T21:01:56.294334+00:00",
       "summary": {
         "first_line": [
           "Cardiac risk stratification, prior to initiation of oncologic therapy, no cardiac symptoms, initial imaging",
@@ -549,16 +568,17 @@
         "total_procedures": 27
       }
     },
-    "187": {
-      "id": "187",
+    "3082570": {
+      "id": "3082570",
+      "topic_id": "187",
       "title": "Asymptomatic Patient at Risk for Coronary Artery Disease",
-      "url": "https://acsearch.acr.org/docs/187/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082570/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:30:26.887621+00:00",
+      "last_attempted": "2026-01-28T21:01:58.408125+00:00",
       "summary": {
         "first_line": [
           "CAD intermediate risk, asymptomatic, initial imaging"
@@ -574,16 +594,17 @@
         "total_procedures": 15
       }
     },
-    "190": {
-      "id": "190",
+    "3082590": {
+      "id": "3082590",
+      "topic_id": "190",
       "title": "Blunt Chest Trauma-Suspected Cardiac Injury",
-      "url": "https://acsearch.acr.org/docs/190/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082590/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:38.342958+00:00",
+      "last_attempted": "2026-01-28T21:02:00.478717+00:00",
       "summary": {
         "first_line": [
           "Chest trauma, blunt, cardiac injury suspected, hemodynamically stable",
@@ -605,16 +626,17 @@
         "total_procedures": 20
       }
     },
-    "63": {
-      "id": "63",
+    "69403": {
+      "id": "69403",
+      "topic_id": "63",
       "title": "Chest Pain-Possible Acute Coronary Syndrome",
-      "url": "https://acsearch.acr.org/docs/63/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69403/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:40.684432+00:00",
+      "last_attempted": "2026-01-28T21:02:02.436011+00:00",
       "summary": {
         "first_line": [
           "Chest pain, low to intermed prob acute coronary syndrome, initial imaging",
@@ -636,17 +658,18 @@
         "total_procedures": 23
       }
     },
-    "65": {
-      "id": "65",
+    "69405": {
+      "id": "69405",
+      "topic_id": "65",
       "title": "Chronic Chest Pain-High Probability of Coronary Artery Disease",
-      "url": "https://acsearch.acr.org/docs/65/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69405/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:42.915449+00:00",
+      "last_attempted": "2026-01-28T21:02:04.102137+00:00",
       "summary": {
         "first_line": [
           "Chest pain, chronic, high probability of CAD, no ischemic heart disease, initial imaging",
@@ -668,17 +691,18 @@
         "total_procedures": 19
       }
     },
-    "1": {
-      "id": "1",
+    "69337": {
+      "id": "69337",
+      "topic_id": "1",
       "title": "Chronic Chest Pain-Noncardiac Etiology Unlikely: Low to Intermediate Probability of Coronary Artery Disease",
-      "url": "https://acsearch.acr.org/docs/1/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69337/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:45.820019+00:00",
+      "last_attempted": "2026-01-28T21:02:05.675764+00:00",
       "summary": {
         "first_line": [
           "Chest pain, chronic, low-mod prob of CAD",
@@ -700,16 +724,17 @@
         "total_procedures": 17
       }
     },
-    "255": {
-      "id": "255",
+    "3102389": {
+      "id": "3102389",
+      "topic_id": "255",
       "title": "Congenital or Acquired Heart Disease ",
-      "url": "https://acsearch.acr.org/docs/255/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102389/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:48.463082+00:00",
+      "last_attempted": "2026-01-28T21:02:07.794237+00:00",
       "summary": {
         "first_line": [
           "Repaired pulmonary valve stenosis, branch pulmonary artery stenosis suspected, TTE inadequate assessment of cardiovascular morphology and function, next imaging study",
@@ -731,16 +756,17 @@
         "total_procedures": 38
       }
     },
-    "66": {
-      "id": "66",
+    "69407": {
+      "id": "69407",
+      "topic_id": "66",
       "title": "Dyspnea-Suspected Cardiac Origin (Ischemia Already Excluded)",
-      "url": "https://acsearch.acr.org/docs/66/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69407/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:52.043107+00:00",
+      "last_attempted": "2026-01-28T21:02:09.782676+00:00",
       "summary": {
         "first_line": [
           "Dyspnea, valvular heart disease suspected, ischemia excluded, initial imaging",
@@ -761,16 +787,17 @@
         "total_procedures": 21
       }
     },
-    "324": {
-      "id": "324",
+    "3195143": {
+      "id": "3195143",
+      "topic_id": "324",
       "title": "Evaluation of Cardiac Masses",
-      "url": "https://acsearch.acr.org/docs/324/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195143/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:53.865374+00:00",
+      "last_attempted": "2026-01-28T21:02:11.856721+00:00",
       "summary": {
         "first_line": [
           "Cardiac mass suspected, no known cardiac mass, initial imaging",
@@ -792,16 +819,17 @@
         "total_procedures": 26
       }
     },
-    "323": {
-      "id": "323",
+    "3195142": {
+      "id": "3195142",
+      "topic_id": "323",
       "title": "Evaluation of Coronary Artery Anomalies",
-      "url": "https://acsearch.acr.org/docs/323/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195142/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:56.280830+00:00",
+      "last_attempted": "2026-01-28T21:02:13.704631+00:00",
       "summary": {
         "first_line": [
           "Coronary artery anomaly suspected, initial imaging",
@@ -822,17 +850,18 @@
         "total_procedures": 25
       }
     },
-    "325": {
-      "id": "325",
+    "3195144": {
+      "id": "3195144",
+      "topic_id": "325",
       "title": "Imaging for Pulmonary Embolism, Known Clot",
-      "url": "https://acsearch.acr.org/docs/325/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195144/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:32:59.136137+00:00",
+      "last_attempted": "2026-01-28T21:02:15.408657+00:00",
       "summary": {
         "first_line": [
           "Residual embolic disease suspected, hx of acute pulmonary embolism, initial imaging",
@@ -854,14 +883,15 @@
         "total_procedures": 20
       }
     },
-    "67": {
-      "id": "67",
+    "69408": {
+      "id": "69408",
+      "topic_id": "67",
       "title": "Infective Endocarditis",
-      "url": "https://acsearch.acr.org/docs/67/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69408/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:01.661990+00:00",
+      "last_attempted": "2026-01-28T21:02:17.277949+00:00",
       "summary": {
         "first_line": [
           "Infective endocarditis suspected, initial imaging",
@@ -883,14 +913,15 @@
         "total_procedures": 18
       }
     },
-    "188": {
-      "id": "188",
+    "3082580": {
+      "id": "3082580",
+      "topic_id": "188",
       "title": "Nonischemic Myocardial Disease with Clinical Manifestations (Ischemic Cardiomyopathy Already Excluded)",
-      "url": "https://acsearch.acr.org/docs/188/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082580/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:04.345588+00:00",
+      "last_attempted": "2026-01-28T21:02:19.179839+00:00",
       "summary": {
         "first_line": [
           "Cardiomyopathy hypertrophic suspected, not ischemic, initial imaging",
@@ -911,17 +942,18 @@
         "total_procedures": 24
       }
     },
-    "321": {
-      "id": "321",
+    "3195140": {
+      "id": "3195140",
+      "topic_id": "321",
       "title": "Preprocedural Chest or Cardiac Imaging for Cardiothoracic Surgery",
-      "url": "https://acsearch.acr.org/docs/321/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195140/Narrative/",
       "body_regions": [
         "spine",
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:07.310619+00:00",
+      "last_attempted": "2026-01-28T21:02:21.286515+00:00",
       "summary": {
         "first_line": [
           "Coronary cardiac surgery, no hx of cardiothoracic surgery, preprocedural chest or cardiac imaging",
@@ -943,14 +975,15 @@
         "total_procedures": 28
       }
     },
-    "319": {
-      "id": "319",
+    "3194787": {
+      "id": "3194787",
+      "topic_id": "319",
       "title": "Preprocedural Planning for Left Atrial Procedures in Atrial Fibrillation",
-      "url": "https://acsearch.acr.org/docs/319/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3194787/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:09.620480+00:00",
+      "last_attempted": "2026-01-28T21:02:23.045212+00:00",
       "summary": {
         "first_line": [
           "Atrial flutter, atypical, preprocedural planning, left atrial ablation",
@@ -971,16 +1004,17 @@
         "total_procedures": 22
       }
     },
-    "191": {
-      "id": "191",
+    "3082594": {
+      "id": "3082594",
+      "topic_id": "191",
       "title": "Preprocedural Planning for Transcatheter Aortic Valve Replacement",
-      "url": "https://acsearch.acr.org/docs/191/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082594/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:11.495679+00:00",
+      "last_attempted": "2026-01-28T21:02:24.710744+00:00",
       "summary": {
         "first_line": [
           "TAVR, preintervention planning, aortic root assessment, initial imaging",
@@ -1002,16 +1036,17 @@
         "total_procedures": 31
       }
     },
-    "62": {
-      "id": "62",
+    "69402": {
+      "id": "69402",
+      "topic_id": "62",
       "title": "Suspected Acute Aortic Syndrome",
-      "url": "https://acsearch.acr.org/docs/62/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69402/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:14.280159+00:00",
+      "last_attempted": "2026-01-28T21:02:26.574964+00:00",
       "summary": {
         "first_line": [
           "Chest pain, acute aortic syndrome suspected",
@@ -1031,16 +1066,17 @@
         "total_procedures": 16
       }
     },
-    "249": {
-      "id": "249",
+    "3102383": {
+      "id": "3102383",
+      "topic_id": "249",
       "title": "Suspected and Known Heart Failure",
-      "url": "https://acsearch.acr.org/docs/249/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102383/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:16.962912+00:00",
+      "last_attempted": "2026-01-28T21:02:28.503247+00:00",
       "summary": {
         "first_line": [
           "Heart failure suspected, no hx of heart failure, initial imaging",
@@ -1061,17 +1097,18 @@
         "total_procedures": 21
       }
     },
-    "64": {
-      "id": "64",
+    "69404": {
+      "id": "69404",
+      "topic_id": "64",
       "title": "Suspected Pulmonary Embolism",
-      "url": "https://acsearch.acr.org/docs/64/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69404/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:19.371685+00:00",
+      "last_attempted": "2026-01-28T21:02:30.348878+00:00",
       "summary": {
         "first_line": [
           "Pulmonary embolism suspected, intermediate pretest probability, positive D-dimer, initial imaging",
@@ -1091,14 +1128,15 @@
         "total_procedures": 20
       }
     },
-    "278": {
-      "id": "278",
+    "3128014": {
+      "id": "3128014",
+      "topic_id": "278",
       "title": "Syncope ",
-      "url": "https://acsearch.acr.org/docs/278/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3128014/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:22.226025+00:00",
+      "last_attempted": "2026-01-28T21:02:32.430061+00:00",
       "summary": {
         "first_line": [
           "Presyncope, cardiovascular etiology suspected, initial imaging",
@@ -1117,14 +1155,15 @@
         "total_procedures": 22
       }
     },
-    "303": {
-      "id": "303",
+    "3158182": {
+      "id": "3158182",
+      "topic_id": "303",
       "title": "Workup of Noncerebral Systemic Arterial Embolic Source",
-      "url": "https://acsearch.acr.org/docs/303/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158182/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:24.151007+00:00",
+      "last_attempted": "2026-01-28T21:02:33.831393+00:00",
       "summary": {
         "first_line": [
           "Arterial occlusion, upper extremity, embolic etiology suspected, next imaging study, determine source",
@@ -1146,16 +1185,17 @@
         "total_procedures": 23
       }
     },
-    "288": {
-      "id": "288",
+    "3158167": {
+      "id": "3158167",
+      "topic_id": "288",
       "title": "Abnormal Liver Function Tests",
-      "url": "https://acsearch.acr.org/docs/288/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158167/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:33:26.367167+00:00",
+      "last_attempted": "2026-01-28T21:02:35.082512+00:00",
       "summary": {
         "first_line": [
           "Abnormal liver function tests, hepatocellular predominance, mild aminotransferase increase , initial imaging",
@@ -1177,14 +1217,15 @@
         "total_procedures": 17
       }
     },
-    "350": {
-      "id": "350",
+    "3195874": {
+      "id": "3195874",
+      "topic_id": "350",
       "title": "Acute Left Upper Quadrant Pain",
-      "url": "https://acsearch.acr.org/docs/350/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195874/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:06.182900+00:00",
+      "last_attempted": "2026-01-28T21:02:37.061616+00:00",
       "summary": {
         "first_line": [
           "LUQ pain, acute, splenomegaly suspected, initial imaging",
@@ -1205,14 +1246,15 @@
         "total_procedures": 11
       }
     },
-    "125": {
-      "id": "125",
+    "69467": {
+      "id": "69467",
+      "topic_id": "125",
       "title": "Acute Nonlocalized Abdominal Pain",
-      "url": "https://acsearch.acr.org/docs/125/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69467/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:08.601677+00:00",
+      "last_attempted": "2026-01-28T21:02:38.789485+00:00",
       "summary": {
         "first_line": [
           "Abscess, liver",
@@ -1234,16 +1276,17 @@
         "total_procedures": 18
       }
     },
-    "126": {
-      "id": "126",
+    "69468": {
+      "id": "69468",
+      "topic_id": "126",
       "title": "Acute Pancreatitis",
-      "url": "https://acsearch.acr.org/docs/126/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69468/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:11.568702+00:00",
+      "last_attempted": "2026-01-28T21:02:40.515780+00:00",
       "summary": {
         "first_line": [
           "Pancreatitis suspected, typical presentation",
@@ -1265,14 +1308,15 @@
         "total_procedures": 14
       }
     },
-    "250": {
-      "id": "250",
+    "3102384": {
+      "id": "3102384",
+      "topic_id": "250",
       "title": "Anorectal Disease",
-      "url": "https://acsearch.acr.org/docs/250/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102384/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:14.364995+00:00",
+      "last_attempted": "2026-01-28T21:02:42.724124+00:00",
       "summary": {
         "first_line": [
           "Perianal fistula suspected,  initial imaging",
@@ -1294,16 +1338,17 @@
         "total_procedures": 29
       }
     },
-    "229": {
-      "id": "229",
+    "3098416": {
+      "id": "3098416",
+      "topic_id": "229",
       "title": "Chronic Liver Disease",
-      "url": "https://acsearch.acr.org/docs/229/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3098416/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:16.578234+00:00",
+      "last_attempted": "2026-01-28T21:02:44.149069+00:00",
       "summary": {
         "first_line": [
           "Liver disease, chronic, fibrosis suspected, diagnosis and staging, initial imaging",
@@ -1324,16 +1369,17 @@
         "total_procedures": 15
       }
     },
-    "352": {
-      "id": "352",
+    "3196038": {
+      "id": "3196038",
+      "topic_id": "352",
       "title": "Chronic Pancreatitis",
-      "url": "https://acsearch.acr.org/docs/352/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196038/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:19.498122+00:00",
+      "last_attempted": "2026-01-28T21:02:46.258384+00:00",
       "summary": {
         "first_line": [
           "Chronic pancreatitis suspected, initial imaging",
@@ -1354,14 +1400,15 @@
         "total_procedures": 10
       }
     },
-    "127": {
-      "id": "127",
+    "69469": {
+      "id": "69469",
+      "topic_id": "127",
       "title": "Colorectal Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/127/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69469/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:21.351414+00:00",
+      "last_attempted": "2026-01-28T21:02:48.288568+00:00",
       "summary": {
         "first_line": [
           "Colorectal cancer screening, 5 yr follow-up after initial negative screening, average risk",
@@ -1379,14 +1426,15 @@
         "total_procedures": 17
       }
     },
-    "128": {
-      "id": "128",
+    "69470": {
+      "id": "69470",
+      "topic_id": "128",
       "title": "Crohn Disease",
-      "url": "https://acsearch.acr.org/docs/128/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69470/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:24.430156+00:00",
+      "last_attempted": "2026-01-28T21:02:50.319346+00:00",
       "summary": {
         "first_line": [
           "Crohn disease suspected, initial imaging",
@@ -1408,14 +1456,15 @@
         "total_procedures": 17
       }
     },
-    "129": {
-      "id": "129",
+    "69471": {
+      "id": "69471",
+      "topic_id": "129",
       "title": "Dysphagia",
-      "url": "https://acsearch.acr.org/docs/129/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69471/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:26.575360+00:00",
+      "last_attempted": "2026-01-28T21:02:51.821297+00:00",
       "summary": {
         "first_line": [
           "Dysphagia, oropharyngeal, known cause",
@@ -1437,14 +1486,15 @@
         "total_procedures": 14
       }
     },
-    "289": {
-      "id": "289",
+    "3158168": {
+      "id": "3158168",
+      "topic_id": "289",
       "title": "Epigastric Pain",
-      "url": "https://acsearch.acr.org/docs/289/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158168/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:29.467218+00:00",
+      "last_attempted": "2026-01-28T21:02:53.711514+00:00",
       "summary": {
         "first_line": [
           "Epigastric pain, peptic ulcer suspected, initial imaging",
@@ -1466,14 +1516,15 @@
         "total_procedures": 22
       }
     },
-    "290": {
-      "id": "290",
+    "3158169": {
+      "id": "3158169",
+      "topic_id": "290",
       "title": "Hernia",
-      "url": "https://acsearch.acr.org/docs/290/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158169/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:31.687589+00:00",
+      "last_attempted": "2026-01-28T21:09:21.079701+00:00",
       "summary": {
         "first_line": [
           "Abdominal wall hernia suspected, umbilical, initial imaging",
@@ -1495,16 +1546,17 @@
         "total_procedures": 34
       }
     },
-    "326": {
-      "id": "326",
+    "3195145": {
+      "id": "3195145",
+      "topic_id": "326",
       "title": "Imaging After Liver Transplant",
-      "url": "https://acsearch.acr.org/docs/326/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195145/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:34.505862+00:00",
+      "last_attempted": "2026-01-28T21:09:22.724895+00:00",
       "summary": {
         "first_line": [
           "Liver transplant, immediate postoperative, initial imaging",
@@ -1526,14 +1578,15 @@
         "total_procedures": 18
       }
     },
-    "178": {
-      "id": "178",
+    "70909": {
+      "id": "70909",
+      "topic_id": "178",
       "title": "Imaging of Mesenteric Ischemia",
-      "url": "https://acsearch.acr.org/docs/178/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70909/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:37.338350+00:00",
+      "last_attempted": "2026-01-28T21:09:24.487684+00:00",
       "summary": {
         "first_line": [
           "Mesenteric ischemia, acute, suspected, initial exam",
@@ -1553,14 +1606,15 @@
         "total_procedures": 11
       }
     },
-    "155": {
-      "id": "155",
+    "69497": {
+      "id": "69497",
+      "topic_id": "155",
       "title": "Jaundice",
-      "url": "https://acsearch.acr.org/docs/155/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69497/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:40.468252+00:00",
+      "last_attempted": "2026-01-28T21:09:26.504969+00:00",
       "summary": {
         "first_line": [
           "Jaundice, initial exam",
@@ -1580,14 +1634,15 @@
         "total_procedures": 10
       }
     },
-    "20": {
-      "id": "20",
+    "69356": {
+      "id": "69356",
+      "topic_id": "20",
       "title": "Left Lower Quadrant Pain",
-      "url": "https://acsearch.acr.org/docs/20/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69356/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:42.646968+00:00",
+      "last_attempted": "2026-01-28T21:09:28.040674+00:00",
       "summary": {
         "first_line": [
           "LLQ pain, initial imaging",
@@ -1606,16 +1661,17 @@
         "total_procedures": 13
       }
     },
-    "130": {
-      "id": "130",
+    "69472": {
+      "id": "69472",
+      "topic_id": "130",
       "title": "Liver Lesion-Initial Characterization",
-      "url": "https://acsearch.acr.org/docs/130/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69472/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:44.673820+00:00",
+      "last_attempted": "2026-01-28T21:09:29.336878+00:00",
       "summary": {
         "first_line": [
           "Liver lesion, >1cm, indeterminate on US, normal liver, no extrahepatic malignancy",
@@ -1637,14 +1693,15 @@
         "total_procedures": 28
       }
     },
-    "72": {
-      "id": "72",
+    "69413": {
+      "id": "69413",
+      "topic_id": "72",
       "title": "Nonvariceal Upper Gastrointestinal Bleeding",
-      "url": "https://acsearch.acr.org/docs/72/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69413/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:48.038730+00:00",
+      "last_attempted": "2026-01-28T21:09:31.393082+00:00",
       "summary": {
         "first_line": [
           "Upper GI bleeding suspected, nonvariceal, no endoscopy, initial imaging",
@@ -1664,14 +1721,15 @@
         "total_procedures": 24
       }
     },
-    "131": {
-      "id": "131",
+    "69473": {
+      "id": "69473",
+      "topic_id": "131",
       "title": "Palpable Abdominal Mass-Suspected Neoplasm",
-      "url": "https://acsearch.acr.org/docs/131/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69473/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:49.944004+00:00",
+      "last_attempted": "2026-01-28T21:09:33.558384+00:00",
       "summary": {
         "first_line": [
           "Abdominal mass, intra-abdominal neoplasm suspected",
@@ -1691,16 +1749,17 @@
         "total_procedures": 12
       }
     },
-    "277": {
-      "id": "277",
+    "3127236": {
+      "id": "3127236",
+      "topic_id": "277",
       "title": "Pancreatic Cyst",
-      "url": "https://acsearch.acr.org/docs/277/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3127236/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:52.170432+00:00",
+      "last_attempted": "2026-01-28T21:09:35.247369+00:00",
       "summary": {
         "first_line": [
           "Pancreas cyst, <=2.5cm, incidental, initial evaluation",
@@ -1721,14 +1780,15 @@
         "total_procedures": 11
       }
     },
-    "330": {
-      "id": "330",
+    "3195149": {
+      "id": "3195149",
+      "topic_id": "330",
       "title": "Preoperative and Postoperative Imaging for Bariatric Procedures",
-      "url": "https://acsearch.acr.org/docs/330/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195149/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:35:54.350902+00:00",
+      "last_attempted": "2026-01-28T21:09:36.619885+00:00",
       "summary": {
         "first_line": [
           "Bariatric procedure, complication suspected, postprocedure evaluation"
@@ -1746,14 +1806,15 @@
         "total_procedures": 19
       }
     },
-    "21": {
-      "id": "21",
+    "69357": {
+      "id": "69357",
+      "topic_id": "21",
       "title": "Right Lower Quadrant Pain",
-      "url": "https://acsearch.acr.org/docs/21/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69357/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:36:56.131783+00:00",
+      "last_attempted": "2026-01-28T21:09:38.789126+00:00",
       "summary": {
         "first_line": [
           "RLQ pain, initial imaging",
@@ -1773,14 +1834,15 @@
         "total_procedures": 13
       }
     },
-    "132": {
-      "id": "132",
+    "69474": {
+      "id": "69474",
+      "topic_id": "132",
       "title": "Right Upper Quadrant Pain",
-      "url": "https://acsearch.acr.org/docs/132/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69474/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:36:58.081541+00:00",
+      "last_attempted": "2026-01-28T21:09:40.471385+00:00",
       "summary": {
         "first_line": [
           "RUQ pain, etiology unknown, initial imaging",
@@ -1801,16 +1863,17 @@
         "total_procedures": 16
       }
     },
-    "238": {
-      "id": "238",
+    "3099847": {
+      "id": "3099847",
+      "topic_id": "238",
       "title": "Screening, Locoregional Assessment, and Surveillance of Pancreatic Ductal Adenocarcinoma",
-      "url": "https://acsearch.acr.org/docs/238/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099847/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:00.208593+00:00",
+      "last_attempted": "2026-01-28T21:09:41.802603+00:00",
       "summary": {
         "first_line": [
           "Pancreatic ductal adenocarcinoma screening, high risk,",
@@ -1831,14 +1894,15 @@
         "total_procedures": 25
       }
     },
-    "311": {
-      "id": "311",
+    "3188086": {
+      "id": "3188086",
+      "topic_id": "311",
       "title": "Sepsis",
-      "url": "https://acsearch.acr.org/docs/311/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3188086/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:02.116345+00:00",
+      "last_attempted": "2026-01-28T21:09:43.498866+00:00",
       "summary": {
         "first_line": [
           "Sepsis, chest pain, initial imaging",
@@ -1860,14 +1924,15 @@
         "total_procedures": 62
       }
     },
-    "349": {
-      "id": "349",
+    "3195871": {
+      "id": "3195871",
+      "topic_id": "349",
       "title": "Staging and Disease Monitoring of Colon Cancer and Appendiceal Cancer",
-      "url": "https://acsearch.acr.org/docs/349/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195871/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:05.165951+00:00",
+      "last_attempted": "2026-01-28T21:09:45.710245+00:00",
       "summary": {
         "first_line": [
           "Colon cancer, staging",
@@ -1889,14 +1954,15 @@
         "total_procedures": 14
       }
     },
-    "348": {
-      "id": "348",
+    "3195870": {
+      "id": "3195870",
+      "topic_id": "348",
       "title": "Staging and Disease Monitoring of Rectal Cancer",
-      "url": "https://acsearch.acr.org/docs/348/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195870/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:07.324325+00:00",
+      "last_attempted": "2026-01-28T21:09:47.439283+00:00",
       "summary": {
         "first_line": [
           "Rectal cancer, locoregional staging",
@@ -1917,14 +1983,15 @@
         "total_procedures": 18
       }
     },
-    "329": {
-      "id": "329",
+    "3195148": {
+      "id": "3195148",
+      "topic_id": "329",
       "title": "Staging and Follow-up of Anal Cancer",
-      "url": "https://acsearch.acr.org/docs/329/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195148/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:09.285419+00:00",
+      "last_attempted": "2026-01-28T21:09:49.416784+00:00",
       "summary": {
         "first_line": [
           "Anal cancer, squamous cell, newly diagnosed, locoregional assessment, initial staging",
@@ -1946,14 +2013,15 @@
         "total_procedures": 18
       }
     },
-    "305": {
-      "id": "305",
+    "3163055": {
+      "id": "3163055",
+      "topic_id": "305",
       "title": "Staging and Follow-up of Esophageal Cancer",
-      "url": "https://acsearch.acr.org/docs/305/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3163055/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:11.570530+00:00",
+      "last_attempted": "2026-01-28T21:09:51.469953+00:00",
       "summary": {
         "first_line": [
           "Esophageal cancer, newly diagnosed, pretreatment clinical staging, initial imaging",
@@ -1975,14 +2043,15 @@
         "total_procedures": 20
       }
     },
-    "353": {
-      "id": "353",
+    "3196039": {
+      "id": "3196039",
+      "topic_id": "353",
       "title": "Staging and Follow-up of Gastric Cancer",
-      "url": "https://acsearch.acr.org/docs/353/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196039/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:13.221174+00:00",
+      "last_attempted": "2026-01-28T21:09:53.145971+00:00",
       "summary": {
         "first_line": [
           "Gastric adenocarcinoma, suspected, initial imaging",
@@ -2004,16 +2073,17 @@
         "total_procedures": 20
       }
     },
-    "328": {
-      "id": "328",
+    "3195147": {
+      "id": "3195147",
+      "topic_id": "328",
       "title": "Staging and Follow-up of Pancreatic Neuroendocrine Tumors",
-      "url": "https://acsearch.acr.org/docs/328/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195147/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:14.775133+00:00",
+      "last_attempted": "2026-01-28T21:09:54.721096+00:00",
       "summary": {
         "first_line": [
           "Pancreatic neuroendocrine tumor, local staging",
@@ -2035,16 +2105,17 @@
         "total_procedures": 21
       }
     },
-    "327": {
-      "id": "327",
+    "3195146": {
+      "id": "3195146",
+      "topic_id": "327",
       "title": "Staging and Follow-up of Primary Liver Cancer",
-      "url": "https://acsearch.acr.org/docs/327/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195146/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:17.454749+00:00",
+      "last_attempted": "2026-01-28T21:09:56.962505+00:00",
       "summary": {
         "first_line": [
           "Primary liver cancer, screening",
@@ -2066,16 +2137,17 @@
         "total_procedures": 28
       }
     },
-    "134": {
-      "id": "134",
+    "69476": {
+      "id": "69476",
+      "topic_id": "134",
       "title": "Suspected Small-Bowel Obstruction",
-      "url": "https://acsearch.acr.org/docs/134/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69476/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:19.476776+00:00",
+      "last_attempted": "2026-01-28T21:09:58.208951+00:00",
       "summary": {
         "first_line": [
           "Small bowel obstruction suspected, acute presentation, initial imaging",
@@ -2094,14 +2166,15 @@
         "total_procedures": 14
       }
     },
-    "116": {
-      "id": "116",
+    "69458": {
+      "id": "69458",
+      "topic_id": "116",
       "title": "Abnormal Uterine Bleeding",
-      "url": "https://acsearch.acr.org/docs/116/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69458/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:21.597882+00:00",
+      "last_attempted": "2026-01-28T21:10:00.177929+00:00",
       "summary": {
         "first_line": [
           "Uterine bleeding, abnormal, initial imaging",
@@ -2122,14 +2195,15 @@
         "total_procedures": 13
       }
     },
-    "161": {
-      "id": "161",
+    "69503": {
+      "id": "69503",
+      "topic_id": "161",
       "title": "Acute Pelvic Pain in the Reproductive Age Group",
-      "url": "https://acsearch.acr.org/docs/161/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69503/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:23.250390+00:00",
+      "last_attempted": "2026-01-28T21:10:02.122560+00:00",
       "summary": {
         "first_line": [
           "Pelvic pain, acute, positive beta-hCG, gynecological etiology suspected, initial imaging",
@@ -2147,14 +2221,15 @@
         "total_procedures": 18
       }
     },
-    "122": {
-      "id": "122",
+    "69464": {
+      "id": "69464",
+      "topic_id": "122",
       "title": "Assessment of Gravid Cervix",
-      "url": "https://acsearch.acr.org/docs/122/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69464/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:24.812274+00:00",
+      "last_attempted": "2026-01-28T21:10:03.375653+00:00",
       "summary": {
         "first_line": [
           "Gravid cervix assessment, no hx of preterm birth, initial imaging",
@@ -2173,14 +2248,15 @@
         "total_procedures": 9
       }
     },
-    "124": {
-      "id": "124",
+    "69466": {
+      "id": "69466",
+      "topic_id": "124",
       "title": "Clinically Suspected Adnexal Mass, No Acute Symptoms",
-      "url": "https://acsearch.acr.org/docs/124/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69466/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:26.177826+00:00",
+      "last_attempted": "2026-01-28T21:10:05.287280+00:00",
       "summary": {
         "first_line": [
           "Adnexal mass suspected, no acute symptoms, postmenopausal, initial imaging",
@@ -2201,14 +2277,15 @@
         "total_procedures": 21
       }
     },
-    "331": {
-      "id": "331",
+    "3195150": {
+      "id": "3195150",
+      "topic_id": "331",
       "title": "Endometriosis",
-      "url": "https://acsearch.acr.org/docs/331/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195150/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:28.261611+00:00",
+      "last_attempted": "2026-01-28T21:10:07.345631+00:00",
       "summary": {
         "first_line": [
           "Endometriosis suspected, initial imaging",
@@ -2229,14 +2306,15 @@
         "total_procedures": 18
       }
     },
-    "211": {
-      "id": "211",
+    "3093336": {
+      "id": "3093336",
+      "topic_id": "211",
       "title": "Female Infertility",
-      "url": "https://acsearch.acr.org/docs/211/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3093336/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:30.470956+00:00",
+      "last_attempted": "2026-01-28T21:10:09.545415+00:00",
       "summary": {
         "first_line": [
           "Infertility, evaluate ovulatory function and reserve, initial imaging",
@@ -2257,14 +2335,15 @@
         "total_procedures": 16
       }
     },
-    "312": {
-      "id": "312",
+    "3188532": {
+      "id": "3188532",
+      "topic_id": "312",
       "title": "Fibroids",
-      "url": "https://acsearch.acr.org/docs/312/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3188532/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:32.720429+00:00",
+      "last_attempted": "2026-01-28T21:10:11.027880+00:00",
       "summary": {
         "first_line": [
           "Fibroids suspected, initial imaging",
@@ -2285,14 +2364,15 @@
         "total_procedures": 11
       }
     },
-    "118": {
-      "id": "118",
+    "69460": {
+      "id": "69460",
+      "topic_id": "118",
       "title": "First Trimester Vaginal Bleeding",
-      "url": "https://acsearch.acr.org/docs/118/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69460/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:34.805500+00:00",
+      "last_attempted": "2026-01-28T21:10:12.455971+00:00",
       "summary": {
         "first_line": [
           "Vaginal bleeding, first trimester, initial imaging",
@@ -2310,14 +2390,15 @@
         "total_procedures": 8
       }
     },
-    "261": {
-      "id": "261",
+    "3102395": {
+      "id": "3102395",
+      "topic_id": "261",
       "title": "Gestational Trophoblastic Disease",
-      "url": "https://acsearch.acr.org/docs/261/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102395/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:36.816682+00:00",
+      "last_attempted": "2026-01-28T21:10:14.245154+00:00",
       "summary": {
         "first_line": [
           "Gestational trophoblastic disease (GTD) suspected",
@@ -2338,14 +2419,15 @@
         "total_procedures": 24
       }
     },
-    "41": {
-      "id": "41",
+    "69377": {
+      "id": "69377",
+      "topic_id": "41",
       "title": "Growth Disturbances\u2013Risk of Fetal Growth Restriction",
-      "url": "https://acsearch.acr.org/docs/41/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69377/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:39.429515+00:00",
+      "last_attempted": "2026-01-28T21:10:16.431033+00:00",
       "summary": {
         "first_line": [
           "Fetal growth disturbance, low risk for fetal growth restriction",
@@ -2362,14 +2444,15 @@
         "total_procedures": 9
       }
     },
-    "120": {
-      "id": "120",
+    "69462": {
+      "id": "69462",
+      "topic_id": "120",
       "title": "Multiple Gestations",
-      "url": "https://acsearch.acr.org/docs/120/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69462/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:41.524835+00:00",
+      "last_attempted": "2026-01-28T21:10:17.995584+00:00",
       "summary": {
         "first_line": [
           "Multiple gestations suspected, dichorionic, first trimester, initial imaging",
@@ -2387,14 +2470,15 @@
         "total_procedures": 28
       }
     },
-    "263": {
-      "id": "263",
+    "3102397": {
+      "id": "3102397",
+      "topic_id": "263",
       "title": "Nuchal Translucency Evaluation at 11 to 14 Weeks Gestational Age",
-      "url": "https://acsearch.acr.org/docs/263/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102397/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:43.760758+00:00",
+      "last_attempted": "2026-01-28T21:10:19.884985+00:00",
       "summary": {
         "first_line": [
           "Nuchal translucency measurement, routine, 11-14 weeks gestation, single or twins, initial imaging",
@@ -2413,14 +2497,15 @@
         "total_procedures": 8
       }
     },
-    "121": {
-      "id": "121",
+    "69463": {
+      "id": "69463",
+      "topic_id": "121",
       "title": "Ovarian Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/121/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69463/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:45.394707+00:00",
+      "last_attempted": "2026-01-28T21:10:21.867521+00:00",
       "summary": {
         "first_line": [],
         "alternatives": [
@@ -2436,14 +2521,15 @@
         "total_procedures": 24
       }
     },
-    "201": {
-      "id": "201",
+    "3083064": {
+      "id": "3083064",
+      "topic_id": "201",
       "title": "Pelvic Floor Dysfunction in Females",
-      "url": "https://acsearch.acr.org/docs/201/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3083064/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:47.997775+00:00",
+      "last_attempted": "2026-01-28T21:10:24.044053+00:00",
       "summary": {
         "first_line": [
           "Vaginal bulge, initial imaging",
@@ -2465,14 +2551,15 @@
         "total_procedures": 33
       }
     },
-    "269": {
-      "id": "269",
+    "3102403": {
+      "id": "3102403",
+      "topic_id": "269",
       "title": "Placenta Accreta Spectrum Disorder",
-      "url": "https://acsearch.acr.org/docs/269/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102403/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:50.808819+00:00",
+      "last_attempted": "2026-01-28T21:10:26.348851+00:00",
       "summary": {
         "first_line": [
           "Placenta accreta spectrum disorder screening, initial imaging",
@@ -2491,14 +2578,15 @@
         "total_procedures": 8
       }
     },
-    "264": {
-      "id": "264",
+    "3102398": {
+      "id": "3102398",
+      "topic_id": "264",
       "title": "Postmenopausal Acute Pelvic Pain",
-      "url": "https://acsearch.acr.org/docs/264/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102398/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:52.273049+00:00",
+      "last_attempted": "2026-01-28T21:10:27.793993+00:00",
       "summary": {
         "first_line": [
           "Pelvic pain, acute, postmenopausal, initial imaging",
@@ -2516,14 +2604,15 @@
         "total_procedures": 7
       }
     },
-    "265": {
-      "id": "265",
+    "3102399": {
+      "id": "3102399",
+      "topic_id": "265",
       "title": "Postmenopausal Subacute or Chronic Pelvic Pain",
-      "url": "https://acsearch.acr.org/docs/265/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102399/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:53.697579+00:00",
+      "last_attempted": "2026-01-28T21:10:29.938470+00:00",
       "summary": {
         "first_line": [
           "Pelvic pain chronic, postmenopausal, gynecologic etiologies suspected, initial imaging",
@@ -2543,14 +2632,15 @@
         "total_procedures": 13
       }
     },
-    "276": {
-      "id": "276",
+    "3113019": {
+      "id": "3113019",
+      "topic_id": "276",
       "title": "Postpartum Hemorrhage",
-      "url": "https://acsearch.acr.org/docs/276/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3113019/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:55.427278+00:00",
+      "last_attempted": "2026-01-28T21:10:31.985876+00:00",
       "summary": {
         "first_line": [
           "Postpartum hemorrhage, <= 24 hrs after cesarean delivery, initial Imaging",
@@ -2572,14 +2662,15 @@
         "total_procedures": 12
       }
     },
-    "117": {
-      "id": "117",
+    "69459": {
+      "id": "69459",
+      "topic_id": "117",
       "title": "Pretreatment Evaluation and Follow-Up of Endometrial Cancer",
-      "url": "https://acsearch.acr.org/docs/117/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69459/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:56.955244+00:00",
+      "last_attempted": "2026-01-28T21:10:34.028403+00:00",
       "summary": {
         "first_line": [
           "Endometrial cancer, pretreatment staging, all grades, assess local tumor extension",
@@ -2599,14 +2690,15 @@
         "total_procedures": 22
       }
     },
-    "119": {
-      "id": "119",
+    "69461": {
+      "id": "69461",
+      "topic_id": "119",
       "title": "Pretreatment Evaluation and Follow-up of Invasive Cancer of the Cervix",
-      "url": "https://acsearch.acr.org/docs/119/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69461/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:37:59.292094+00:00",
+      "last_attempted": "2026-01-28T21:10:36.294719+00:00",
       "summary": {
         "first_line": [
           "Cervical cancer, pretreatment, clinically visible lesion, local tumor staging",
@@ -2628,14 +2720,15 @@
         "total_procedures": 27
       }
     },
-    "266": {
-      "id": "266",
+    "3102400": {
+      "id": "3102400",
+      "topic_id": "266",
       "title": "Second and Third Trimester Screening for Fetal Anomaly",
-      "url": "https://acsearch.acr.org/docs/266/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102400/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:01.184386+00:00",
+      "last_attempted": "2026-01-28T21:10:38.365824+00:00",
       "summary": {
         "first_line": [
           "Fetal anomaly screening, gestation >= 14 weeks, low risk pregnancy, initial imaging",
@@ -2655,14 +2748,15 @@
         "total_procedures": 10
       }
     },
-    "123": {
-      "id": "123",
+    "69465": {
+      "id": "69465",
+      "topic_id": "123",
       "title": "Second and Third Trimester Vaginal Bleeding",
-      "url": "https://acsearch.acr.org/docs/123/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69465/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:03.378653+00:00",
+      "last_attempted": "2026-01-28T21:10:40.461341+00:00",
       "summary": {
         "first_line": [
           "Vaginal bleeding, after first trimester, painless, initial imaging",
@@ -2678,14 +2772,15 @@
         "total_procedures": 11
       }
     },
-    "42": {
-      "id": "42",
+    "69378": {
+      "id": "69378",
+      "topic_id": "42",
       "title": "Staging and Follow-up of Ovarian Cancer",
-      "url": "https://acsearch.acr.org/docs/42/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69378/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:05.592016+00:00",
+      "last_attempted": "2026-01-28T21:10:41.875262+00:00",
       "summary": {
         "first_line": [
           "Ovarian cancer, pretreatment staging",
@@ -2707,14 +2802,15 @@
         "total_procedures": 17
       }
     },
-    "267": {
-      "id": "267",
+    "3102401": {
+      "id": "3102401",
+      "topic_id": "267",
       "title": "Staging and Follow-up of Primary Vaginal Cancer",
-      "url": "https://acsearch.acr.org/docs/267/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102401/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:07.438768+00:00",
+      "last_attempted": "2026-01-28T21:10:43.356651+00:00",
       "summary": {
         "first_line": [
           "Vaginal cancer, initial pretreatment staging",
@@ -2736,14 +2832,15 @@
         "total_procedures": 18
       }
     },
-    "268": {
-      "id": "268",
+    "3102402": {
+      "id": "3102402",
+      "topic_id": "268",
       "title": "Staging and Follow-up of Vulvar Cancer",
-      "url": "https://acsearch.acr.org/docs/268/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102402/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:09.395112+00:00",
+      "last_attempted": "2026-01-28T21:10:44.856076+00:00",
       "summary": {
         "first_line": [
           "Vulvar cancer, primary tumor <=4cm, >1mm stromal invasion, confined to vulva or perineum, initial pretreatment staging",
@@ -2763,16 +2860,17 @@
         "total_procedures": 23
       }
     },
-    "335": {
-      "id": "335",
+    "3195154": {
+      "id": "3195154",
+      "topic_id": "335",
       "title": "Acute Elbow and Forearm Pain",
-      "url": "https://acsearch.acr.org/docs/335/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195154/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:11.001518+00:00",
+      "last_attempted": "2026-01-28T21:10:47.137156+00:00",
       "summary": {
         "first_line": [
           "Elbow pain, acute, initial imaging",
@@ -2790,16 +2888,17 @@
         "total_procedures": 32
       }
     },
-    "77": {
-      "id": "77",
+    "69418": {
+      "id": "69418",
+      "topic_id": "77",
       "title": "Acute Hand and Wrist Trauma",
-      "url": "https://acsearch.acr.org/docs/77/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69418/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:13.616136+00:00",
+      "last_attempted": "2026-01-28T21:10:49.332752+00:00",
       "summary": {
         "first_line": [
           "Wrist trauma, initial exam",
@@ -2817,16 +2916,17 @@
         "total_procedures": 31
       }
     },
-    "189": {
-      "id": "189",
+    "3082587": {
+      "id": "3082587",
+      "topic_id": "189",
       "title": "Acute Hip Pain",
-      "url": "https://acsearch.acr.org/docs/189/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082587/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:16.032338+00:00",
+      "last_attempted": "2026-01-28T21:10:54.413207+00:00",
       "summary": {
         "first_line": [
           "Hip pain, acute, traumatic, initial imaging",
@@ -2844,16 +2944,17 @@
         "total_procedures": 18
       }
     },
-    "91": {
-      "id": "91",
+    "69433": {
+      "id": "69433",
+      "topic_id": "91",
       "title": "Acute Shoulder Pain",
-      "url": "https://acsearch.acr.org/docs/91/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69433/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:18.514601+00:00",
+      "last_attempted": "2026-01-28T21:10:56.640018+00:00",
       "summary": {
         "first_line": [
           "Shoulder pain, acute, any etiology, initial imaging",
@@ -2871,16 +2972,17 @@
         "total_procedures": 26
       }
     },
-    "23": {
-      "id": "23",
+    "69359": {
+      "id": "69359",
+      "topic_id": "23",
       "title": "Acute Spinal Trauma",
-      "url": "https://acsearch.acr.org/docs/23/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69359/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:20.726281+00:00",
+      "last_attempted": "2026-01-28T21:10:58.087996+00:00",
       "summary": {
         "first_line": [
           "Cervical spine trauma, acute, blunt, imaging indicated by CCR or NEXUS, initial imaging",
@@ -2900,16 +3002,17 @@
         "total_procedures": 99
       }
     },
-    "94": {
-      "id": "94",
+    "69436": {
+      "id": "69436",
+      "topic_id": "94",
       "title": "Acute Trauma to the Ankle",
-      "url": "https://acsearch.acr.org/docs/94/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69436/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:24.111611+00:00",
+      "last_attempted": "2026-01-28T21:11:00.803114+00:00",
       "summary": {
         "first_line": [
           "Ankle trauma, up to 3 weeks after injury, no exclusionary criteria, unable to bear weight immediately after injury, initial imaging",
@@ -2929,14 +3032,15 @@
         "total_procedures": 26
       }
     },
-    "172": {
-      "id": "172",
+    "70546": {
+      "id": "70546",
+      "topic_id": "172",
       "title": "Acute Trauma to the Foot",
-      "url": "https://acsearch.acr.org/docs/172/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70546/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:26.271841+00:00",
+      "last_attempted": "2026-01-28T21:11:02.549868+00:00",
       "summary": {
         "first_line": [
           "Foot trauma, Ottawa rules positive, initial imaging",
@@ -2954,16 +3058,17 @@
         "total_procedures": 18
       }
     },
-    "78": {
-      "id": "78",
+    "69419": {
+      "id": "69419",
+      "topic_id": "78",
       "title": "Acute Trauma to the Knee",
-      "url": "https://acsearch.acr.org/docs/78/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69419/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:28.514144+00:00",
+      "last_attempted": "2026-01-28T21:11:04.510594+00:00",
       "summary": {
         "first_line": [
           "Knee trauma, fall or twisting, effusion, initial imaging",
@@ -2984,16 +3089,17 @@
         "total_procedures": 22
       }
     },
-    "81": {
-      "id": "81",
+    "69422": {
+      "id": "69422",
+      "topic_id": "81",
       "title": "Chronic Ankle Pain",
-      "url": "https://acsearch.acr.org/docs/81/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69422/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:30.358471+00:00",
+      "last_attempted": "2026-01-28T21:11:06.236245+00:00",
       "summary": {
         "first_line": [
           "Ankle pain, initial exam",
@@ -3015,16 +3121,17 @@
         "total_procedures": 33
       }
     },
-    "82": {
-      "id": "82",
+    "69423": {
+      "id": "69423",
+      "topic_id": "82",
       "title": "Chronic Elbow Pain",
-      "url": "https://acsearch.acr.org/docs/82/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69423/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:32.150378+00:00",
+      "last_attempted": "2026-01-28T21:11:07.569616+00:00",
       "summary": {
         "first_line": [
           "Elbow pain, chronic, initial imaging",
@@ -3044,16 +3151,17 @@
         "total_procedures": 31
       }
     },
-    "225": {
-      "id": "225",
+    "3097211": {
+      "id": "3097211",
+      "topic_id": "225",
       "title": "Chronic Extremity Joint Pain-Suspected Inflammatory Arthritis, Crystalline Arthritis, or Erosive Osteoarthritis",
-      "url": "https://acsearch.acr.org/docs/225/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3097211/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:34.726516+00:00",
+      "last_attempted": "2026-01-28T21:11:09.791228+00:00",
       "summary": {
         "first_line": [
           "Hand pain, chronic, seropositive inflammatory arthritis suspected, initial imaging",
@@ -3075,14 +3183,15 @@
         "total_procedures": 187
       }
     },
-    "83": {
-      "id": "83",
+    "69424": {
+      "id": "69424",
+      "topic_id": "83",
       "title": "Chronic Foot Pain",
-      "url": "https://acsearch.acr.org/docs/83/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69424/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:38.937880+00:00",
+      "last_attempted": "2026-01-28T21:11:13.477648+00:00",
       "summary": {
         "first_line": [
           "Foot pain chronic, etiology unknown, initial imaging",
@@ -3103,16 +3212,17 @@
         "total_procedures": 45
       }
     },
-    "86": {
-      "id": "86",
+    "69427": {
+      "id": "69427",
+      "topic_id": "86",
       "title": "Chronic Hand and Wrist Pain",
-      "url": "https://acsearch.acr.org/docs/86/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69427/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:38:41.690802+00:00",
+      "last_attempted": "2026-01-28T21:11:15.317284+00:00",
       "summary": {
         "first_line": [
           "Hand pain, chronic, initial imaging",
@@ -3134,16 +3244,17 @@
         "total_procedures": 47
       }
     },
-    "84": {
-      "id": "84",
+    "69425": {
+      "id": "69425",
+      "topic_id": "84",
       "title": "Chronic Hip Pain",
-      "url": "https://acsearch.acr.org/docs/84/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69425/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:18.753820+00:00",
+      "last_attempted": "2026-01-28T21:11:16.896075+00:00",
       "summary": {
         "first_line": [
           "Hip pain, chronic, initial imaging",
@@ -3163,16 +3274,17 @@
         "total_procedures": 36
       }
     },
-    "90": {
-      "id": "90",
+    "69432": {
+      "id": "69432",
+      "topic_id": "90",
       "title": "Chronic Knee Pain",
-      "url": "https://acsearch.acr.org/docs/90/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69432/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:21.027138+00:00",
+      "last_attempted": "2026-01-28T21:11:18.806398+00:00",
       "summary": {
         "first_line": [
           "Knee pain, chronic, initial exam",
@@ -3193,16 +3305,17 @@
         "total_procedures": 18
       }
     },
-    "241": {
-      "id": "241",
+    "3101482": {
+      "id": "3101482",
+      "topic_id": "241",
       "title": "Chronic Shoulder Pain",
-      "url": "https://acsearch.acr.org/docs/241/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3101482/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:22.581789+00:00",
+      "last_attempted": "2026-01-28T21:11:20.395882+00:00",
       "summary": {
         "first_line": [
           "Shoulder pain, chronic, initial imaging",
@@ -3222,16 +3335,17 @@
         "total_procedures": 32
       }
     },
-    "224": {
-      "id": "224",
+    "3097049": {
+      "id": "3097049",
+      "topic_id": "224",
       "title": "Imaging After Shoulder Arthroplasty",
-      "url": "https://acsearch.acr.org/docs/224/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3097049/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:24.522452+00:00",
+      "last_attempted": "2026-01-28T21:11:22.103070+00:00",
       "summary": {
         "first_line": [
           "Shoulder replaced, asymptomatic, routine follow up imaging",
@@ -3253,16 +3367,17 @@
         "total_procedures": 19
       }
     },
-    "220": {
-      "id": "220",
+    "3094200": {
+      "id": "3094200",
+      "topic_id": "220",
       "title": "Imaging after Total Hip Arthroplasty",
-      "url": "https://acsearch.acr.org/docs/220/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094200/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:26.218215+00:00",
+      "last_attempted": "2026-01-28T21:11:23.902145+00:00",
       "summary": {
         "first_line": [
           "Hip replaced, asymptomatic, follow-up imaging",
@@ -3283,16 +3398,17 @@
         "total_procedures": 28
       }
     },
-    "88": {
-      "id": "88",
+    "69430": {
+      "id": "69430",
+      "topic_id": "88",
       "title": "Imaging After Total Knee Arthroplasty",
-      "url": "https://acsearch.acr.org/docs/88/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69430/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:27.864368+00:00",
+      "last_attempted": "2026-01-28T21:11:25.482064+00:00",
       "summary": {
         "first_line": [
           "Knee replaced, follow-up, symptomatic, initial imaging",
@@ -3310,16 +3426,17 @@
         "total_procedures": 31
       }
     },
-    "212": {
-      "id": "212",
+    "3094107": {
+      "id": "3094107",
+      "topic_id": "212",
       "title": "Inflammatory Back Pain: Known or Suspected Axial Spondyloarthropathy",
-      "url": "https://acsearch.acr.org/docs/212/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094107/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:29.390713+00:00",
+      "last_attempted": "2026-01-28T21:11:27.329508+00:00",
       "summary": {
         "first_line": [
           "Inflammatory back pain, thoracic and lumbar spine symptoms, axial spondyloarthritis suspected, initial imaging",
@@ -3341,16 +3458,17 @@
         "total_procedures": 161
       }
     },
-    "87": {
-      "id": "87",
+    "69428": {
+      "id": "69428",
+      "topic_id": "87",
       "title": "Malignant or Aggressive Primary Musculoskeletal Tumor-Staging And Surveillance",
-      "url": "https://acsearch.acr.org/docs/87/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69428/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:31.731835+00:00",
+      "last_attempted": "2026-01-28T21:11:29.904053+00:00",
       "summary": {
         "first_line": [
           "Primary musculoskeletal tumor, malignant, pulmonary metastasis evaluation, initial staging",
@@ -3372,17 +3490,18 @@
         "total_procedures": 179
       }
     },
-    "171": {
-      "id": "171",
+    "70545": {
+      "id": "70545",
+      "topic_id": "171",
       "title": "Management of Vertebral Compression Fractures",
-      "url": "https://acsearch.acr.org/docs/171/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70545/Narrative/",
       "body_regions": [
         "spine",
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:34.601595+00:00",
+      "last_attempted": "2026-01-28T21:11:32.488083+00:00",
       "summary": {
         "first_line": [
           "Vertebral compression fracture on xray, lumbar, symptomatic, new, no malignancy, next imaging study",
@@ -3404,14 +3523,15 @@
         "total_procedures": 87
       }
     },
-    "79": {
-      "id": "79",
+    "69420": {
+      "id": "69420",
+      "topic_id": "79",
       "title": "Osteonecrosis",
-      "url": "https://acsearch.acr.org/docs/79/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69420/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:37.249092+00:00",
+      "last_attempted": "2026-01-28T21:11:34.574034+00:00",
       "summary": {
         "first_line": [
           "Osteonecrosis suspected, wrist, initial imaging",
@@ -3429,16 +3549,17 @@
         "total_procedures": 138
       }
     },
-    "22": {
-      "id": "22",
+    "69358": {
+      "id": "69358",
+      "topic_id": "22",
       "title": "Osteoporosis and Bone Mineral Density",
-      "url": "https://acsearch.acr.org/docs/22/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69358/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:39.677287+00:00",
+      "last_attempted": "2026-01-28T21:11:36.969048+00:00",
       "summary": {
         "first_line": [
           "Low bone mineral density suspected, initial imaging",
@@ -3459,14 +3580,15 @@
         "total_procedures": 25
       }
     },
-    "92": {
-      "id": "92",
+    "69434": {
+      "id": "69434",
+      "topic_id": "92",
       "title": "Soft Tissue Masses",
-      "url": "https://acsearch.acr.org/docs/92/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69434/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:41.923591+00:00",
+      "last_attempted": "2026-01-28T21:11:39.130244+00:00",
       "summary": {
         "first_line": [
           "Soft tissue mass, elbow, superficial, initial imaging",
@@ -3488,17 +3610,18 @@
         "total_procedures": 227
       }
     },
-    "93": {
-      "id": "93",
+    "69435": {
+      "id": "69435",
+      "topic_id": "93",
       "title": "Stress (Fatigue/Insufficiency) Fracture, Including Sacrum, Excluding Other Vertebrae",
-      "url": "https://acsearch.acr.org/docs/93/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69435/Narrative/",
       "body_regions": [
         "spine",
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:44.978703+00:00",
+      "last_attempted": "2026-01-28T21:11:41.325665+00:00",
       "summary": {
         "first_line": [
           "Stress fracture suspected, shoulder, initial imaging",
@@ -3520,14 +3643,15 @@
         "total_procedures": 327
       }
     },
-    "4": {
-      "id": "4",
+    "69340": {
+      "id": "69340",
+      "topic_id": "4",
       "title": "Suspected Osteomyelitis of the Foot in Patients with Diabetes Mellitus",
-      "url": "https://acsearch.acr.org/docs/4/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69340/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:49.925212+00:00",
+      "last_attempted": "2026-01-28T21:11:45.815899+00:00",
       "summary": {
         "first_line": [
           "Osteomyelitis suspected, foot, diabetic, initial imaging",
@@ -3545,16 +3669,17 @@
         "total_procedures": 21
       }
     },
-    "221": {
-      "id": "221",
+    "3094201": {
+      "id": "3094201",
+      "topic_id": "221",
       "title": "Suspected Osteomyelitis, Septic Arthritis, or Soft Tissue Infection (Excluding Spine and Diabetic Foot)",
-      "url": "https://acsearch.acr.org/docs/221/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094201/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:51.804931+00:00",
+      "last_attempted": "2026-01-28T21:11:47.463606+00:00",
       "summary": {
         "first_line": [
           "Soft tissue infection suspected, upper arm, initial imaging",
@@ -3576,16 +3701,17 @@
         "total_procedures": 424
       }
     },
-    "80": {
-      "id": "80",
+    "69421": {
+      "id": "69421",
+      "topic_id": "80",
       "title": "Suspected Primary Bone Tumors",
-      "url": "https://acsearch.acr.org/docs/80/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69421/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:41:57.483738+00:00",
+      "last_attempted": "2026-01-28T21:11:52.871145+00:00",
       "summary": {
         "first_line": [
           "Primary bone tumor suspected, hand, initial imaging",
@@ -3607,14 +3733,15 @@
         "total_procedures": 272
       }
     },
-    "271": {
-      "id": "271",
+    "3102409": {
+      "id": "3102409",
+      "topic_id": "271",
       "title": "Altered Mental Status, Coma, Delirium, and Psychosis",
-      "url": "https://acsearch.acr.org/docs/271/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102409/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:01.721325+00:00",
+      "last_attempted": "2026-01-28T21:11:56.072006+00:00",
       "summary": {
         "first_line": [
           "Altered mental status, intracranial pathology suspected, initial imaging",
@@ -3636,16 +3763,17 @@
         "total_procedures": 14
       }
     },
-    "336": {
-      "id": "336",
+    "3195155": {
+      "id": "3195155",
+      "topic_id": "336",
       "title": "Brain Tumors",
-      "url": "https://acsearch.acr.org/docs/336/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195155/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:03.592456+00:00",
+      "last_attempted": "2026-01-28T21:11:57.871170+00:00",
       "summary": {
         "first_line": [
           "Brain tumor primary, screening, genetic risk factors",
@@ -3666,16 +3794,17 @@
         "total_procedures": 27
       }
     },
-    "281": {
-      "id": "281",
+    "3149013": {
+      "id": "3149013",
+      "topic_id": "281",
       "title": "Cerebrovascular Diseases-Aneurysm, Vascular Malformation, and Subarachnoid Hemorrhage",
-      "url": "https://acsearch.acr.org/docs/281/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3149013/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:05.244305+00:00",
+      "last_attempted": "2026-01-28T21:11:59.395761+00:00",
       "summary": {
         "first_line": [
           "SAH on CT, acute, next imaging study",
@@ -3696,17 +3825,18 @@
         "total_procedures": 31
       }
     },
-    "280": {
-      "id": "280",
+    "3149012": {
+      "id": "3149012",
+      "topic_id": "280",
       "title": "Cerebrovascular Diseases-Stroke and Stroke-Related Conditions",
-      "url": "https://acsearch.acr.org/docs/280/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3149012/Narrative/",
       "body_regions": [
         "head",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:07.341221+00:00",
+      "last_attempted": "2026-01-28T21:12:01.237534+00:00",
       "summary": {
         "first_line": [
           "TIA, symptoms resolved, initial imaging",
@@ -3728,16 +3858,17 @@
         "total_procedures": 33
       }
     },
-    "85": {
-      "id": "85",
+    "69426": {
+      "id": "69426",
+      "topic_id": "85",
       "title": "Cervical Pain or Cervical Radiculopathy",
-      "url": "https://acsearch.acr.org/docs/85/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69426/Narrative/",
       "body_regions": [
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:08.921646+00:00",
+      "last_attempted": "2026-01-28T21:12:03.723936+00:00",
       "summary": {
         "first_line": [
           "Cervical spine mechanical pain, increasing, no trauma, no red flags,  prior cervical spine surgery,  initial imaging",
@@ -3759,16 +3890,17 @@
         "total_procedures": 46
       }
     },
-    "167": {
-      "id": "167",
+    "69509": {
+      "id": "69509",
+      "topic_id": "167",
       "title": "Cranial Neuropathy",
-      "url": "https://acsearch.acr.org/docs/167/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69509/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:11.738320+00:00",
+      "last_attempted": "2026-01-28T21:12:05.845326+00:00",
       "summary": {
         "first_line": [
           "Anosmia, initial imaging",
@@ -3790,16 +3922,17 @@
         "total_procedures": 57
       }
     },
-    "274": {
-      "id": "274",
+    "3111292": {
+      "id": "3111292",
+      "topic_id": "274",
       "title": "Dementia",
-      "url": "https://acsearch.acr.org/docs/274/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3111292/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:14.567747+00:00",
+      "last_attempted": "2026-01-28T21:12:07.730695+00:00",
       "summary": {
         "first_line": [
           "Cognitive impairment, mild, dementia criteria not met, initial imaging",
@@ -3821,14 +3954,15 @@
         "total_procedures": 32
       }
     },
-    "367": {
-      "id": "367",
+    "3197165": {
+      "id": "3197165",
+      "topic_id": "367",
       "title": "Demyelinating Diseases",
-      "url": "https://acsearch.acr.org/docs/367/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3197165/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:16.427267+00:00",
+      "last_attempted": "2026-01-28T21:12:09.974281+00:00",
       "summary": {
         "first_line": [
           "Demyelinating disease of the CNS suspected, acute sensorimotor symptoms, initial imaging",
@@ -3850,14 +3984,15 @@
         "total_procedures": 40
       }
     },
-    "135": {
-      "id": "135",
+    "69477": {
+      "id": "69477",
+      "topic_id": "135",
       "title": "Dizziness and Ataxia",
-      "url": "https://acsearch.acr.org/docs/135/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69477/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:18.756632+00:00",
+      "last_attempted": "2026-01-28T21:12:11.965137+00:00",
       "summary": {
         "first_line": [
           "Vertigo, acute, persistent, HINTS exam, consistent with central vertigo, initial imaging",
@@ -3878,16 +4013,17 @@
         "total_procedures": 29
       }
     },
-    "139": {
-      "id": "139",
+    "69481": {
+      "id": "69481",
+      "topic_id": "139",
       "title": "Head Trauma",
-      "url": "https://acsearch.acr.org/docs/139/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69481/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:20.688611+00:00",
+      "last_attempted": "2026-01-28T21:12:14.156637+00:00",
       "summary": {
         "first_line": [
           "Head trauma, acute, mild, GCS 13-15, imaging indicated per clinical decision rule, initial imaging",
@@ -3909,16 +4045,17 @@
         "total_procedures": 42
       }
     },
-    "140": {
-      "id": "140",
+    "69482": {
+      "id": "69482",
+      "topic_id": "140",
       "title": "Headache",
-      "url": "https://acsearch.acr.org/docs/140/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69482/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:22.837046+00:00",
+      "last_attempted": "2026-01-28T21:12:16.374262+00:00",
       "summary": {
         "first_line": [
           "Headache, severe, sudden onset, maximal severity within an hour, initial imaging",
@@ -3940,14 +4077,15 @@
         "total_procedures": 37
       }
     },
-    "146": {
-      "id": "146",
+    "69488": {
+      "id": "69488",
+      "topic_id": "146",
       "title": "Hearing Loss and/or Vertigo",
-      "url": "https://acsearch.acr.org/docs/146/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69488/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:25.184874+00:00",
+      "last_attempted": "2026-01-28T21:12:18.467571+00:00",
       "summary": {
         "first_line": [
           "Hearing loss, conductive, no mass in ear, initial exam",
@@ -3968,14 +4106,15 @@
         "total_procedures": 24
       }
     },
-    "337": {
-      "id": "337",
+    "3195156": {
+      "id": "3195156",
+      "topic_id": "337",
       "title": "Horner Syndrome",
-      "url": "https://acsearch.acr.org/docs/337/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195156/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:27.011981+00:00",
+      "last_attempted": "2026-01-28T21:12:20.393517+00:00",
       "summary": {
         "first_line": [
           "Horner syndrome, acute onset, recent trauma, with or without localizing neuro signs or symptoms, initial imaging",
@@ -3996,14 +4135,15 @@
         "total_procedures": 46
       }
     },
-    "307": {
-      "id": "307",
+    "3179912": {
+      "id": "3179912",
+      "topic_id": "307",
       "title": "Imaging of Facial Trauma Following Primary Survey",
-      "url": "https://acsearch.acr.org/docs/307/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3179912/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:28.701594+00:00",
+      "last_attempted": "2026-01-28T21:12:22.714434+00:00",
       "summary": {
         "first_line": [
           "Frontal bone tenderness, frontal bone fracture suspected, initial imaging following primary survey",
@@ -4024,16 +4164,17 @@
         "total_procedures": 47
       }
     },
-    "340": {
-      "id": "340",
+    "3195159": {
+      "id": "3195159",
+      "topic_id": "340",
       "title": "Imaging of Suspected Intracranial Hypotension",
-      "url": "https://acsearch.acr.org/docs/340/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195159/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:30.765384+00:00",
+      "last_attempted": "2026-01-28T21:12:25.160229+00:00",
       "summary": {
         "first_line": [
           "Headache, orthostatic, intracranial hypotension suspected, no recent spinal intervention that could cause CSF leakage, initial imaging",
@@ -4053,14 +4194,15 @@
         "total_procedures": 27
       }
     },
-    "338": {
-      "id": "338",
+    "3195157": {
+      "id": "3195157",
+      "topic_id": "338",
       "title": "Inflammatory Ear Disease",
-      "url": "https://acsearch.acr.org/docs/338/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195157/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:32.862561+00:00",
+      "last_attempted": "2026-01-28T21:12:26.794621+00:00",
       "summary": {
         "first_line": [
           "Otitis externa, poorly controlled diabetes, cranial nerve deficits, initial imaging",
@@ -4082,16 +4224,17 @@
         "total_procedures": 47
       }
     },
-    "141": {
-      "id": "141",
+    "69483": {
+      "id": "69483",
+      "topic_id": "141",
       "title": "Low Back Pain",
-      "url": "https://acsearch.acr.org/docs/141/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69483/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:35.338598+00:00",
+      "last_attempted": "2026-01-28T21:12:29.249310+00:00",
       "summary": {
         "first_line": [
           "Low back pain, subacute, intervention candidate, persistent symptoms after 6 wks medical management, initial imaging",
@@ -4111,14 +4254,15 @@
         "total_procedures": 26
       }
     },
-    "275": {
-      "id": "275",
+    "3111293": {
+      "id": "3111293",
+      "topic_id": "275",
       "title": "Movement Disorders and Neurodegenerative Diseases",
-      "url": "https://acsearch.acr.org/docs/275/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3111293/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:37.267510+00:00",
+      "last_attempted": "2026-01-28T21:12:31.062270+00:00",
       "summary": {
         "first_line": [
           "Dementia, rapidly progressive, Creutzfeld-Jakob disease suspected, initial imaging",
@@ -4140,16 +4284,17 @@
         "total_procedures": 21
       }
     },
-    "142": {
-      "id": "142",
+    "69484": {
+      "id": "69484",
+      "topic_id": "142",
       "title": "Myelopathy",
-      "url": "https://acsearch.acr.org/docs/142/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69484/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:39.277626+00:00",
+      "last_attempted": "2026-01-28T21:12:32.472036+00:00",
       "summary": {
         "first_line": [
           "Myelopathy, acute, thoracic and lumbar spine, initial imaging",
@@ -4171,16 +4316,17 @@
         "total_procedures": 84
       }
     },
-    "162": {
-      "id": "162",
+    "69504": {
+      "id": "69504",
+      "topic_id": "162",
       "title": "Neck Mass/Adenopathy",
-      "url": "https://acsearch.acr.org/docs/162/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69504/Narrative/",
       "body_regions": [
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:41.413904+00:00",
+      "last_attempted": "2026-01-28T21:12:33.905862+00:00",
       "summary": {
         "first_line": [
           "Neck mass, nonpulsatile",
@@ -4202,14 +4348,15 @@
         "total_procedures": 20
       }
     },
-    "143": {
-      "id": "143",
+    "69485": {
+      "id": "69485",
+      "topic_id": "143",
       "title": "Neuroendocrine Imaging",
-      "url": "https://acsearch.acr.org/docs/143/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69485/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:43.311780+00:00",
+      "last_attempted": "2026-01-28T21:12:35.225420+00:00",
       "summary": {
         "first_line": [
           "Hypopituitarism known",
@@ -4230,14 +4377,15 @@
         "total_procedures": 19
       }
     },
-    "144": {
-      "id": "144",
+    "69486": {
+      "id": "69486",
+      "topic_id": "144",
       "title": "Orbits, Vision, and Visual Loss",
-      "url": "https://acsearch.acr.org/docs/144/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69486/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:44.898711+00:00",
+      "last_attempted": "2026-01-28T21:12:36.822589+00:00",
       "summary": {
         "first_line": [
           "Orbital trauma, visual defect, initial exam",
@@ -4259,16 +4407,17 @@
         "total_procedures": 34
       }
     },
-    "292": {
-      "id": "292",
+    "3158171": {
+      "id": "3158171",
+      "topic_id": "292",
       "title": "Parathyroid Adenoma",
-      "url": "https://acsearch.acr.org/docs/292/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158171/Narrative/",
       "body_regions": [
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:46.755316+00:00",
+      "last_attempted": "2026-01-28T21:12:39.056892+00:00",
       "summary": {
         "first_line": [
           "Hyperparathyroidism, primary, initial imaging",
@@ -4290,16 +4439,17 @@
         "total_procedures": 18
       }
     },
-    "233": {
-      "id": "233",
+    "3099165": {
+      "id": "3099165",
+      "topic_id": "233",
       "title": "Penetrating Neck Injury",
-      "url": "https://acsearch.acr.org/docs/233/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099165/Narrative/",
       "body_regions": [
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:48.284272+00:00",
+      "last_attempted": "2026-01-28T21:12:43.717061+00:00",
       "summary": {
         "first_line": [
           "Neck trauma, penetrating, soft tissue injury suspected",
@@ -4316,14 +4466,15 @@
         "total_procedures": 11
       }
     },
-    "145": {
-      "id": "145",
+    "69487": {
+      "id": "69487",
+      "topic_id": "145",
       "title": "Plexopathy",
-      "url": "https://acsearch.acr.org/docs/145/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69487/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:50.570805+00:00",
+      "last_attempted": "2026-01-28T21:12:45.898677+00:00",
       "summary": {
         "first_line": [
           "Plexopathy brachial, chronic, nontraumatic,  no malignancy, initial imaging",
@@ -4345,16 +4496,17 @@
         "total_procedures": 39
       }
     },
-    "137": {
-      "id": "137",
+    "69479": {
+      "id": "69479",
+      "topic_id": "137",
       "title": "Seizures and Epilepsy",
-      "url": "https://acsearch.acr.org/docs/137/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69479/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:52.299585+00:00",
+      "last_attempted": "2026-01-28T21:12:48.086047+00:00",
       "summary": {
         "first_line": [
           "Seizure, new, no trauma, initial imaging",
@@ -4376,14 +4528,15 @@
         "total_procedures": 15
       }
     },
-    "160": {
-      "id": "160",
+    "69502": {
+      "id": "69502",
+      "topic_id": "160",
       "title": "Sinonasal Disease",
-      "url": "https://acsearch.acr.org/docs/160/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69502/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:53.586370+00:00",
+      "last_attempted": "2026-01-28T21:12:49.611263+00:00",
       "summary": {
         "first_line": [
           "Rhinosinusitis, acute, intracranial complication suspected, initial imaging",
@@ -4404,17 +4557,18 @@
         "total_procedures": 37
       }
     },
-    "314": {
-      "id": "314",
+    "3193973": {
+      "id": "3193973",
+      "topic_id": "314",
       "title": "Staging and Post-Therapy Assessment of Head and Neck Cancer",
-      "url": "https://acsearch.acr.org/docs/314/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3193973/Narrative/",
       "body_regions": [
         "head",
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:42:56.146376+00:00",
+      "last_attempted": "2026-01-28T21:12:51.975473+00:00",
       "summary": {
         "first_line": [
           "Unknown primary head and neck cancer, initial staging",
@@ -4436,16 +4590,17 @@
         "total_procedures": 91
       }
     },
-    "279": {
-      "id": "279",
+    "3148734": {
+      "id": "3148734",
+      "topic_id": "279",
       "title": "Suspected Spine Infection",
-      "url": "https://acsearch.acr.org/docs/279/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3148734/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:01.059629+00:00",
+      "last_attempted": "2026-01-28T21:12:56.071076+00:00",
       "summary": {
         "first_line": [
           "Spine infection suspected, cervical and lumbar, neck or back pain, with or without fever, dialysis, initial imaging",
@@ -4467,16 +4622,17 @@
         "total_procedures": 156
       }
     },
-    "339": {
-      "id": "339",
+    "3195158": {
+      "id": "3195158",
+      "topic_id": "339",
       "title": "Thoracic Back Pain",
-      "url": "https://acsearch.acr.org/docs/339/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195158/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:04.411218+00:00",
+      "last_attempted": "2026-01-28T21:12:59.959558+00:00",
       "summary": {
         "first_line": [
           "Thoracic back pain, myelopathy, initial imaging",
@@ -4498,16 +4654,17 @@
         "total_procedures": 41
       }
     },
-    "200": {
-      "id": "200",
+    "3083061": {
+      "id": "3083061",
+      "topic_id": "200",
       "title": "Thoracic Outlet Syndrome",
-      "url": "https://acsearch.acr.org/docs/200/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3083061/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:06.152986+00:00",
+      "last_attempted": "2026-01-28T21:13:01.650925+00:00",
       "summary": {
         "first_line": [
           "Thoracic outlet syndrome, neurogenic, initial imaging",
@@ -4529,16 +4686,17 @@
         "total_procedures": 21
       }
     },
-    "252": {
-      "id": "252",
+    "3102386": {
+      "id": "3102386",
+      "topic_id": "252",
       "title": "Thyroid Disease",
-      "url": "https://acsearch.acr.org/docs/252/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102386/Narrative/",
       "body_regions": [
         "neck"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:07.427319+00:00",
+      "last_attempted": "2026-01-28T21:13:03.101013+00:00",
       "summary": {
         "first_line": [
           "Thyroid nodule, palpable, euthyroid",
@@ -4560,14 +4718,15 @@
         "total_procedures": 31
       }
     },
-    "219": {
-      "id": "219",
+    "3094199": {
+      "id": "3094199",
+      "topic_id": "219",
       "title": "Tinnitus",
-      "url": "https://acsearch.acr.org/docs/219/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094199/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:09.301477+00:00",
+      "last_attempted": "2026-01-28T21:13:05.160735+00:00",
       "summary": {
         "first_line": [
           "Tinnitus, pulsatile, bilateral, no retrotympanic lesion on otoscopy, initial imaging",
@@ -4589,14 +4748,15 @@
         "total_procedures": 28
       }
     },
-    "361": {
-      "id": "361",
+    "3196640": {
+      "id": "3196640",
+      "topic_id": "361",
       "title": "Vision Loss",
-      "url": "https://acsearch.acr.org/docs/361/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196640/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:11.559674+00:00",
+      "last_attempted": "2026-01-28T21:13:07.402974+00:00",
       "summary": {
         "first_line": [
           "Visual defect, acute, posttraumatic, orbital injury suspected, initial imaging",
@@ -4616,14 +4776,15 @@
         "total_procedures": 50
       }
     },
-    "351": {
-      "id": "351",
+    "3196027": {
+      "id": "3196027",
+      "topic_id": "351",
       "title": "Abdominal Pain-Child",
-      "url": "https://acsearch.acr.org/docs/351/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196027/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:47.387791+00:00",
+      "last_attempted": "2026-01-28T21:13:09.703676+00:00",
       "summary": {
         "first_line": [
           "Abdominal pain, acute, intussusception suspected, initial imaging",
@@ -4643,14 +4804,15 @@
         "total_procedures": 23
       }
     },
-    "25": {
-      "id": "25",
+    "69361": {
+      "id": "69361",
+      "topic_id": "25",
       "title": "Acutely Limping Child Up To Age 5",
-      "url": "https://acsearch.acr.org/docs/25/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69361/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:49.089009+00:00",
+      "last_attempted": "2026-01-28T21:13:10.950453+00:00",
       "summary": {
         "first_line": [
           "Ped <=5yo, acute limp, non localized",
@@ -4672,14 +4834,15 @@
         "total_procedures": 71
       }
     },
-    "254": {
-      "id": "254",
+    "3102388": {
+      "id": "3102388",
+      "topic_id": "254",
       "title": "Antenatal Hydronephrosis-Infant",
-      "url": "https://acsearch.acr.org/docs/254/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102388/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:51.331347+00:00",
+      "last_attempted": "2026-01-28T21:13:12.387536+00:00",
       "summary": {
         "first_line": [
           "Hydronephrosis, antenatal, initial neonatal imaging",
@@ -4697,14 +4860,15 @@
         "total_procedures": 21
       }
     },
-    "293": {
-      "id": "293",
+    "3158172": {
+      "id": "3158172",
+      "topic_id": "293",
       "title": "Ataxia-Child",
-      "url": "https://acsearch.acr.org/docs/293/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158172/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:53.042856+00:00",
+      "last_attempted": "2026-01-28T21:13:14.294913+00:00",
       "summary": {
         "first_line": [
           "Ataxia, acute, no recent trauma, initial imaging",
@@ -4726,16 +4890,17 @@
         "total_procedures": 34
       }
     },
-    "230": {
-      "id": "230",
+    "3099011": {
+      "id": "3099011",
+      "topic_id": "230",
       "title": "Back Pain-Child",
-      "url": "https://acsearch.acr.org/docs/230/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099011/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:43:55.109536+00:00",
+      "last_attempted": "2026-01-28T21:13:15.846035+00:00",
       "summary": {
         "first_line": [
           "Thoracic spine pain, lasting >4wks, initial imaging",
@@ -4756,16 +4921,17 @@
         "total_procedures": 259
       }
     },
-    "246": {
-      "id": "246",
+    "3102253": {
+      "id": "3102253",
+      "topic_id": "246",
       "title": "Cerebrovascular Disease-Child",
-      "url": "https://acsearch.acr.org/docs/246/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102253/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:04.860144+00:00",
+      "last_attempted": "2026-01-28T21:13:21.728489+00:00",
       "summary": {
         "first_line": [
           "Stroke suspected, acute non-sickle cell, <24 hrs from sx onset, emergent imaging",
@@ -4787,16 +4953,17 @@
         "total_procedures": 41
       }
     },
-    "347": {
-      "id": "347",
+    "3195835": {
+      "id": "3195835",
+      "topic_id": "347",
       "title": "Chest Pain-Child",
-      "url": "https://acsearch.acr.org/docs/347/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195835/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:07.317570+00:00",
+      "last_attempted": "2026-01-28T21:13:23.689007+00:00",
       "summary": {
         "first_line": [
           "Chest wall pain, initial imaging",
@@ -4818,14 +4985,15 @@
         "total_procedures": 42
       }
     },
-    "295": {
-      "id": "295",
+    "3158174": {
+      "id": "3158174",
+      "topic_id": "295",
       "title": "Crohn Disease-Child",
-      "url": "https://acsearch.acr.org/docs/295/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158174/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:09.140358+00:00",
+      "last_attempted": "2026-01-28T21:13:25.767121+00:00",
       "summary": {
         "first_line": [
           "Crohn disease suspected, no prior Crohn diagnosis, initial imaging",
@@ -4847,16 +5015,17 @@
         "total_procedures": 24
       }
     },
-    "95": {
-      "id": "95",
+    "69437": {
+      "id": "69437",
+      "topic_id": "95",
       "title": "Developmental Dysplasia of the Hip-Child",
-      "url": "https://acsearch.acr.org/docs/95/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69437/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:11.080909+00:00",
+      "last_attempted": "2026-01-28T21:13:27.586198+00:00",
       "summary": {
         "first_line": [
           "Hip dysplasia suspected",
@@ -4873,14 +5042,15 @@
         "total_procedures": 10
       }
     },
-    "96": {
-      "id": "96",
+    "69438": {
+      "id": "69438",
+      "topic_id": "96",
       "title": "Fever Without Source or Unknown Origin-Child",
-      "url": "https://acsearch.acr.org/docs/96/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69438/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:13.313707+00:00",
+      "last_attempted": "2026-01-28T21:13:28.867922+00:00",
       "summary": {
         "first_line": [],
         "alternatives": [
@@ -4896,16 +5066,17 @@
         "total_procedures": 30
       }
     },
-    "199": {
-      "id": "199",
+    "3083021": {
+      "id": "3083021",
+      "topic_id": "199",
       "title": "Head Trauma-Child",
-      "url": "https://acsearch.acr.org/docs/199/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3083021/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:15.317964+00:00",
+      "last_attempted": "2026-01-28T21:13:30.284297+00:00",
       "summary": {
         "first_line": [
           "Head trauma, minor, acute, blunt, basilar skull fracture suspected, not abuse, initial imaging",
@@ -4927,16 +5098,17 @@
         "total_procedures": 27
       }
     },
-    "97": {
-      "id": "97",
+    "69439": {
+      "id": "69439",
+      "topic_id": "97",
       "title": "Headache-Child",
-      "url": "https://acsearch.acr.org/docs/97/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69439/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:17.486816+00:00",
+      "last_attempted": "2026-01-28T21:13:32.241649+00:00",
       "summary": {
         "first_line": [
           "Headache, secondary, initial exam",
@@ -4953,14 +5125,15 @@
         "total_procedures": 17
       }
     },
-    "98": {
-      "id": "98",
+    "69440": {
+      "id": "69440",
+      "topic_id": "98",
       "title": "Hematuria-Child",
-      "url": "https://acsearch.acr.org/docs/98/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69440/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:19.021543+00:00",
+      "last_attempted": "2026-01-28T21:13:33.899302+00:00",
       "summary": {
         "first_line": [
           "Ped, hematuria, micro, nontraumatic, painless, positive proteinuria, initial exam",
@@ -4981,14 +5154,15 @@
         "total_procedures": 19
       }
     },
-    "384": {
-      "id": "384",
+    "3197198": {
+      "id": "3197198",
+      "topic_id": "384",
       "title": "Ingested or Aspirated Foreign Body-Child",
-      "url": "https://acsearch.acr.org/docs/384/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3197198/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:21.666767+00:00",
+      "last_attempted": "2026-01-28T21:13:35.508996+00:00",
       "summary": {
         "first_line": [
           "Aspirated foreign body suspected, initial imaging",
@@ -5009,16 +5183,17 @@
         "total_procedures": 21
       }
     },
-    "346": {
-      "id": "346",
+    "3195834": {
+      "id": "3195834",
+      "topic_id": "346",
       "title": "Joint Pain: Idiopathic Arthritis-Child",
-      "url": "https://acsearch.acr.org/docs/346/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195834/Narrative/",
       "body_regions": [
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:23.253282+00:00",
+      "last_attempted": "2026-01-28T21:13:37.152064+00:00",
       "summary": {
         "first_line": [
           "Ankle swelling, idiopathic arthritis suspected, initial imaging",
@@ -5040,14 +5215,15 @@
         "total_procedures": 201
       }
     },
-    "294": {
-      "id": "294",
+    "3158173": {
+      "id": "3158173",
+      "topic_id": "294",
       "title": "Orbital Imaging and Vision Loss-Child",
-      "url": "https://acsearch.acr.org/docs/294/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158173/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:26.569485+00:00",
+      "last_attempted": "2026-01-28T21:13:40.323552+00:00",
       "summary": {
         "first_line": [
           "Visual loss, traumatic, orbital injury suspected, initial imaging",
@@ -5069,14 +5245,15 @@
         "total_procedures": 44
       }
     },
-    "296": {
-      "id": "296",
+    "3158175": {
+      "id": "3158175",
+      "topic_id": "296",
       "title": "Osteomyelitis or Septic Arthritis-Child (Excluding Axial Skeleton)",
-      "url": "https://acsearch.acr.org/docs/296/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158175/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:28.957990+00:00",
+      "last_attempted": "2026-01-28T21:13:42.494480+00:00",
       "summary": {
         "first_line": [
           "Septic arthritis suspected, elbow, initial imaging",
@@ -5098,14 +5275,15 @@
         "total_procedures": 211
       }
     },
-    "253": {
-      "id": "253",
+    "3102387": {
+      "id": "3102387",
+      "topic_id": "253",
       "title": "Pneumonia in the Immunocompetent Child",
-      "url": "https://acsearch.acr.org/docs/253/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102387/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:35.686208+00:00",
+      "last_attempted": "2026-01-28T21:13:46.677703+00:00",
       "summary": {
         "first_line": [
           "Community acquired pneumonia, immunocompetent, hospital admission required, initial imaging",
@@ -5126,14 +5304,15 @@
         "total_procedures": 18
       }
     },
-    "242": {
-      "id": "242",
+    "3101564": {
+      "id": "3101564",
+      "topic_id": "242",
       "title": "Scoliosis-Child",
-      "url": "https://acsearch.acr.org/docs/242/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3101564/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:37.888107+00:00",
+      "last_attempted": "2026-01-28T21:13:48.947815+00:00",
       "summary": {
         "first_line": [
           "Ped, scoliosis, congenital, lumbar spine",
@@ -5155,16 +5334,17 @@
         "total_procedures": 45
       }
     },
-    "99": {
-      "id": "99",
+    "69441": {
+      "id": "69441",
+      "topic_id": "99",
       "title": "Seizures-Child",
-      "url": "https://acsearch.acr.org/docs/99/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69441/Narrative/",
       "body_regions": [
         "head"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:40.224064+00:00",
+      "last_attempted": "2026-01-28T21:13:51.274227+00:00",
       "summary": {
         "first_line": [
           "Seizure, neonate, initial imaging",
@@ -5186,14 +5366,15 @@
         "total_procedures": 16
       }
     },
-    "100": {
-      "id": "100",
+    "69442": {
+      "id": "69442",
+      "topic_id": "100",
       "title": "Sinusitis\u2013Child",
-      "url": "https://acsearch.acr.org/docs/100/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69442/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:42.658422+00:00",
+      "last_attempted": "2026-01-28T21:13:53.214037+00:00",
       "summary": {
         "first_line": [
           "Ped, sinusitis, persistent or recurrent, initial exam",
@@ -5215,16 +5396,17 @@
         "total_procedures": 23
       }
     },
-    "309": {
-      "id": "309",
+    "3186695": {
+      "id": "3186695",
+      "topic_id": "309",
       "title": "Soft Tissue Vascular Anomalies: Vascular Malformations  and Infantile Vascular Tumors (Non-CNS)-Child",
-      "url": "https://acsearch.acr.org/docs/309/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3186695/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:44.206730+00:00",
+      "last_attempted": "2026-01-28T21:13:55.263097+00:00",
       "summary": {
         "first_line": [
           "Hemangioma suspected, neck, initial imaging",
@@ -5246,14 +5428,15 @@
         "total_procedures": 278
       }
     },
-    "273": {
-      "id": "273",
+    "3105874": {
+      "id": "3105874",
+      "topic_id": "273",
       "title": "Suspected Appendicitis-Child",
-      "url": "https://acsearch.acr.org/docs/273/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3105874/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:50.096513+00:00",
+      "last_attempted": "2026-01-28T21:13:59.022851+00:00",
       "summary": {
         "first_line": [
           "Appendicitis suspected, intermediate clinical risk, initial exam",
@@ -5272,14 +5455,15 @@
         "total_procedures": 14
       }
     },
-    "101": {
-      "id": "101",
+    "69443": {
+      "id": "69443",
+      "topic_id": "101",
       "title": "Suspected Physical Abuse-Child",
-      "url": "https://acsearch.acr.org/docs/101/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69443/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:51.565787+00:00",
+      "last_attempted": "2026-01-28T21:14:00.743849+00:00",
       "summary": {
         "first_line": [
           "Physical abuse suspected, concern for skull injury based on clinical presentation or hx, no apparent neurological or skeletal or visceral injuries, initial imaging",
@@ -5301,16 +5485,17 @@
         "total_procedures": 119
       }
     },
-    "240": {
-      "id": "240",
+    "3101274": {
+      "id": "3101274",
+      "topic_id": "240",
       "title": "Suspected Spine Trauma-Child",
-      "url": "https://acsearch.acr.org/docs/240/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3101274/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:57.527995+00:00",
+      "last_attempted": "2026-01-28T21:14:05.809968+00:00",
       "summary": {
         "first_line": [
           "Neck trauma, predisposing condition to spinal injury",
@@ -5331,14 +5516,15 @@
         "total_procedures": 31
       }
     },
-    "102": {
-      "id": "102",
+    "69444": {
+      "id": "69444",
+      "topic_id": "102",
       "title": "Urinary Tract Infection\u2013Child",
-      "url": "https://acsearch.acr.org/docs/102/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69444/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:44:59.652923+00:00",
+      "last_attempted": "2026-01-28T21:14:08.005392+00:00",
       "summary": {
         "first_line": [
           "UTI, first febrile, response to medical management, initial imaging",
@@ -5358,14 +5544,15 @@
         "total_procedures": 15
       }
     },
-    "103": {
-      "id": "103",
+    "69445": {
+      "id": "69445",
+      "topic_id": "103",
       "title": "Vomiting in Infants",
-      "url": "https://acsearch.acr.org/docs/103/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69445/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:01.692081+00:00",
+      "last_attempted": "2026-01-28T21:14:10.196995+00:00",
       "summary": {
         "first_line": [
           "Vomiting, poor feeding, initial imaging",
@@ -5387,14 +5574,15 @@
         "total_procedures": 15
       }
     },
-    "270": {
-      "id": "270",
+    "3102405": {
+      "id": "3102405",
+      "topic_id": "270",
       "title": "Major Blunt Trauma",
-      "url": "https://acsearch.acr.org/docs/270/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102405/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:03.498492+00:00",
+      "last_attempted": "2026-01-28T21:14:12.012174+00:00",
       "summary": {
         "first_line": [
           "Major blunt trauma, hemodynamically unstable, initial imaging",
@@ -5416,14 +5604,15 @@
         "total_procedures": 53
       }
     },
-    "333": {
-      "id": "333",
+    "3195152": {
+      "id": "3195152",
+      "topic_id": "333",
       "title": "Penetrating Torso Trauma",
-      "url": "https://acsearch.acr.org/docs/333/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195152/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:05.038367+00:00",
+      "last_attempted": "2026-01-28T21:14:13.993542+00:00",
       "summary": {
         "first_line": [
           "Torso trauma, penetrating, hypotensive, initial imaging",
@@ -5445,14 +5634,15 @@
         "total_procedures": 25
       }
     },
-    "317": {
-      "id": "317",
+    "3194378": {
+      "id": "3194378",
+      "topic_id": "317",
       "title": "Staging and Follow-Up of Leukemia",
-      "url": "https://acsearch.acr.org/docs/317/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3194378/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:07.231895+00:00",
+      "last_attempted": "2026-01-28T21:14:15.517321+00:00",
       "summary": {
         "first_line": [
           "Acute lymphoblastic leukemia, extra medullary disease, post therapy evaluation",
@@ -5473,14 +5663,15 @@
         "total_procedures": 43
       }
     },
-    "341": {
-      "id": "341",
+    "3195160": {
+      "id": "3195160",
+      "topic_id": "341",
       "title": "Staging and Follow-up of Melanoma",
-      "url": "https://acsearch.acr.org/docs/341/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195160/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:09.972320+00:00",
+      "last_attempted": "2026-01-28T21:14:18.101282+00:00",
       "summary": {
         "first_line": [
           "Cutaneous melanoma, abdomen, newly diagnosed, no signs or symptoms of regional or metastatic disease, no regional nodal mets on pathology, initial staging",
@@ -5502,14 +5693,15 @@
         "total_procedures": 193
       }
     },
-    "104": {
-      "id": "104",
+    "69446": {
+      "id": "69446",
+      "topic_id": "104",
       "title": "Acute Respiratory Illness in Immunocompetent Patients",
-      "url": "https://acsearch.acr.org/docs/104/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69446/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:17.727184+00:00",
+      "last_attempted": "2026-01-28T21:14:24.086181+00:00",
       "summary": {
         "first_line": [
           "Respiratory illness, acute, immunocompetent, risk factors,  initial imaging",
@@ -5530,14 +5722,15 @@
         "total_procedures": 32
       }
     },
-    "105": {
-      "id": "105",
+    "69447": {
+      "id": "69447",
+      "topic_id": "105",
       "title": "Acute Respiratory Illness in Immunocompromised Patients",
-      "url": "https://acsearch.acr.org/docs/105/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69447/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:20.369174+00:00",
+      "last_attempted": "2026-01-28T21:14:26.110911+00:00",
       "summary": {
         "first_line": [
           "Respiratory illness, acute, immunodeficiency, initial exam",
@@ -5559,14 +5752,15 @@
         "total_procedures": 12
       }
     },
-    "298": {
-      "id": "298",
+    "3158177": {
+      "id": "3158177",
+      "topic_id": "298",
       "title": "Chronic Cough",
-      "url": "https://acsearch.acr.org/docs/298/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158177/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:22.352443+00:00",
+      "last_attempted": "2026-01-28T21:14:27.960728+00:00",
       "summary": {
         "first_line": [
           "Cough, chronic, >8 wks, no lung cancer risk factors, initial imaging",
@@ -5586,16 +5780,17 @@
         "total_procedures": 16
       }
     },
-    "106": {
-      "id": "106",
+    "69448": {
+      "id": "69448",
+      "topic_id": "106",
       "title": "Chronic Dyspnea-Noncardiovascular Origin",
-      "url": "https://acsearch.acr.org/docs/106/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69448/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:23.848291+00:00",
+      "last_attempted": "2026-01-28T21:14:29.388569+00:00",
       "summary": {
         "first_line": [
           "Dyspnea, chronic, unclear etiology, initial imaging",
@@ -5615,16 +5810,17 @@
         "total_procedures": 17
       }
     },
-    "284": {
-      "id": "284",
+    "3157911": {
+      "id": "3157911",
+      "topic_id": "284",
       "title": "Diffuse Lung Disease",
-      "url": "https://acsearch.acr.org/docs/284/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3157911/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:26.313663+00:00",
+      "last_attempted": "2026-01-28T21:14:30.840558+00:00",
       "summary": {
         "first_line": [
           "Diffuse lung disease suspected, initial imaging",
@@ -5645,14 +5841,15 @@
         "total_procedures": 11
       }
     },
-    "107": {
-      "id": "107",
+    "69449": {
+      "id": "69449",
+      "topic_id": "107",
       "title": "Hemoptysis",
-      "url": "https://acsearch.acr.org/docs/107/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69449/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:28.153560+00:00",
+      "last_attempted": "2026-01-28T21:14:32.277143+00:00",
       "summary": {
         "first_line": [
           "Hemoptysis, massive, life threatening, initial imaging",
@@ -5670,14 +5867,15 @@
         "total_procedures": 8
       }
     },
-    "285": {
-      "id": "285",
+    "3157912": {
+      "id": "3157912",
+      "topic_id": "285",
       "title": "Imaging of Mediastinal Masses",
-      "url": "https://acsearch.acr.org/docs/285/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3157912/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:30.298318+00:00",
+      "last_attempted": "2026-01-28T21:14:34.186456+00:00",
       "summary": {
         "first_line": [
           "Mediastinal mass suspected, initial imaging",
@@ -5695,14 +5893,15 @@
         "total_procedures": 15
       }
     },
-    "234": {
-      "id": "234",
+    "3099187": {
+      "id": "3099187",
+      "topic_id": "234",
       "title": "Imaging of Possible Tuberculosis",
-      "url": "https://acsearch.acr.org/docs/234/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099187/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:32.329015+00:00",
+      "last_attempted": "2026-01-28T21:14:35.982948+00:00",
       "summary": {
         "first_line": [
           "Tuberculosis, active suspected",
@@ -5721,16 +5920,17 @@
         "total_procedures": 8
       }
     },
-    "113": {
-      "id": "113",
+    "69455": {
+      "id": "69455",
+      "topic_id": "113",
       "title": "Incidentally Detected Indeterminate Pulmonary Nodule",
-      "url": "https://acsearch.acr.org/docs/113/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69455/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:33.942194+00:00",
+      "last_attempted": "2026-01-28T21:14:40.650733+00:00",
       "summary": {
         "first_line": [
           "Pulmonary nodule on chest radiography, incidental, indeterminate, next imaging study",
@@ -5749,14 +5949,15 @@
         "total_procedures": 12
       }
     },
-    "110": {
-      "id": "110",
+    "69452": {
+      "id": "69452",
+      "topic_id": "110",
       "title": "Intensive Care Unit Patients",
-      "url": "https://acsearch.acr.org/docs/110/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69452/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:36.017006+00:00",
+      "last_attempted": "2026-01-28T21:14:42.706166+00:00",
       "summary": {
         "first_line": [
           "ICU patient, newly admitted, initial imaging",
@@ -5774,16 +5975,17 @@
         "total_procedures": 11
       }
     },
-    "256": {
-      "id": "256",
+    "3102390": {
+      "id": "3102390",
+      "topic_id": "256",
       "title": "Lung Cancer Screening",
-      "url": "https://acsearch.acr.org/docs/256/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102390/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:37.823334+00:00",
+      "last_attempted": "2026-01-28T21:14:44.422020+00:00",
       "summary": {
         "first_line": [
           "Lung cancer screening, current smoker, >=20 pack yrs, initial imaging",
@@ -5798,16 +6000,17 @@
         "total_procedures": 21
       }
     },
-    "343": {
-      "id": "343",
+    "3195162": {
+      "id": "3195162",
+      "topic_id": "343",
       "title": "Lung Cancer: Surveillance After Therapy",
-      "url": "https://acsearch.acr.org/docs/343/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195162/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:39.989404+00:00",
+      "last_attempted": "2026-01-28T21:14:46.688863+00:00",
       "summary": {
         "first_line": [
           "NSCLC, stage I-III, treated, routine noninvasive imaging surveillance",
@@ -5827,16 +6030,17 @@
         "total_procedures": 30
       }
     },
-    "114": {
-      "id": "114",
+    "69456": {
+      "id": "69456",
+      "topic_id": "114",
       "title": "Noninvasive Clinical Staging of Primary Lung Cancer",
-      "url": "https://acsearch.acr.org/docs/114/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69456/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:42.862854+00:00",
+      "last_attempted": "2026-01-28T21:14:48.783524+00:00",
       "summary": {
         "first_line": [
           "Lung cancer, non-small cell, staging",
@@ -5858,16 +6062,17 @@
         "total_procedures": 19
       }
     },
-    "297": {
-      "id": "297",
+    "3158176": {
+      "id": "3158176",
+      "topic_id": "297",
       "title": "Nontraumatic Chest Wall Pain",
-      "url": "https://acsearch.acr.org/docs/297/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158176/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:44.496008+00:00",
+      "last_attempted": "2026-01-28T21:14:50.105365+00:00",
       "summary": {
         "first_line": [
           "Chest wall pain, nontraumatic, no hx of malignancy, initial imaging",
@@ -5888,16 +6093,17 @@
         "total_procedures": 16
       }
     },
-    "209": {
-      "id": "209",
+    "3091680": {
+      "id": "3091680",
+      "topic_id": "209",
       "title": "Occupational Lung Diseases",
-      "url": "https://acsearch.acr.org/docs/209/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3091680/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:46.737742+00:00",
+      "last_attempted": "2026-01-28T21:14:51.874756+00:00",
       "summary": {
         "first_line": [
           "Occupational exposure, lung disease screening and surveillance, initial imaging",
@@ -5918,17 +6124,18 @@
         "total_procedures": 13
       }
     },
-    "108": {
-      "id": "108",
+    "69450": {
+      "id": "69450",
+      "topic_id": "108",
       "title": "Rib Fractures",
-      "url": "https://acsearch.acr.org/docs/108/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69450/Narrative/",
       "body_regions": [
         "chest",
         "msk"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:48.864594+00:00",
+      "last_attempted": "2026-01-28T21:14:54.074571+00:00",
       "summary": {
         "first_line": [
           "Chest trauma, blunt, rib fracture suspected",
@@ -5947,16 +6154,17 @@
         "total_procedures": 10
       }
     },
-    "109": {
-      "id": "109",
+    "69451": {
+      "id": "69451",
+      "topic_id": "109",
       "title": "Routine Chest Imaging",
-      "url": "https://acsearch.acr.org/docs/109/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69451/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:50.964516+00:00",
+      "last_attempted": "2026-01-28T21:14:55.702669+00:00",
       "summary": {
         "first_line": [],
         "alternatives": [
@@ -5972,16 +6180,17 @@
         "total_procedures": 14
       }
     },
-    "182": {
-      "id": "182",
+    "71095": {
+      "id": "71095",
+      "topic_id": "182",
       "title": "Suspected Pulmonary Hypertension",
-      "url": "https://acsearch.acr.org/docs/182/Narrative/",
+      "url": "https://acsearch.acr.org/docs/71095/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:53.051276+00:00",
+      "last_attempted": "2026-01-28T21:14:57.849983+00:00",
       "summary": {
         "first_line": [
           "Pulmonary hypertension suspected, initial imaging",
@@ -6002,14 +6211,15 @@
         "total_procedures": 14
       }
     },
-    "342": {
-      "id": "342",
+    "3195161": {
+      "id": "3195161",
+      "topic_id": "342",
       "title": "Tracheobronchial Disease",
-      "url": "https://acsearch.acr.org/docs/342/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3195161/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:45:55.058406+00:00",
+      "last_attempted": "2026-01-28T21:14:59.083798+00:00",
       "summary": {
         "first_line": [
           "Bronchial stenosis suspected, initial imaging",
@@ -6031,14 +6241,15 @@
         "total_procedures": 30
       }
     },
-    "300": {
-      "id": "300",
+    "3158179": {
+      "id": "3158179",
+      "topic_id": "300",
       "title": "Workup of Pleural Effusion or Pleural Disease",
-      "url": "https://acsearch.acr.org/docs/300/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158179/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:38.177181+00:00",
+      "last_attempted": "2026-01-28T21:15:01.232608+00:00",
       "summary": {
         "first_line": [
           "Parapneumonic effusion suspected, recent pneumonia,  initial imaging",
@@ -6060,14 +6271,15 @@
         "total_procedures": 16
       }
     },
-    "26": {
-      "id": "26",
+    "69362": {
+      "id": "69362",
+      "topic_id": "26",
       "title": "Acute Onset Flank Pain-Suspicion of Stone Disease (Urolithiasis)",
-      "url": "https://acsearch.acr.org/docs/26/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69362/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:40.702554+00:00",
+      "last_attempted": "2026-01-28T21:15:03.621669+00:00",
       "summary": {
         "first_line": [
           "Flank pain, acute, stone disease suspected, remote hx of stone disease, initial imaging",
@@ -6089,16 +6301,17 @@
         "total_procedures": 18
       }
     },
-    "27": {
-      "id": "27",
+    "69363": {
+      "id": "69363",
+      "topic_id": "27",
       "title": "Acute Onset of Scrotal Pain-Without Trauma, Without Antecedent Mass",
-      "url": "https://acsearch.acr.org/docs/27/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69363/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:42.323902+00:00",
+      "last_attempted": "2026-01-28T21:15:05.768224+00:00",
       "summary": {
         "first_line": [
           "Scrotal pain, acute, nontraumatic, no antecedent mass, initial imaging",
@@ -6113,14 +6326,15 @@
         "total_procedures": 8
       }
     },
-    "147": {
-      "id": "147",
+    "69489": {
+      "id": "69489",
+      "topic_id": "147",
       "title": "Acute Pyelonephritis",
-      "url": "https://acsearch.acr.org/docs/147/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69489/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:44.303432+00:00",
+      "last_attempted": "2026-01-28T21:15:07.843736+00:00",
       "summary": {
         "first_line": [
           "Pyelonephritis suspected, acute, diabetes, initial imaging",
@@ -6141,16 +6355,17 @@
         "total_procedures": 34
       }
     },
-    "30": {
-      "id": "30",
+    "69366": {
+      "id": "69366",
+      "topic_id": "30",
       "title": "Adrenal Mass Evaluation",
-      "url": "https://acsearch.acr.org/docs/30/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69366/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:46.688199+00:00",
+      "last_attempted": "2026-01-28T21:15:10.228526+00:00",
       "summary": {
         "first_line": [
           "Adrenal mass, indeterminate, 1-2cm on imaging, no benign features, no hx of malignancy, follow up imaging in 12 mos",
@@ -6167,14 +6382,15 @@
         "total_procedures": 13
       }
     },
-    "173": {
-      "id": "173",
+    "70547": {
+      "id": "70547",
+      "topic_id": "173",
       "title": "Hematospermia",
-      "url": "https://acsearch.acr.org/docs/173/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70547/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:48.893766+00:00",
+      "last_attempted": "2026-01-28T21:15:11.543335+00:00",
       "summary": {
         "first_line": [
           "Hematospermia, initial imaging",
@@ -6192,14 +6408,15 @@
         "total_procedures": 25
       }
     },
-    "148": {
-      "id": "148",
+    "69490": {
+      "id": "69490",
+      "topic_id": "148",
       "title": "Hematuria",
-      "url": "https://acsearch.acr.org/docs/148/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69490/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:51.321344+00:00",
+      "last_attempted": "2026-01-28T21:15:13.445476+00:00",
       "summary": {
         "first_line": [
           "Hematuria, microscopic, risk factors, no infection or viral illness, initial imaging",
@@ -6221,14 +6438,15 @@
         "total_procedures": 22
       }
     },
-    "315": {
-      "id": "315",
+    "3193974": {
+      "id": "3193974",
+      "topic_id": "315",
       "title": "Hydronephrosis on Prior Imaging-Unknown Cause",
-      "url": "https://acsearch.acr.org/docs/315/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3193974/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:53.871605+00:00",
+      "last_attempted": "2026-01-28T21:15:15.357200+00:00",
       "summary": {
         "first_line": [
           "Hydronephrosis, unknown cause, unilateral, asymptomatic, initial imaging",
@@ -6250,16 +6468,17 @@
         "total_procedures": 27
       }
     },
-    "31": {
-      "id": "31",
+    "69367": {
+      "id": "69367",
+      "topic_id": "31",
       "title": "Indeterminate Renal Mass",
-      "url": "https://acsearch.acr.org/docs/31/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69367/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:55.613765+00:00",
+      "last_attempted": "2026-01-28T21:15:16.723655+00:00",
       "summary": {
         "first_line": [
           "Renal mass, indeterminate, no contraindication to iodinated or gadolinium based contrast, initial imaging",
@@ -6281,14 +6500,15 @@
         "total_procedures": 14
       }
     },
-    "32": {
-      "id": "32",
+    "69368": {
+      "id": "69368",
+      "topic_id": "32",
       "title": "Lower Urinary Tract Symptoms: Suspicion of Benign Prostatic Hyperplasia",
-      "url": "https://acsearch.acr.org/docs/32/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69368/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:57.355459+00:00",
+      "last_attempted": "2026-01-28T21:15:18.161838+00:00",
       "summary": {
         "first_line": [],
         "alternatives": [
@@ -6303,16 +6523,17 @@
         "total_procedures": 12
       }
     },
-    "304": {
-      "id": "304",
+    "3158184": {
+      "id": "3158184",
+      "topic_id": "304",
       "title": "Newly Diagnosed Palpable Scrotal Abnormality",
-      "url": "https://acsearch.acr.org/docs/304/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158184/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:46:59.576600+00:00",
+      "last_attempted": "2026-01-28T21:15:20.164669+00:00",
       "summary": {
         "first_line": [
           "Scrotum abnormality, palpable, newly diagnosed, hx of trauma, initial imaging",
@@ -6333,17 +6554,18 @@
         "total_procedures": 16
       }
     },
-    "40": {
-      "id": "40",
+    "69376": {
+      "id": "69376",
+      "topic_id": "40",
       "title": "Penetrating Trauma-Lower Abdomen and Pelvis",
-      "url": "https://acsearch.acr.org/docs/40/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69376/Narrative/",
       "body_regions": [
         "abdomen",
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:02.000374+00:00",
+      "last_attempted": "2026-01-28T21:15:22.282001+00:00",
       "summary": {
         "first_line": [
           "Lower abdominal trauma, penetrating, urinary tract injury suspected",
@@ -6362,16 +6584,17 @@
         "total_procedures": 13
       }
     },
-    "29": {
-      "id": "29",
+    "69365": {
+      "id": "69365",
+      "topic_id": "29",
       "title": "Post Treatment Follow-up and Active Surveillance of Renal Cell Carcinoma",
-      "url": "https://acsearch.acr.org/docs/29/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69365/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:03.533588+00:00",
+      "last_attempted": "2026-01-28T21:15:24.194646+00:00",
       "summary": {
         "first_line": [
           "Renal cell cancer carcinoma, localized, post radical nephrectomy, follow up imaging",
@@ -6393,16 +6616,17 @@
         "total_procedures": 33
       }
     },
-    "33": {
-      "id": "33",
+    "69369": {
+      "id": "69369",
+      "topic_id": "33",
       "title": "Post-Treatment Follow-up of Prostate Cancer",
-      "url": "https://acsearch.acr.org/docs/33/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69369/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:05.933447+00:00",
+      "last_attempted": "2026-01-28T21:15:26.390208+00:00",
       "summary": {
         "first_line": [
           "Prostate cancer, recurrent disease suspected, post radical prostatectomy, follow-up imaging",
@@ -6424,16 +6648,17 @@
         "total_procedures": 34
       }
     },
-    "28": {
-      "id": "28",
+    "69364": {
+      "id": "69364",
+      "topic_id": "28",
       "title": "Post-Treatment Surveillance of Bladder Cancer",
-      "url": "https://acsearch.acr.org/docs/28/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69364/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:07.991384+00:00",
+      "last_attempted": "2026-01-28T21:15:28.454215+00:00",
       "summary": {
         "first_line": [
           "Bladder cancer, nonmuscle invasive, treated, symptomatic, surveillance",
@@ -6450,16 +6675,17 @@
         "total_procedures": 20
       }
     },
-    "35": {
-      "id": "35",
+    "69371": {
+      "id": "69371",
+      "topic_id": "35",
       "title": "Pretreatment Detection, Surveillance, and Staging of Prostate Cancer",
-      "url": "https://acsearch.acr.org/docs/35/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69371/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:10.253356+00:00",
+      "last_attempted": "2026-01-28T21:15:30.261998+00:00",
       "summary": {
         "first_line": [
           "Prostate cancer suspected, no prior biopsy, initial diagnosis, initial imaging",
@@ -6477,14 +6703,15 @@
         "total_procedures": 30
       }
     },
-    "34": {
-      "id": "34",
+    "69370": {
+      "id": "69370",
+      "topic_id": "34",
       "title": "Pretreatment Staging of Urothelial Cancer",
-      "url": "https://acsearch.acr.org/docs/34/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69370/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:12.741743+00:00",
+      "last_attempted": "2026-01-28T21:15:32.193842+00:00",
       "summary": {
         "first_line": [
           "Bladder cancer, nonmuscle invasive, pretreatment staging",
@@ -6506,14 +6733,15 @@
         "total_procedures": 33
       }
     },
-    "149": {
-      "id": "149",
+    "69491": {
+      "id": "69491",
+      "topic_id": "149",
       "title": "Recurrent Lower Urinary Tract Infections in Females",
-      "url": "https://acsearch.acr.org/docs/149/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69491/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:14.736523+00:00",
+      "last_attempted": "2026-01-28T21:15:34.438865+00:00",
       "summary": {
         "first_line": [
           "UTI, lower urinary tract, recurrent, risk factors",
@@ -6532,16 +6760,17 @@
         "total_procedures": 20
       }
     },
-    "150": {
-      "id": "150",
+    "69492": {
+      "id": "69492",
+      "topic_id": "150",
       "title": "Renal Failure",
-      "url": "https://acsearch.acr.org/docs/150/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69492/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:17.163869+00:00",
+      "last_attempted": "2026-01-28T21:15:36.659132+00:00",
       "summary": {
         "first_line": [
           "Renal failure, acute kidney injury, initial imaging",
@@ -6562,16 +6791,17 @@
         "total_procedures": 27
       }
     },
-    "183": {
-      "id": "183",
+    "71096": {
+      "id": "71096",
+      "topic_id": "183",
       "title": "Renal Transplant Dysfunction",
-      "url": "https://acsearch.acr.org/docs/183/Narrative/",
+      "url": "https://acsearch.acr.org/docs/71096/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:19.595425+00:00",
+      "last_attempted": "2026-01-28T21:15:38.134391+00:00",
       "summary": {
         "first_line": [
           "Renal transplant dysfunction, initial imaging",
@@ -6590,16 +6820,17 @@
         "total_procedures": 36
       }
     },
-    "38": {
-      "id": "38",
+    "69374": {
+      "id": "69374",
+      "topic_id": "38",
       "title": "Renovascular Hypertension",
-      "url": "https://acsearch.acr.org/docs/38/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69374/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:22.151774+00:00",
+      "last_attempted": "2026-01-28T21:15:39.935264+00:00",
       "summary": {
         "first_line": [
           "HTN, high suspicion renal vascular, normal renal function",
@@ -6618,16 +6849,17 @@
         "total_procedures": 8
       }
     },
-    "39": {
-      "id": "39",
+    "69375": {
+      "id": "69375",
+      "topic_id": "39",
       "title": "Staging and Surveillance of Testicular Cancer",
-      "url": "https://acsearch.acr.org/docs/39/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69375/Narrative/",
       "body_regions": [
         "pelvis"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:24.362264+00:00",
+      "last_attempted": "2026-01-28T21:15:41.420372+00:00",
       "summary": {
         "first_line": [
           "Testicular cancer, pure seminoma, post orchiectomy, initial staging",
@@ -6649,16 +6881,17 @@
         "total_procedures": 24
       }
     },
-    "36": {
-      "id": "36",
+    "69372": {
+      "id": "69372",
+      "topic_id": "36",
       "title": "Staging of Renal Cell Carcinoma",
-      "url": "https://acsearch.acr.org/docs/36/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69372/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:26.962906+00:00",
+      "last_attempted": "2026-01-28T21:15:43.687507+00:00",
       "summary": {
         "first_line": [
           "Renal cell carcinoma, no contraindication to iodinated or gadolinium based contrast, staging",
@@ -6680,17 +6913,18 @@
         "total_procedures": 53
       }
     },
-    "257": {
-      "id": "257",
+    "3102391": {
+      "id": "3102391",
+      "topic_id": "257",
       "title": "Abdominal Aortic Aneurysm Follow-up (Without Repair)",
-      "url": "https://acsearch.acr.org/docs/257/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102391/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:28.963438+00:00",
+      "last_attempted": "2026-01-28T21:15:45.554840+00:00",
       "summary": {
         "first_line": [
           "AAA, asymptomatic, surveillance",
@@ -6709,17 +6943,18 @@
         "total_procedures": 13
       }
     },
-    "174": {
-      "id": "174",
+    "70548": {
+      "id": "70548",
+      "topic_id": "174",
       "title": "Abdominal Aortic Aneurysm or Dissection-Interventional Planning and Follow-up",
-      "url": "https://acsearch.acr.org/docs/174/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70548/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:30.838174+00:00",
+      "last_attempted": "2026-01-28T21:15:46.948454+00:00",
       "summary": {
         "first_line": [
           "AAA, pre-op planning (open or endovasc)",
@@ -6739,16 +6974,17 @@
         "total_procedures": 11
       }
     },
-    "231": {
-      "id": "231",
+    "3099053": {
+      "id": "3099053",
+      "topic_id": "231",
       "title": "Chylothorax Treatment Planning",
-      "url": "https://acsearch.acr.org/docs/231/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099053/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:32.694676+00:00",
+      "last_attempted": "2026-01-28T21:15:48.226017+00:00",
       "summary": {
         "first_line": [
           "Chylothorax, iatrogenic etiology, treatment planning, initial imaging",
@@ -6769,16 +7005,17 @@
         "total_procedures": 21
       }
     },
-    "259": {
-      "id": "259",
+    "3102393": {
+      "id": "3102393",
+      "topic_id": "259",
       "title": "Clinically Suspected Vascular Malformation of the Extremities",
-      "url": "https://acsearch.acr.org/docs/259/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102393/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:34.835300+00:00",
+      "last_attempted": "2026-01-28T21:15:50.209301+00:00",
       "summary": {
         "first_line": [
           "Vascular malformation suspected, wrist",
@@ -6800,14 +7037,15 @@
         "total_procedures": 156
       }
     },
-    "291": {
-      "id": "291",
+    "3158170": {
+      "id": "3158170",
+      "topic_id": "291",
       "title": "Dialysis Fistula Malfunction ",
-      "url": "https://acsearch.acr.org/docs/291/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158170/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:37.523227+00:00",
+      "last_attempted": "2026-01-28T21:15:52.444707+00:00",
       "summary": {
         "first_line": [
           "Hemodialysis access dysfunction suspected, lower extremity, abnormal hemodynamic indicator, initial imaging, guide IR therapy",
@@ -6829,16 +7067,17 @@
         "total_procedures": 59
       }
     },
-    "243": {
-      "id": "243",
+    "3101591": {
+      "id": "3101591",
+      "topic_id": "243",
       "title": "Imaging of Deep Inferior Epigastric Arteries for Surgical Planning (Breast Reconstruction Surgery)",
-      "url": "https://acsearch.acr.org/docs/243/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3101591/Narrative/",
       "body_regions": [
         "breast"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:40.450442+00:00",
+      "last_attempted": "2026-01-28T21:15:54.987806+00:00",
       "summary": {
         "first_line": [
           "Breast reconstruction, surgical planning, deep inferior epigastric arteries evaluation, initial imaging",
@@ -6855,16 +7094,17 @@
         "total_procedures": 10
       }
     },
-    "70": {
-      "id": "70",
+    "69411": {
+      "id": "69411",
+      "topic_id": "70",
       "title": "Lower Extremity Arterial Claudication-Imaging Assessment for Revascularization",
-      "url": "https://acsearch.acr.org/docs/70/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69411/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:42.355112+00:00",
+      "last_attempted": "2026-01-28T21:15:56.942584+00:00",
       "summary": {
         "first_line": [
           "Arterial claudication, revascularization assessment, initial imaging",
@@ -6882,16 +7122,17 @@
         "total_procedures": 10
       }
     },
-    "245": {
-      "id": "245",
+    "3102223": {
+      "id": "3102223",
+      "topic_id": "245",
       "title": "Lower Extremity Arterial Revascularization-Post-Therapy Imaging",
-      "url": "https://acsearch.acr.org/docs/245/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102223/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:43.767831+00:00",
+      "last_attempted": "2026-01-28T21:15:58.817792+00:00",
       "summary": {
         "first_line": [
           "Lower extremity prior revascularization, asymptomatic, follow up",
@@ -6908,14 +7149,15 @@
         "total_procedures": 8
       }
     },
-    "165": {
-      "id": "165",
+    "69507": {
+      "id": "69507",
+      "topic_id": "165",
       "title": "Lower Extremity Chronic Venous Disease",
-      "url": "https://acsearch.acr.org/docs/165/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69507/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:45.246798+00:00",
+      "last_attempted": "2026-01-28T21:16:00.683993+00:00",
       "summary": {
         "first_line": [
           "Varicose veins, lower extremity, initial imaging",
@@ -6937,14 +7179,15 @@
         "total_procedures": 38
       }
     },
-    "260": {
-      "id": "260",
+    "3102394": {
+      "id": "3102394",
+      "topic_id": "260",
       "title": "Nonatherosclerotic Peripheral Arterial Disease",
-      "url": "https://acsearch.acr.org/docs/260/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102394/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:47.252828+00:00",
+      "last_attempted": "2026-01-28T21:16:02.614757+00:00",
       "summary": {
         "first_line": [
           "Popliteal arterial entrapment syndrome suspected",
@@ -6964,14 +7207,15 @@
         "total_procedures": 17
       }
     },
-    "301": {
-      "id": "301",
+    "3158180": {
+      "id": "3158180",
+      "topic_id": "301",
       "title": "Noncerebral Vasculitis",
-      "url": "https://acsearch.acr.org/docs/301/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158180/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:49.812426+00:00",
+      "last_attempted": "2026-01-28T21:16:04.867197+00:00",
       "summary": {
         "first_line": [
           "Large vessel vasculitis suspected, initial imaging",
@@ -6993,16 +7237,17 @@
         "total_procedures": 26
       }
     },
-    "192": {
-      "id": "192",
+    "3082597": {
+      "id": "3082597",
+      "topic_id": "192",
       "title": "Nontraumatic Aortic Disease",
-      "url": "https://acsearch.acr.org/docs/192/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082597/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:51.488646+00:00",
+      "last_attempted": "2026-01-28T21:16:06.136977+00:00",
       "summary": {
         "first_line": [
           "Aortic disease, congenital, initial imaging",
@@ -7024,16 +7269,17 @@
         "total_procedures": 19
       }
     },
-    "218": {
-      "id": "218",
+    "3094113": {
+      "id": "3094113",
+      "topic_id": "218",
       "title": "Pulmonary Arteriovenous Malformation (PAVM)",
-      "url": "https://acsearch.acr.org/docs/218/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094113/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:53.938392+00:00",
+      "last_attempted": "2026-01-28T21:16:08.007797+00:00",
       "summary": {
         "first_line": [
           "PAVM suspected, altered sensorium, lung nodule on chest radiography, next imaging study",
@@ -7055,17 +7301,18 @@
         "total_procedures": 26
       }
     },
-    "73": {
-      "id": "73",
+    "69414": {
+      "id": "69414",
+      "topic_id": "73",
       "title": "Pulsatile Abdominal Mass, Suspected Abdominal Aortic Aneurysm",
-      "url": "https://acsearch.acr.org/docs/73/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69414/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:56.709288+00:00",
+      "last_attempted": "2026-01-28T21:16:10.427294+00:00",
       "summary": {
         "first_line": [
           "Abdominal mass, pulsatile, abdominal aortic aneurysm suspected, initial imaging",
@@ -7087,17 +7334,18 @@
         "total_procedures": 16
       }
     },
-    "316": {
-      "id": "316",
+    "3194112": {
+      "id": "3194112",
+      "topic_id": "316",
       "title": "Screening for Abdominal Aortic Aneurysm",
-      "url": "https://acsearch.acr.org/docs/316/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3194112/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:47:58.105091+00:00",
+      "last_attempted": "2026-01-28T21:16:12.567122+00:00",
       "summary": {
         "first_line": [
           "AAA screening, asymptomatic, with or without smoking hx",
@@ -7115,14 +7363,15 @@
         "total_procedures": 16
       }
     },
-    "2": {
-      "id": "2",
+    "69338": {
+      "id": "69338",
+      "topic_id": "2",
       "title": "Sudden Onset of Cold, Painful Leg",
-      "url": "https://acsearch.acr.org/docs/2/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69338/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:00.106898+00:00",
+      "last_attempted": "2026-01-28T21:16:14.887539+00:00",
       "summary": {
         "first_line": [
           "Cold painful leg, sudden onset, vascular compromise suspected, initial imaging",
@@ -7142,16 +7391,17 @@
         "total_procedures": 10
       }
     },
-    "75": {
-      "id": "75",
+    "69416": {
+      "id": "69416",
+      "topic_id": "75",
       "title": "Suspected Lower Extremity Deep Vein Thrombosis",
-      "url": "https://acsearch.acr.org/docs/75/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69416/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:02.368543+00:00",
+      "last_attempted": "2026-01-28T21:16:24.119966+00:00",
       "summary": {
         "first_line": [
           "DVT suspected, initial exam"
@@ -7167,14 +7417,15 @@
         "total_procedures": 5
       }
     },
-    "302": {
-      "id": "302",
+    "3158181": {
+      "id": "3158181",
+      "topic_id": "302",
       "title": "Suspected Retroperitoneal Bleed",
-      "url": "https://acsearch.acr.org/docs/302/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3158181/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:04.597500+00:00",
+      "last_attempted": "2026-01-28T21:16:25.694138+00:00",
       "summary": {
         "first_line": [
           "Retroperitoneal bleed suspected, initial imaging",
@@ -7193,16 +7444,17 @@
         "total_procedures": 13
       }
     },
-    "76": {
-      "id": "76",
+    "69417": {
+      "id": "69417",
+      "topic_id": "76",
       "title": "Suspected Upper-Extremity Deep Vein Thrombosis",
-      "url": "https://acsearch.acr.org/docs/76/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69417/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:07.002988+00:00",
+      "last_attempted": "2026-01-28T21:16:27.570497+00:00",
       "summary": {
         "first_line": [
           "Upper extremity DVT suspected, initial imaging"
@@ -7220,10 +7472,11 @@
         "total_procedures": 7
       }
     },
-    "237": {
-      "id": "237",
+    "3099659": {
+      "id": "3099659",
+      "topic_id": "237",
       "title": "Thoracic Aortic Aneurysm or Dissection-Treatment Planning and Follow-Up",
-      "url": "https://acsearch.acr.org/docs/237/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3099659/Narrative/",
       "body_regions": [
         "spine",
         "chest",
@@ -7231,7 +7484,7 @@
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:08.734016+00:00",
+      "last_attempted": "2026-01-28T21:16:28.823291+00:00",
       "summary": {
         "first_line": [
           "Thoracic aortic dissection, without repair, with or without symptoms, follow-up imaging",
@@ -7253,16 +7506,17 @@
         "total_procedures": 27
       }
     },
-    "356": {
-      "id": "356",
+    "3196043": {
+      "id": "3196043",
+      "topic_id": "356",
       "title": "Thoracic Venous Occlusions-Suspected Superior Vena Cava Syndrome",
-      "url": "https://acsearch.acr.org/docs/356/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196043/Narrative/",
       "body_regions": [
         "spine"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:10.935378+00:00",
+      "last_attempted": "2026-01-28T21:16:30.632341+00:00",
       "summary": {
         "first_line": [
           "SVC occlusion suspected, acute, initial imaging",
@@ -7284,17 +7538,18 @@
         "total_procedures": 25
       }
     },
-    "308": {
-      "id": "308",
+    "3185039": {
+      "id": "3185039",
+      "topic_id": "308",
       "title": "Thoracoabdominal Aortic Aneurysm or Dissection: Treatment Planning and Follow-Up",
-      "url": "https://acsearch.acr.org/docs/308/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3185039/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:12.943457+00:00",
+      "last_attempted": "2026-01-28T21:16:32.736620+00:00",
       "summary": {
         "first_line": [
           "Thoracoabdominal aortic aneurysm, without repair, without or with new symptoms, follow-up imaging",
@@ -7316,14 +7571,15 @@
         "total_procedures": 26
       }
     },
-    "222": {
-      "id": "222",
+    "3094281": {
+      "id": "3094281",
+      "topic_id": "222",
       "title": "Central Venous Access Device and Site Selection",
-      "url": "https://acsearch.acr.org/docs/222/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3094281/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:15.225938+00:00",
+      "last_attempted": "2026-01-28T21:16:34.883929+00:00",
       "summary": {
         "first_line": [
           "Device selection: Acutely ill patient requiring infusion of an irritant medication, hemodynamic monitoring, and frequent blood draws for 2 weeks or shorter.",
@@ -7345,17 +7601,18 @@
         "total_procedures": 29
       }
     },
-    "360": {
-      "id": "360",
+    "3196391": {
+      "id": "3196391",
+      "topic_id": "360",
       "title": "Management of Acute Pulmonary Embolism",
-      "url": "https://acsearch.acr.org/docs/360/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3196391/Narrative/",
       "body_regions": [
         "chest",
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:17.036633+00:00",
+      "last_attempted": "2026-01-28T21:16:37.040862+00:00",
       "summary": {
         "first_line": [
           "Adult. Extensive acute bilateral central pulmonary emboli. Sustained hypotension for more than 15 minutes. Initial therapy.",
@@ -7372,16 +7629,17 @@
         "total_procedures": 13
       }
     },
-    "5": {
-      "id": "5",
+    "69341": {
+      "id": "69341",
+      "topic_id": "5",
       "title": "Management of Iliac Artery Occlusive Disease",
-      "url": "https://acsearch.acr.org/docs/5/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69341/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:19.284166+00:00",
+      "last_attempted": "2026-01-28T21:16:38.839023+00:00",
       "summary": {
         "first_line": [
           "Adult. Nonsmoker, sedentary lifestyle. Left lower-extremity claudication on walking, asymmetrically diminished left femoral pulse. No symptoms at rest. Initial management.",
@@ -7403,16 +7661,17 @@
         "total_procedures": 32
       }
     },
-    "43": {
-      "id": "43",
+    "69379": {
+      "id": "69379",
+      "topic_id": "43",
       "title": "Management of Liver Cancer",
-      "url": "https://acsearch.acr.org/docs/43/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69379/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:21.625990+00:00",
+      "last_attempted": "2026-01-28T21:16:40.691421+00:00",
       "summary": {
         "first_line": [
           "Hepatocellular cancer: Solitary tumor less than 3 cm, cirrhotic.",
@@ -7434,14 +7693,15 @@
         "total_procedures": 20
       }
     },
-    "166": {
-      "id": "166",
+    "69508": {
+      "id": "69508",
+      "topic_id": "166",
       "title": "Management of Uterine Fibroids",
-      "url": "https://acsearch.acr.org/docs/166/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69508/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:48:23.484861+00:00",
+      "last_attempted": "2026-01-28T21:16:42.780922+00:00",
       "summary": {
         "first_line": [
           "Reproductive age female with uterine fibroids (leiomyomas), symptomatic with heavy uterine bleeding or bulk symptoms (e.g., pressure, pain, fullness, bladder or bowel symptoms), and a desire to preserve fertility. Initial therapy.",
@@ -7461,63 +7721,69 @@
         "total_procedures": 14
       }
     },
-    "8": {
-      "id": "8",
+    "69344": {
+      "id": "69344",
+      "topic_id": "8",
       "title": "Radiologic Management of Biliary Obstruction",
-      "url": "https://acsearch.acr.org/docs/8/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69344/Narrative/",
       "body_regions": [
         "abdomen"
       ],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:36.828783+00:00"
+      "last_attempted": "2026-01-28T21:16:44.879185+00:00"
     },
-    "180": {
-      "id": "180",
+    "70911": {
+      "id": "70911",
+      "topic_id": "180",
       "title": "Radiologic Management of Gastric Varices",
-      "url": "https://acsearch.acr.org/docs/180/Narrative/",
+      "url": "https://acsearch.acr.org/docs/70911/Narrative/",
       "body_regions": [],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:38.902725+00:00"
+      "last_attempted": "2026-01-28T21:16:46.630304+00:00"
     },
-    "193": {
-      "id": "193",
+    "3082663": {
+      "id": "3082663",
+      "topic_id": "193",
       "title": "Radiologic Management of Iliofemoral Venous Thrombosis",
-      "url": "https://acsearch.acr.org/docs/193/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3082663/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:41.203349+00:00"
+      "last_attempted": "2026-01-28T21:16:48.681497+00:00"
     },
-    "9": {
-      "id": "9",
+    "69345": {
+      "id": "69345",
+      "topic_id": "9",
       "title": "Radiologic Management of Infected Fluid Collections",
-      "url": "https://acsearch.acr.org/docs/9/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69345/Narrative/",
       "body_regions": [],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:43.306485+00:00"
+      "last_attempted": "2026-01-28T21:16:50.781000+00:00"
     },
-    "115": {
-      "id": "115",
+    "69457": {
+      "id": "69457",
+      "topic_id": "115",
       "title": "Radiologic Management of Lower Gastrointestinal Tract Bleeding",
-      "url": "https://acsearch.acr.org/docs/115/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69457/Narrative/",
       "body_regions": [],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:45.658741+00:00"
+      "last_attempted": "2026-01-28T21:16:52.342196+00:00"
     },
-    "159": {
-      "id": "159",
+    "69501": {
+      "id": "69501",
+      "topic_id": "159",
       "title": "Radiologic Management of Mesenteric Ischemia",
-      "url": "https://acsearch.acr.org/docs/159/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69501/Narrative/",
       "body_regions": [],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:47.180589+00:00",
+      "last_attempted": "2026-01-28T21:16:53.956767+00:00",
       "summary": {
         "first_line": [
           "Recent onset abdominal pain, no peritoneal signs, and known atrial fibrillation. CTA shows filling defect in proximal SMA consistent with embolus. No intramural or extra-luminal air. Initial therapy.",
@@ -7538,25 +7804,27 @@
         "total_procedures": 22
       }
     },
-    "251": {
-      "id": "251",
+    "3102385": {
+      "id": "3102385",
+      "topic_id": "251",
       "title": "Radiologic Management of Portal Hypertension",
-      "url": "https://acsearch.acr.org/docs/251/Narrative/",
+      "url": "https://acsearch.acr.org/docs/3102385/Narrative/",
       "body_regions": [],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:48.809037+00:00"
+      "last_attempted": "2026-01-28T21:16:55.349937+00:00"
     },
-    "7": {
-      "id": "7",
+    "69343": {
+      "id": "69343",
+      "topic_id": "7",
       "title": "Radiologic Management of Pulmonary Nodules and Masses",
-      "url": "https://acsearch.acr.org/docs/7/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69343/Narrative/",
       "body_regions": [
         "chest"
       ],
       "status": "success",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:50.496556+00:00",
+      "last_attempted": "2026-01-28T21:16:56.864953+00:00",
       "summary": {
         "first_line": [
           "Adult. Serially, enlarging solitary solid pulmonary nodule, now 1 to 3 cm in diameter. Person who smokes. Next step.",
@@ -7577,25 +7845,27 @@
         "total_procedures": 13
       }
     },
-    "17": {
-      "id": "17",
+    "69353": {
+      "id": "69353",
+      "topic_id": "17",
       "title": "Radiologic Management of Urinary Tract Obstruction",
-      "url": "https://acsearch.acr.org/docs/17/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69353/Narrative/",
       "body_regions": [],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:52.321560+00:00"
+      "last_attempted": "2026-01-28T21:16:58.484359+00:00"
     },
-    "6": {
-      "id": "6",
+    "69342": {
+      "id": "69342",
+      "topic_id": "6",
       "title": "Radiologic Management of Venous Thromboembolism-Inferior Vena Cava Filters",
-      "url": "https://acsearch.acr.org/docs/6/Narrative/",
+      "url": "https://acsearch.acr.org/docs/69342/Narrative/",
       "body_regions": [
         "vascular"
       ],
       "status": "no_data",
       "attempts": 1,
-      "last_attempted": "2026-01-28T03:51:54.358422+00:00"
+      "last_attempted": "2026-01-28T21:17:00.058222+00:00"
     }
   }
 }

@@ -1,0 +1,163 @@
+{
+  "id": "3196391",
+  "topic_id": "360",
+  "title": "Management of Acute Pulmonary Embolism",
+  "url": "https://acsearch.acr.org/docs/3196391/Narrative/",
+  "body_regions": [
+    "chest",
+    "vascular"
+  ],
+  "procedures": [
+    {
+      "name": "Adult. Extensive acute bilateral central pulmonary emboli. Sustained hypotension for more than 15 minutes. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed therapy pulmonary artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy pulmonary artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Adult. Acute bilateral pulmonary emboli. RV/LV ratio greater than 0.9 on CTA. Evidence of right heart strain on echocardiogram. Elevated troponin level. No hypotension. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed therapy pulmonary artery",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy pulmonary artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Acute bilateral pulmonary emboli. RV/LV ratio less than 0.9 on CTA. No right heart strain on echocardiogram. Normal troponin level. No hypotension. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed therapy pulmonary artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy pulmonary artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Acute saddle pulmonary embolism. Normal RV/LV ratio on CTA. Normal troponin level. No hypotension. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed therapy pulmonary artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy pulmonary artery",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Acute bilateral central pulmonary emboli. Evidence of right heart failure on echocardiogram. Sustained a syncopal event with head trauma and acute intracranial hemorrhage. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy pulmonary artery",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Anticoagulation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 2,
+      "rating": "Usually Not Appropriate"
+    },
+    {
+      "name": "Adult. Acute thromboembolism in transit. Thrombus in the right atrium. Sustained hypotension for more than 15 minutes. Initial therapy.",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Catheter-directed therapy right heart",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Surgical embolectomy right heart",
+      "score": 9,
+      "rating": "Usually Appropriate"
+    },
+    {
+      "name": "Systemic thrombolysis",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    },
+    {
+      "name": "Extracorporeal membrane oxygenation",
+      "score": 5,
+      "rating": "May Be Appropriate"
+    }
+  ],
+  "updated_at": "2026-01-28T21:16:37.040862+00:00"
+}
