@@ -1076,12 +1076,11 @@ body {
 }
 
 .acr-instruction {
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 600;
     color: #64748B;
     font-style: italic;
     margin: 0;
-    font-size: 12px;
-    font-weight: 600;
 }
 
 /* Inline Phone Link */

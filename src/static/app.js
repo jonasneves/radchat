@@ -474,10 +474,11 @@ class RadChat {
 
         // Add assistant message with loading state
         const assistantMessage = this.addMessage('assistant', '', true);
-        const contentWrapper = assistantMessage.querySelector('.message-content-wrapper');
         const cardsContainer = assistantMessage.querySelector('.message-cards');
         const bubbleEl = assistantMessage.querySelector('.message-bubble');
-        let messageRevealed = false; // Track if we've shown the message yet
+        let messageRevealed = false;
+        let fullText = '';
+        let usedTools = false;
 
         try {
             const response = await fetch('/chat/stream', {
@@ -498,10 +499,8 @@ class RadChat {
 
             const reader = response.body.getReader();
             const decoder = new TextDecoder();
-            let fullText = '';
             let buffer = '';
             let toolResults = [];
-            let usedTools = false;
 
             while (true) {
                 const { value, done } = await reader.read();
@@ -1164,96 +1163,6 @@ class RadChat {
         `;
 
         return card;
-    }
-
-    renderACRResults(data) {
-        const container = document.createElement('div');
-        container.className = 'acr-results';
-
-        if (data.title) {
-            const header = document.createElement('div');
-            header.className = 'acr-header';
-            header.innerHTML = `
-                <h3 class="acr-title">${data.title}</h3>
-                ${data.synopsis ? `
-                    <div class="acr-synopsis">
-                        ${data.synopsis.map(s => `<span class="acr-synopsis-item">${s}</span>`).join('')}
-                    </div>
-                ` : ''}
-            `;
-            container.appendChild(header);
-        }
-
-        if (data.variants) {
-            data.variants.forEach((variant, index) => {
-                const variantEl = this.createVariantCard(variant, index + 1);
-                container.appendChild(variantEl);
-            });
-        }
-
-        return container;
-    }
-
-    createVariantCard(variant, number) {
-        const card = document.createElement('div');
-        card.className = 'acr-variant';
-
-        const header = document.createElement('div');
-        header.className = 'variant-header';
-        header.innerHTML = `
-            <span class="variant-number">${number}</span>
-            <span class="variant-description">${variant.description || variant.clinical_scenario || `Variant ${number}`}</span>
-        `;
-        card.appendChild(header);
-
-        const procedures = document.createElement('div');
-        procedures.className = 'variant-procedures';
-
-        if (variant.procedures) {
-            variant.procedures.forEach(proc => {
-                const procEl = this.createProcedureRow(proc);
-                procedures.appendChild(procEl);
-            });
-        }
-
-        card.appendChild(procedures);
-        return card;
-    }
-
-    createProcedureRow(procedure) {
-        const row = document.createElement('div');
-        row.className = 'acr-procedure';
-
-        const score = procedure.score || 0;
-        let scoreClass = 'maybe';
-        if (score >= 7) scoreClass = 'appropriate';
-        else if (score <= 3) scoreClass = 'not-appropriate';
-
-        const radiationLabel = {
-            'none': 'No radiation',
-            'low': 'Low dose',
-            'medium': 'Medium dose',
-            'high': 'High dose'
-        };
-
-        row.innerHTML = `
-            <div class="procedure-score ${scoreClass}">
-                <span class="score-value">${score || '?'}</span>
-            </div>
-            <div class="procedure-details">
-                <span class="procedure-name">${procedure.name}</span>
-                <div class="procedure-meta">
-                    ${procedure.radiation_level ? `
-                        <span class="radiation-badge ${procedure.radiation_level}">${radiationLabel[procedure.radiation_level] || procedure.radiation_level}</span>
-                    ` : ''}
-                    ${procedure.contrast?.contrast_detail ? `
-                        <span class="contrast-badge">${procedure.contrast.contrast_detail}</span>
-                    ` : ''}
-                </div>
-            </div>
-        `;
-
-        return row;
     }
 
     scrollToBottom() {

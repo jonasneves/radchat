@@ -5,7 +5,6 @@ Implements Anthropic's recommended agentic loop pattern for multi-turn
 tool use with streaming support.
 """
 
-import json
 from typing import Generator, Optional
 
 from dotenv import load_dotenv
@@ -39,7 +38,7 @@ Tool results appear as rich cards in the UI. Do NOT repeat or list the data from
 
 **Tool usage guidance:**
 • For contact questions → use search_phone_directory or specific contact tools
-• For imaging appropriateness → use get_imaging_recommendations or search_acr_criteria
+• For imaging appropriateness → use get_imaging_recommendations
 • Consider time of day - mention if contacts are after-hours only
 
 **Domain knowledge (general info only - always verify specifics with tools):**
@@ -66,7 +65,7 @@ def execute_tool(name: str, args: dict) -> dict:
         print(f"[TOOL] {name} returned {len(result.get('results', result.get('contacts', [])))} results")
         return result
     # ACR criteria tools
-    acr_tools = ("get_imaging_recommendations", "search_acr_criteria", "get_acr_topic_details", "list_acr_topics")
+    acr_tools = ("get_imaging_recommendations", "list_acr_topics")
     if name in acr_tools:
         result = execute_acr_tool(name, args)
         print(f"[TOOL] {name} found={result.get('found', 'n/a')}")
