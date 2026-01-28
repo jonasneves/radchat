@@ -513,7 +513,9 @@ class RadChat {
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
                                     usedTools = true;
-                                    // Show message, remove thinking indicator (only once)
+                                    // Always remove thinking indicator on tool result
+                                    this.removeThinkingIndicator();
+                                    // Show message (only once)
                                     if (!messageRevealed) {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                         messageRevealed = true;
