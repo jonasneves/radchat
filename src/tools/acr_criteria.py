@@ -227,13 +227,10 @@ def list_topics_by_region(body_region: str) -> dict:
 ACR_CRITERIA_TOOLS = [
     {
         "name": "get_imaging_recommendations",
-        "description": """Get ACR Appropriateness Criteria imaging recommendations for a clinical scenario.
+        "description": """Find ACR Appropriateness Criteria topics for a clinical scenario.
 
-Returns:
-- First-line imaging (Usually Appropriate, score 7-9)
-- Alternative options (May Be Appropriate, score 4-6)
-- Procedures to avoid (Usually Not Appropriate, score 1-3)
-- Radiation levels and clinical variants
+Returns the most relevant ACR guideline topic with a link to view detailed recommendations.
+ACR scores range from 1-9: Usually Appropriate (7-9), May Be Appropriate (4-6), Usually Not Appropriate (1-3).
 
 Use when clinicians ask about appropriate imaging for symptoms or conditions.
 Examples: "suspected pulmonary embolism", "acute chest pain", "headache", "low back pain".""",
