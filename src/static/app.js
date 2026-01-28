@@ -882,8 +882,11 @@ class RadChat {
                     ${iconSvg}
                 </svg>
                 <span class="thinking-text">Searching ${displayName}</span>
-                <div class="thinking-dots">
-                    <span></span><span></span><span></span>
+                <div class="thinking-spinner">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                        <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                    </svg>
                 </div>
             </div>
         `;
