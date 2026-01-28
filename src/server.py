@@ -177,7 +177,6 @@ def duke_callback():
 
     data = response.json()
     access_token = data.get("access_token")
-    id_token = data.get("id_token")
 
     if not access_token:
         return jsonify({"error": data.get("error_description", "No token received")}), 400
@@ -333,10 +332,10 @@ def chat_stream():
 
 @app.route("/sessions/<session_id>", methods=["DELETE"])
 def clear_session(session_id: str):
-    """Clear a chat session."""
-    token = os.environ.get("GH_MODELS_TOKEN") or request.headers.get("X-GitHub-Token")
-    key = f"{session_id}:{token or 'default'}"
-    if key in sessions:
+    """Clear all chat sessions for a given session ID."""
+    prefix = f"{session_id}:"
+    keys_to_delete = [k for k in sessions if k.startswith(prefix)]
+    for key in keys_to_delete:
         del sessions[key]
     return jsonify({"status": "cleared", "session_id": session_id})
 
@@ -356,7 +355,6 @@ def list_tools():
 def main():
     """Run the server."""
     import logging
-    import click
 
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("DEBUG", "true").lower() == "true"
@@ -364,7 +362,6 @@ def main():
     # Suppress default Flask startup banner
     log = logging.getLogger('werkzeug')
     log.setLevel(logging.WARNING)
-    click.disable_unicode_literals_warning = True
 
     print(f" * Running on http://localhost:{port}")
     print(" * Press CTRL+C to quit")
