@@ -63,6 +63,7 @@ jobs:
           DUKE_CLIENT_ID: radchat
           DUKE_CLIENT_SECRET: ${{ secrets.DUKE_CLIENT_SECRET }}
           FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           gunicorn --bind 0.0.0.0:5000 --workers 2 --timeout 120 src.server:app &
           for i in {1..15}; do
@@ -87,6 +88,11 @@ jobs:
       - name: Monitor
         env:
           RESTART_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          GH_MODELS_TOKEN: ${{ secrets.GH_MODELS_TOKEN }}
+          DUKE_CLIENT_ID: radchat
+          DUKE_CLIENT_SECRET: ${{ secrets.DUKE_CLIENT_SECRET }}
+          FLASK_SECRET_KEY: ${{ secrets.FLASK_SECRET_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           DURATION_HOURS="${{ github.event.client_payload.duration_hours || github.event.inputs.duration_hours || '5' }}"
           DURATION=$(awk "BEGIN {printf \"%.0f\", $DURATION_HOURS * 3600}")
