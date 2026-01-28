@@ -44,7 +44,7 @@ class RadChat {
 
         // Thinking indicator timing
         this.thinkingShownAt = null;
-        this.minThinkingTime = 600; // minimum ms to show indicator
+        this.minThinkingTime = 800; // minimum ms to show indicator
 
         this.init();
     }
@@ -422,6 +422,7 @@ class RadChat {
         // Add assistant message with loading state
         const assistantMessage = this.addMessage('assistant', '', true);
         const bubbleEl = assistantMessage.querySelector('.message-bubble');
+        let messageRevealed = false; // Track if we've shown the message yet
 
         try {
             const response = await fetch('/chat/stream', {
@@ -473,7 +474,6 @@ class RadChat {
                                 // Check for tool start marker
                                 const startMatch = buffer.match(/__TOOL_START__(.+?)__/);
                                 if (startMatch) {
-                                    console.log('[RadChat] Tool start detected:', startMatch[1]);
                                     const beforeMarker = buffer.slice(0, startMatch.index);
                                     if (beforeMarker) {
                                         fullText += beforeMarker;
@@ -490,8 +490,11 @@ class RadChat {
                                 const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
-                                    // Show message, remove thinking indicator
-                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    // Show message, remove thinking indicator (only once)
+                                    if (!messageRevealed) {
+                                        await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                        messageRevealed = true;
+                                    }
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
@@ -504,15 +507,26 @@ class RadChat {
 
                                 // Stream text immediately if no marker could be starting
                                 const underscoreIdx = buffer.indexOf('_');
+                                const textContainer = bubbleEl.querySelector('.message-text') || bubbleEl;
                                 if (underscoreIdx === -1) {
                                     // No underscore, safe to output all
                                     fullText += buffer;
-                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    if (!messageRevealed) {
+                                        await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                        messageRevealed = true;
+                                    } else {
+                                        textContainer.innerHTML = this.formatMessage(fullText);
+                                    }
                                     buffer = '';
                                 } else if (underscoreIdx > 0) {
                                     // Output everything before the underscore
                                     fullText += buffer.slice(0, underscoreIdx);
-                                    await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                    if (!messageRevealed) {
+                                        await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
+                                        messageRevealed = true;
+                                    } else {
+                                        textContainer.innerHTML = this.formatMessage(fullText);
+                                    }
                                     buffer = buffer.slice(underscoreIdx);
                                 }
                                 // else: buffer starts with '_', keep buffering
@@ -532,9 +546,10 @@ class RadChat {
                 fullText += buffer;
             }
 
-            // Final render
-            bubbleEl.innerHTML = this.formatMessage(fullText);
-            this.parseAndRenderToolResults(bubbleEl, fullText);
+            // Final render - use text container to preserve cards
+            const finalTextContainer = bubbleEl.querySelector('.message-text') || bubbleEl;
+            finalTextContainer.innerHTML = this.formatMessage(fullText);
+            this.parseAndRenderToolResults(finalTextContainer, fullText);
 
             // Append any tool result cards that were rendered
             toolResults.forEach(tr => {
@@ -545,7 +560,7 @@ class RadChat {
             });
 
             // Add message footer with time
-            this.addMessageFooter(bubbleEl);
+            this.addMessageFooter(finalTextContainer);
 
         } catch (error) {
             bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
@@ -623,14 +638,34 @@ class RadChat {
         const bubbleEl = document.createElement('div');
         bubbleEl.className = 'message-bubble';
 
-        if (isLoading) {
-            bubbleEl.innerHTML = `
-                <div class="loading-dots">
-                    <span></span><span></span><span></span>
-                </div>
-            `;
+        if (role === 'assistant') {
+            // Create structure: cards container + text container
+            const cardsContainer = document.createElement('div');
+            cardsContainer.className = 'message-cards';
+            bubbleEl.appendChild(cardsContainer);
+
+            const textContainer = document.createElement('div');
+            textContainer.className = 'message-text';
+            if (isLoading) {
+                textContainer.innerHTML = `
+                    <div class="loading-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                `;
+            } else {
+                textContainer.innerHTML = this.formatMessage(content);
+            }
+            bubbleEl.appendChild(textContainer);
         } else {
-            bubbleEl.innerHTML = this.formatMessage(content);
+            if (isLoading) {
+                bubbleEl.innerHTML = `
+                    <div class="loading-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                `;
+            } else {
+                bubbleEl.innerHTML = this.formatMessage(content);
+            }
         }
 
         messageEl.appendChild(bubbleEl);
@@ -687,7 +722,6 @@ class RadChat {
 
         // Record when indicator is shown
         this.thinkingShownAt = Date.now();
-        console.log('[RadChat] Showing thinking indicator for:', toolName);
 
         // Format tool name for display
         const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
@@ -731,26 +765,30 @@ class RadChat {
         // Wait for minimum thinking time if indicator was recently shown
         if (this.thinkingShownAt) {
             const elapsed = Date.now() - this.thinkingShownAt;
-            console.log('[RadChat] Thinking indicator shown for', elapsed, 'ms, min is', this.minThinkingTime);
             if (elapsed < this.minThinkingTime) {
-                console.log('[RadChat] Waiting', this.minThinkingTime - elapsed, 'ms before showing message');
                 await new Promise(r => setTimeout(r, this.minThinkingTime - elapsed));
             }
             this.thinkingShownAt = null;
         }
         // Remove thinking indicator if present
-        console.log('[RadChat] Removing thinking indicator, showing message');
         this.removeThinkingIndicator();
         // Show the message element
         messageEl.style.display = '';
+        // Get or create text container
+        let textContainer = bubbleEl.querySelector('.message-text');
+        if (!textContainer) {
+            textContainer = bubbleEl;
+        }
         // Clear loading dots
-        const loadingDots = bubbleEl.querySelector('.loading-dots');
+        const loadingDots = textContainer.querySelector('.loading-dots');
         if (loadingDots) loadingDots.remove();
         // Render the text
-        bubbleEl.innerHTML = this.formatMessage(text);
+        textContainer.innerHTML = this.formatMessage(text);
     }
 
     renderToolResult(bubbleEl, toolData) {
+        // Get cards container, fall back to bubble
+        const cardsContainer = bubbleEl.querySelector('.message-cards') || bubbleEl;
         const { type, tool, data } = toolData;
 
         // Don't render if there's an error
@@ -776,7 +814,7 @@ class RadChat {
             if (contacts.length > 0) {
                 const card = this.renderContactResults(contacts.slice(0, 5), data.time_context);
                 card.dataset.tool = tool;
-                bubbleEl.appendChild(card);
+                cardsContainer.appendChild(card);
             }
         } else if (type === 'acr') {
             // Render ACR results
@@ -785,12 +823,12 @@ class RadChat {
                 // Search results - show list of topics
                 const card = this.renderACRSearchResults(topics);
                 card.dataset.tool = tool;
-                bubbleEl.appendChild(card);
+                cardsContainer.appendChild(card);
             } else if (data.topic) {
                 // Single topic detail
                 const card = this.renderACRResults(data.topic);
                 card.dataset.tool = tool;
-                bubbleEl.appendChild(card);
+                cardsContainer.appendChild(card);
             }
         }
 
