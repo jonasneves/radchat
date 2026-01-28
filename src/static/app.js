@@ -277,20 +277,38 @@ class RadChat {
     }
 
     async checkAuthStatus() {
+        // Show cached state immediately to prevent flicker
+        const cachedUser = localStorage.getItem('radchat_user');
+        if (cachedUser) {
+            try {
+                this.user = JSON.parse(cachedUser);
+                this.renderUserInfo();
+                this.updateWelcomeMessage();
+            } catch (e) {
+                localStorage.removeItem('radchat_user');
+            }
+        }
+
+        // Then verify with server
         try {
             const response = await fetch('/auth/status');
             const data = await response.json();
 
             if (data.authenticated && data.user) {
                 this.user = data.user;
+                localStorage.setItem('radchat_user', JSON.stringify(data.user));
                 this.renderUserInfo();
             } else {
                 this.user = null;
+                localStorage.removeItem('radchat_user');
                 this.renderLoginButton();
             }
         } catch (error) {
             console.error('Failed to check auth status:', error);
-            this.renderLoginButton();
+            // Keep cached state on network error, or show login if no cache
+            if (!this.user) {
+                this.renderLoginButton();
+            }
         }
         this.updateWelcomeMessage();
     }
@@ -369,6 +387,7 @@ class RadChat {
         try {
             await fetch('/auth/logout', { method: 'POST' });
             this.user = null;
+            localStorage.removeItem('radchat_user');
             this.renderLoginButton();
             this.updateWelcomeMessage();
         } catch (error) {
