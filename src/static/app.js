@@ -944,6 +944,10 @@ class RadChat {
                     contacts = contacts.concat(data.alternatives);
                 }
             }
+            // Also include after_hours_contacts if present
+            if (data.after_hours_contacts) {
+                contacts = contacts.concat(data.after_hours_contacts);
+            }
 
             if (contacts.length > 0) {
                 const card = this.renderContactResults(contacts.slice(0, 5), data.time_context);

@@ -267,6 +267,10 @@ def search_contacts(
         "time_context": time_ctx,
     }
 
+    # Explicit message when no results found
+    if not filtered:
+        response["message"] = "No contacts found matching your search. Do not make up contact information."
+
     # Add after-hours information if relevant
     if time_ctx["is_after_hours"] and contact_type == "interpretation_questions":
         response["after_hours_contacts"] = get_after_hours_contacts()
