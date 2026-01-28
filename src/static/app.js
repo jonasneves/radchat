@@ -546,7 +546,6 @@ class RadChat {
                                 const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
-                                    usedTools = true;
                                     // Always remove thinking indicator on tool result
                                     this.removeThinkingIndicator();
                                     // Show message (only once)
@@ -557,7 +556,10 @@ class RadChat {
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
-                                        this.renderToolResult(cardsContainer, toolData);
+                                        // Only mark as verified if tool returned useful data
+                                        if (this.renderToolResult(cardsContainer, toolData)) {
+                                            usedTools = true;
+                                        }
                                     } catch (e) {
                                         console.error('Failed to parse tool result:', e);
                                     }
@@ -922,7 +924,9 @@ class RadChat {
         const { type, tool, data } = toolData;
 
         // Don't render if there's an error
-        if (data.error) return;
+        if (data.error) return false;
+
+        let rendered = false;
 
         if (type === 'contacts') {
             // Handle different response structures
@@ -945,6 +949,7 @@ class RadChat {
                 const card = this.renderContactResults(contacts.slice(0, 5), data.time_context);
                 card.dataset.tool = tool;
                 cardsContainer.appendChild(card);
+                rendered = true;
             }
         } else if (type === 'acr') {
             // Render ACR results
@@ -954,15 +959,18 @@ class RadChat {
                 const card = this.renderACRSearchResults(topics);
                 card.dataset.tool = tool;
                 cardsContainer.appendChild(card);
+                rendered = true;
             } else if (data.topic || data.first_line_imaging) {
                 // Recommendation results with detailed data
                 const card = this.renderACRRecommendations(data);
                 card.dataset.tool = tool;
                 cardsContainer.appendChild(card);
+                rendered = true;
             }
         }
 
         this.scrollToBottom();
+        return rendered;
     }
 
     renderACRSearchResults(topics) {
