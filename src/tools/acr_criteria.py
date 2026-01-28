@@ -75,25 +75,32 @@ def fetch_topics_live() -> list[dict]:
     soup = BeautifulSoup(response.text, "html.parser")
     topics = {}
 
+    # First pass: collect document IDs from Narrative links
+    doc_ids = {}
     for link in soup.find_all("a", href=True):
         href = link.get("href", "")
-        if "TopicId=" in href and "TopicName=" in href:
-            id_match = re.search(r"TopicId=(\d+)", href)
-            name_match = re.search(r"TopicName=([^&]+)", href)
-            if id_match and name_match:
-                topic_id = id_match.group(1)
-                topic_name = unquote(name_match.group(1)).replace("+", " ")
-                if topic_id not in topics:
-                    topics[topic_id] = topic_name
+        # Match Narrative links: /docs/{doc_id}/Narrative/
+        doc_match = re.search(r"/docs/(\d+)/Narrative/", href)
+        if doc_match:
+            doc_id = doc_match.group(1)
+            # Get topic name from link text
+            topic_name = link.get_text(strip=True)
+            if topic_name and doc_id not in doc_ids:
+                doc_ids[doc_id] = topic_name
+
+    # Use document IDs for URLs (correct format)
+    for doc_id, topic_name in doc_ids.items():
+        if doc_id not in topics:
+            topics[doc_id] = topic_name
 
     return [
         {
-            "id": tid,
+            "id": doc_id,
             "title": tname,
             "body_regions": extract_body_regions(tname),
-            "url": f"{BASE_URL}/docs/{tid}/Narrative/",
+            "url": f"{BASE_URL}/docs/{doc_id}/Narrative/",
         }
-        for tid, tname in sorted(topics.items(), key=lambda x: x[1])
+        for doc_id, tname in sorted(topics.items(), key=lambda x: x[1])
     ]
 
 

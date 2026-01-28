@@ -149,8 +149,8 @@ def should_attempt_details(topic: dict) -> bool:
     return True
 
 
-def fetch_topic_list() -> dict[str, str]:
-    """Fetch topic list from acsearch.acr.org. Returns {topic_id: topic_name}."""
+def fetch_topic_list() -> dict[str, dict]:
+    """Fetch topic list from acsearch.acr.org. Returns {doc_id: {name, topic_id}}."""
     print("Fetching topic list from acsearch.acr.org...")
 
     try:
@@ -163,6 +163,20 @@ def fetch_topic_list() -> dict[str, str]:
     soup = BeautifulSoup(response.text, "html.parser")
     topics = {}
 
+    # Extract document IDs from Narrative links (correct URL format)
+    # and TopicIds from Evidence links (for API calls)
+    for link in soup.find_all("a", href=True):
+        href = link.get("href", "")
+
+        # Match Narrative links: /docs/{doc_id}/Narrative/
+        doc_match = re.search(r"/docs/(\d+)/Narrative/", href)
+        if doc_match:
+            doc_id = doc_match.group(1)
+            topic_name = link.get_text(strip=True)
+            if topic_name and doc_id not in topics:
+                topics[doc_id] = {"name": topic_name, "topic_id": None}
+
+    # Second pass: find TopicIds for API calls
     for link in soup.find_all("a", href=True):
         href = link.get("href", "")
         if "TopicId=" in href and "TopicName=" in href:
@@ -171,8 +185,11 @@ def fetch_topic_list() -> dict[str, str]:
             if id_match and name_match:
                 topic_id = id_match.group(1)
                 topic_name = unquote(name_match.group(1)).replace("+", " ")
-                if topic_id not in topics:
-                    topics[topic_id] = topic_name
+                # Find matching doc by name and set topic_id
+                for doc_id, data in topics.items():
+                    if data["name"] == topic_name and data["topic_id"] is None:
+                        data["topic_id"] = topic_id
+                        break
 
     print(f"Found {len(topics)} topics")
     return topics
@@ -257,18 +274,23 @@ def main():
         sys.exit(1)
 
     # Update index with any new topics
+    # topic_map now returns {doc_id: {name, topic_id}}
     new_topics = 0
-    for topic_id, topic_name in topic_map.items():
-        if topic_id not in index["topics"]:
-            index["topics"][topic_id] = {
-                "id": topic_id,
-                "title": topic_name,
-                "url": f"https://acsearch.acr.org/docs/{topic_id}/Narrative/",
-                "body_regions": extract_body_regions(topic_name),
+    for doc_id, data in topic_map.items():
+        if doc_id not in index["topics"]:
+            index["topics"][doc_id] = {
+                "id": doc_id,
+                "topic_id": data.get("topic_id"),  # For API calls
+                "title": data["name"],
+                "url": f"https://acsearch.acr.org/docs/{doc_id}/Narrative/",
+                "body_regions": extract_body_regions(data["name"]),
                 "status": "pending",
                 "attempts": 0,
             }
             new_topics += 1
+        elif data.get("topic_id") and not index["topics"][doc_id].get("topic_id"):
+            # Update existing entries with topic_id if missing
+            index["topics"][doc_id]["topic_id"] = data["topic_id"]
 
     print(f"Total topics: {len(index['topics'])} ({new_topics} new)")
 
@@ -284,7 +306,7 @@ def main():
     batch = pending[:BATCH_SIZE]
     success_count = 0
 
-    for i, (topic_id, topic) in enumerate(batch):
+    for i, (doc_id, topic) in enumerate(batch):
         print(f"[{i+1}/{len(batch)}] {topic['title'][:50]}...")
 
         # Random delay
@@ -294,7 +316,9 @@ def main():
         topic["last_attempted"] = now
         topic["attempts"] = topic.get("attempts", 0) + 1
 
-        details = fetch_topic_details(topic_id)
+        # Use topic_id for API call, fall back to doc_id
+        api_id = topic.get("topic_id") or doc_id
+        details = fetch_topic_details(api_id)
 
         if details and details.get("no_data"):
             topic["status"] = "no_data"
@@ -332,8 +356,9 @@ def main():
             }
 
             # Save full details to separate file
-            save_topic_details(topic_id, {
-                "id": topic_id,
+            save_topic_details(doc_id, {
+                "id": doc_id,
+                "topic_id": topic.get("topic_id"),
                 "title": topic["title"],
                 "url": topic["url"],
                 "body_regions": topic["body_regions"],
