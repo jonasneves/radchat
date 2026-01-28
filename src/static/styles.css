@@ -847,28 +847,45 @@ body {
 }
 
 .model-btn {
-    width: 48px;
-    height: 48px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #F8FAFC;
+    gap: 6px;
+    padding: 8px 12px;
+    background: white;
     border: 1px solid #E2E8F0;
-    border-radius: 12px;
+    border-radius: 20px;
     color: #64748B;
     cursor: pointer;
     transition: all 0.15s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.model-btn svg:first-child {
+    color: var(--duke-royal);
+}
+
+.model-btn .model-name {
+    color: #334155;
+}
+
+.model-btn .chevron {
+    color: #94A3B8;
+    transition: transform 0.15s;
 }
 
 .model-btn:hover {
-    border-color: #CBD5E1;
-    color: #475569;
+    border-color: var(--duke-royal);
+    background: #FAFBFC;
 }
 
 .model-btn.active {
     border-color: var(--duke-royal);
-    color: var(--duke-royal);
     background: var(--duke-royal-light);
+}
+
+.model-btn.active .chevron {
+    transform: rotate(180deg);
 }
 
 .model-menu {

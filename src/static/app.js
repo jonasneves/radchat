@@ -17,6 +17,7 @@ class RadChat {
         this.modelBtn = document.getElementById('modelBtn');
         this.modelMenu = document.getElementById('modelMenu');
         this.modelOptions = document.getElementById('modelOptions');
+        this.modelNameEl = document.getElementById('modelName');
         this.shiftIndicator = document.getElementById('shiftIndicator');
         this.welcomeState = document.getElementById('welcomeState');
         this.quickActions = document.getElementById('quickActions');
@@ -132,6 +133,9 @@ class RadChat {
             // Set default
             if (data.models.length > 0) {
                 this.selectedModel = data.models[0];
+                if (this.modelNameEl) {
+                    this.modelNameEl.textContent = data.models[0].name;
+                }
             }
         } catch (error) {
             console.error('Failed to load models:', error);
@@ -146,6 +150,11 @@ class RadChat {
         this.modelOptions.querySelectorAll('.model-option').forEach(opt => {
             opt.classList.toggle('selected', opt.dataset.id === model.id);
         });
+
+        // Update button label
+        if (this.modelNameEl) {
+            this.modelNameEl.textContent = model.name;
+        }
 
         // Close menu
         this.modelMenu.classList.remove('open');
