@@ -2,6 +2,7 @@
 Duke RadChat API Server - Flask backend for web interface
 """
 
+import hashlib
 import json
 import os
 import secrets
@@ -9,7 +10,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 import requests
-from flask import Flask, request, jsonify, Response, stream_with_context, redirect, session, send_from_directory
+from flask import Flask, request, jsonify, Response, stream_with_context, redirect, session, send_from_directory, make_response
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -21,6 +22,28 @@ from .chat import create_chat, RadChat, get_available_models
 STATIC_DIR = Path(__file__).parent / "static"
 
 app = Flask(__name__, static_folder=str(STATIC_DIR))
+
+
+def get_file_hash(filepath: Path) -> str:
+    """Generate a short hash of file contents for cache busting."""
+    if not filepath.exists():
+        return "0"
+    content = filepath.read_bytes()
+    return hashlib.md5(content).hexdigest()[:8]
+
+
+# Cache file hashes (recomputed on each server start)
+_file_hashes: dict[str, str] = {}
+
+
+def get_static_hash(filename: str) -> str:
+    """Get cached hash for a static file."""
+    # In debug mode, always recompute hashes
+    if app.debug or filename not in _file_hashes:
+        _file_hashes[filename] = get_file_hash(STATIC_DIR / filename)
+    return _file_hashes[filename]
+
+
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", secrets.token_hex(32))
 CORS(app, supports_credentials=True)
 
@@ -52,14 +75,35 @@ def get_session(session_id: str, token: str = None, model: str = None) -> RadCha
 
 @app.route("/")
 def index():
-    """Serve the web UI."""
-    return send_from_directory(STATIC_DIR, "index.html")
+    """Serve the web UI with cache-busted static file URLs."""
+    html_path = STATIC_DIR / "index.html"
+    html = html_path.read_text()
+
+    # Inject version hashes for cache busting
+    css_hash = get_static_hash("styles.css")
+    app_hash = get_static_hash("app.js")
+    marked_hash = get_static_hash("marked.min.js")
+
+    html = html.replace('href="/static/styles.css"', f'href="/static/styles.css?v={css_hash}"')
+    html = html.replace('src="/static/app.js"', f'src="/static/app.js?v={app_hash}"')
+    html = html.replace('src="/static/marked.min.js"', f'src="/static/marked.min.js?v={marked_hash}"')
+
+    response = make_response(html)
+    response.headers["Content-Type"] = "text/html"
+    response.headers["Cache-Control"] = "no-cache, must-revalidate"
+    return response
 
 
 @app.route("/static/<path:filename>")
 def static_files(filename):
-    """Serve static files."""
-    return send_from_directory(STATIC_DIR, filename)
+    """Serve static files with cache headers."""
+    response = make_response(send_from_directory(STATIC_DIR, filename))
+    # If version query param is present, cache for 1 year (immutable)
+    if request.args.get("v"):
+        response.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+    else:
+        response.headers["Cache-Control"] = "public, max-age=3600"
+    return response
 
 
 @app.route("/health")
