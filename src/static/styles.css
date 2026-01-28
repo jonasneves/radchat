@@ -681,7 +681,7 @@ body {
     width: 16px;
     height: 16px;
     color: var(--duke-royal);
-    animation: spin 0.6s linear infinite;
+    animation: spin 0.4s linear infinite;
 }
 
 @keyframes pulse {
@@ -703,10 +703,10 @@ body {
 }
 
 .loading-spinner svg {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     color: var(--duke-royal);
-    animation: spin 1s linear infinite;
+    animation: spin 0.4s linear infinite;
 }
 
 @keyframes spin {
