@@ -91,6 +91,12 @@ body {
     font-size: 18px;
     font-weight: 700;
     color: white;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.brand:hover {
+    opacity: 0.85;
 }
 
 .header-right {

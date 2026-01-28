@@ -123,6 +123,36 @@ class RadChat {
             this.isNearBottom = scrollHeight - scrollTop - clientHeight < 100;
             this.updateScrollToBottomButton();
         });
+
+        // Brand title click - start new chat
+        const brandTitle = document.getElementById('brandTitle');
+        if (brandTitle) {
+            brandTitle.addEventListener('click', () => this.startNewChat());
+        }
+    }
+
+    startNewChat() {
+        // Generate new session
+        this.sessionId = this.generateSessionId();
+
+        // Clear messages from DOM
+        const messages = this.chatMessages.querySelectorAll('.message, .date-group-header, .thinking-indicator');
+        messages.forEach(el => el.remove());
+
+        // Reset state
+        this.lastMessageDate = null;
+        this.isStreaming = false;
+
+        // Show welcome state
+        if (this.welcomeState) {
+            this.welcomeState.style.display = '';
+        }
+
+        // Update welcome message
+        this.updateWelcomeMessage();
+
+        // Focus input
+        this.messageInput.focus();
     }
 
     updateScrollToBottomButton() {
