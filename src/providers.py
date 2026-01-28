@@ -7,7 +7,7 @@ import os
 from abc import ABC, abstractmethod
 from typing import Generator, Optional
 
-# GitHub Models that support function calling (tool-calling capability)
+# GitHub Models that support function calling (from https://models.github.ai/catalog/models)
 GITHUB_MODELS_WITH_TOOLS = [
     # OpenAI - GPT-4.1 family first (better tool calling reliability)
     {"id": "openai/gpt-4.1-mini", "name": "GPT-4.1 Mini", "provider": "OpenAI"},
@@ -15,18 +15,27 @@ GITHUB_MODELS_WITH_TOOLS = [
     {"id": "openai/gpt-4.1-nano", "name": "GPT-4.1 Nano", "provider": "OpenAI"},
     {"id": "openai/gpt-4o", "name": "GPT-4o", "provider": "OpenAI"},
     {"id": "openai/gpt-4o-mini", "name": "GPT-4o Mini", "provider": "OpenAI"},
+    {"id": "openai/gpt-5", "name": "GPT-5", "provider": "OpenAI"},
+    {"id": "openai/gpt-5-mini", "name": "GPT-5 Mini", "provider": "OpenAI"},
+    {"id": "openai/gpt-5-nano", "name": "GPT-5 Nano", "provider": "OpenAI"},
+    {"id": "openai/o1", "name": "o1", "provider": "OpenAI"},
+    {"id": "openai/o3", "name": "o3", "provider": "OpenAI"},
     {"id": "openai/o3-mini", "name": "o3 Mini", "provider": "OpenAI"},
     {"id": "openai/o4-mini", "name": "o4 Mini", "provider": "OpenAI"},
-    # DeepSeek - only R1-0528+ supports tool calling (original R1 does not)
+    # DeepSeek
     {"id": "deepseek/deepseek-r1-0528", "name": "DeepSeek R1", "provider": "DeepSeek"},
     {"id": "deepseek/deepseek-v3-0324", "name": "DeepSeek V3", "provider": "DeepSeek"},
     # Meta
     {"id": "meta/llama-4-maverick-17b-128e-instruct-fp8", "name": "Llama 4 Maverick", "provider": "Meta"},
     {"id": "meta/llama-4-scout-17b-16e-instruct", "name": "Llama 4 Scout", "provider": "Meta"},
     # Mistral
+    {"id": "mistral-ai/ministral-3b", "name": "Ministral 3B", "provider": "Mistral AI"},
+    {"id": "mistral-ai/mistral-medium-2505", "name": "Mistral Medium 3", "provider": "Mistral AI"},
     {"id": "mistral-ai/mistral-small-2503", "name": "Mistral Small 3.1", "provider": "Mistral AI"},
     # Cohere
     {"id": "cohere/cohere-command-r-plus-08-2024", "name": "Command R+", "provider": "Cohere"},
+    # AI21
+    {"id": "ai21-labs/ai21-jamba-1.5-large", "name": "Jamba 1.5 Large", "provider": "AI21 Labs"},
 ]
 
 # Anthropic models (direct API)
