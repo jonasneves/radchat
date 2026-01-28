@@ -45,7 +45,7 @@ jobs:
             exit 0
           fi
 
-          if [ ! -f src/data/acr_criteria.json ]; then
+          if [ ! -f src/data/acr/index.json ]; then
             echo "skip=false" >> $GITHUB_OUTPUT
             echo "reason=no_cache" >> $GITHUB_OUTPUT
             echo "No cache file, running initial scrape"
@@ -55,7 +55,7 @@ jobs:
           # Check scrape state
           PENDING=$(python3 -c "
           import json
-          data = json.load(open('src/data/acr_criteria.json'))
+          data = json.load(open('src/data/acr/index.json'))
           topics = data.get('topics', {})
           pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
           print(pending)
@@ -71,7 +71,7 @@ jobs:
           fi
 
           # Check age for weekly refresh
-          UPDATED=$(python3 -c "import json; print(json.load(open('src/data/acr_criteria.json')).get('updated_at', ''))" 2>/dev/null || echo "")
+          UPDATED=$(python3 -c "import json; print(json.load(open('src/data/acr/index.json')).get('updated_at', ''))" 2>/dev/null || echo "")
           if [ -n "$UPDATED" ]; then
             AGE_DAYS=$(python3 -c "
           from datetime import datetime, timezone
@@ -102,31 +102,22 @@ jobs:
       - name: Update ACR cache
         if: steps.need_update.outputs.skip != 'true'
         run: |
-          # Copy existing cache if present
-          if [ -f src/data/acr_criteria.json ]; then
-            cp src/data/acr_criteria.json /tmp/existing_cache.json
-          fi
-
           git show main:scripts/update_acr_cache.py > update_acr_cache.py
           python update_acr_cache.py
-
-          # Restore cache location if script wrote elsewhere
-          if [ -f /tmp/existing_cache.json ] && [ ! -f src/data/acr_criteria.json ]; then
-            cp /tmp/existing_cache.json src/data/acr_criteria.json
-          fi
 
       - name: Show stats
         if: steps.need_update.outputs.skip != 'true'
         run: |
           python3 << 'EOF'
           import json
-          data = json.load(open("src/data/acr_criteria.json"))
+          data = json.load(open("src/data/acr/index.json"))
           topics = data.get("topics", {})
           state = data.get("scrape_state", {})
 
-          print(f"Topics: {len(topics)}")
-          print(f"Details scraped: {state.get('details_scraped', 0)}")
-          print(f"Details blocked: {state.get('details_blocked', 0)}")
+          print(f"Topics total: {state.get('topics_total', len(topics))}")
+          print(f"Topics with data: {state.get('topics_with_data', 0)}")
+          print(f"No data on ACR: {state.get('topics_no_data', 0)}")
+          print(f"Blocked: {state.get('topics_blocked', 0)}")
 
           pending = sum(1 for t in topics.values() if t.get('status') in ('pending', 'failed', None))
           print(f"Pending: {pending}")
@@ -136,7 +127,7 @@ jobs:
         if: steps.need_update.outputs.skip != 'true'
         id: check
         run: |
-          git add src/data/acr_criteria.json
+          git add src/data/acr/
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else

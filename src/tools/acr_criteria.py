@@ -1,11 +1,10 @@
 """
 ACR Appropriateness Criteria Tool - Clinical decision support for imaging.
-Fetches cached data from GitHub data branch, falls back to live topic search.
-Cache is updated weekly via GitHub Action.
+Fetches cached data from GitHub data branch (index + individual topic files).
+Cache is updated daily via GitHub Action until complete, then weekly.
 """
 
 import json
-import os
 import re
 from functools import lru_cache
 from typing import Optional
@@ -15,7 +14,8 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://acsearch.acr.org"
-CACHE_URL = "https://raw.githubusercontent.com/jonasneves/radchat/data/src/data/acr_criteria.json"
+CACHE_BASE = "https://raw.githubusercontent.com/jonasneves/radchat/data/src/data/acr"
+INDEX_URL = f"{CACHE_BASE}/index.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
@@ -42,10 +42,22 @@ def extract_body_regions(title: str) -> list[str]:
 
 
 @lru_cache(maxsize=1)
-def load_cache() -> Optional[dict]:
-    """Fetch cached ACR data from GitHub data branch."""
+def load_index() -> Optional[dict]:
+    """Fetch ACR index from GitHub data branch."""
     try:
-        response = requests.get(CACHE_URL, timeout=10)
+        response = requests.get(INDEX_URL, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, json.JSONDecodeError):
+        return None
+
+
+@lru_cache(maxsize=50)
+def load_topic_details(topic_id: str) -> Optional[dict]:
+    """Fetch individual topic details from GitHub data branch."""
+    try:
+        url = f"{CACHE_BASE}/topics/{topic_id}.json"
+        response = requests.get(url, timeout=10)
         response.raise_for_status()
         return response.json()
     except (requests.RequestException, json.JSONDecodeError):
@@ -88,9 +100,9 @@ def fetch_topics_live() -> list[dict]:
 
 def get_topics() -> tuple[list[dict], bool]:
     """Get topics from cache or live. Returns (topics, is_cached)."""
-    cache = load_cache()
-    if cache and cache.get("topics"):
-        topics = list(cache["topics"].values())
+    index = load_index()
+    if index and index.get("topics"):
+        topics = list(index["topics"].values())
         return topics, True
     return fetch_topics_live(), False
 
@@ -171,7 +183,7 @@ def get_imaging_recommendations(
         "body_regions": topic.get("body_regions", []),
     }
 
-    # Include detailed recommendations if we have cached data
+    # Include summary from index if available
     summary = topic.get("summary", {})
     if summary.get("first_line"):
         response["first_line_imaging"] = summary["first_line"]
@@ -179,15 +191,36 @@ def get_imaging_recommendations(
         response["alternatives"] = summary["alternatives"]
     if summary.get("avoid"):
         response["usually_not_appropriate"] = summary["avoid"]
-    if summary.get("special_considerations"):
-        response["special_considerations"] = summary["special_considerations"]
-
-    # Include procedure count if available
     if summary.get("total_procedures"):
         response["total_procedures_evaluated"] = summary["total_procedures"]
 
-    # If no detailed data, add instruction to visit URL
-    if not summary.get("first_line"):
+    # If no detailed data in index, try loading full topic details
+    if not summary.get("first_line") and topic.get("status") == "success":
+        details = load_topic_details(topic.get("id", ""))
+        if details and details.get("procedures"):
+            first_line = []
+            alternatives = []
+            avoid = []
+            for proc in details["procedures"]:
+                score = proc.get("score")
+                if score:
+                    if score >= 7 and len(first_line) < 5:
+                        first_line.append(proc["name"])
+                    elif 4 <= score < 7 and len(alternatives) < 3:
+                        alternatives.append(proc["name"])
+                    elif score < 4 and len(avoid) < 3:
+                        avoid.append(proc["name"])
+
+            if first_line:
+                response["first_line_imaging"] = first_line
+            if alternatives:
+                response["alternatives"] = alternatives
+            if avoid:
+                response["usually_not_appropriate"] = avoid
+            response["total_procedures_evaluated"] = len(details["procedures"])
+
+    # If still no detailed data, add instruction to visit URL
+    if not response.get("first_line_imaging"):
         response["instructions"] = "View the ACR website for detailed appropriateness ratings."
 
     # Related topics

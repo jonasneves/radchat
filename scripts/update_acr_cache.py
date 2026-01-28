@@ -6,6 +6,10 @@ Strategy:
 1. Get topic list from acsearch.acr.org/list (TopicId values)
 2. Fetch procedure data from gravitas.acr.org/ACPortal/GetDataForOneTopic?topicId=X
 3. Parse HTML tables with appropriateness ratings (bg-green, bg-yellow, bg-pink)
+
+Output structure:
+- src/data/acr/index.json - topic list with basic info
+- src/data/acr/topics/{id}.json - individual topic details
 """
 
 import json
@@ -21,7 +25,9 @@ from urllib.parse import unquote
 import requests
 from bs4 import BeautifulSoup
 
-OUTPUT_FILE = Path.cwd() / "src" / "data" / "acr_criteria.json"
+OUTPUT_DIR = Path.cwd() / "src" / "data" / "acr"
+INDEX_FILE = OUTPUT_DIR / "index.json"
+TOPICS_DIR = OUTPUT_DIR / "topics"
 LIST_URL = "https://acsearch.acr.org/list"
 DETAIL_API_URL = "https://gravitas.acr.org/ACPortal/GetDataForOneTopic"
 
@@ -75,11 +81,11 @@ def get_rating_from_cell(cell) -> tuple[Optional[str], Optional[int]]:
     return None, None
 
 
-def load_existing_cache() -> dict:
-    """Load existing cache if available."""
-    if OUTPUT_FILE.exists():
+def load_existing_index() -> dict:
+    """Load existing index if available."""
+    if INDEX_FILE.exists():
         try:
-            with open(OUTPUT_FILE) as f:
+            with open(INDEX_FILE) as f:
                 return json.load(f)
         except (json.JSONDecodeError, IOError):
             pass
@@ -91,12 +97,19 @@ def load_existing_cache() -> dict:
     }
 
 
-def save_cache(data: dict):
-    """Save cache to file."""
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+def save_index(data: dict):
+    """Save index to file."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     data["updated_at"] = datetime.now(timezone.utc).isoformat()
-    with open(OUTPUT_FILE, "w") as f:
+    with open(INDEX_FILE, "w") as f:
         json.dump(data, f, indent=2)
+
+
+def save_topic_details(topic_id: str, details: dict):
+    """Save individual topic details."""
+    TOPICS_DIR.mkdir(parents=True, exist_ok=True)
+    with open(TOPICS_DIR / f"{topic_id}.json", "w") as f:
+        json.dump(details, f, indent=2)
 
 
 def should_attempt_details(topic: dict) -> bool:
@@ -107,6 +120,14 @@ def should_attempt_details(topic: dict) -> bool:
         return True
 
     if status == "success":
+        last_attempted = topic.get("last_attempted")
+        if last_attempted:
+            last_dt = datetime.fromisoformat(last_attempted.replace("Z", "+00:00"))
+            age_days = (datetime.now(timezone.utc) - last_dt).days
+            return age_days > DETAIL_MAX_AGE_DAYS
+        return False
+
+    if status == "no_data":
         last_attempted = topic.get("last_attempted")
         if last_attempted:
             last_dt = datetime.fromisoformat(last_attempted.replace("Z", "+00:00"))
@@ -170,6 +191,11 @@ def fetch_topic_details(topic_id: str) -> Optional[dict]:
 
     soup = BeautifulSoup(response.text, "html.parser")
 
+    # Check for "content not available" message
+    not_available = soup.find(string=re.compile(r"content.*not available", re.I))
+    if not_available:
+        return {"no_data": True}
+
     # Find all procedure tables
     procedures = []
     tables = soup.find_all("table", class_="tblResDocs")
@@ -220,7 +246,7 @@ def fetch_topic_details(topic_id: str) -> Optional[dict]:
 def main():
     print("Starting ACR cache update (gravitas.acr.org API)...")
 
-    cache = load_existing_cache()
+    index = load_existing_index()
 
     # Phase 1: Get topic list
     print("\n=== Phase 1: Topic List ===")
@@ -230,11 +256,11 @@ def main():
         print("Failed to fetch topic list")
         sys.exit(1)
 
-    # Update cache with any new topics
+    # Update index with any new topics
     new_topics = 0
     for topic_id, topic_name in topic_map.items():
-        if topic_id not in cache["topics"]:
-            cache["topics"][topic_id] = {
+        if topic_id not in index["topics"]:
+            index["topics"][topic_id] = {
                 "id": topic_id,
                 "title": topic_name,
                 "url": f"https://acsearch.acr.org/docs/{topic_id}/Narrative/",
@@ -244,13 +270,13 @@ def main():
             }
             new_topics += 1
 
-    print(f"Total topics: {len(cache['topics'])} ({new_topics} new)")
+    print(f"Total topics: {len(index['topics'])} ({new_topics} new)")
 
     # Phase 2: Fetch details for pending topics
     print(f"\n=== Phase 2: Details (batch of {BATCH_SIZE}) ===")
 
     pending = [
-        (topic_id, topic) for topic_id, topic in cache["topics"].items()
+        (topic_id, topic) for topic_id, topic in index["topics"].items()
         if should_attempt_details(topic)
     ]
     print(f"Topics needing details: {len(pending)}")
@@ -270,9 +296,11 @@ def main():
 
         details = fetch_topic_details(topic_id)
 
-        if details and details.get("procedures"):
+        if details and details.get("no_data"):
+            topic["status"] = "no_data"
+            print(f"  ○ Content not available on ACR")
+        elif details and details.get("procedures"):
             topic["status"] = "success"
-            topic["procedures"] = details["procedures"]
 
             # Build summary (deduplicated)
             first_line = []
@@ -295,6 +323,7 @@ def main():
                     elif score < 4 and len(avoid) < 3:
                         avoid.append(name)
 
+            # Store summary in index (for quick access)
             topic["summary"] = {
                 "first_line": first_line,
                 "alternatives": alternatives,
@@ -302,8 +331,18 @@ def main():
                 "total_procedures": len(seen),
             }
 
+            # Save full details to separate file
+            save_topic_details(topic_id, {
+                "id": topic_id,
+                "title": topic["title"],
+                "url": topic["url"],
+                "body_regions": topic["body_regions"],
+                "procedures": details["procedures"],
+                "updated_at": now,
+            })
+
             success_count += 1
-            print(f"  ✓ Found {len(details['procedures'])} procedures")
+            print(f"  ✓ Found {len(seen)} unique procedures")
         else:
             print(f"  ✗ No procedure data found (attempt {topic['attempts']})")
             if topic["attempts"] >= MAX_ATTEMPTS:
@@ -312,23 +351,25 @@ def main():
                 topic["status"] = "failed"
 
     # Update state
-    state = cache.get("scrape_state", {})
+    state = index.get("scrape_state", {})
     state["last_run"] = datetime.now(timezone.utc).isoformat()
-    state["topics_scraped"] = len(cache["topics"])
-    state["details_scraped"] = sum(1 for t in cache["topics"].values() if t.get("status") == "success")
-    state["details_blocked"] = sum(1 for t in cache["topics"].values() if t.get("status") == "blocked")
-    cache["scrape_state"] = state
+    state["topics_total"] = len(index["topics"])
+    state["topics_with_data"] = sum(1 for t in index["topics"].values() if t.get("status") == "success")
+    state["topics_no_data"] = sum(1 for t in index["topics"].values() if t.get("status") == "no_data")
+    state["topics_blocked"] = sum(1 for t in index["topics"].values() if t.get("status") == "blocked")
+    index["scrape_state"] = state
 
-    save_cache(cache)
+    save_index(index)
 
     print(f"\n=== Summary ===")
-    print(f"Topics: {state['topics_scraped']}")
-    print(f"Details scraped: {state['details_scraped']}")
-    print(f"Details blocked: {state['details_blocked']}")
-    pending_count = state['topics_scraped'] - state['details_scraped'] - state['details_blocked']
+    print(f"Topics total: {state['topics_total']}")
+    print(f"Topics with data: {state['topics_with_data']}")
+    print(f"No data on ACR: {state['topics_no_data']}")
+    print(f"Blocked: {state['topics_blocked']}")
+    pending_count = state['topics_total'] - state['topics_with_data'] - state['topics_no_data'] - state['topics_blocked']
     print(f"Pending: {pending_count}")
     print(f"This batch: {success_count}/{len(batch)} succeeded")
-    print(f"Saved to {OUTPUT_FILE}")
+    print(f"Saved to {OUTPUT_DIR}")
 
 
 if __name__ == "__main__":
