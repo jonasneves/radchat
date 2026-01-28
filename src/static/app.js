@@ -307,7 +307,7 @@ class RadChat {
             heading.textContent = `How can I help, ${firstName}?`;
             subtext.textContent = 'Use the quick actions below or type a message';
         } else {
-            heading.textContent = 'How can I help?';
+            heading.textContent = 'Welcome to DukeRad Chat';
             subtext.textContent = 'Sign in with Duke to get started';
         }
     }
