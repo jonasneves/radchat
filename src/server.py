@@ -262,17 +262,15 @@ def chat_stream():
 
     def generate():
         try:
-            yield f"data: {json.dumps({'text': ''})}\n\n"  # Initial ping
-            chunk_count = 0
             for chunk in chat_session.chat_stream(message):
-                chunk_count += 1
                 yield f"data: {json.dumps({'text': chunk})}\n\n"
-            if chunk_count == 0:
-                yield f"data: {json.dumps({'text': '[No response from model]'})}\n\n"
             yield "data: [DONE]\n\n"
         except Exception as e:
-            import traceback
-            yield f"data: {json.dumps({'error': str(e), 'trace': traceback.format_exc()})}\n\n"
+            error_msg = str(e)
+            if "rate" in error_msg.lower() or "too many" in error_msg.lower():
+                yield f"data: {json.dumps({'error': 'Rate limit exceeded. Please wait a moment and try again.'})}\n\n"
+            else:
+                yield f"data: {json.dumps({'error': error_msg})}\n\n"
             yield "data: [DONE]\n\n"
 
     return Response(
