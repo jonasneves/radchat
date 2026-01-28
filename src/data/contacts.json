@@ -1,0 +1,1188 @@
+{
+  "metadata": {
+    "total_contacts": 94,
+    "version": "1.0",
+    "last_updated": "2025-01-03",
+    "sources": [
+      "Duke Radiology - Who to Call.xlsx",
+      "Phone numbers - DukeRads.html"
+    ]
+  },
+  "contacts": [
+    {
+      "id": "breast_imaging_weekday",
+      "department": "Breast Imaging",
+      "phone": "(919) 684-7849",
+      "description": "Breast imaging studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "mammography",
+        "breast"
+      ],
+      "anatomical_regions": [
+        "breast"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_body_weekday",
+      "department": "CT Body Reading Room",
+      "phone": "(919) 684-7224",
+      "description": "Body CT studies (chest/abdomen/pelvis)",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "abdomen",
+        "pelvis",
+        "body",
+        "chest"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_chest_weekday",
+      "department": "CT Chest Reading Room",
+      "phone": "(919) 684-7419",
+      "description": "Chest-only CT studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "chest",
+        "lung",
+        "thorax"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_msk_weekday",
+      "department": "CT MSK Reading Room",
+      "phone": "(919) 684-7247",
+      "description": "Musculoskeletal CT studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "msk",
+        "musculoskeletal",
+        "bone",
+        "joint"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_neuro_weekday",
+      "department": "CT Neuro Reading Room",
+      "phone": "(919) 684-7213",
+      "description": "Neuroradiology CT studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "neuro",
+        "head",
+        "brain",
+        "spine"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_peds_weekday",
+      "department": "CT Pediatrics (Non-Neuro)",
+      "phone": "(919) 684-7288",
+      "description": "Pediatric CT studies (non-neuro)",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "pediatric",
+        "child"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ct_reformats",
+      "department": "CT T/L Reformats",
+      "phone": "(919) 684-7247",
+      "description": "CT thoracic/lumbar reformats",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT"
+      ],
+      "anatomical_regions": [
+        "spine",
+        "thoracic",
+        "lumbar"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "cta_head_neck_weekday",
+      "department": "CTA Head & Neck Reading Room",
+      "phone": "(919) 684-7213",
+      "description": "CT angiography of head and neck",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT",
+        "CTA"
+      ],
+      "anatomical_regions": [
+        "head",
+        "neck",
+        "neuro",
+        "vascular"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "cvi_weekday",
+      "department": "Cardiovascular Imaging",
+      "phone": "(919) 684-7419",
+      "description": "CTA for thoracic/abdominal aneurysms, runoffs, etc",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT",
+        "CTA"
+      ],
+      "anatomical_regions": [
+        "vascular",
+        "aorta",
+        "chest",
+        "abdomen"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "mri_body_weekday",
+      "department": "MRI Body Reading Room",
+      "phone": "(919) 684-7224",
+      "description": "Body MRI studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "MRI"
+      ],
+      "anatomical_regions": [
+        "abdomen",
+        "pelvis",
+        "body"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "mri_chest_weekday",
+      "department": "MRI Chest Reading Room",
+      "phone": "(919) 684-7419",
+      "description": "Chest MRI studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "MRI"
+      ],
+      "anatomical_regions": [
+        "chest",
+        "thorax"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "mri_msk_weekday",
+      "department": "MRI MSK Reading Room",
+      "phone": "(919) 684-7247",
+      "description": "Musculoskeletal MRI studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "MRI"
+      ],
+      "anatomical_regions": [
+        "msk",
+        "musculoskeletal",
+        "bone",
+        "joint"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "mri_neuro_weekday",
+      "department": "MRI Neuro Reading Room",
+      "phone": "(919) 684-7213",
+      "description": "Neuroradiology MRI studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "MRI"
+      ],
+      "anatomical_regions": [
+        "neuro",
+        "head",
+        "brain",
+        "spine"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "mri_peds_weekday",
+      "department": "MRI Pediatrics (Non-Neuro)",
+      "phone": "(919) 684-7288",
+      "description": "Pediatric MRI studies (non-neuro)",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "MRI"
+      ],
+      "anatomical_regions": [
+        "pediatric",
+        "child"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "nucmed_nonpet_weekday",
+      "department": "Nuclear Medicine - Non-PET",
+      "phone": "(919) 684-7867",
+      "description": "Nuclear medicine studies (non-PET)",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "nuclear medicine"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "nucmed_pet_weekday",
+      "department": "Nuclear Medicine - PET",
+      "phone": "(919) 613-2094",
+      "description": "PET scan studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "PET",
+        "nuclear medicine"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "senior_resident_afterhours",
+      "department": "Senior Resident After-Hours",
+      "phone": "(919) 681-4422",
+      "description": "Senior resident for after-hours CT, MRI, Nuclear Medicine questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "CT",
+        "MRI",
+        "nuclear medicine",
+        "PET"
+      ],
+      "availability": "Weekday after-hours (10pm-7:30am)"
+    },
+    {
+      "id": "us_adult_weekday",
+      "department": "Ultrasound Adult",
+      "phone": "(919) 684-7381",
+      "description": "Adult ultrasound studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "US",
+        "ultrasound"
+      ],
+      "anatomical_regions": [
+        "adult"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "ultrasound_afterhours",
+      "department": "Ultrasound After-Hours",
+      "phone": "(919) 681-4475",
+      "description": "After-hours ultrasound questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "US",
+        "ultrasound"
+      ],
+      "availability": "Weekday after-hours (5pm-9pm, 9pm-7:30am)"
+    },
+    {
+      "id": "us_peds_weekday",
+      "department": "Ultrasound Peds",
+      "phone": "(919) 684-7288",
+      "description": "Pediatric ultrasound studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "US",
+        "ultrasound"
+      ],
+      "anatomical_regions": [
+        "pediatric",
+        "child"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "xray_ed_op_afterhours",
+      "department": "X-ray ED/Outpatient After-Hours",
+      "phone": "(919) 681-4475",
+      "description": "After-hours ED and outpatient X-ray questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "availability": "Weekday after-hours (5pm-9pm, 9pm-7:30am)"
+    },
+    {
+      "id": "xray_inpatient_afterhours",
+      "department": "X-ray Inpatient After-Hours",
+      "phone": "(919) 681-4422",
+      "description": "After-hours inpatient X-ray questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "availability": "Weekday after-hours (5pm-9pm)"
+    },
+    {
+      "id": "xr_abdomen_weekday",
+      "department": "XR Abdomen Reading Room",
+      "phone": "(919) 684-7250",
+      "description": "Abdominal X-ray studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "anatomical_regions": [
+        "abdomen",
+        "pelvis",
+        "body"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)",
+      "notes": "For XR abdomen or adult U/S between 4:30-5pm M-F, call 684-7224"
+    },
+    {
+      "id": "xr_chest_weekday",
+      "department": "XR Chest Reading Room",
+      "phone": "(919) 684-7419",
+      "description": "Chest X-ray studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "anatomical_regions": [
+        "chest",
+        "lung",
+        "thorax"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "xr_msk_weekday",
+      "department": "XR MSK Reading Room",
+      "phone": "(919) 684-7247",
+      "description": "Musculoskeletal X-ray studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "anatomical_regions": [
+        "msk",
+        "musculoskeletal",
+        "bone",
+        "joint",
+        "extremity"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "xr_neuro_weekday",
+      "department": "XR Neuro Reading Room",
+      "phone": "(919) 684-7213",
+      "description": "Neuroradiology X-ray studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "anatomical_regions": [
+        "neuro",
+        "head",
+        "brain",
+        "spine"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "xr_peds_weekday",
+      "department": "XR Peds Reading Room",
+      "phone": "(919) 684-7288",
+      "description": "Pediatric X-ray studies and questions",
+      "study_status": "interpretation_questions",
+      "modalities": [
+        "XR"
+      ],
+      "anatomical_regions": [
+        "pediatric",
+        "child"
+      ],
+      "availability": "Weekday business hours (7:30am-5pm)"
+    },
+    {
+      "id": "breast_imaging_scheduling",
+      "department": "Breast Imaging Scheduling",
+      "phone": "(919) 684-7816",
+      "description": "When will my breast imaging study happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "mammography",
+        "breast"
+      ]
+    },
+    {
+      "id": "ct_scheduling_dmp",
+      "department": "CT Scheduling - DMP",
+      "phone": "(919) 385-1364",
+      "description": "When will my CT scan happen? (DMP daytime, all locations after-hours)",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_scheduling_ed",
+      "department": "CT Scheduling - Emergency Department",
+      "phone": "(919) 684-1276",
+      "description": "When will my ED CT scan happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "CT"
+      ],
+      "location": "ED"
+    },
+    {
+      "id": "ct_scheduling_peds_north",
+      "department": "CT Scheduling - Pediatrics/Duke North",
+      "phone": "(919) 684-7221",
+      "description": "When will my CT scan happen? (Daytime Pediatrics and Duke North)",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North, Pediatrics"
+    },
+    {
+      "id": "gi_fluoro_scheduling",
+      "department": "GI Fluoroscopy Scheduling",
+      "phone": "(919) 684-7257",
+      "description": "When will my GI/fluoro procedure happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "fluoro",
+        "fluoroscopy"
+      ],
+      "procedures": [
+        "GI"
+      ]
+    },
+    {
+      "id": "lp_scheduling",
+      "department": "Lumbar Puncture Scheduling",
+      "phone": "(919) 684-7257",
+      "description": "When will my LP happen?",
+      "study_status": "scheduling_inpatient",
+      "procedures": [
+        "LP",
+        "lumbar puncture"
+      ]
+    },
+    {
+      "id": "mri_scheduling_dmp",
+      "department": "MRI Scheduling - DMP",
+      "phone": "(919) 385-1381",
+      "description": "When will my MRI scan happen? (DMP daytime, all locations after-hours)",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_scheduling_north",
+      "department": "MRI Scheduling - Duke North",
+      "phone": "(919) 684-7254",
+      "description": "When will my MRI scan happen? (Daytime Duke North)",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "nucmed_nonpet_scheduling",
+      "department": "Nuclear Medicine Non-PET Scheduling",
+      "phone": "(919) 684-7435",
+      "description": "When will my nuclear medicine scan happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "nuclear medicine"
+      ]
+    },
+    {
+      "id": "nucmed_pet_scheduling",
+      "department": "Nuclear Medicine PET Scheduling",
+      "phone": "(919) 684-7714",
+      "description": "When will my PET scan happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "PET"
+      ]
+    },
+    {
+      "id": "ultrasound_scheduling",
+      "department": "Ultrasound Scheduling",
+      "phone": "(919) 684-7431",
+      "description": "When will my ultrasound happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "US",
+        "ultrasound"
+      ]
+    },
+    {
+      "id": "xray_scheduling_dmp_portables",
+      "department": "X-ray Scheduling - DMP Portables",
+      "phone": "(919) 684-7312",
+      "description": "DMP portable X-rays and all transport inpatients",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "XR"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "xray_scheduling_north_portables",
+      "department": "X-ray Scheduling - Duke North Portables",
+      "phone": "(919) 684-7430",
+      "description": "Duke North portable X-rays",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "xray_scheduling_ed",
+      "department": "X-ray Scheduling - Emergency Department",
+      "phone": "(919) 684-1278",
+      "description": "When will my ED X-ray happen?",
+      "study_status": "scheduling_inpatient",
+      "modalities": [
+        "XR"
+      ],
+      "location": "ED"
+    },
+    {
+      "id": "ct_cancer_center_tl",
+      "department": "Cancer Center CT Team Leader",
+      "phone": "(919) 613-2707",
+      "description": "CT Team Leader tech cell phone at Cancer Center",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_cancer_center_nurse_tl",
+      "department": "Cancer Center CT Team Leader Nurse",
+      "phone": "(919) 613-2774",
+      "description": "Team Leader Nurse cell phone at Cancer Center",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_scheduling",
+      "department": "Cancer Center MRI Scheduling",
+      "phone": "(919) 613-2739",
+      "description": "MRI Scheduling at Cancer Center",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_tl",
+      "department": "Cancer Center MRI Team Leader",
+      "phone": "(919) 613-2732",
+      "description": "MRI Team Leader at Cancer Center",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_work_area",
+      "department": "Cancer Center MRI Work Area",
+      "phone": "(919) 613-2733",
+      "description": "MRI Work Area at Cancer Center",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "xray_cancer_center",
+      "department": "Cancer Center X-Ray",
+      "phone": "(919) 613-2749",
+      "description": "Cancer Center X-Ray",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_dmp_tl",
+      "department": "DMP CT Team Leader",
+      "phone": "(919) 385-1364",
+      "description": "DMP CT Team Leader",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_nurses",
+      "department": "DMP MRI Nurses Station",
+      "phone": "(919) 385-1449",
+      "description": "DMP MRI Nurses Station",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_reception",
+      "department": "DMP MRI Reception",
+      "phone": "(919) 385-1441",
+      "description": "DMP MRI Reception desk",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_tl",
+      "department": "DMP MRI Team Leader",
+      "phone": "(919) 385-1381",
+      "description": "MRI Team Leader at DMP",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "xray_dmp_portables",
+      "department": "DMP X-Ray / Portables",
+      "phone": "(919) 385-1330",
+      "description": "DMP X-Ray and Portables",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_duke_north_control",
+      "department": "Duke North CT Control Desk",
+      "phone": "(919) 684-7221",
+      "description": "Main control desk for Duke North CT scanners",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_interv",
+      "department": "Duke North CT Intervention Desk",
+      "phone": "(919) 684-7331",
+      "description": "Intervention desk for CT procedures",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_nurse",
+      "department": "Duke North CT Nurse",
+      "phone": "(919) 684-7328",
+      "description": "Nurse for Duke North CT",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_team_leader",
+      "department": "Duke North CT Team Leader",
+      "phone": "(919) 613-2768",
+      "description": "CT Team Leader cell phone",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "xray_er_portables",
+      "department": "Duke North ER Portables",
+      "phone": "(919) 684-1278",
+      "description": "Emergency Room Portable X-Ray",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "mri_duke_north_main",
+      "department": "Duke North MRI Main",
+      "phone": "(919) 684-7254",
+      "description": "Duke North MRI Main line; for adult inpatients also 385-1381 (DMP)",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "xray_portables",
+      "department": "Duke North Portables",
+      "phone": "(919) 684-7430",
+      "description": "Portable X-Ray at Duke North",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "us_duke_north_tech_area",
+      "department": "Duke North U/S Tech Area",
+      "phone": "(919) 684-7431",
+      "description": "Duke North Ultrasound tech area",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "US"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "us_duke_north_main",
+      "department": "Duke North Ultrasound",
+      "phone": "(919) 684-7249",
+      "description": "Duke North Ultrasound main line",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "US"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "xray_main_radiology",
+      "department": "Main Radiology X-Ray",
+      "phone": "(919) 684-7312",
+      "description": "Main Radiology X-Ray",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "nm_scheduling",
+      "department": "Nuclear Medicine Scheduling",
+      "phone": "(919) 684-7220",
+      "description": "Nuclear Medicine scheduling",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "NM"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "nm_tech_area",
+      "department": "Nuclear Medicine Tech Area",
+      "phone": "(919) 684-7435",
+      "description": "Nuclear Medicine tech area - for scan status inquiries",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "NM"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "nm_pet_techs",
+      "department": "PET Techs",
+      "phone": "(919) 684-7971",
+      "description": "PET Techs",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "PET"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "us_peds",
+      "department": "Pediatrics U/S Techs",
+      "phone": "(919) 684-7379",
+      "description": "Pediatric Ultrasound techs",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "US"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "xray_peds",
+      "department": "Pediatrics X-Ray",
+      "phone": "(919) 684-7302",
+      "description": "Pediatric X-Ray",
+      "study_status": "tech_scheduling",
+      "modalities": [
+        "XR"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_cancer_center_cct1",
+      "department": "Cancer Center CT Scanner CCT1",
+      "phone": "(919) 613-2716",
+      "description": "Cancer Center CT Scanner 1",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_cancer_center_cct2",
+      "department": "Cancer Center CT Scanner CCT2",
+      "phone": "(919) 613-2715",
+      "description": "Cancer Center CT Scanner 2",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_cancer_center_cct3",
+      "department": "Cancer Center CT Scanner CCT3",
+      "phone": "(919) 613-2714",
+      "description": "Cancer Center CT Scanner 3",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_cancer_center_cct4",
+      "department": "Cancer Center CT Scanner CCT4",
+      "phone": "(919) 613-2713",
+      "description": "Cancer Center CT Scanner 4",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_cancer_center_cct5",
+      "department": "Cancer Center CT Scanner CCT5",
+      "phone": "(919) 613-2712",
+      "description": "Cancer Center CT Scanner 5",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_cmr1",
+      "department": "Cancer Center MRI Scanner CMR1 (Skyra)",
+      "phone": "(919) 613-2734",
+      "description": "Cancer Center MRI Scanner 1 - Skyra",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_cmr2",
+      "department": "Cancer Center MRI Scanner CMR2 (Skyra)",
+      "phone": "(919) 613-2735",
+      "description": "Cancer Center MRI Scanner 2 - Skyra",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "mri_cancer_center_cmr3",
+      "department": "Cancer Center MRI Scanner CMR3 (Optima)",
+      "phone": "(919) 613-2732",
+      "description": "Cancer Center MRI Scanner 3 - Optima",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Cancer Center"
+    },
+    {
+      "id": "ct_dmp_neuro",
+      "department": "DMP CT Neuro Procedure Scanner",
+      "phone": "(919) 385-1365",
+      "description": "DMP CT Neuro Procedure Scanner",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_dmp_ct1",
+      "department": "DMP CT Scanner 1",
+      "phone": "(919) 385-1413",
+      "description": "DMP CT Scanner 1",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_dmp_ct2",
+      "department": "DMP CT Scanner 2 (Discovery 750)",
+      "phone": "(919) 385-1362",
+      "description": "DMP CT Scanner 2 - Discovery 750",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_dmp_ct3",
+      "department": "DMP CT Scanner 3 (FORCE)",
+      "phone": "(919) 385-1361",
+      "description": "DMP CT Scanner 3 - FORCE",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_mr2",
+      "department": "DMP MRI Scanner 2",
+      "phone": "(919) 385-1383",
+      "description": "DMP MRI Scanner 2",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_mr3",
+      "department": "DMP MRI Scanner 3",
+      "phone": "(919) 385-1384",
+      "description": "DMP MRI Scanner 3",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "mri_dmp_mr4",
+      "department": "DMP MRI Scanner 4",
+      "phone": "(919) 385-1385",
+      "description": "DMP MRI Scanner 4",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "DMP"
+    },
+    {
+      "id": "ct_duke_north_b5",
+      "department": "Duke North CT Scanner B5",
+      "phone": "(919) 681-5015",
+      "description": "CT Scanner B5 direct line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_c1",
+      "department": "Duke North CT Scanner C1",
+      "phone": "(919) 684-7264",
+      "description": "CT Scanner C1 direct line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_c3",
+      "department": "Duke North CT Scanner C3",
+      "phone": "(919) 684-7263",
+      "description": "CT Scanner C3 direct line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_d1",
+      "department": "Duke North CT Scanner D1 (U/S Intervention)",
+      "phone": "(919) 684-7437",
+      "description": "CT Scanner D1 for ultrasound intervention procedures",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_j1",
+      "department": "Duke North CT Scanner J1",
+      "phone": "(919) 684-7355",
+      "description": "CT Scanner J1 direct line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_j3",
+      "department": "Duke North CT Scanner J3",
+      "phone": "(919) 684-7216",
+      "description": "CT Scanner J3 direct line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "ct_duke_north_er",
+      "department": "Duke North ER CT",
+      "phone": "(919) 684-1276",
+      "description": "Emergency Room CT scanner",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "CT"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "mri_duke_north_mr1",
+      "department": "Duke North MRI Scanner 1 (1.5T Siemens)",
+      "phone": "(919) 684-7262",
+      "description": "Duke North MRI Scanner 1 - 1.5T Siemens",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "mri_duke_north_mr2",
+      "department": "Duke North MRI Scanner 2 (3T Siemens)",
+      "phone": "(919) 684-7291",
+      "description": "Duke North MRI Scanner 2 - 3T Siemens",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "mri_duke_north_mr3",
+      "department": "Duke North MRI Scanner 3 (3T GE)",
+      "phone": "(919) 684-7301",
+      "description": "Duke North MRI Scanner 3 - 3T GE",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "MRI"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "nm_pet_main",
+      "department": "PET Scanner",
+      "phone": "(919) 684-7714",
+      "description": "PET Scanner main line",
+      "study_status": "scanner_direct",
+      "modalities": [
+        "PET"
+      ],
+      "location": "Duke North"
+    },
+    {
+      "id": "vir_resident",
+      "department": "Vascular Interventional Radiology Resident",
+      "phone": "(919) 684-7592",
+      "description": "VIR resident for procedures: tunneled lines, PICC lines, biopsies, drains, paracentesis, thoracentesis",
+      "study_status": "procedure_request",
+      "procedures": [
+        "tunneled_line",
+        "picc_line",
+        "biopsy",
+        "drain_placement",
+        "paracentesis",
+        "thoracentesis"
+      ]
+    }
+  ],
+  "routing_rules": [
+    {
+      "condition": "weekday_business_hours AND xr_abdomen AND time_between_4:30pm_5pm",
+      "action": "route_to_ct_body",
+      "phone": "(919) 684-7224",
+      "rationale": "XR abdomen or adult ultrasound between 4:30-5pm M-F routes to CT Body reading room"
+    },
+    {
+      "condition": "after_hours AND (ct OR mri OR nuclear_medicine)",
+      "action": "contact_senior_resident",
+      "phone": "(919) 681-4422",
+      "rationale": "After-hours CT, MRI, and Nuclear Medicine questions go to senior resident"
+    },
+    {
+      "condition": "weekend AND any_imaging_question",
+      "action": "use_weekend_schedule",
+      "rationale": "Weekend hours are 7:30am-12pm and 12pm-7:30am with different on-call schedules"
+    }
+  ]
+}

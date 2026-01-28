@@ -6,23 +6,21 @@ Full implementation with time-aware routing and comprehensive search.
 import json
 from datetime import datetime
 from functools import lru_cache
+from pathlib import Path
 from typing import Optional
 from zoneinfo import ZoneInfo
 
-import requests
-
 EASTERN = ZoneInfo("America/New_York")
-CONTACTS_URL = "https://raw.githubusercontent.com/jonasneves/radchat/data/src/data/contacts.json"
+CONTACTS_FILE = Path(__file__).parent.parent / "data" / "contacts.json"
 
 
 @lru_cache(maxsize=1)
 def load_contacts() -> dict:
-    """Fetch contacts from GitHub data branch."""
+    """Load contacts from local file."""
     try:
-        response = requests.get(CONTACTS_URL, timeout=10)
-        response.raise_for_status()
-        return response.json()
-    except (requests.RequestException, json.JSONDecodeError):
+        with open(CONTACTS_FILE) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
         return {"metadata": {}, "contacts": [], "routing_rules": []}
 
 
