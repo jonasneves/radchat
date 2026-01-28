@@ -703,27 +703,24 @@ body {
     40% { transform: translateY(-6px); }
 }
 
-/* Loading Dots */
-.loading-dots {
+/* Loading Spinner */
+.loading-spinner {
     display: flex;
-    gap: 6px;
+    align-items: center;
+    justify-content: center;
     padding: 8px 0;
 }
 
-.loading-dots span {
-    width: 8px;
-    height: 8px;
-    background: var(--duke-royal);
-    border-radius: 50%;
-    animation: bounce 1.4s ease-in-out infinite;
+.loading-spinner svg {
+    width: 24px;
+    height: 24px;
+    color: var(--duke-royal);
+    animation: spin 1s linear infinite;
 }
 
-.loading-dots span:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.loading-dots span:nth-child(3) {
-    animation-delay: 0.2s;
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* Data Cards */

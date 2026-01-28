@@ -701,8 +701,11 @@ class RadChat {
             bubbleEl.className = 'message-bubble';
             if (isLoading) {
                 bubbleEl.innerHTML = `
-                    <div class="loading-dots">
-                        <span></span><span></span><span></span>
+                    <div class="loading-spinner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                            <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                        </svg>
                     </div>
                 `;
             } else {
@@ -717,8 +720,11 @@ class RadChat {
             bubbleEl.className = 'message-bubble';
             if (isLoading) {
                 bubbleEl.innerHTML = `
-                    <div class="loading-dots">
-                        <span></span><span></span><span></span>
+                    <div class="loading-spinner">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+                            <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/>
+                        </svg>
                     </div>
                 `;
             } else {
@@ -854,9 +860,9 @@ class RadChat {
         this.removeThinkingIndicator();
         // Show the message element
         messageEl.style.display = '';
-        // Clear loading dots from bubble
-        const loadingDots = bubbleEl.querySelector('.loading-dots');
-        if (loadingDots) loadingDots.remove();
+        // Clear loading spinner from bubble
+        const loadingSpinner = bubbleEl.querySelector('.loading-spinner');
+        if (loadingSpinner) loadingSpinner.remove();
         // Render the text
         bubbleEl.innerHTML = this.formatMessage(text);
     }
