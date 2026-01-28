@@ -34,6 +34,14 @@ class RadChat {
         this.scrollToBottomBtn = null;
         this.isNearBottom = true;
 
+        // Carousel
+        this.carouselTrack = document.getElementById('carouselTrack');
+        this.carouselPrev = document.getElementById('carouselPrev');
+        this.carouselNext = document.getElementById('carouselNext');
+        this.carouselDots = document.getElementById('carouselDots');
+        this.currentPage = 0;
+        this.totalPages = 0;
+
         this.init();
     }
 
@@ -43,6 +51,7 @@ class RadChat {
 
     async init() {
         this.bindEvents();
+        this.initCarousel();
         await this.checkAuthStatus();
         await this.loadModels();
         this.updateShiftIndicator();
@@ -131,6 +140,74 @@ class RadChat {
         } else if (this.scrollToBottomBtn) {
             this.scrollToBottomBtn.remove();
             this.scrollToBottomBtn = null;
+        }
+    }
+
+    initCarousel() {
+        if (!this.carouselTrack) return;
+
+        const pages = this.carouselTrack.querySelectorAll('.carousel-page');
+        this.totalPages = pages.length;
+
+        if (this.totalPages <= 1) {
+            // Hide arrows if only one page
+            if (this.carouselPrev) this.carouselPrev.style.display = 'none';
+            if (this.carouselNext) this.carouselNext.style.display = 'none';
+            if (this.carouselDots) this.carouselDots.style.display = 'none';
+            return;
+        }
+
+        // Bind arrow events
+        if (this.carouselPrev) {
+            this.carouselPrev.addEventListener('click', () => this.goToPage(this.currentPage - 1));
+        }
+        if (this.carouselNext) {
+            this.carouselNext.addEventListener('click', () => this.goToPage(this.currentPage + 1));
+        }
+
+        // Bind dot events
+        if (this.carouselDots) {
+            this.carouselDots.querySelectorAll('.carousel-dot').forEach(dot => {
+                dot.addEventListener('click', () => {
+                    const page = parseInt(dot.dataset.page, 10);
+                    this.goToPage(page);
+                });
+            });
+        }
+
+        this.updateCarouselState();
+    }
+
+    goToPage(page) {
+        if (page < 0 || page >= this.totalPages) return;
+
+        this.currentPage = page;
+
+        // Slide the track
+        this.carouselTrack.style.transform = `translateX(-${page * 100}%)`;
+
+        // Update page visibility
+        this.carouselTrack.querySelectorAll('.carousel-page').forEach((p, i) => {
+            p.classList.toggle('active', i === page);
+        });
+
+        this.updateCarouselState();
+    }
+
+    updateCarouselState() {
+        // Update arrows
+        if (this.carouselPrev) {
+            this.carouselPrev.disabled = this.currentPage === 0;
+        }
+        if (this.carouselNext) {
+            this.carouselNext.disabled = this.currentPage === this.totalPages - 1;
+        }
+
+        // Update dots
+        if (this.carouselDots) {
+            this.carouselDots.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === this.currentPage);
+            });
         }
     }
 

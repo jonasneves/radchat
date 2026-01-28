@@ -339,6 +339,92 @@ body {
     flex-shrink: 0;
 }
 
+/* Prompts Carousel */
+.prompts-carousel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.carousel-arrow {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid rgba(0, 83, 155, 0.15);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--duke-royal);
+    flex-shrink: 0;
+    transition: all 0.15s;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+    background: var(--duke-royal-light);
+    border-color: var(--duke-royal);
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.carousel-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-page {
+    flex: 0 0 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-page.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #CBD5E1;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.15s;
+}
+
+.carousel-dot:hover {
+    background: #94A3B8;
+}
+
+.carousel-dot.active {
+    background: var(--duke-royal);
+    width: 24px;
+    border-radius: 4px;
+}
+
 /* Messages */
 .message {
     display: flex;

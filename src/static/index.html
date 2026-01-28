@@ -46,36 +46,89 @@
 
                         <div class="try-asking">
                             <span class="try-asking-label">Try asking</span>
-                            <div class="quick-actions" id="quickActions">
-                                <button class="quick-action" data-query="Who covers neuro imaging today?">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                        <circle cx="9" cy="7" r="4"/>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            <div class="prompts-carousel" id="promptsCarousel">
+                                <button class="carousel-arrow carousel-prev" id="carouselPrev" disabled>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M15 18l-6-6 6-6"/>
                                     </svg>
-                                    Who covers neuro imaging today?
                                 </button>
-                                <button class="quick-action" data-query="ACR criteria for suspected PE?">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                <div class="carousel-container">
+                                    <div class="carousel-track" id="carouselTrack">
+                                        <!-- Page 1 -->
+                                        <div class="carousel-page active" data-page="0">
+                                            <button class="quick-action" data-query="Who covers neuro imaging today?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                                    <circle cx="9" cy="7" r="4"/>
+                                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                                </svg>
+                                                Who covers neuro imaging today?
+                                            </button>
+                                            <button class="quick-action" data-query="ACR criteria for suspected PE?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                                </svg>
+                                                ACR criteria for suspected PE?
+                                            </button>
+                                            <button class="quick-action" data-query="How do I reach MRI after hours?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <path d="M12 6v6l4 2"/>
+                                                </svg>
+                                                How do I reach MRI after hours?
+                                            </button>
+                                            <button class="quick-action" data-query="I need a PICC line placed">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                                </svg>
+                                                I need a PICC line placed
+                                            </button>
+                                        </div>
+                                        <!-- Page 2 -->
+                                        <div class="carousel-page" data-page="1">
+                                            <button class="quick-action" data-query="Is CT or MRI better for knee injury?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M9 11l3 3L22 4"/>
+                                                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                                </svg>
+                                                Is CT or MRI better for knee injury?
+                                            </button>
+                                            <button class="quick-action" data-query="What's the pager for body imaging?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                                </svg>
+                                                What's the pager for body imaging?
+                                            </button>
+                                            <button class="quick-action" data-query="Imaging guidelines for headache?">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                                </svg>
+                                                Imaging guidelines for headache?
+                                            </button>
+                                            <button class="quick-action" data-query="Schedule a paracentesis">
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                                </svg>
+                                                Schedule a paracentesis
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-arrow carousel-next" id="carouselNext">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M9 18l6-6-6-6"/>
                                     </svg>
-                                    ACR criteria for suspected PE?
                                 </button>
-                                <button class="quick-action" data-query="How do I reach MRI after hours?">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <path d="M12 6v6l4 2"/>
-                                    </svg>
-                                    How do I reach MRI after hours?
-                                </button>
-                                <button class="quick-action" data-query="I need a PICC line placed">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                    </svg>
-                                    I need a PICC line placed
-                                </button>
+                            </div>
+                            <div class="carousel-dots" id="carouselDots">
+                                <button class="carousel-dot active" data-page="0"></button>
+                                <button class="carousel-dot" data-page="1"></button>
                             </div>
                         </div>
                     </div>
