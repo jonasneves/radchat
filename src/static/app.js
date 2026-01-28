@@ -336,6 +336,11 @@ class RadChat {
 
                     try {
                         const parsed = JSON.parse(data);
+                        if (parsed.error) {
+                            this.showToast(parsed.error, 'error');
+                            bubbleEl.innerHTML = '<span class="error-text">Unable to get response. Please try again.</span>';
+                            return;
+                        }
                         if (parsed.text) {
                             buffer += parsed.text;
 
@@ -772,24 +777,25 @@ class RadChat {
         this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
     }
 
-    showToast(message) {
+    showToast(message, type = 'info') {
         // Remove existing toast if any
         const existing = document.querySelector('.toast');
         if (existing) existing.remove();
 
         const toast = document.createElement('div');
-        toast.className = 'toast';
+        toast.className = `toast toast-${type}`;
         toast.textContent = message;
         document.body.appendChild(toast);
 
         // Trigger animation
         requestAnimationFrame(() => toast.classList.add('show'));
 
-        // Auto-dismiss after 4 seconds
+        // Auto-dismiss (longer for errors)
+        const duration = type === 'error' ? 6000 : 4000;
         setTimeout(() => {
             toast.classList.remove('show');
             setTimeout(() => toast.remove(), 300);
-        }, 4000);
+        }, duration);
     }
 }
 
