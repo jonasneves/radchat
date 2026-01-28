@@ -239,9 +239,10 @@ class RadChat {
             const data = await response.json();
             this.models = data.models;
 
-            // Set default
+            // Set default to GPT-4.1 Mini, fallback to first model
             if (data.models.length > 0) {
-                this.selectedModel = data.models[0];
+                const preferredModel = data.models.find(m => m.id === 'openai/gpt-4.1-mini');
+                this.selectedModel = preferredModel || data.models[0];
             }
 
             // Re-render user info if already logged in (to show model options)
