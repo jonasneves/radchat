@@ -473,6 +473,7 @@ class RadChat {
                                 // Check for tool start marker
                                 const startMatch = buffer.match(/__TOOL_START__(.+?)__/);
                                 if (startMatch) {
+                                    console.log('[RadChat] Tool start detected:', startMatch[1]);
                                     const beforeMarker = buffer.slice(0, startMatch.index);
                                     if (beforeMarker) {
                                         fullText += beforeMarker;
@@ -686,6 +687,7 @@ class RadChat {
 
         // Record when indicator is shown
         this.thinkingShownAt = Date.now();
+        console.log('[RadChat] Showing thinking indicator for:', toolName);
 
         // Format tool name for display
         const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
@@ -729,12 +731,15 @@ class RadChat {
         // Wait for minimum thinking time if indicator was recently shown
         if (this.thinkingShownAt) {
             const elapsed = Date.now() - this.thinkingShownAt;
+            console.log('[RadChat] Thinking indicator shown for', elapsed, 'ms, min is', this.minThinkingTime);
             if (elapsed < this.minThinkingTime) {
+                console.log('[RadChat] Waiting', this.minThinkingTime - elapsed, 'ms before showing message');
                 await new Promise(r => setTimeout(r, this.minThinkingTime - elapsed));
             }
             this.thinkingShownAt = null;
         }
         // Remove thinking indicator if present
+        console.log('[RadChat] Removing thinking indicator, showing message');
         this.removeThinkingIndicator();
         // Show the message element
         messageEl.style.display = '';
