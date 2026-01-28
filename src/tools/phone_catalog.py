@@ -271,8 +271,8 @@ def search_contacts(
     if not filtered:
         response["message"] = "No contacts found matching your search. Do not make up contact information."
 
-    # Add after-hours information if relevant
-    if time_ctx["is_after_hours"] and contact_type == "interpretation_questions":
+    # Always include after-hours contacts when it's after-hours
+    if time_ctx["is_after_hours"]:
         response["after_hours_contacts"] = get_after_hours_contacts()
         response["after_hours_note"] = (
             f"It's currently after-hours ({time_ctx['current_time']} on {time_ctx['day']}). "
