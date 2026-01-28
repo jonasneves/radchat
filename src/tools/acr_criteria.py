@@ -182,15 +182,9 @@ def get_imaging_recommendations(
     if summary.get("special_considerations"):
         response["special_considerations"] = summary["special_considerations"]
 
-    # Include variant descriptions if available
-    variants = topic.get("variants", [])
-    if variants:
-        response["clinical_variants"] = [
-            v.get("description") or f"Variant {v.get('number')}"
-            for v in variants[:3]
-            if v.get("description") or v.get("procedures")
-        ]
-        response["total_procedures_evaluated"] = summary.get("total_procedures", 0)
+    # Include procedure count if available
+    if summary.get("total_procedures"):
+        response["total_procedures_evaluated"] = summary["total_procedures"]
 
     # If no detailed data, add instruction to visit URL
     if not summary.get("first_line"):
