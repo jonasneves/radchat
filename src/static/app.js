@@ -485,12 +485,8 @@ class RadChat {
                                 const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
-                                    // Remove thinking indicator, show message again
-                                    this.removeThinkingIndicator();
-                                    assistantMessage.style.display = '';
-                                    // Clear loading dots
-                                    const loadingDots = bubbleEl.querySelector('.loading-dots');
-                                    if (loadingDots) loadingDots.remove();
+                                    // Show message, remove thinking indicator
+                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     try {
                                         const toolData = JSON.parse(resultMatch[1]);
                                         toolResults.push(toolData);
@@ -506,12 +502,12 @@ class RadChat {
                                 if (underscoreIdx === -1) {
                                     // No underscore, safe to output all
                                     fullText += buffer;
-                                    bubbleEl.innerHTML = this.formatMessage(fullText);
+                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     buffer = '';
                                 } else if (underscoreIdx > 0) {
                                     // Output everything before the underscore
                                     fullText += buffer.slice(0, underscoreIdx);
-                                    bubbleEl.innerHTML = this.formatMessage(fullText);
+                                    this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                     buffer = buffer.slice(underscoreIdx);
                                 }
                                 // else: buffer starts with '_', keep buffering
@@ -720,6 +716,18 @@ class RadChat {
     removeThinkingIndicator() {
         const indicator = this.chatMessages.querySelector('.thinking-indicator');
         if (indicator) indicator.remove();
+    }
+
+    showAssistantMessage(messageEl, bubbleEl, text) {
+        // Remove thinking indicator if present
+        this.removeThinkingIndicator();
+        // Show the message element
+        messageEl.style.display = '';
+        // Clear loading dots
+        const loadingDots = bubbleEl.querySelector('.loading-dots');
+        if (loadingDots) loadingDots.remove();
+        // Render the text
+        bubbleEl.innerHTML = this.formatMessage(text);
     }
 
     renderToolResult(bubbleEl, toolData) {
