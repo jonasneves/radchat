@@ -445,6 +445,7 @@ class RadChat {
             let fullText = '';
             let buffer = '';
             let toolResults = [];
+            let usedTools = false;
 
             while (true) {
                 const { value, done } = await reader.read();
@@ -490,6 +491,7 @@ class RadChat {
                                 const resultMatch = buffer.match(/__TOOL_RESULT__(.+?)__/);
                                 if (resultMatch) {
                                     buffer = buffer.slice(resultMatch.index + resultMatch[0].length);
+                                    usedTools = true;
                                     // Show message, remove thinking indicator (only once)
                                     if (!messageRevealed) {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
@@ -559,8 +561,8 @@ class RadChat {
                 }
             });
 
-            // Add message footer with time
-            this.addMessageFooter(finalTextContainer);
+            // Add message footer with time and source badge
+            this.addMessageFooter(finalTextContainer, usedTools);
 
         } catch (error) {
             bubbleEl.innerHTML = `<span style="color: #DC2626;">Error: ${error.message}</span>`;
@@ -709,10 +711,34 @@ class RadChat {
         }
     }
 
-    addMessageFooter(bubbleEl) {
+    addMessageFooter(bubbleEl, usedTools = false) {
         const footer = document.createElement('div');
         footer.className = 'message-footer';
-        footer.innerHTML = `<span class="message-time">just now</span>`;
+
+        if (usedTools) {
+            footer.innerHTML = `
+                <span class="source-badge verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    Verified
+                </span>
+                <span class="message-time">just now</span>
+            `;
+        } else {
+            footer.innerHTML = `
+                <span class="source-badge unverified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="12"/>
+                        <line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                    General knowledge
+                </span>
+                <span class="message-time">just now</span>
+            `;
+        }
         bubbleEl.appendChild(footer);
     }
 

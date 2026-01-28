@@ -511,6 +511,31 @@ body {
     color: #94A3B8;
 }
 
+/* Source Badge */
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.source-badge svg {
+    flex-shrink: 0;
+}
+
+.source-badge.verified {
+    background: #DCFCE7;
+    color: #166534;
+}
+
+.source-badge.unverified {
+    background: #FEF9C3;
+    color: #854D0E;
+}
+
 /* Message Status (inside user message bubble) */
 .message-status {
     display: flex;
