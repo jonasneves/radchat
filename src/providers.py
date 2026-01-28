@@ -262,7 +262,6 @@ class GitHubModelsProvider(LLMProvider):
                 model=self.model,
                 messages=openai_msgs,
                 tools=openai_tools,
-                max_tokens=4096,
             )
 
             choice = response.choices[0]
@@ -322,7 +321,6 @@ class GitHubModelsProvider(LLMProvider):
                 model=self.model,
                 messages=openai_msgs,
                 tools=openai_tools,
-                max_tokens=4096,
                 stream=True,
             )
 

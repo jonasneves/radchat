@@ -13,16 +13,12 @@ class RadChat {
         this.messageInput = document.getElementById('messageInput');
         this.inputForm = document.getElementById('inputForm');
         this.sendBtn = document.getElementById('sendBtn');
-        this.modelSelect = document.getElementById('modelSelect');
-        this.modelBtn = document.getElementById('modelBtn');
-        this.modelMenu = document.getElementById('modelMenu');
-        this.modelOptions = document.getElementById('modelOptions');
-        this.modelNameEl = document.getElementById('modelName');
         this.shiftIndicator = document.getElementById('shiftIndicator');
         this.welcomeState = document.getElementById('welcomeState');
         this.quickActions = document.getElementById('quickActions');
 
         this.selectedModel = { id: 'openai/gpt-4o-mini', name: 'GPT-4o Mini' };
+        this.models = [];
         this.user = null;
 
         // Auth elements
@@ -103,21 +99,6 @@ class RadChat {
 
             // Focus the input and let the keypress go through
             this.messageInput.focus();
-        });
-
-        // Model menu toggle
-        this.modelBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            this.modelMenu.classList.toggle('open');
-            this.modelBtn.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!this.modelMenu.contains(e.target) && e.target !== this.modelBtn) {
-                this.modelMenu.classList.remove('open');
-                this.modelBtn.classList.remove('active');
-            }
         });
 
         // Scroll tracking for "new messages" button
@@ -252,38 +233,16 @@ class RadChat {
         try {
             const response = await fetch('/models');
             const data = await response.json();
-
             this.models = data.models;
-            this.modelOptions.innerHTML = '';
-
-            data.models.forEach((model, index) => {
-                // Update hidden select
-                const option = document.createElement('option');
-                option.value = model.id;
-                option.textContent = model.name;
-                this.modelSelect.appendChild(option);
-
-                // Create menu option
-                const menuOption = document.createElement('div');
-                menuOption.className = `model-option ${index === 0 ? 'selected' : ''}`;
-                menuOption.dataset.id = model.id;
-                menuOption.dataset.name = model.name;
-                menuOption.innerHTML = `
-                    <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                    <span>${model.name}</span>
-                `;
-                menuOption.addEventListener('click', () => this.selectModel(model));
-                this.modelOptions.appendChild(menuOption);
-            });
 
             // Set default
             if (data.models.length > 0) {
                 this.selectedModel = data.models[0];
-                if (this.modelNameEl) {
-                    this.modelNameEl.textContent = data.models[0].name;
-                }
+            }
+
+            // Re-render user info if already logged in (to show model options)
+            if (this.user) {
+                this.renderUserInfo();
             }
         } catch (error) {
             console.error('Failed to load models:', error);
@@ -292,21 +251,18 @@ class RadChat {
 
     selectModel(model) {
         this.selectedModel = model;
-        this.modelSelect.value = model.id;
 
-        // Update UI
-        this.modelOptions.querySelectorAll('.model-option').forEach(opt => {
+        // Update UI in user menu
+        const modelOptions = this.authArea.querySelectorAll('.model-option');
+        modelOptions.forEach(opt => {
             opt.classList.toggle('selected', opt.dataset.id === model.id);
         });
 
-        // Update button label
-        if (this.modelNameEl) {
-            this.modelNameEl.textContent = model.name;
+        // Update model name display
+        const modelNameEl = this.authArea.querySelector('.selected-model-name');
+        if (modelNameEl) {
+            modelNameEl.textContent = model.name;
         }
-
-        // Close menu
-        this.modelMenu.classList.remove('open');
-        this.modelBtn.classList.remove('active');
     }
 
     async checkAuthStatus() {
@@ -375,6 +331,17 @@ class RadChat {
         const firstName = fullName.split(' ')[0];
         const initials = fullName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
 
+        // Build model options HTML
+        const modelOptionsHtml = this.models.map(model => `
+            <div class="model-option ${model.id === this.selectedModel.id ? 'selected' : ''}"
+                 data-id="${model.id}" data-name="${model.name}">
+                <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>${model.name}</span>
+            </div>
+        `).join('');
+
         this.authArea.innerHTML = `
             <div class="user-info">
                 <button class="user-btn" id="userBtn">
@@ -382,7 +349,15 @@ class RadChat {
                     <span class="user-name">${firstName}</span>
                 </button>
                 <div class="user-menu" id="userMenu">
-                    <button class="user-menu-item" disabled>${fullName}</button>
+                    <div class="user-menu-item user-name-display" disabled>${fullName}</div>
+                    <div class="user-menu-divider"></div>
+                    <div class="user-menu-section">
+                        <div class="user-menu-label">Model</div>
+                        <div class="model-options" id="modelOptions">
+                            ${modelOptionsHtml}
+                        </div>
+                    </div>
+                    <div class="user-menu-divider"></div>
                     <button class="user-menu-item danger" id="logoutBtn">Sign out</button>
                 </div>
             </div>
@@ -396,8 +371,21 @@ class RadChat {
             userMenu.classList.toggle('open');
         });
 
-        document.addEventListener('click', () => {
-            userMenu.classList.remove('open');
+        document.addEventListener('click', (e) => {
+            if (!userMenu.contains(e.target)) {
+                userMenu.classList.remove('open');
+            }
+        });
+
+        // Model option click handlers
+        this.authArea.querySelectorAll('.model-option').forEach(opt => {
+            opt.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const model = this.models.find(m => m.id === opt.dataset.id);
+                if (model) {
+                    this.selectModel(model);
+                }
+            });
         });
 
         this.authArea.querySelector('#logoutBtn').addEventListener('click', () => this.logout());
@@ -486,7 +474,7 @@ class RadChat {
                 body: JSON.stringify({
                     message,
                     session_id: this.sessionId,
-                    model: this.modelSelect.value
+                    model: this.selectedModel.id
                 }),
                 signal: this.abortController.signal
             });
