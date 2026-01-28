@@ -378,7 +378,8 @@ class GitHubModelsProvider(LLMProvider):
                     result = tool_executor(tool_name, args)
 
                     # Determine tool type
-                    if "acr" in tool_name.lower():
+                    acr_tools = ["get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"]
+                    if tool_name in acr_tools or "acr" in tool_name.lower():
                         tool_type = "acr"
                     else:
                         tool_type = "contacts"
