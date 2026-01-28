@@ -144,9 +144,16 @@ class RadChat {
     }
 
     updateScrollToBottomButton() {
-        const hasMessages = this.chatMessages.querySelectorAll('.message').length > 0;
+        const messages = this.chatMessages.querySelectorAll('.message');
+        const hasMessages = messages.length > 0;
+        const { scrollTop, scrollHeight, clientHeight } = this.chatMessages;
+        const isScrollable = scrollHeight > clientHeight + 10;
+        const isAtBottom = scrollHeight - scrollTop - clientHeight < 100;
 
-        if (!this.isNearBottom && hasMessages) {
+        // Only show button if: has messages, content is scrollable, and not at bottom
+        const shouldShow = hasMessages && isScrollable && !isAtBottom;
+
+        if (shouldShow) {
             if (!this.scrollToBottomBtn) {
                 this.scrollToBottomBtn = document.createElement('button');
                 this.scrollToBottomBtn.className = 'scroll-to-bottom';
