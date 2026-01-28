@@ -29,6 +29,11 @@ class RadChat {
         this.authArea = document.getElementById('authArea');
         this.loginBtn = document.getElementById('loginBtn');
 
+        // Scroll tracking
+        this.lastMessageDate = null;
+        this.scrollToBottomBtn = null;
+        this.isNearBottom = true;
+
         this.init();
     }
 
@@ -98,6 +103,35 @@ class RadChat {
                 this.modelBtn.classList.remove('active');
             }
         });
+
+        // Scroll tracking for "new messages" button
+        this.chatMessages.addEventListener('scroll', () => {
+            const { scrollTop, scrollHeight, clientHeight } = this.chatMessages;
+            this.isNearBottom = scrollHeight - scrollTop - clientHeight < 100;
+            this.updateScrollToBottomButton();
+        });
+    }
+
+    updateScrollToBottomButton() {
+        const hasMessages = this.chatMessages.querySelectorAll('.message').length > 0;
+
+        if (!this.isNearBottom && hasMessages) {
+            if (!this.scrollToBottomBtn) {
+                this.scrollToBottomBtn = document.createElement('button');
+                this.scrollToBottomBtn.className = 'scroll-to-bottom';
+                this.scrollToBottomBtn.innerHTML = `
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                    New messages
+                `;
+                this.scrollToBottomBtn.addEventListener('click', () => this.scrollToBottom());
+                this.chatMessages.parentElement.appendChild(this.scrollToBottomBtn);
+            }
+        } else if (this.scrollToBottomBtn) {
+            this.scrollToBottomBtn.remove();
+            this.scrollToBottomBtn = null;
+        }
     }
 
     async loadModels() {
@@ -446,7 +480,47 @@ class RadChat {
         });
     }
 
+    formatDateGroup(date) {
+        const now = new Date();
+        const messageDate = new Date(date);
+
+        if (now.toDateString() === messageDate.toDateString()) {
+            return 'Today';
+        }
+
+        const yesterday = new Date(now);
+        yesterday.setDate(yesterday.getDate() - 1);
+        if (yesterday.toDateString() === messageDate.toDateString()) {
+            return 'Yesterday';
+        }
+
+        return messageDate.toLocaleDateString('en-US', {
+            weekday: 'long',
+            month: 'short',
+            day: 'numeric'
+        });
+    }
+
+    addDateGroupHeader(date) {
+        const dateStr = this.formatDateGroup(date);
+
+        // Check if we need a new header
+        if (this.lastMessageDate === dateStr) {
+            return;
+        }
+
+        this.lastMessageDate = dateStr;
+
+        const headerEl = document.createElement('div');
+        headerEl.className = 'date-group-header';
+        headerEl.innerHTML = `<span>${dateStr}</span>`;
+        this.chatMessages.appendChild(headerEl);
+    }
+
     addMessage(role, content, isLoading = false) {
+        // Add date group header if needed
+        this.addDateGroupHeader(new Date());
+
         const messageEl = document.createElement('div');
         messageEl.className = `message ${role}`;
 
@@ -512,16 +586,26 @@ class RadChat {
         // Format tool name for display
         const displayName = toolName.replace(/_/g, ' ').replace(/search |get /gi, '');
 
+        // Choose icon based on tool type
+        let iconSvg = `<path d="M22 12h-4l-3 9L9 3l-3 9H2"/>`; // activity/pulse
+        if (toolName.includes('contact') || toolName.includes('phone')) {
+            iconSvg = `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`;
+        } else if (toolName.includes('acr')) {
+            iconSvg = `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`;
+        }
+
         const loader = document.createElement('div');
         loader.className = 'tool-call-loader';
         loader.innerHTML = `
             <div class="tool-call">
                 <div class="tool-call-header loading">
-                    <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M12 6v6l4 2"/>
+                    <svg class="tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        ${iconSvg}
                     </svg>
-                    <span>Searching ${displayName}...</span>
+                    <span>Searching ${displayName}</span>
+                    <div class="tool-call-dots">
+                        <span></span><span></span><span></span>
+                    </div>
                 </div>
             </div>
         `;
