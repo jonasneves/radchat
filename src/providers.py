@@ -46,7 +46,7 @@ ANTHROPIC_MODELS = [
 
 GITHUB_MODELS_ENDPOINT = "https://models.github.ai/inference"
 
-ACR_TOOLS = {"get_imaging_recommendations", "search_acr_criteria", "list_acr_topics", "get_acr_topic_details"}
+ACR_TOOLS = {"get_imaging_recommendations", "list_acr_topics"}
 
 
 def get_tool_type(tool_name: str) -> str:
