@@ -246,9 +246,9 @@ class RadChat {
             const data = await response.json();
             this.models = data.models;
 
-            // Set default to GPT-4.1 Mini, fallback to first model
+            // Set default to Claude Sonnet, fallback to first model
             if (data.models.length > 0) {
-                const preferredModel = data.models.find(m => m.id === 'openai/gpt-4.1-mini');
+                const preferredModel = data.models.find(m => m.id === 'claude-sonnet-4-20250514');
                 this.selectedModel = preferredModel || data.models[0];
             }
 
