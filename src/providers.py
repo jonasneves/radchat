@@ -56,8 +56,17 @@ def get_tool_type(tool_name: str) -> str:
     return "contacts"
 
 
+# Cache for converted tools (avoids repeated conversion)
+_converted_tools_cache: dict[int, list[dict]] = {}
+
+
 def convert_anthropic_tools_to_openai(tools: list[dict]) -> list[dict]:
-    """Convert Anthropic tool format to OpenAI function calling format."""
+    """Convert Anthropic tool format to OpenAI function calling format. Cached."""
+    # Use tuple of tool names as cache key (tools list is constant per session)
+    cache_key = id(tools)
+    if cache_key in _converted_tools_cache:
+        return _converted_tools_cache[cache_key]
+
     openai_tools = []
     for tool in tools:
         openai_tools.append({
@@ -68,6 +77,8 @@ def convert_anthropic_tools_to_openai(tools: list[dict]) -> list[dict]:
                 "parameters": tool["input_schema"],
             }
         })
+
+    _converted_tools_cache[cache_key] = openai_tools
     return openai_tools
 
 

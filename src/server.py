@@ -6,7 +6,11 @@ import hashlib
 import json
 import os
 import secrets
+import time
+from collections import OrderedDict
+from functools import lru_cache
 from pathlib import Path
+from threading import Lock
 from urllib.parse import urlencode
 
 import requests
@@ -22,6 +26,10 @@ from .chat import create_chat, RadChat, get_available_models
 STATIC_DIR = Path(__file__).parent / "static"
 
 app = Flask(__name__, static_folder=str(STATIC_DIR))
+
+# Session configuration
+SESSION_MAX_SIZE = 100  # Maximum sessions to keep
+SESSION_TTL = 3600  # Session TTL in seconds (1 hour)
 
 
 def get_file_hash(filepath: Path) -> str:
@@ -54,8 +62,45 @@ DUKE_OAUTH_URL = "https://oauth.oit.duke.edu/oidc/authorize"
 DUKE_TOKEN_URL = "https://oauth.oit.duke.edu/oidc/token"
 DUKE_USERINFO_URL = "https://oauth.oit.duke.edu/oidc/userinfo"
 
-# Session storage (in production, use Redis or similar)
-sessions: dict[str, RadChat] = {}
+# Session storage with TTL eviction (in production, use Redis or similar)
+class SessionStore:
+    """LRU session store with TTL eviction."""
+
+    def __init__(self, max_size: int = SESSION_MAX_SIZE, ttl: int = SESSION_TTL):
+        self._sessions: OrderedDict[str, tuple[RadChat, float]] = OrderedDict()
+        self._lock = Lock()
+        self._max_size = max_size
+        self._ttl = ttl
+
+    def get(self, key: str) -> RadChat | None:
+        with self._lock:
+            if key in self._sessions:
+                chat, created_at = self._sessions[key]
+                if time.time() - created_at < self._ttl:
+                    # Move to end (most recently used)
+                    self._sessions.move_to_end(key)
+                    return chat
+                # Expired, remove it
+                del self._sessions[key]
+            return None
+
+    def set(self, key: str, chat: RadChat) -> None:
+        with self._lock:
+            # Evict oldest if at capacity
+            while len(self._sessions) >= self._max_size:
+                self._sessions.popitem(last=False)
+            self._sessions[key] = (chat, time.time())
+
+    def delete_prefix(self, prefix: str) -> int:
+        """Delete all sessions matching prefix. Returns count deleted."""
+        with self._lock:
+            keys_to_delete = [k for k in self._sessions if k.startswith(prefix)]
+            for key in keys_to_delete:
+                del self._sessions[key]
+            return len(keys_to_delete)
+
+
+sessions = SessionStore()
 
 
 def get_session(session_id: str, token: str = None, model: str = None) -> RadChat:
@@ -64,18 +109,19 @@ def get_session(session_id: str, token: str = None, model: str = None) -> RadCha
     provider_type = "anthropic" if model and model.startswith("claude-") else "github"
     key = f"{session_id}:{model or 'default'}"
 
-    if key not in sessions:
-        sessions[key] = create_chat(
+    chat = sessions.get(key)
+    if chat is None:
+        chat = create_chat(
             provider_type=provider_type,
             model=model or "openai/gpt-4.1-mini",
             token=token,
         )
-    return sessions[key]
+        sessions.set(key, chat)
+    return chat
 
 
-@app.route("/")
-def index():
-    """Serve the web UI with cache-busted static file URLs."""
+def _render_index_html() -> str:
+    """Render index.html with cache-busted URLs."""
     html_path = STATIC_DIR / "index.html"
     html = html_path.read_text()
 
@@ -88,7 +134,23 @@ def index():
     html = html.replace('src="/static/app.js"', f'src="/static/app.js?v={app_hash}"')
     html = html.replace('src="/static/marked.min.js"', f'src="/static/marked.min.js?v={marked_hash}"')
 
-    response = make_response(html)
+    return html
+
+
+# Cached rendered HTML (cleared on debug mode)
+_cached_html: str | None = None
+
+
+@app.route("/")
+def index():
+    """Serve the web UI with cache-busted static file URLs."""
+    global _cached_html
+
+    # In debug mode, always re-render; otherwise use cache
+    if app.debug or _cached_html is None:
+        _cached_html = _render_index_html()
+
+    response = make_response(_cached_html)
     response.headers["Content-Type"] = "text/html"
     response.headers["Cache-Control"] = "no-cache, must-revalidate"
     return response
@@ -334,10 +396,8 @@ def chat_stream():
 def clear_session(session_id: str):
     """Clear all chat sessions for a given session ID."""
     prefix = f"{session_id}:"
-    keys_to_delete = [k for k in sessions if k.startswith(prefix)]
-    for key in keys_to_delete:
-        del sessions[key]
-    return jsonify({"status": "cleared", "session_id": session_id})
+    count = sessions.delete_prefix(prefix)
+    return jsonify({"status": "cleared", "session_id": session_id, "cleared": count})
 
 
 @app.route("/tools", methods=["GET"])

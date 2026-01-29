@@ -16,12 +16,18 @@ CONTACTS_FILE = Path(__file__).parent.parent / "data" / "contacts.json"
 
 @lru_cache(maxsize=1)
 def load_contacts() -> dict:
-    """Load contacts from local file."""
+    """Load contacts from local file with prebuilt indexes for O(1) lookups."""
     try:
         with open(CONTACTS_FILE) as f:
-            return json.load(f)
+            data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
-        return {"metadata": {}, "contacts": [], "routing_rules": []}
+        return {"metadata": {}, "contacts": [], "routing_rules": [], "_by_id": {}}
+
+    # Build ID index for O(1) lookups
+    contacts = data.get("contacts", [])
+    data["_by_id"] = {c.get("id"): c for c in contacts if c.get("id")}
+
+    return data
 
 
 def is_after_hours() -> bool:
@@ -139,12 +145,9 @@ def search_by_location(contacts: list, location: str) -> list:
 
 
 def get_contact_by_id(contact_id: str) -> Optional[dict]:
-    """Get a specific contact by ID."""
+    """Get a specific contact by ID using O(1) lookup."""
     data = load_contacts()
-    for contact in data.get("contacts", []):
-        if contact.get("id") == contact_id:
-            return contact
-    return None
+    return data.get("_by_id", {}).get(contact_id)
 
 
 def get_after_hours_contacts() -> list:
@@ -220,43 +223,39 @@ def search_contacts(
     contacts = data.get("contacts", [])
     time_ctx = get_time_context()
 
-    # Start with all contacts or semantic search if query provided
+    # Filter contacts in a single pass using set intersection on contact objects
+    # Convert filter functions to return sets of contact IDs for O(1) intersection
     if query:
-        results = set(contacts.index(c) for c in semantic_search(contacts, query))
+        candidates = set(id(c) for c in semantic_search(contacts, query))
     else:
-        results = set(range(len(contacts)))
+        candidates = set(id(c) for c in contacts)
 
-    # Apply filters
+    # Apply filters efficiently - only iterate once per filter
     if modality:
-        matches = search_by_modality(contacts, modality)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_modality(contacts, modality))
 
     if anatomical_region:
-        matches = search_by_anatomical_region(contacts, anatomical_region)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_anatomical_region(contacts, anatomical_region))
 
     if procedure:
-        matches = search_by_procedure(contacts, procedure)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_procedure(contacts, procedure))
 
     if department:
-        matches = search_by_department(contacts, department)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_department(contacts, department))
 
     if contact_type:
-        matches = search_by_study_status(contacts, contact_type)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_study_status(contacts, contact_type))
 
     if location:
-        matches = search_by_location(contacts, location)
-        results &= {contacts.index(c) for c in matches}
+        candidates &= set(id(c) for c in search_by_location(contacts, location))
 
-    # Get filtered contacts with availability
+    # Get filtered contacts with availability - single pass
     filtered = []
-    for i in sorted(results):
-        contact = contacts[i].copy()
-        contact["available_now"] = is_available_now(contact, time_ctx)
-        filtered.append(contact)
+    for contact in contacts:
+        if id(contact) in candidates:
+            contact_copy = contact.copy()
+            contact_copy["available_now"] = is_available_now(contact, time_ctx)
+            filtered.append(contact_copy)
 
     # Sort by relevance (available contacts first)
     filtered.sort(key=lambda x: (not x["available_now"], x.get("department", "")))

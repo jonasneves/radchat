@@ -45,6 +45,11 @@ class RadChat {
         // Streaming control
         this.abortController = null;
 
+        // DOM update batching for streaming performance
+        this.pendingDomUpdate = null;
+        this.pendingText = null;
+        this.pendingBubble = null;
+
         this.init();
     }
 
@@ -575,7 +580,8 @@ class RadChat {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                         messageRevealed = true;
                                     } else {
-                                        bubbleEl.innerHTML = this.formatMessage(fullText);
+                                        // Batch DOM updates for performance
+                                        this.scheduleDomUpdate(bubbleEl, fullText);
                                     }
                                     buffer = '';
                                 } else if (underscoreIdx > 0) {
@@ -585,7 +591,8 @@ class RadChat {
                                         await this.showAssistantMessage(assistantMessage, bubbleEl, fullText);
                                         messageRevealed = true;
                                     } else {
-                                        bubbleEl.innerHTML = this.formatMessage(fullText);
+                                        // Batch DOM updates for performance
+                                        this.scheduleDomUpdate(bubbleEl, fullText);
                                     }
                                     buffer = buffer.slice(underscoreIdx);
                                 }
@@ -605,6 +612,9 @@ class RadChat {
             if (buffer) {
                 fullText += buffer;
             }
+
+            // Flush any pending batched updates before final render
+            this.flushDomUpdate();
 
             // Final render - bubble is now just for text
             bubbleEl.innerHTML = this.formatMessage(fullText);
@@ -639,6 +649,7 @@ class RadChat {
             this.updateSendButton(false);
             this.setQuickActionsDisabled(false);
             this.removeThinkingIndicator();
+            this.flushDomUpdate();  // Ensure any pending updates are flushed
             this.scrollToBottom();
         }
     }
@@ -792,9 +803,8 @@ class RadChat {
             `;
             bubbleEl.appendChild(statusEl);
 
-            // Simulate delivery status changes
-            setTimeout(() => this.updateMessageStatus(messageEl, 'delivered'), 300);
-            setTimeout(() => this.updateMessageStatus(messageEl, 'read'), 600);
+            // Mark as read immediately (no artificial delay)
+            this.updateMessageStatus(messageEl, 'read');
 
             messageEl.appendChild(bubbleEl);
         }
@@ -1179,6 +1189,39 @@ class RadChat {
 
     scrollToBottom() {
         this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
+    }
+
+    /**
+     * Schedule a batched DOM update using requestAnimationFrame.
+     * Coalesces multiple updates into a single render frame.
+     */
+    scheduleDomUpdate(bubbleEl, text) {
+        this.pendingText = text;
+        this.pendingBubble = bubbleEl;
+
+        if (!this.pendingDomUpdate) {
+            this.pendingDomUpdate = requestAnimationFrame(() => {
+                if (this.pendingBubble && this.pendingText !== null) {
+                    this.pendingBubble.innerHTML = this.formatMessage(this.pendingText);
+                }
+                this.pendingDomUpdate = null;
+            });
+        }
+    }
+
+    /**
+     * Flush any pending DOM updates immediately.
+     */
+    flushDomUpdate() {
+        if (this.pendingDomUpdate) {
+            cancelAnimationFrame(this.pendingDomUpdate);
+            this.pendingDomUpdate = null;
+        }
+        if (this.pendingBubble && this.pendingText !== null) {
+            this.pendingBubble.innerHTML = this.formatMessage(this.pendingText);
+        }
+        this.pendingText = null;
+        this.pendingBubble = null;
     }
 
     showToast(message, type = 'info') {

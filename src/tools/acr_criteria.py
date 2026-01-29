@@ -13,6 +13,18 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
+# Reusable session for connection pooling
+_http_session: Optional[requests.Session] = None
+
+
+def _get_session() -> requests.Session:
+    """Get or create a reusable HTTP session for connection pooling."""
+    global _http_session
+    if _http_session is None:
+        _http_session = requests.Session()
+        _http_session.headers.update(HEADERS)
+    return _http_session
+
 BASE_URL = "https://acsearch.acr.org"
 DATA_DIR = Path(__file__).parent.parent / "data" / "acr"
 INDEX_FILE = DATA_DIR / "index.json"
@@ -52,7 +64,7 @@ def load_index() -> Optional[dict]:
         return None
 
 
-@lru_cache(maxsize=50)
+@lru_cache(maxsize=128)
 def load_topic_details(topic_id: str) -> Optional[dict]:
     """Load individual topic details from local file."""
     try:
@@ -66,7 +78,8 @@ def load_topic_details(topic_id: str) -> Optional[dict]:
 def fetch_topics_live() -> list[dict]:
     """Fetch topic list from ACR website (fallback when no cache)."""
     try:
-        response = requests.get(f"{BASE_URL}/list", headers=HEADERS, timeout=30)
+        session = _get_session()
+        response = session.get(f"{BASE_URL}/list", timeout=10)
         response.raise_for_status()
     except requests.RequestException:
         return []
