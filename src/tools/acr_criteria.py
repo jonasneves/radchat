@@ -13,6 +13,16 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
+BASE_URL = "https://acsearch.acr.org"
+DATA_DIR = Path(__file__).parent.parent / "data" / "acr"
+INDEX_FILE = DATA_DIR / "index.json"
+TOPICS_DIR = DATA_DIR / "topics"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9",
+}
+
 # Reusable session for connection pooling
 _http_session: Optional[requests.Session] = None
 
@@ -24,16 +34,6 @@ def _get_session() -> requests.Session:
         _http_session = requests.Session()
         _http_session.headers.update(HEADERS)
     return _http_session
-
-BASE_URL = "https://acsearch.acr.org"
-DATA_DIR = Path(__file__).parent.parent / "data" / "acr"
-INDEX_FILE = DATA_DIR / "index.json"
-TOPICS_DIR = DATA_DIR / "topics"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9",
-}
 
 BODY_REGION_KEYWORDS = {
     "head": ["head", "brain", "cranial", "intracranial", "skull", "headache", "stroke"],
